@@ -1,3 +1,4 @@
+<!--This is the landing page-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,22 +6,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- This makes website responsive on different devices-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CHEM E Plan</title>
+    <title>Computer Plan</title>
     <!--Styles sheets & web icon-->
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
 </head>
 <body>
+    <!--header-->
     <header>
-        <div class="header" id="header" style="width:1730px;">
+        <div class="header" id="header" style="width:100vw;">
             <table>
                 <tr>
-                    <td style="width: 65%;"><a href="#"> <img alt="UofA logo" src="./images/uofalogo.png"/></a></td>
-                    <td><a class="site-title" href="#default">Computer Engineering Program Plan Visualizer</a> </td>
+                    <td style="width: 65%;"><a href="#"> <img src="./images/uofalogo.png" alt="UofA logo"></a></td>
+                    <td><a href="#default" class="site-title">Computer Engineering Program Plan Visualizer</a></td>
                 </tr>
             </table>
         </div>
     </header>
-    <div><p>This visualizer is still being constructed!</p></div>
+    <div id="main" ng-app="main" ng-controller="main" style="height:100vh;">
+        <div id="introtext">
+            <p>Welcome to the University of Alberta Computer Engineering Program Plan Visualzier</p>
+            <p>This page is blank for now</p>
+        </div>
+    </div>
+    <footer>
+        <div class="footer" id="footer" style="width:100vw;">
+            <table>
+                <tr>
+                    <td style="width: 65%;"><a href="#"> <img src="./images/uofalogo.png" alt="UofA logo"></a></td>
+                    <td><p id="copyright">&copy 2022 University of Alberta</p></td>
+                </tr>
+            </table>
+        </div>
+    </footer>
 </body>
 </html>
