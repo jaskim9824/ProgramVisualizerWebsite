@@ -1353,7 +1353,7 @@ ENGG130MechatronicsPlanTime = currentTime;
 }      that.addLine(getLine0());
       that.addLine(getLine5());
       that.addLine(getLine9());
-      that.addLine(getLine22());
+      that.addLine(getLine23());
      ENGG130MechatronicsPlanelement.classList.remove("NaturalSciences");
      ENGG130MechatronicsPlanelement.classList.add("NaturalSciences-highlighted");
      that.addToClicked(["ENGG130MechatronicsPlan", "NaturalSciences"]);
@@ -1363,7 +1363,7 @@ ENGG130MechatronicsPlanTime = currentTime;
       that.removeLine(getLine0());
       that.removeLine(getLine5());
       that.removeLine(getLine9());
-      that.removeLine(getLine22());
+      that.removeLine(getLine23());
      ENGG130MechatronicsPlanelement.classList.remove("NaturalSciences-highlighted");
      ENGG130MechatronicsPlanelement.classList.add("NaturalSciences");
      that.removeFromClicked("ENGG130MechatronicsPlan");
@@ -1473,7 +1473,7 @@ CHEM105MechatronicsPlanTime = currentTime;
      CHEM105MechatronicsPlanelement.classList.add("NaturalSciences");
       return;
 }      that.addLine(getLine2());
-      that.addLine(getLine41());
+      that.addLine(getLine50());
      CHEM105MechatronicsPlanelement.classList.remove("NaturalSciences");
      CHEM105MechatronicsPlanelement.classList.add("NaturalSciences-highlighted");
      that.addToClicked(["CHEM105MechatronicsPlan", "NaturalSciences"]);
@@ -1481,7 +1481,7 @@ CHEM105MechatronicsPlanTime = currentTime;
   }
  else {
       that.removeLine(getLine2());
-      that.removeLine(getLine41());
+      that.removeLine(getLine50());
      CHEM105MechatronicsPlanelement.classList.remove("NaturalSciences-highlighted");
      CHEM105MechatronicsPlanelement.classList.add("NaturalSciences");
      that.removeFromClicked("CHEM105MechatronicsPlan");
@@ -1501,14 +1501,14 @@ ENCMP100MechatronicsPlanTime = currentTime;
      ENCMP100MechatronicsPlanelement.classList.remove("NaturalSciences-highlighted");
      ENCMP100MechatronicsPlanelement.classList.add("NaturalSciences");
       return;
-}      that.addLine(getLine19());
+}      that.addLine(getLine20());
      ENCMP100MechatronicsPlanelement.classList.remove("NaturalSciences");
      ENCMP100MechatronicsPlanelement.classList.add("NaturalSciences-highlighted");
      that.addToClicked(["ENCMP100MechatronicsPlan", "NaturalSciences"]);
       ENCMP100MechatronicsPlanflag=true
   }
  else {
-      that.removeLine(getLine19());
+      that.removeLine(getLine20());
      ENCMP100MechatronicsPlanelement.classList.remove("NaturalSciences-highlighted");
      ENCMP100MechatronicsPlanelement.classList.add("NaturalSciences");
      that.removeFromClicked("ENCMP100MechatronicsPlan");
@@ -1529,7 +1529,7 @@ ENGG160MechatronicsPlanTime = currentTime;
      ENGG160MechatronicsPlanelement.classList.add("EngineeringDesign");
       return;
 }      that.addLine(getLine3());
-      that.addLine(getLine25());
+      that.addLine(getLine26());
      ENGG160MechatronicsPlanelement.classList.remove("EngineeringDesign");
      ENGG160MechatronicsPlanelement.classList.add("EngineeringDesign-highlighted");
      that.addToClicked(["ENGG160MechatronicsPlan", "EngineeringDesign"]);
@@ -1537,7 +1537,7 @@ ENGG160MechatronicsPlanTime = currentTime;
   }
  else {
       that.removeLine(getLine3());
-      that.removeLine(getLine25());
+      that.removeLine(getLine26());
      ENGG160MechatronicsPlanelement.classList.remove("EngineeringDesign-highlighted");
      ENGG160MechatronicsPlanelement.classList.add("EngineeringDesign");
      that.removeFromClicked("ENGG160MechatronicsPlan");
@@ -1560,8 +1560,8 @@ ENPH131MechatronicsPlanTime = currentTime;
 }      that.addLine(getLine4());
       that.addLine(getLine5());
       that.addLine(getLine6());
-      that.addLine(getLine21());
-      that.addLine(getLine23());
+      that.addLine(getLine22());
+      that.addLine(getLine24());
      ENPH131MechatronicsPlanelement.classList.remove("NaturalSciences");
      ENPH131MechatronicsPlanelement.classList.add("NaturalSciences-highlighted");
      that.addToClicked(["ENPH131MechatronicsPlan", "NaturalSciences"]);
@@ -1571,8 +1571,8 @@ ENPH131MechatronicsPlanTime = currentTime;
       that.removeLine(getLine4());
       that.removeLine(getLine5());
       that.removeLine(getLine6());
-      that.removeLine(getLine21());
-      that.removeLine(getLine23());
+      that.removeLine(getLine22());
+      that.removeLine(getLine24());
      ENPH131MechatronicsPlanelement.classList.remove("NaturalSciences-highlighted");
      ENPH131MechatronicsPlanelement.classList.add("NaturalSciences");
      that.removeFromClicked("ENPH131MechatronicsPlan");
@@ -1597,9 +1597,9 @@ MATH101MechatronicsPlanTime = currentTime;
       that.addLine(getLine10());
       that.addLine(getLine14());
       that.addLine(getLine16());
-      that.addLine(getLine18());
-      that.addLine(getLine20());
-      that.addLine(getLine24());
+      that.addLine(getLine19());
+      that.addLine(getLine21());
+      that.addLine(getLine25());
      MATH101MechatronicsPlanelement.classList.remove("Math");
      MATH101MechatronicsPlanelement.classList.add("Math-highlighted");
      that.addToClicked(["MATH101MechatronicsPlan", "Math"]);
@@ -1611,9 +1611,9 @@ MATH101MechatronicsPlanTime = currentTime;
       that.removeLine(getLine10());
       that.removeLine(getLine14());
       that.removeLine(getLine16());
-      that.removeLine(getLine18());
-      that.removeLine(getLine20());
-      that.removeLine(getLine24());
+      that.removeLine(getLine19());
+      that.removeLine(getLine21());
+      that.removeLine(getLine25());
      MATH101MechatronicsPlanelement.classList.remove("Math-highlighted");
      MATH101MechatronicsPlanelement.classList.add("Math");
      that.removeFromClicked("MATH101MechatronicsPlan");
@@ -1636,7 +1636,7 @@ MATH102MechatronicsPlanTime = currentTime;
 }      that.addLine(getLine8());
       that.addLine(getLine15());
       that.addLine(getLine17());
-      that.addLine(getLine35());
+      that.addLine(getLine38());
      MATH102MechatronicsPlanelement.classList.remove("Math");
      MATH102MechatronicsPlanelement.classList.add("Math-highlighted");
      that.addToClicked(["MATH102MechatronicsPlan", "Math"]);
@@ -1646,7 +1646,7 @@ MATH102MechatronicsPlanTime = currentTime;
       that.removeLine(getLine8());
       that.removeLine(getLine15());
       that.removeLine(getLine17());
-      that.removeLine(getLine35());
+      that.removeLine(getLine38());
      MATH102MechatronicsPlanelement.classList.remove("Math-highlighted");
      MATH102MechatronicsPlanelement.classList.add("Math");
      that.removeFromClicked("MATH102MechatronicsPlan");
@@ -1668,9 +1668,9 @@ CIVE270MechatronicsPlanTime = currentTime;
       return;
 }      that.addLine(getLine9());
       that.addLine(getLine10());
-      that.addLine(getLine27());
-      that.addLine(getLine33());
-      that.addLine(getLine37());
+      that.addLine(getLine28());
+      that.addLine(getLine36());
+      that.addLine(getLine40());
      CIVE270MechatronicsPlanelement.classList.remove("EngineeringSciences");
      CIVE270MechatronicsPlanelement.classList.add("EngineeringSciences-highlighted");
      that.addToClicked(["CIVE270MechatronicsPlan", "EngineeringSciences"]);
@@ -1679,9 +1679,9 @@ CIVE270MechatronicsPlanTime = currentTime;
  else {
       that.removeLine(getLine9());
       that.removeLine(getLine10());
-      that.removeLine(getLine27());
-      that.removeLine(getLine33());
-      that.removeLine(getLine37());
+      that.removeLine(getLine28());
+      that.removeLine(getLine36());
+      that.removeLine(getLine40());
      CIVE270MechatronicsPlanelement.classList.remove("EngineeringSciences-highlighted");
      CIVE270MechatronicsPlanelement.classList.add("EngineeringSciences");
      that.removeFromClicked("CIVE270MechatronicsPlan");
@@ -1728,6 +1728,7 @@ ECE240MechatronicsPlanTime = currentTime;
       return;
 }      that.addLine(getLine11());
       that.addLine(getLine12());
+      that.addLine(getLine18());
      ECE240MechatronicsPlanelement.classList.remove("EngineeringSciences");
      ECE240MechatronicsPlanelement.classList.add("EngineeringSciences-highlighted");
      that.addToClicked(["ECE240MechatronicsPlan", "EngineeringSciences"]);
@@ -1736,6 +1737,7 @@ ECE240MechatronicsPlanTime = currentTime;
  else {
       that.removeLine(getLine11());
       that.removeLine(getLine12());
+      that.removeLine(getLine18());
      ECE240MechatronicsPlanelement.classList.remove("EngineeringSciences-highlighted");
      ECE240MechatronicsPlanelement.classList.add("EngineeringSciences");
      that.removeFromClicked("ECE240MechatronicsPlan");
@@ -1757,7 +1759,7 @@ MATH201MechatronicsPlanTime = currentTime;
       return;
 }      that.addLine(getLine12());
       that.addLine(getLine13());
-      that.addLine(getLine36());
+      that.addLine(getLine39());
      MATH201MechatronicsPlanelement.classList.remove("Math");
      MATH201MechatronicsPlanelement.classList.add("Math-highlighted");
      that.addToClicked(["MATH201MechatronicsPlan", "Math"]);
@@ -1766,7 +1768,7 @@ MATH201MechatronicsPlanTime = currentTime;
  else {
       that.removeLine(getLine12());
       that.removeLine(getLine13());
-      that.removeLine(getLine36());
+      that.removeLine(getLine39());
      MATH201MechatronicsPlanelement.classList.remove("Math-highlighted");
      MATH201MechatronicsPlanelement.classList.add("Math");
      that.removeFromClicked("MATH201MechatronicsPlan");
@@ -1789,7 +1791,7 @@ MATH209MechatronicsPlanTime = currentTime;
 }      that.addLine(getLine13());
       that.addLine(getLine14());
       that.addLine(getLine15());
-      that.addLine(getLine30());
+      that.addLine(getLine31());
      MATH209MechatronicsPlanelement.classList.remove("Math");
      MATH209MechatronicsPlanelement.classList.add("Math-highlighted");
      that.addToClicked(["MATH209MechatronicsPlan", "Math"]);
@@ -1799,7 +1801,7 @@ MATH209MechatronicsPlanTime = currentTime;
       that.removeLine(getLine13());
       that.removeLine(getLine14());
       that.removeLine(getLine15());
-      that.removeLine(getLine30());
+      that.removeLine(getLine31());
      MATH209MechatronicsPlanelement.classList.remove("Math-highlighted");
      MATH209MechatronicsPlanelement.classList.add("Math");
      that.removeFromClicked("MATH209MechatronicsPlan");
@@ -1822,7 +1824,10 @@ MCTR202MechatronicsPlanTime = currentTime;
 }      that.addLine(getLine11());
       that.addLine(getLine16());
       that.addLine(getLine17());
-      that.addLine(getLine28());
+      that.addLine(getLine18());
+      that.addLine(getLine29());
+      that.addLine(getLine41());
+      that.addLine(getLine43());
      MCTR202MechatronicsPlanelement.classList.remove("Mechatronics");
      MCTR202MechatronicsPlanelement.classList.add("Mechatronics-highlighted");
      that.addToClicked(["MCTR202MechatronicsPlan", "Mechatronics"]);
@@ -1832,7 +1837,10 @@ MCTR202MechatronicsPlanTime = currentTime;
       that.removeLine(getLine11());
       that.removeLine(getLine16());
       that.removeLine(getLine17());
-      that.removeLine(getLine28());
+      that.removeLine(getLine18());
+      that.removeLine(getLine29());
+      that.removeLine(getLine41());
+      that.removeLine(getLine43());
      MCTR202MechatronicsPlanelement.classList.remove("Mechatronics-highlighted");
      MCTR202MechatronicsPlanelement.classList.add("Mechatronics");
      that.removeFromClicked("MCTR202MechatronicsPlan");
@@ -1877,14 +1885,14 @@ CHE243MechatronicsPlanTime = currentTime;
      CHE243MechatronicsPlanelement.classList.remove("EngineeringSciences-highlighted");
      CHE243MechatronicsPlanelement.classList.add("EngineeringSciences");
       return;
-}      that.addLine(getLine18());
+}      that.addLine(getLine19());
      CHE243MechatronicsPlanelement.classList.remove("EngineeringSciences");
      CHE243MechatronicsPlanelement.classList.add("EngineeringSciences-highlighted");
      that.addToClicked(["CHE243MechatronicsPlan", "EngineeringSciences"]);
       CHE243MechatronicsPlanflag=true
   }
  else {
-      that.removeLine(getLine18());
+      that.removeLine(getLine19());
      CHE243MechatronicsPlanelement.classList.remove("EngineeringSciences-highlighted");
      CHE243MechatronicsPlanelement.classList.add("EngineeringSciences");
      that.removeFromClicked("CHE243MechatronicsPlan");
@@ -1929,14 +1937,18 @@ MCTR274MechatronicsPlanTime = currentTime;
      MCTR274MechatronicsPlanelement.classList.remove("Mechatronics-highlighted");
      MCTR274MechatronicsPlanelement.classList.add("Mechatronics");
       return;
-}      that.addLine(getLine19());
+}      that.addLine(getLine20());
+      that.addLine(getLine32());
+      that.addLine(getLine45());
      MCTR274MechatronicsPlanelement.classList.remove("Mechatronics");
      MCTR274MechatronicsPlanelement.classList.add("Mechatronics-highlighted");
      that.addToClicked(["MCTR274MechatronicsPlan", "Mechatronics"]);
       MCTR274MechatronicsPlanflag=true
   }
  else {
-      that.removeLine(getLine19());
+      that.removeLine(getLine20());
+      that.removeLine(getLine32());
+      that.removeLine(getLine45());
      MCTR274MechatronicsPlanelement.classList.remove("Mechatronics-highlighted");
      MCTR274MechatronicsPlanelement.classList.add("Mechatronics");
      that.removeFromClicked("MCTR274MechatronicsPlan");
@@ -1956,16 +1968,16 @@ MECE230MechatronicsPlanTime = currentTime;
      MECE230MechatronicsPlanelement.classList.remove("NaturalSciences-highlighted");
      MECE230MechatronicsPlanelement.classList.add("NaturalSciences");
       return;
-}      that.addLine(getLine20());
-      that.addLine(getLine21());
+}      that.addLine(getLine21());
+      that.addLine(getLine22());
      MECE230MechatronicsPlanelement.classList.remove("NaturalSciences");
      MECE230MechatronicsPlanelement.classList.add("NaturalSciences-highlighted");
      that.addToClicked(["MECE230MechatronicsPlan", "NaturalSciences"]);
       MECE230MechatronicsPlanflag=true
   }
  else {
-      that.removeLine(getLine20());
       that.removeLine(getLine21());
+      that.removeLine(getLine22());
      MECE230MechatronicsPlanelement.classList.remove("NaturalSciences-highlighted");
      MECE230MechatronicsPlanelement.classList.add("NaturalSciences");
      that.removeFromClicked("MECE230MechatronicsPlan");
@@ -1985,18 +1997,20 @@ MECE250MechatronicsPlanTime = currentTime;
      MECE250MechatronicsPlanelement.classList.remove("EngineeringSciences-highlighted");
      MECE250MechatronicsPlanelement.classList.add("EngineeringSciences");
       return;
-}      that.addLine(getLine22());
-      that.addLine(getLine23());
+}      that.addLine(getLine23());
       that.addLine(getLine24());
+      that.addLine(getLine25());
+      that.addLine(getLine33());
      MECE250MechatronicsPlanelement.classList.remove("EngineeringSciences");
      MECE250MechatronicsPlanelement.classList.add("EngineeringSciences-highlighted");
      that.addToClicked(["MECE250MechatronicsPlan", "EngineeringSciences"]);
       MECE250MechatronicsPlanflag=true
   }
  else {
-      that.removeLine(getLine22());
       that.removeLine(getLine23());
       that.removeLine(getLine24());
+      that.removeLine(getLine25());
+      that.removeLine(getLine33());
      MECE250MechatronicsPlanelement.classList.remove("EngineeringSciences-highlighted");
      MECE250MechatronicsPlanelement.classList.add("EngineeringSciences");
      that.removeFromClicked("MECE250MechatronicsPlan");
@@ -2016,20 +2030,20 @@ MECE260MechatronicsPlanTime = currentTime;
      MECE260MechatronicsPlanelement.classList.remove("EngineeringDesign-highlighted");
      MECE260MechatronicsPlanelement.classList.add("EngineeringDesign");
       return;
-}      that.addLine(getLine25());
-      that.addLine(getLine26());
+}      that.addLine(getLine26());
       that.addLine(getLine27());
-      that.addLine(getLine31());
+      that.addLine(getLine28());
+      that.addLine(getLine34());
      MECE260MechatronicsPlanelement.classList.remove("EngineeringDesign");
      MECE260MechatronicsPlanelement.classList.add("EngineeringDesign-highlighted");
      that.addToClicked(["MECE260MechatronicsPlan", "EngineeringDesign"]);
       MECE260MechatronicsPlanflag=true
   }
  else {
-      that.removeLine(getLine25());
       that.removeLine(getLine26());
       that.removeLine(getLine27());
-      that.removeLine(getLine31());
+      that.removeLine(getLine28());
+      that.removeLine(getLine34());
      MECE260MechatronicsPlanelement.classList.remove("EngineeringDesign-highlighted");
      MECE260MechatronicsPlanelement.classList.add("EngineeringDesign");
      that.removeFromClicked("MECE260MechatronicsPlan");
@@ -2049,16 +2063,16 @@ MECE265MechatronicsPlanTime = currentTime;
      MECE265MechatronicsPlanelement.classList.remove("EngineeringDesign-highlighted");
      MECE265MechatronicsPlanelement.classList.add("EngineeringDesign");
       return;
-}      that.addLine(getLine26());
-      that.addLine(getLine32());
+}      that.addLine(getLine27());
+      that.addLine(getLine35());
      MECE265MechatronicsPlanelement.classList.remove("EngineeringDesign");
      MECE265MechatronicsPlanelement.classList.add("EngineeringDesign-highlighted");
      that.addToClicked(["MECE265MechatronicsPlan", "EngineeringDesign"]);
       MECE265MechatronicsPlanflag=true
   }
  else {
-      that.removeLine(getLine26());
-      that.removeLine(getLine32());
+      that.removeLine(getLine27());
+      that.removeLine(getLine35());
      MECE265MechatronicsPlanelement.classList.remove("EngineeringDesign-highlighted");
      MECE265MechatronicsPlanelement.classList.add("EngineeringDesign");
      that.removeFromClicked("MECE265MechatronicsPlan");
@@ -2078,16 +2092,16 @@ ECE315MechatronicsPlanTime = currentTime;
      ECE315MechatronicsPlanelement.classList.remove("EngineeringSciences-highlighted");
      ECE315MechatronicsPlanelement.classList.add("EngineeringSciences");
       return;
-}      that.addLine(getLine28());
-      that.addLine(getLine29());
+}      that.addLine(getLine29());
+      that.addLine(getLine30());
      ECE315MechatronicsPlanelement.classList.remove("EngineeringSciences");
      ECE315MechatronicsPlanelement.classList.add("EngineeringSciences-highlighted");
      that.addToClicked(["ECE315MechatronicsPlan", "EngineeringSciences"]);
       ECE315MechatronicsPlanflag=true
   }
  else {
-      that.removeLine(getLine28());
       that.removeLine(getLine29());
+      that.removeLine(getLine30());
      ECE315MechatronicsPlanelement.classList.remove("EngineeringSciences-highlighted");
      ECE315MechatronicsPlanelement.classList.add("EngineeringSciences");
      that.removeFromClicked("ECE315MechatronicsPlan");
@@ -2107,18 +2121,18 @@ ECE342MechatronicsPlanTime = currentTime;
      ECE342MechatronicsPlanelement.classList.remove("Math-highlighted");
      ECE342MechatronicsPlanelement.classList.add("Math");
       return;
-}      that.addLine(getLine30());
-      that.addLine(getLine38());
-      that.addLine(getLine39());
+}      that.addLine(getLine31());
+      that.addLine(getLine42());
+      that.addLine(getLine47());
      ECE342MechatronicsPlanelement.classList.remove("Math");
      ECE342MechatronicsPlanelement.classList.add("Math-highlighted");
      that.addToClicked(["ECE342MechatronicsPlan", "Math"]);
       ECE342MechatronicsPlanflag=true
   }
  else {
-      that.removeLine(getLine30());
-      that.removeLine(getLine38());
-      that.removeLine(getLine39());
+      that.removeLine(getLine31());
+      that.removeLine(getLine42());
+      that.removeLine(getLine47());
      ECE342MechatronicsPlanelement.classList.remove("Math-highlighted");
      ECE342MechatronicsPlanelement.classList.add("Math");
      that.removeFromClicked("ECE342MechatronicsPlan");
@@ -2138,16 +2152,18 @@ MCTR374MechatronicsPlanTime = currentTime;
      MCTR374MechatronicsPlanelement.classList.remove("Mechatronics-highlighted");
      MCTR374MechatronicsPlanelement.classList.add("Mechatronics");
       return;
-}      that.addLine(getLine29());
-      that.addLine(getLine46());
+}      that.addLine(getLine30());
+      that.addLine(getLine32());
+      that.addLine(getLine57());
      MCTR374MechatronicsPlanelement.classList.remove("Mechatronics");
      MCTR374MechatronicsPlanelement.classList.add("Mechatronics-highlighted");
      that.addToClicked(["MCTR374MechatronicsPlan", "Mechatronics"]);
       MCTR374MechatronicsPlanflag=true
   }
  else {
-      that.removeLine(getLine29());
-      that.removeLine(getLine46());
+      that.removeLine(getLine30());
+      that.removeLine(getLine32());
+      that.removeLine(getLine57());
      MCTR374MechatronicsPlanelement.classList.remove("Mechatronics-highlighted");
      MCTR374MechatronicsPlanelement.classList.add("Mechatronics");
      that.removeFromClicked("MCTR374MechatronicsPlan");
@@ -2167,14 +2183,16 @@ MECE350MechatronicsPlanTime = currentTime;
      MECE350MechatronicsPlanelement.classList.remove("EngineeringSciences-highlighted");
      MECE350MechatronicsPlanelement.classList.add("EngineeringSciences");
       return;
-}      that.addLine(getLine34());
+}      that.addLine(getLine33());
+      that.addLine(getLine37());
      MECE350MechatronicsPlanelement.classList.remove("EngineeringSciences");
      MECE350MechatronicsPlanelement.classList.add("EngineeringSciences-highlighted");
      that.addToClicked(["MECE350MechatronicsPlan", "EngineeringSciences"]);
       MECE350MechatronicsPlanflag=true
   }
  else {
-      that.removeLine(getLine34());
+      that.removeLine(getLine33());
+      that.removeLine(getLine37());
      MECE350MechatronicsPlanelement.classList.remove("EngineeringSciences-highlighted");
      MECE350MechatronicsPlanelement.classList.add("EngineeringSciences");
      that.removeFromClicked("MECE350MechatronicsPlan");
@@ -2194,22 +2212,26 @@ MECE360MechatronicsPlanTime = currentTime;
      MECE360MechatronicsPlanelement.classList.remove("EngineeringDesign-highlighted");
      MECE360MechatronicsPlanelement.classList.add("EngineeringDesign");
       return;
-}      that.addLine(getLine31());
-      that.addLine(getLine32());
-      that.addLine(getLine33());
-      that.addLine(getLine34());
-      that.addLine(getLine42());
+}      that.addLine(getLine34());
+      that.addLine(getLine35());
+      that.addLine(getLine36());
+      that.addLine(getLine37());
+      that.addLine(getLine44());
+      that.addLine(getLine52());
+      that.addLine(getLine61());
      MECE360MechatronicsPlanelement.classList.remove("EngineeringDesign");
      MECE360MechatronicsPlanelement.classList.add("EngineeringDesign-highlighted");
      that.addToClicked(["MECE360MechatronicsPlan", "EngineeringDesign"]);
       MECE360MechatronicsPlanflag=true
   }
  else {
-      that.removeLine(getLine31());
-      that.removeLine(getLine32());
-      that.removeLine(getLine33());
       that.removeLine(getLine34());
-      that.removeLine(getLine42());
+      that.removeLine(getLine35());
+      that.removeLine(getLine36());
+      that.removeLine(getLine37());
+      that.removeLine(getLine44());
+      that.removeLine(getLine52());
+      that.removeLine(getLine61());
      MECE360MechatronicsPlanelement.classList.remove("EngineeringDesign-highlighted");
      MECE360MechatronicsPlanelement.classList.add("EngineeringDesign");
      that.removeFromClicked("MECE360MechatronicsPlan");
@@ -2229,18 +2251,22 @@ MECE390MechatronicsPlanTime = currentTime;
      MECE390MechatronicsPlanelement.classList.remove("Math-highlighted");
      MECE390MechatronicsPlanelement.classList.add("Math");
       return;
-}      that.addLine(getLine35());
-      that.addLine(getLine36());
-      that.addLine(getLine40());
+}      that.addLine(getLine38());
+      that.addLine(getLine39());
+      that.addLine(getLine48());
+      that.addLine(getLine49());
+      that.addLine(getLine62());
      MECE390MechatronicsPlanelement.classList.remove("Math");
      MECE390MechatronicsPlanelement.classList.add("Math-highlighted");
      that.addToClicked(["MECE390MechatronicsPlan", "Math"]);
       MECE390MechatronicsPlanflag=true
   }
  else {
-      that.removeLine(getLine35());
-      that.removeLine(getLine36());
-      that.removeLine(getLine40());
+      that.removeLine(getLine38());
+      that.removeLine(getLine39());
+      that.removeLine(getLine48());
+      that.removeLine(getLine49());
+      that.removeLine(getLine62());
      MECE390MechatronicsPlanelement.classList.remove("Math-highlighted");
      MECE390MechatronicsPlanelement.classList.add("Math");
      that.removeFromClicked("MECE390MechatronicsPlan");
@@ -2260,14 +2286,14 @@ ENGM401MechatronicsPlanTime = currentTime;
      ENGM401MechatronicsPlanelement.classList.remove("Other-highlighted");
      ENGM401MechatronicsPlanelement.classList.add("Other");
       return;
-}      that.addLine(getLine44());
+}      that.addLine(getLine54());
      ENGM401MechatronicsPlanelement.classList.remove("Other");
      ENGM401MechatronicsPlanelement.classList.add("Other-highlighted");
      that.addToClicked(["ENGM401MechatronicsPlan", "Other"]);
       ENGM401MechatronicsPlanflag=true
   }
  else {
-      that.removeLine(getLine44());
+      that.removeLine(getLine54());
      ENGM401MechatronicsPlanelement.classList.remove("Other-highlighted");
      ENGM401MechatronicsPlanelement.classList.add("Other");
      that.removeFromClicked("ENGM401MechatronicsPlan");
@@ -2287,18 +2313,20 @@ MCTR300MechatronicsPlanTime = currentTime;
      MCTR300MechatronicsPlanelement.classList.remove("Mechatronics-highlighted");
      MCTR300MechatronicsPlanelement.classList.add("Mechatronics");
       return;
-}      that.addLine(getLine37());
-      that.addLine(getLine38());
-      that.addLine(getLine49());
+}      that.addLine(getLine40());
+      that.addLine(getLine41());
+      that.addLine(getLine42());
+      that.addLine(getLine63());
      MCTR300MechatronicsPlanelement.classList.remove("Mechatronics");
      MCTR300MechatronicsPlanelement.classList.add("Mechatronics-highlighted");
      that.addToClicked(["MCTR300MechatronicsPlan", "Mechatronics"]);
       MCTR300MechatronicsPlanflag=true
   }
  else {
-      that.removeLine(getLine37());
-      that.removeLine(getLine38());
-      that.removeLine(getLine49());
+      that.removeLine(getLine40());
+      that.removeLine(getLine41());
+      that.removeLine(getLine42());
+      that.removeLine(getLine63());
      MCTR300MechatronicsPlanelement.classList.remove("Mechatronics-highlighted");
      MCTR300MechatronicsPlanelement.classList.add("Mechatronics");
      that.removeFromClicked("MCTR300MechatronicsPlan");
@@ -2318,12 +2346,14 @@ MCTR332MechatronicsPlanTime = currentTime;
      MCTR332MechatronicsPlanelement.classList.remove("Mechatronics-highlighted");
      MCTR332MechatronicsPlanelement.classList.add("Mechatronics");
       return;
-}     MCTR332MechatronicsPlanelement.classList.remove("Mechatronics");
+}      that.addLine(getLine43());
+     MCTR332MechatronicsPlanelement.classList.remove("Mechatronics");
      MCTR332MechatronicsPlanelement.classList.add("Mechatronics-highlighted");
      that.addToClicked(["MCTR332MechatronicsPlan", "Mechatronics"]);
       MCTR332MechatronicsPlanflag=true
   }
  else {
+      that.removeLine(getLine43());
      MCTR332MechatronicsPlanelement.classList.remove("Mechatronics-highlighted");
      MCTR332MechatronicsPlanelement.classList.add("Mechatronics");
      that.removeFromClicked("MCTR332MechatronicsPlan");
@@ -2343,14 +2373,20 @@ MCTR365MechatronicsPlanTime = currentTime;
      MCTR365MechatronicsPlanelement.classList.remove("Mechatronics-highlighted");
      MCTR365MechatronicsPlanelement.classList.add("Mechatronics");
       return;
-}      that.addLine(getLine43());
+}      that.addLine(getLine44());
+      that.addLine(getLine45());
+      that.addLine(getLine46());
+      that.addLine(getLine53());
      MCTR365MechatronicsPlanelement.classList.remove("Mechatronics");
      MCTR365MechatronicsPlanelement.classList.add("Mechatronics-highlighted");
      that.addToClicked(["MCTR365MechatronicsPlan", "Mechatronics"]);
       MCTR365MechatronicsPlanflag=true
   }
  else {
-      that.removeLine(getLine43());
+      that.removeLine(getLine44());
+      that.removeLine(getLine45());
+      that.removeLine(getLine46());
+      that.removeLine(getLine53());
      MCTR365MechatronicsPlanelement.classList.remove("Mechatronics-highlighted");
      MCTR365MechatronicsPlanelement.classList.add("Mechatronics");
      that.removeFromClicked("MCTR365MechatronicsPlan");
@@ -2370,14 +2406,16 @@ MCTR370MechatronicsPlanTime = currentTime;
      MCTR370MechatronicsPlanelement.classList.remove("Mechatronics-highlighted");
      MCTR370MechatronicsPlanelement.classList.add("Mechatronics");
       return;
-}      that.addLine(getLine39());
+}      that.addLine(getLine47());
+      that.addLine(getLine48());
      MCTR370MechatronicsPlanelement.classList.remove("Mechatronics");
      MCTR370MechatronicsPlanelement.classList.add("Mechatronics-highlighted");
      that.addToClicked(["MCTR370MechatronicsPlan", "Mechatronics"]);
       MCTR370MechatronicsPlanflag=true
   }
  else {
-      that.removeLine(getLine39());
+      that.removeLine(getLine47());
+      that.removeLine(getLine48());
      MCTR370MechatronicsPlanelement.classList.remove("Mechatronics-highlighted");
      MCTR370MechatronicsPlanelement.classList.add("Mechatronics");
      that.removeFromClicked("MCTR370MechatronicsPlan");
@@ -2397,18 +2435,22 @@ MECE420MechatronicsPlanTime = currentTime;
      MECE420MechatronicsPlanelement.classList.remove("EngineeringSciences-highlighted");
      MECE420MechatronicsPlanelement.classList.add("EngineeringSciences");
       return;
-}      that.addLine(getLine40());
-      that.addLine(getLine45());
-      that.addLine(getLine47());
+}      that.addLine(getLine46());
+      that.addLine(getLine49());
+      that.addLine(getLine51());
+      that.addLine(getLine55());
+      that.addLine(getLine58());
      MECE420MechatronicsPlanelement.classList.remove("EngineeringSciences");
      MECE420MechatronicsPlanelement.classList.add("EngineeringSciences-highlighted");
      that.addToClicked(["MECE420MechatronicsPlan", "EngineeringSciences"]);
       MECE420MechatronicsPlanflag=true
   }
  else {
-      that.removeLine(getLine40());
-      that.removeLine(getLine45());
-      that.removeLine(getLine47());
+      that.removeLine(getLine46());
+      that.removeLine(getLine49());
+      that.removeLine(getLine51());
+      that.removeLine(getLine55());
+      that.removeLine(getLine58());
      MECE420MechatronicsPlanelement.classList.remove("EngineeringSciences-highlighted");
      MECE420MechatronicsPlanelement.classList.add("EngineeringSciences");
      that.removeFromClicked("MECE420MechatronicsPlan");
@@ -2503,14 +2545,14 @@ MATE201MechatronicsPlanTime = currentTime;
      MATE201MechatronicsPlanelement.classList.remove("NaturalSciences-highlighted");
      MATE201MechatronicsPlanelement.classList.add("NaturalSciences");
       return;
-}      that.addLine(getLine41());
+}      that.addLine(getLine50());
      MATE201MechatronicsPlanelement.classList.remove("NaturalSciences");
      MATE201MechatronicsPlanelement.classList.add("NaturalSciences-highlighted");
      that.addToClicked(["MATE201MechatronicsPlan", "NaturalSciences"]);
       MATE201MechatronicsPlanflag=true
   }
  else {
-      that.removeLine(getLine41());
+      that.removeLine(getLine50());
      MATE201MechatronicsPlanelement.classList.remove("NaturalSciences-highlighted");
      MATE201MechatronicsPlanelement.classList.add("NaturalSciences");
      that.removeFromClicked("MATE201MechatronicsPlan");
@@ -2530,12 +2572,16 @@ MCTR460MechatronicsPlanTime = currentTime;
      MCTR460MechatronicsPlanelement.classList.remove("Mechatronics-highlighted");
      MCTR460MechatronicsPlanelement.classList.add("Mechatronics");
       return;
-}     MCTR460MechatronicsPlanelement.classList.remove("Mechatronics");
+}      that.addLine(getLine51());
+      that.addLine(getLine56());
+     MCTR460MechatronicsPlanelement.classList.remove("Mechatronics");
      MCTR460MechatronicsPlanelement.classList.add("Mechatronics-highlighted");
      that.addToClicked(["MCTR460MechatronicsPlan", "Mechatronics"]);
       MCTR460MechatronicsPlanflag=true
   }
  else {
+      that.removeLine(getLine51());
+      that.removeLine(getLine56());
      MCTR460MechatronicsPlanelement.classList.remove("Mechatronics-highlighted");
      MCTR460MechatronicsPlanelement.classList.add("Mechatronics");
      that.removeFromClicked("MCTR460MechatronicsPlan");
@@ -2555,20 +2601,20 @@ MECE460MechatronicsPlanTime = currentTime;
      MECE460MechatronicsPlanelement.classList.remove("EngineeringDesign-highlighted");
      MECE460MechatronicsPlanelement.classList.add("EngineeringDesign");
       return;
-}      that.addLine(getLine42());
-      that.addLine(getLine43());
-      that.addLine(getLine44());
-      that.addLine(getLine48());
+}      that.addLine(getLine52());
+      that.addLine(getLine53());
+      that.addLine(getLine54());
+      that.addLine(getLine60());
      MECE460MechatronicsPlanelement.classList.remove("EngineeringDesign");
      MECE460MechatronicsPlanelement.classList.add("EngineeringDesign-highlighted");
      that.addToClicked(["MECE460MechatronicsPlan", "EngineeringDesign"]);
       MECE460MechatronicsPlanflag=true
   }
  else {
-      that.removeLine(getLine42());
-      that.removeLine(getLine43());
-      that.removeLine(getLine44());
-      that.removeLine(getLine48());
+      that.removeLine(getLine52());
+      that.removeLine(getLine53());
+      that.removeLine(getLine54());
+      that.removeLine(getLine60());
      MECE460MechatronicsPlanelement.classList.remove("EngineeringDesign-highlighted");
      MECE460MechatronicsPlanelement.classList.add("EngineeringDesign");
      that.removeFromClicked("MECE460MechatronicsPlan");
@@ -2613,14 +2659,18 @@ MCTR461MechatronicsPlanTime = currentTime;
      MCTR461MechatronicsPlanelement.classList.remove("Mechatronics-highlighted");
      MCTR461MechatronicsPlanelement.classList.add("Mechatronics");
       return;
-}      that.addLine(getLine45());
+}      that.addLine(getLine55());
+      that.addLine(getLine56());
+      that.addLine(getLine59());
      MCTR461MechatronicsPlanelement.classList.remove("Mechatronics");
      MCTR461MechatronicsPlanelement.classList.add("Mechatronics-highlighted");
      that.addToClicked(["MCTR461MechatronicsPlan", "Mechatronics"]);
       MCTR461MechatronicsPlanflag=true
   }
  else {
-      that.removeLine(getLine45());
+      that.removeLine(getLine55());
+      that.removeLine(getLine56());
+      that.removeLine(getLine59());
      MCTR461MechatronicsPlanelement.classList.remove("Mechatronics-highlighted");
      MCTR461MechatronicsPlanelement.classList.add("Mechatronics");
      that.removeFromClicked("MCTR461MechatronicsPlan");
@@ -2640,16 +2690,18 @@ MCTR465MechatronicsPlanTime = currentTime;
      MCTR465MechatronicsPlanelement.classList.remove("Mechatronics-highlighted");
      MCTR465MechatronicsPlanelement.classList.add("Mechatronics");
       return;
-}      that.addLine(getLine46());
-      that.addLine(getLine47());
+}      that.addLine(getLine57());
+      that.addLine(getLine58());
+      that.addLine(getLine59());
      MCTR465MechatronicsPlanelement.classList.remove("Mechatronics");
      MCTR465MechatronicsPlanelement.classList.add("Mechatronics-highlighted");
      that.addToClicked(["MCTR465MechatronicsPlan", "Mechatronics"]);
       MCTR465MechatronicsPlanflag=true
   }
  else {
-      that.removeLine(getLine46());
-      that.removeLine(getLine47());
+      that.removeLine(getLine57());
+      that.removeLine(getLine58());
+      that.removeLine(getLine59());
      MCTR465MechatronicsPlanelement.classList.remove("Mechatronics-highlighted");
      MCTR465MechatronicsPlanelement.classList.add("Mechatronics");
      that.removeFromClicked("MCTR465MechatronicsPlan");
@@ -2669,14 +2721,14 @@ MECE461MechatronicsPlanTime = currentTime;
      MECE461MechatronicsPlanelement.classList.remove("EngineeringDesign-highlighted");
      MECE461MechatronicsPlanelement.classList.add("EngineeringDesign");
       return;
-}      that.addLine(getLine48());
+}      that.addLine(getLine60());
      MECE461MechatronicsPlanelement.classList.remove("EngineeringDesign");
      MECE461MechatronicsPlanelement.classList.add("EngineeringDesign-highlighted");
      that.addToClicked(["MECE461MechatronicsPlan", "EngineeringDesign"]);
       MECE461MechatronicsPlanflag=true
   }
  else {
-      that.removeLine(getLine48());
+      that.removeLine(getLine60());
      MECE461MechatronicsPlanelement.classList.remove("EngineeringDesign-highlighted");
      MECE461MechatronicsPlanelement.classList.add("EngineeringDesign");
      that.removeFromClicked("MECE461MechatronicsPlan");
@@ -2696,14 +2748,18 @@ MECE465MechatronicsPlanTime = currentTime;
      MECE465MechatronicsPlanelement.classList.remove("EngineeringSciences-highlighted");
      MECE465MechatronicsPlanelement.classList.add("EngineeringSciences");
       return;
-}      that.addLine(getLine49());
+}      that.addLine(getLine61());
+      that.addLine(getLine62());
+      that.addLine(getLine63());
      MECE465MechatronicsPlanelement.classList.remove("EngineeringSciences");
      MECE465MechatronicsPlanelement.classList.add("EngineeringSciences-highlighted");
      that.addToClicked(["MECE465MechatronicsPlan", "EngineeringSciences"]);
       MECE465MechatronicsPlanflag=true
   }
  else {
-      that.removeLine(getLine49());
+      that.removeLine(getLine61());
+      that.removeLine(getLine62());
+      that.removeLine(getLine63());
      MECE465MechatronicsPlanelement.classList.remove("EngineeringSciences-highlighted");
      MECE465MechatronicsPlanelement.classList.add("EngineeringSciences");
      that.removeFromClicked("MECE465MechatronicsPlan");
