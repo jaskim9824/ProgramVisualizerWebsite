@@ -163,7 +163,7 @@ h3.planhead {
 .select {
     width: fit-content;
     margin-top: 15px;
-    margin-left: 30%;
+    margin-left: 33%;
     margin-right: 35px;
 }
 
@@ -227,6 +227,10 @@ label {
 /* Wrapper div for the term names and course boxes, the main content */
 #main {
     height: fit-content;
+}
+
+#explainertext {
+    margin-left: 10px;
 }
 
 /* Plan diagram styling */
