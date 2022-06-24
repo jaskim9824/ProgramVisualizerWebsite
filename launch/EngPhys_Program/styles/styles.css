@@ -60,19 +60,6 @@ header {
     float: left;
 }
 
-.backbutton {
-    background-color: white;
-}
-
-a.backbutton {
-    font-size: 120%;
-    color: black;
-}
-
-a.backbutton:hover {
-    color: blue;
-}
-
 /* at 500px align header left when the screen is 500px wide or less*/
 @media screen and (max-width: 840px) {
     .header a {
