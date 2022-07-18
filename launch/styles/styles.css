@@ -25,6 +25,7 @@ header {
     background-color: #275d38;
     margin-bottom: 10px;
     height: 7vh;
+    min-height: 2vw;
     min-width: 100vw;
 }
 
@@ -56,13 +57,16 @@ header {
 /*Image style*/
 .header img, .footer img {
     width: 22vh;
+    min-width: 5vw;
     height: 6vh;
+    min-height: 1.37vw;
     margin-right: 0;
     float: left;
 }
 
 /* Applies when screen width < 840px */
 @media screen and (max-width: 840px) {
+    /* Adjust site title so it fits and is spaced nicely */
     header .site-title {
         padding: 1vh 1vw 1vh 10vw;
         max-width: 55vw;
@@ -72,6 +76,7 @@ header {
         font-size: 90%;
     }
 
+    /* Scaled by a ratio that matches original image dimensions */
     header .header img, footer .footer img {
         width: 12.8vh;
         height: 3.5vh;
@@ -86,11 +91,13 @@ header {
         font-size: 55%;
     }
 
+    /* Prevent text off page */
     #introtext {
         font-size: 75%;
         width: 90vw;
     }
 
+    /* Allow vertical wrapping */
     #main .deptscontainer {
         flex-wrap: wrap;
         width: 90vw;
