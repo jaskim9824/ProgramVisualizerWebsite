@@ -24,7 +24,7 @@ header {
     padding: 8px 8px;
     background-color: #275d38;
     margin-bottom: 10px;
-    height: 60px;
+    height: 7vh;
     min-width: 100vw;
 }
 
@@ -43,53 +43,61 @@ header {
 }
 
 .site-title {
-    padding: 1rem 1rem 1rem 25rem;
+    padding: 1vh 1vw 1vh 25vw;
 }
 
 /*Title style*/
 .header a.site-title {
     width: fit-content;
-    font-size: 25px;
+    font-size: 1.5vw;
     color: #F2CD00;
 }
 
 /*Image style*/
-.header img {
-    width: 183px;
-    height: 50px;
+.header img, .footer img {
+    width: 22vh;
+    height: 6vh;
     margin-right: 0;
     float: left;
 }
 
+/* Applies when screen width < 840px */
 @media screen and (max-width: 840px) {
-    .header img{
-        margin-right: 0;
-        float: left;
-        position: relative;
-        top: -1rem;
-        right: 0.4rem;
-        width: 5.5rem;
-        height: 2rem;
+    header .site-title {
+        padding: 1vh 1vw 1vh 10vw;
+        max-width: 55vw;
     }
 
-    .header a.site-title {
-        width: 55vw;
-        font-size: 15px;
-        position: relative;
-        top: -0.5rem;
-        left: -1rem;
+    header .header a.site-title {
+        font-size: 90%;
     }
 
-    #main #introtext, #main .deptscontainer {
-        left: 1rem;
+    header .header img, footer .footer img {
+        width: 12.8vh;
+        height: 3.5vh;
     }
 
     footer .footer img {
-        left: 30em;
+        left: 20vw;
     }
 
     footer #copyright {
-        left: 45em;
+        left: 30vw;
+        font-size: 55%;
+    }
+
+    #introtext {
+        font-size: 75%;
+        width: 90vw;
+    }
+
+    #main .deptscontainer {
+        flex-wrap: wrap;
+        width: 90vw;
+    }
+
+    #main .button, #main .depthead {
+        font-size: 120%;
     }
 }
 
@@ -106,7 +114,7 @@ footer {
     background-color: #275d38;
     margin-top: 10px;
     margin-bottom: 0;
-    height: 4rem;
+    height: 7vh;
     position: relative;
     bottom: 0;
     min-width: 100vw;
@@ -114,17 +122,17 @@ footer {
 
 /* U of A logo */
 .footer img {
-    width: 183px;
-    height: 50px;
+    width: 22vh;
+    height: 6vh;
     margin-right: 0;
     position: relative;
-    left: 48em;
+    left: 46vw;
 }
 
 /* copyright logo and text */
 #copyright {
     position: relative;
-    left: 70em;
+    left: 60vw;
     color: #FFFFFF;
     font-family: 'Roboto',sans-serif;
     font-size: 75%;
@@ -135,44 +143,51 @@ footer {
     text-align: center;
     margin: 2px;
     position: relative;
-    left: 10rem;
+    left: 5vw;
 }
 
+/* Container for departments/disciplines */
 .deptscontainer {
     display: flex;
     flex-direction: row;
     position: relative;
-    left: 10rem;
+    left: 5vw;
     justify-content: center;
 }
 
+/* Bold title of department */
 .depthead {
     text-align: center;
-    height: 2rem;
+    height: 2vh;
+    font-size: 1.5vw;
 }
 
+/* Disciplines within a department */
 .disciplines {
     display: flex;
     flex-direction: column;
     width: fit-content;
     height: fit-content;
-    margin-left: 3rem;
-    margin-right: 3rem;
+    margin-left: 5vw;
+    margin-right: 2vw;
+    margin-bottom: 5vh;
 }
 
+/* Discipline button */
 .button {
     border: none;
     color: white;
-    padding: 16px 32px;
+    padding: 2vh 3vw;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 0.8vw;
     margin: 4px 2px;
-    transition-duration: 0.4s;
+    transition-duration: 0.3s;
     cursor: pointer;
   }
   
+  /* Button colors change for diff department */
   .chembutton {
     background-color: white; 
     color: black; 
