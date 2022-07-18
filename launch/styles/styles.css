@@ -30,6 +30,9 @@ header {
 
 /*Header link style */
 .header a {
+    float: none;
+    display: block;
+    text-align: center;
     text-decoration: none;
     line-height: 1.5rem;
     border-radius: 4px;
@@ -58,14 +61,7 @@ header {
     float: left;
 }
 
-/* at 500px align header left when the screen is 500px wide or less*/
 @media screen and (max-width: 840px) {
-    .header a {
-        float: none;
-        display: block;
-        text-align: center;  
-    }
-
     .header img{
         margin-right: 0;
         float: left;
@@ -147,10 +143,12 @@ footer {
     flex-direction: row;
     position: relative;
     left: 10rem;
+    justify-content: center;
 }
 
 .depthead {
     text-align: center;
+    height: 2rem;
 }
 
 .disciplines {
