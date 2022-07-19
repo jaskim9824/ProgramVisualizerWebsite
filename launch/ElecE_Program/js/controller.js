@@ -134,12 +134,12 @@ this.disable = function(plan) {
   that.CoopPlan1LegendBtns.push(currbtn);
   that.NanoTraditionalPlanLegendBtns.push(currbtn);
   that.NanoCoopPlanLegendBtns.push(currbtn);
-  var currbtn = document.getElementById("COMP");
+  var currbtn = document.getElementById("PROG");
   that.TraditionalPlanLegendBtns.push(currbtn);
   that.CoopPlan1LegendBtns.push(currbtn);
   that.NanoTraditionalPlanLegendBtns.push(currbtn);
   that.NanoCoopPlanLegendBtns.push(currbtn);
-  var currbtn = document.getElementById("PROG");
+  var currbtn = document.getElementById("COMP");
   that.TraditionalPlanLegendBtns.push(currbtn);
   that.CoopPlan1LegendBtns.push(currbtn);
   that.NanoTraditionalPlanLegendBtns.push(currbtn);
@@ -512,14 +512,14 @@ var EngineeringSciencesTraditionalPlanflag = false;
 var EngineeringSciencesCoopPlan1flag = false;
 var EngineeringSciencesNanoTraditionalPlanflag = false;
 var EngineeringSciencesNanoCoopPlanflag = false;
-var COMPTraditionalPlanflag = false;
-var COMPCoopPlan1flag = false;
-var COMPNanoTraditionalPlanflag = false;
-var COMPNanoCoopPlanflag = false;
 var PROGTraditionalPlanflag = false;
 var PROGCoopPlan1flag = false;
 var PROGNanoTraditionalPlanflag = false;
 var PROGNanoCoopPlanflag = false;
+var COMPTraditionalPlanflag = false;
+var COMPCoopPlan1flag = false;
+var COMPNanoTraditionalPlanflag = false;
+var COMPNanoCoopPlanflag = false;
 var ITSTraditionalPlanflag = false;
 var ITSCoopPlan1flag = false;
 var ITSNanoTraditionalPlanflag = false;
@@ -680,32 +680,6 @@ $scope.EngineeringSciencesclickListener = function() {
         eval(flagName + " = false");
     }
 }
-$scope.COMPclickListener = function() {
-    var planName = $scope.selectedPlan;
-    var pressedbtn = document.getElementById("COMP");
-    var checkFlag = "!COMP" + planName + "flag";
-    var flagBool = eval(checkFlag);
-    if (flagBool) {
-        that.highlightCategory("COMP", planName);
-        pressedbtn.classList.remove("legendbutton");
-        pressedbtn.classList.add("legendbutton-pressed");
-        var addClick = "that." + planName + "LegendBtnsClicked.push(pressedbtn)";
-        eval(addClick);
-        var flagName = "COMP" + planName + "flag";
-        eval(flagName + " = true");
-    }
-    else {
-        that.unhighlightCategory("COMP", planName);
-        pressedbtn.classList.remove("legendbutton-pressed");
-        pressedbtn.classList.add("legendbutton");
-        var findIndex = "var index = that." + planName + "LegendBtnsClicked.findIndex((element) => element[0] == pressedbtn)";
-        eval(findIndex);
-        var removeClick = "that." + planName + "LegendBtnsClicked.splice(index, 1)";
-        eval(removeClick);
-        var flagName = "COMP" + planName + "flag";
-        eval(flagName + " = false");
-    }
-}
 $scope.PROGclickListener = function() {
     var planName = $scope.selectedPlan;
     var pressedbtn = document.getElementById("PROG");
@@ -729,6 +703,32 @@ $scope.PROGclickListener = function() {
         var removeClick = "that." + planName + "LegendBtnsClicked.splice(index, 1)";
         eval(removeClick);
         var flagName = "PROG" + planName + "flag";
+        eval(flagName + " = false");
+    }
+}
+$scope.COMPclickListener = function() {
+    var planName = $scope.selectedPlan;
+    var pressedbtn = document.getElementById("COMP");
+    var checkFlag = "!COMP" + planName + "flag";
+    var flagBool = eval(checkFlag);
+    if (flagBool) {
+        that.highlightCategory("COMP", planName);
+        pressedbtn.classList.remove("legendbutton");
+        pressedbtn.classList.add("legendbutton-pressed");
+        var addClick = "that." + planName + "LegendBtnsClicked.push(pressedbtn)";
+        eval(addClick);
+        var flagName = "COMP" + planName + "flag";
+        eval(flagName + " = true");
+    }
+    else {
+        that.unhighlightCategory("COMP", planName);
+        pressedbtn.classList.remove("legendbutton-pressed");
+        pressedbtn.classList.add("legendbutton");
+        var findIndex = "var index = that." + planName + "LegendBtnsClicked.findIndex((element) => element[0] == pressedbtn)";
+        eval(findIndex);
+        var removeClick = "that." + planName + "LegendBtnsClicked.splice(index, 1)";
+        eval(removeClick);
+        var flagName = "COMP" + planName + "flag";
         eval(flagName + " = false");
     }
 }
@@ -837,14 +837,6 @@ switch(categoryName) {
                             }
                             this.highlightElement(element, categoryName);
                             this.addToClicked("ENPH131TraditionalPlan", categoryName);
- var element = document.getElementById("MATE201TraditionalPlan");
-                            if (this.TraditionalPlanClickedMap.get("MATE201TraditionalPlan").length > 0) {
-                                var mapLen = this.TraditionalPlanClickedMap.get("MATE201TraditionalPlan").length - 1
-                                var prevCate = this.TraditionalPlanClickedMap.get("MATE201TraditionalPlan")[mapLen];
-                                this.unHighlightElement(element, prevCate);
-                            }
-                            this.highlightElement(element, categoryName);
-                            this.addToClicked("MATE201TraditionalPlan", categoryName);
  var element = document.getElementById("PHYS230TraditionalPlan");
                             if (this.TraditionalPlanClickedMap.get("PHYS230TraditionalPlan").length > 0) {
                                 var mapLen = this.TraditionalPlanClickedMap.get("PHYS230TraditionalPlan").length - 1
@@ -853,14 +845,6 @@ switch(categoryName) {
                             }
                             this.highlightElement(element, categoryName);
                             this.addToClicked("PHYS230TraditionalPlan", categoryName);
- var element = document.getElementById("MATE201TraditionalPlan");
-                            if (this.TraditionalPlanClickedMap.get("MATE201TraditionalPlan").length > 0) {
-                                var mapLen = this.TraditionalPlanClickedMap.get("MATE201TraditionalPlan").length - 1
-                                var prevCate = this.TraditionalPlanClickedMap.get("MATE201TraditionalPlan")[mapLen];
-                                this.unHighlightElement(element, prevCate);
-                            }
-                            this.highlightElement(element, categoryName);
-                            this.addToClicked("MATE201TraditionalPlan", categoryName);
        break;
       case "CoopPlan1":
  var element = document.getElementById("CHEM103CoopPlan1");
@@ -911,14 +895,6 @@ switch(categoryName) {
                             }
                             this.highlightElement(element, categoryName);
                             this.addToClicked("ENPH131CoopPlan1", categoryName);
- var element = document.getElementById("MATE201CoopPlan1");
-                            if (this.CoopPlan1ClickedMap.get("MATE201CoopPlan1").length > 0) {
-                                var mapLen = this.CoopPlan1ClickedMap.get("MATE201CoopPlan1").length - 1
-                                var prevCate = this.CoopPlan1ClickedMap.get("MATE201CoopPlan1")[mapLen];
-                                this.unHighlightElement(element, prevCate);
-                            }
-                            this.highlightElement(element, categoryName);
-                            this.addToClicked("MATE201CoopPlan1", categoryName);
  var element = document.getElementById("PHYS230CoopPlan1");
                             if (this.CoopPlan1ClickedMap.get("PHYS230CoopPlan1").length > 0) {
                                 var mapLen = this.CoopPlan1ClickedMap.get("PHYS230CoopPlan1").length - 1
@@ -927,14 +903,6 @@ switch(categoryName) {
                             }
                             this.highlightElement(element, categoryName);
                             this.addToClicked("PHYS230CoopPlan1", categoryName);
- var element = document.getElementById("MATE201CoopPlan1");
-                            if (this.CoopPlan1ClickedMap.get("MATE201CoopPlan1").length > 0) {
-                                var mapLen = this.CoopPlan1ClickedMap.get("MATE201CoopPlan1").length - 1
-                                var prevCate = this.CoopPlan1ClickedMap.get("MATE201CoopPlan1")[mapLen];
-                                this.unHighlightElement(element, prevCate);
-                            }
-                            this.highlightElement(element, categoryName);
-                            this.addToClicked("MATE201CoopPlan1", categoryName);
        break;
       case "NanoTraditionalPlan":
  var element = document.getElementById("CHEM103NanoTraditionalPlan");
@@ -985,14 +953,6 @@ switch(categoryName) {
                             }
                             this.highlightElement(element, categoryName);
                             this.addToClicked("ENPH131NanoTraditionalPlan", categoryName);
- var element = document.getElementById("MATE201NanoTraditionalPlan");
-                            if (this.NanoTraditionalPlanClickedMap.get("MATE201NanoTraditionalPlan").length > 0) {
-                                var mapLen = this.NanoTraditionalPlanClickedMap.get("MATE201NanoTraditionalPlan").length - 1
-                                var prevCate = this.NanoTraditionalPlanClickedMap.get("MATE201NanoTraditionalPlan")[mapLen];
-                                this.unHighlightElement(element, prevCate);
-                            }
-                            this.highlightElement(element, categoryName);
-                            this.addToClicked("MATE201NanoTraditionalPlan", categoryName);
  var element = document.getElementById("PHYS230NanoTraditionalPlan");
                             if (this.NanoTraditionalPlanClickedMap.get("PHYS230NanoTraditionalPlan").length > 0) {
                                 var mapLen = this.NanoTraditionalPlanClickedMap.get("PHYS230NanoTraditionalPlan").length - 1
@@ -1001,14 +961,6 @@ switch(categoryName) {
                             }
                             this.highlightElement(element, categoryName);
                             this.addToClicked("PHYS230NanoTraditionalPlan", categoryName);
- var element = document.getElementById("MATE201NanoTraditionalPlan");
-                            if (this.NanoTraditionalPlanClickedMap.get("MATE201NanoTraditionalPlan").length > 0) {
-                                var mapLen = this.NanoTraditionalPlanClickedMap.get("MATE201NanoTraditionalPlan").length - 1
-                                var prevCate = this.NanoTraditionalPlanClickedMap.get("MATE201NanoTraditionalPlan")[mapLen];
-                                this.unHighlightElement(element, prevCate);
-                            }
-                            this.highlightElement(element, categoryName);
-                            this.addToClicked("MATE201NanoTraditionalPlan", categoryName);
        break;
       case "NanoCoopPlan":
  var element = document.getElementById("CHEM103NanoCoopPlan");
@@ -1059,14 +1011,6 @@ switch(categoryName) {
                             }
                             this.highlightElement(element, categoryName);
                             this.addToClicked("ENPH131NanoCoopPlan", categoryName);
- var element = document.getElementById("MATE201NanoCoopPlan");
-                            if (this.NanoCoopPlanClickedMap.get("MATE201NanoCoopPlan").length > 0) {
-                                var mapLen = this.NanoCoopPlanClickedMap.get("MATE201NanoCoopPlan").length - 1
-                                var prevCate = this.NanoCoopPlanClickedMap.get("MATE201NanoCoopPlan")[mapLen];
-                                this.unHighlightElement(element, prevCate);
-                            }
-                            this.highlightElement(element, categoryName);
-                            this.addToClicked("MATE201NanoCoopPlan", categoryName);
  var element = document.getElementById("PHYS230NanoCoopPlan");
                             if (this.NanoCoopPlanClickedMap.get("PHYS230NanoCoopPlan").length > 0) {
                                 var mapLen = this.NanoCoopPlanClickedMap.get("PHYS230NanoCoopPlan").length - 1
@@ -1075,14 +1019,6 @@ switch(categoryName) {
                             }
                             this.highlightElement(element, categoryName);
                             this.addToClicked("PHYS230NanoCoopPlan", categoryName);
- var element = document.getElementById("MATE201NanoCoopPlan");
-                            if (this.NanoCoopPlanClickedMap.get("MATE201NanoCoopPlan").length > 0) {
-                                var mapLen = this.NanoCoopPlanClickedMap.get("MATE201NanoCoopPlan").length - 1
-                                var prevCate = this.NanoCoopPlanClickedMap.get("MATE201NanoCoopPlan")[mapLen];
-                                this.unHighlightElement(element, prevCate);
-                            }
-                            this.highlightElement(element, categoryName);
-                            this.addToClicked("MATE201NanoCoopPlan", categoryName);
        break;
        }
       break;
@@ -1793,22 +1729,6 @@ switch(categoryName) {
                             }
                             this.highlightElement(element, categoryName);
                             this.addToClicked("ECE210TraditionalPlan", categoryName);
- var element = document.getElementById("CHE243TraditionalPlan");
-                            if (this.TraditionalPlanClickedMap.get("CHE243TraditionalPlan").length > 0) {
-                                var mapLen = this.TraditionalPlanClickedMap.get("CHE243TraditionalPlan").length - 1
-                                var prevCate = this.TraditionalPlanClickedMap.get("CHE243TraditionalPlan")[mapLen];
-                                this.unHighlightElement(element, prevCate);
-                            }
-                            this.highlightElement(element, categoryName);
-                            this.addToClicked("CHE243TraditionalPlan", categoryName);
- var element = document.getElementById("MECE250TraditionalPlan");
-                            if (this.TraditionalPlanClickedMap.get("MECE250TraditionalPlan").length > 0) {
-                                var mapLen = this.TraditionalPlanClickedMap.get("MECE250TraditionalPlan").length - 1
-                                var prevCate = this.TraditionalPlanClickedMap.get("MECE250TraditionalPlan")[mapLen];
-                                this.unHighlightElement(element, prevCate);
-                            }
-                            this.highlightElement(element, categoryName);
-                            this.addToClicked("MECE250TraditionalPlan", categoryName);
  var element = document.getElementById("ECE203TraditionalPlan");
                             if (this.TraditionalPlanClickedMap.get("ECE203TraditionalPlan").length > 0) {
                                 var mapLen = this.TraditionalPlanClickedMap.get("ECE203TraditionalPlan").length - 1
@@ -1905,22 +1825,6 @@ switch(categoryName) {
                             }
                             this.highlightElement(element, categoryName);
                             this.addToClicked("ECE380TraditionalPlan", categoryName);
- var element = document.getElementById("CHE243TraditionalPlan");
-                            if (this.TraditionalPlanClickedMap.get("CHE243TraditionalPlan").length > 0) {
-                                var mapLen = this.TraditionalPlanClickedMap.get("CHE243TraditionalPlan").length - 1
-                                var prevCate = this.TraditionalPlanClickedMap.get("CHE243TraditionalPlan")[mapLen];
-                                this.unHighlightElement(element, prevCate);
-                            }
-                            this.highlightElement(element, categoryName);
-                            this.addToClicked("CHE243TraditionalPlan", categoryName);
- var element = document.getElementById("MECE250TraditionalPlan");
-                            if (this.TraditionalPlanClickedMap.get("MECE250TraditionalPlan").length > 0) {
-                                var mapLen = this.TraditionalPlanClickedMap.get("MECE250TraditionalPlan").length - 1
-                                var prevCate = this.TraditionalPlanClickedMap.get("MECE250TraditionalPlan")[mapLen];
-                                this.unHighlightElement(element, prevCate);
-                            }
-                            this.highlightElement(element, categoryName);
-                            this.addToClicked("MECE250TraditionalPlan", categoryName);
        break;
       case "CoopPlan1":
  var element = document.getElementById("ECE202CoopPlan1");
@@ -1939,22 +1843,6 @@ switch(categoryName) {
                             }
                             this.highlightElement(element, categoryName);
                             this.addToClicked("ECE210CoopPlan1", categoryName);
- var element = document.getElementById("CHE243CoopPlan1");
-                            if (this.CoopPlan1ClickedMap.get("CHE243CoopPlan1").length > 0) {
-                                var mapLen = this.CoopPlan1ClickedMap.get("CHE243CoopPlan1").length - 1
-                                var prevCate = this.CoopPlan1ClickedMap.get("CHE243CoopPlan1")[mapLen];
-                                this.unHighlightElement(element, prevCate);
-                            }
-                            this.highlightElement(element, categoryName);
-                            this.addToClicked("CHE243CoopPlan1", categoryName);
- var element = document.getElementById("MECE250CoopPlan1");
-                            if (this.CoopPlan1ClickedMap.get("MECE250CoopPlan1").length > 0) {
-                                var mapLen = this.CoopPlan1ClickedMap.get("MECE250CoopPlan1").length - 1
-                                var prevCate = this.CoopPlan1ClickedMap.get("MECE250CoopPlan1")[mapLen];
-                                this.unHighlightElement(element, prevCate);
-                            }
-                            this.highlightElement(element, categoryName);
-                            this.addToClicked("MECE250CoopPlan1", categoryName);
  var element = document.getElementById("ECE203CoopPlan1");
                             if (this.CoopPlan1ClickedMap.get("ECE203CoopPlan1").length > 0) {
                                 var mapLen = this.CoopPlan1ClickedMap.get("ECE203CoopPlan1").length - 1
@@ -2051,22 +1939,6 @@ switch(categoryName) {
                             }
                             this.highlightElement(element, categoryName);
                             this.addToClicked("ECE380CoopPlan1", categoryName);
- var element = document.getElementById("CHE243CoopPlan1");
-                            if (this.CoopPlan1ClickedMap.get("CHE243CoopPlan1").length > 0) {
-                                var mapLen = this.CoopPlan1ClickedMap.get("CHE243CoopPlan1").length - 1
-                                var prevCate = this.CoopPlan1ClickedMap.get("CHE243CoopPlan1")[mapLen];
-                                this.unHighlightElement(element, prevCate);
-                            }
-                            this.highlightElement(element, categoryName);
-                            this.addToClicked("CHE243CoopPlan1", categoryName);
- var element = document.getElementById("MECE250CoopPlan1");
-                            if (this.CoopPlan1ClickedMap.get("MECE250CoopPlan1").length > 0) {
-                                var mapLen = this.CoopPlan1ClickedMap.get("MECE250CoopPlan1").length - 1
-                                var prevCate = this.CoopPlan1ClickedMap.get("MECE250CoopPlan1")[mapLen];
-                                this.unHighlightElement(element, prevCate);
-                            }
-                            this.highlightElement(element, categoryName);
-                            this.addToClicked("MECE250CoopPlan1", categoryName);
        break;
       case "NanoTraditionalPlan":
  var element = document.getElementById("ECE202NanoTraditionalPlan");
@@ -2085,22 +1957,6 @@ switch(categoryName) {
                             }
                             this.highlightElement(element, categoryName);
                             this.addToClicked("ECE210NanoTraditionalPlan", categoryName);
- var element = document.getElementById("CHE243NanoTraditionalPlan");
-                            if (this.NanoTraditionalPlanClickedMap.get("CHE243NanoTraditionalPlan").length > 0) {
-                                var mapLen = this.NanoTraditionalPlanClickedMap.get("CHE243NanoTraditionalPlan").length - 1
-                                var prevCate = this.NanoTraditionalPlanClickedMap.get("CHE243NanoTraditionalPlan")[mapLen];
-                                this.unHighlightElement(element, prevCate);
-                            }
-                            this.highlightElement(element, categoryName);
-                            this.addToClicked("CHE243NanoTraditionalPlan", categoryName);
- var element = document.getElementById("MECE250NanoTraditionalPlan");
-                            if (this.NanoTraditionalPlanClickedMap.get("MECE250NanoTraditionalPlan").length > 0) {
-                                var mapLen = this.NanoTraditionalPlanClickedMap.get("MECE250NanoTraditionalPlan").length - 1
-                                var prevCate = this.NanoTraditionalPlanClickedMap.get("MECE250NanoTraditionalPlan")[mapLen];
-                                this.unHighlightElement(element, prevCate);
-                            }
-                            this.highlightElement(element, categoryName);
-                            this.addToClicked("MECE250NanoTraditionalPlan", categoryName);
  var element = document.getElementById("ECE203NanoTraditionalPlan");
                             if (this.NanoTraditionalPlanClickedMap.get("ECE203NanoTraditionalPlan").length > 0) {
                                 var mapLen = this.NanoTraditionalPlanClickedMap.get("ECE203NanoTraditionalPlan").length - 1
@@ -2173,22 +2029,6 @@ switch(categoryName) {
                             }
                             this.highlightElement(element, categoryName);
                             this.addToClicked("ECE360NanoTraditionalPlan", categoryName);
- var element = document.getElementById("CHE243NanoTraditionalPlan");
-                            if (this.NanoTraditionalPlanClickedMap.get("CHE243NanoTraditionalPlan").length > 0) {
-                                var mapLen = this.NanoTraditionalPlanClickedMap.get("CHE243NanoTraditionalPlan").length - 1
-                                var prevCate = this.NanoTraditionalPlanClickedMap.get("CHE243NanoTraditionalPlan")[mapLen];
-                                this.unHighlightElement(element, prevCate);
-                            }
-                            this.highlightElement(element, categoryName);
-                            this.addToClicked("CHE243NanoTraditionalPlan", categoryName);
- var element = document.getElementById("MECE250NanoTraditionalPlan");
-                            if (this.NanoTraditionalPlanClickedMap.get("MECE250NanoTraditionalPlan").length > 0) {
-                                var mapLen = this.NanoTraditionalPlanClickedMap.get("MECE250NanoTraditionalPlan").length - 1
-                                var prevCate = this.NanoTraditionalPlanClickedMap.get("MECE250NanoTraditionalPlan")[mapLen];
-                                this.unHighlightElement(element, prevCate);
-                            }
-                            this.highlightElement(element, categoryName);
-                            this.addToClicked("MECE250NanoTraditionalPlan", categoryName);
        break;
       case "NanoCoopPlan":
  var element = document.getElementById("ECE202NanoCoopPlan");
@@ -2207,22 +2047,6 @@ switch(categoryName) {
                             }
                             this.highlightElement(element, categoryName);
                             this.addToClicked("ECE210NanoCoopPlan", categoryName);
- var element = document.getElementById("CHE243NanoCoopPlan");
-                            if (this.NanoCoopPlanClickedMap.get("CHE243NanoCoopPlan").length > 0) {
-                                var mapLen = this.NanoCoopPlanClickedMap.get("CHE243NanoCoopPlan").length - 1
-                                var prevCate = this.NanoCoopPlanClickedMap.get("CHE243NanoCoopPlan")[mapLen];
-                                this.unHighlightElement(element, prevCate);
-                            }
-                            this.highlightElement(element, categoryName);
-                            this.addToClicked("CHE243NanoCoopPlan", categoryName);
- var element = document.getElementById("MECE250NanoCoopPlan");
-                            if (this.NanoCoopPlanClickedMap.get("MECE250NanoCoopPlan").length > 0) {
-                                var mapLen = this.NanoCoopPlanClickedMap.get("MECE250NanoCoopPlan").length - 1
-                                var prevCate = this.NanoCoopPlanClickedMap.get("MECE250NanoCoopPlan")[mapLen];
-                                this.unHighlightElement(element, prevCate);
-                            }
-                            this.highlightElement(element, categoryName);
-                            this.addToClicked("MECE250NanoCoopPlan", categoryName);
  var element = document.getElementById("ECE203NanoCoopPlan");
                             if (this.NanoCoopPlanClickedMap.get("ECE203NanoCoopPlan").length > 0) {
                                 var mapLen = this.NanoCoopPlanClickedMap.get("ECE203NanoCoopPlan").length - 1
@@ -2295,22 +2119,71 @@ switch(categoryName) {
                             }
                             this.highlightElement(element, categoryName);
                             this.addToClicked("ECE360NanoCoopPlan", categoryName);
- var element = document.getElementById("CHE243NanoCoopPlan");
-                            if (this.NanoCoopPlanClickedMap.get("CHE243NanoCoopPlan").length > 0) {
-                                var mapLen = this.NanoCoopPlanClickedMap.get("CHE243NanoCoopPlan").length - 1
-                                var prevCate = this.NanoCoopPlanClickedMap.get("CHE243NanoCoopPlan")[mapLen];
-                                this.unHighlightElement(element, prevCate);
-                            }
-                            this.highlightElement(element, categoryName);
-                            this.addToClicked("CHE243NanoCoopPlan", categoryName);
- var element = document.getElementById("MECE250NanoCoopPlan");
-                            if (this.NanoCoopPlanClickedMap.get("MECE250NanoCoopPlan").length > 0) {
-                                var mapLen = this.NanoCoopPlanClickedMap.get("MECE250NanoCoopPlan").length - 1
-                                var prevCate = this.NanoCoopPlanClickedMap.get("MECE250NanoCoopPlan")[mapLen];
-                                this.unHighlightElement(element, prevCate);
-                            }
-                            this.highlightElement(element, categoryName);
-                            this.addToClicked("MECE250NanoCoopPlan", categoryName);
+       break;
+       }
+      break;
+  case "PROG":
+  case "ProgramTechnicalElective":
+    switch(planName) {
+      case "TraditionalPlan":
+        var PROGelements = document.getElementsByClassName("PROG");
+        var i = 0;
+        while (PROGelements.length > 0) {
+          var currelement = document.getElementById(PROGelements.item(0).id);
+          if (this.TraditionalPlanClickedMap.get("ProgramTechnicalElectiveTraditionalPlan" + i).length > 0) {
+                var mapLen = this.TraditionalPlanClickedMap.get("ProgramTechnicalElectiveTraditionalPlan" + i).length - 1
+                var prevCate = this.TraditionalPlanClickedMap.get("ProgramTechnicalElectiveTraditionalPlan" + i)[mapLen];
+                this.unHighlightElement(currelement, prevCate);
+          }
+          this.highlightElement(currelement, categoryName);
+          this.addToClicked("ProgramTechnicalElectiveTraditionalPlan" + i, categoryName);
+          i = i + 1;
+        }
+       break;
+      case "CoopPlan1":
+        var PROGelements = document.getElementsByClassName("PROG");
+        var i = 0;
+        while (PROGelements.length > 0) {
+          var currelement = document.getElementById(PROGelements.item(0).id);
+          if (this.CoopPlan1ClickedMap.get("ProgramTechnicalElectiveCoopPlan1" + i).length > 0) {
+                var mapLen = this.CoopPlan1ClickedMap.get("ProgramTechnicalElectiveCoopPlan1" + i).length - 1
+                var prevCate = this.CoopPlan1ClickedMap.get("ProgramTechnicalElectiveCoopPlan1" + i)[mapLen];
+                this.unHighlightElement(currelement, prevCate);
+          }
+          this.highlightElement(currelement, categoryName);
+          this.addToClicked("ProgramTechnicalElectiveCoopPlan1" + i, categoryName);
+          i = i + 1;
+        }
+       break;
+      case "NanoTraditionalPlan":
+        var PROGelements = document.getElementsByClassName("PROG");
+        var i = 0;
+        while (PROGelements.length > 0) {
+          var currelement = document.getElementById(PROGelements.item(0).id);
+          if (this.NanoTraditionalPlanClickedMap.get("ProgramTechnicalElectiveNanoTraditionalPlan" + i).length > 0) {
+                var mapLen = this.NanoTraditionalPlanClickedMap.get("ProgramTechnicalElectiveNanoTraditionalPlan" + i).length - 1
+                var prevCate = this.NanoTraditionalPlanClickedMap.get("ProgramTechnicalElectiveNanoTraditionalPlan" + i)[mapLen];
+                this.unHighlightElement(currelement, prevCate);
+          }
+          this.highlightElement(currelement, categoryName);
+          this.addToClicked("ProgramTechnicalElectiveNanoTraditionalPlan" + i, categoryName);
+          i = i + 1;
+        }
+       break;
+      case "NanoCoopPlan":
+        var PROGelements = document.getElementsByClassName("PROG");
+        var i = 0;
+        while (PROGelements.length > 0) {
+          var currelement = document.getElementById(PROGelements.item(0).id);
+          if (this.NanoCoopPlanClickedMap.get("ProgramTechnicalElectiveNanoCoopPlan" + i).length > 0) {
+                var mapLen = this.NanoCoopPlanClickedMap.get("ProgramTechnicalElectiveNanoCoopPlan" + i).length - 1
+                var prevCate = this.NanoCoopPlanClickedMap.get("ProgramTechnicalElectiveNanoCoopPlan" + i)[mapLen];
+                this.unHighlightElement(currelement, prevCate);
+          }
+          this.highlightElement(currelement, categoryName);
+          this.addToClicked("ProgramTechnicalElectiveNanoCoopPlan" + i, categoryName);
+          i = i + 1;
+        }
        break;
        }
       break;
@@ -2426,71 +2299,6 @@ switch(categoryName) {
           }
           this.highlightElement(currelement, categoryName);
           this.addToClicked("ComplementaryElectiveNanoCoopPlan" + i, categoryName);
-          i = i + 1;
-        }
-       break;
-       }
-      break;
-  case "PROG":
-  case "ProgramTechnicalElective":
-    switch(planName) {
-      case "TraditionalPlan":
-        var PROGelements = document.getElementsByClassName("PROG");
-        var i = 0;
-        while (PROGelements.length > 0) {
-          var currelement = document.getElementById(PROGelements.item(0).id);
-          if (this.TraditionalPlanClickedMap.get("ProgramTechnicalElectiveTraditionalPlan" + i).length > 0) {
-                var mapLen = this.TraditionalPlanClickedMap.get("ProgramTechnicalElectiveTraditionalPlan" + i).length - 1
-                var prevCate = this.TraditionalPlanClickedMap.get("ProgramTechnicalElectiveTraditionalPlan" + i)[mapLen];
-                this.unHighlightElement(currelement, prevCate);
-          }
-          this.highlightElement(currelement, categoryName);
-          this.addToClicked("ProgramTechnicalElectiveTraditionalPlan" + i, categoryName);
-          i = i + 1;
-        }
-       break;
-      case "CoopPlan1":
-        var PROGelements = document.getElementsByClassName("PROG");
-        var i = 0;
-        while (PROGelements.length > 0) {
-          var currelement = document.getElementById(PROGelements.item(0).id);
-          if (this.CoopPlan1ClickedMap.get("ProgramTechnicalElectiveCoopPlan1" + i).length > 0) {
-                var mapLen = this.CoopPlan1ClickedMap.get("ProgramTechnicalElectiveCoopPlan1" + i).length - 1
-                var prevCate = this.CoopPlan1ClickedMap.get("ProgramTechnicalElectiveCoopPlan1" + i)[mapLen];
-                this.unHighlightElement(currelement, prevCate);
-          }
-          this.highlightElement(currelement, categoryName);
-          this.addToClicked("ProgramTechnicalElectiveCoopPlan1" + i, categoryName);
-          i = i + 1;
-        }
-       break;
-      case "NanoTraditionalPlan":
-        var PROGelements = document.getElementsByClassName("PROG");
-        var i = 0;
-        while (PROGelements.length > 0) {
-          var currelement = document.getElementById(PROGelements.item(0).id);
-          if (this.NanoTraditionalPlanClickedMap.get("ProgramTechnicalElectiveNanoTraditionalPlan" + i).length > 0) {
-                var mapLen = this.NanoTraditionalPlanClickedMap.get("ProgramTechnicalElectiveNanoTraditionalPlan" + i).length - 1
-                var prevCate = this.NanoTraditionalPlanClickedMap.get("ProgramTechnicalElectiveNanoTraditionalPlan" + i)[mapLen];
-                this.unHighlightElement(currelement, prevCate);
-          }
-          this.highlightElement(currelement, categoryName);
-          this.addToClicked("ProgramTechnicalElectiveNanoTraditionalPlan" + i, categoryName);
-          i = i + 1;
-        }
-       break;
-      case "NanoCoopPlan":
-        var PROGelements = document.getElementsByClassName("PROG");
-        var i = 0;
-        while (PROGelements.length > 0) {
-          var currelement = document.getElementById(PROGelements.item(0).id);
-          if (this.NanoCoopPlanClickedMap.get("ProgramTechnicalElectiveNanoCoopPlan" + i).length > 0) {
-                var mapLen = this.NanoCoopPlanClickedMap.get("ProgramTechnicalElectiveNanoCoopPlan" + i).length - 1
-                var prevCate = this.NanoCoopPlanClickedMap.get("ProgramTechnicalElectiveNanoCoopPlan" + i)[mapLen];
-                this.unHighlightElement(currelement, prevCate);
-          }
-          this.highlightElement(currelement, categoryName);
-          this.addToClicked("ProgramTechnicalElectiveNanoCoopPlan" + i, categoryName);
           i = i + 1;
         }
        break;
@@ -2721,24 +2529,8 @@ switch(categoryName) {
                                         this.highlightElement(element, prevCate);
                                     }
                                 }
-     var element = document.getElementById("MATE201TraditionalPlan");
-                            var prevCate = this.removeFromClicked("MATE201TraditionalPlan", categoryName);
-                                if (element.classList.contains(categoryName+"-highlighted")) {
-                                    this.unHighlightElement(element, categoryName);
-                                    if (prevCate != "") {
-                                        this.highlightElement(element, prevCate);
-                                    }
-                                }
      var element = document.getElementById("PHYS230TraditionalPlan");
                             var prevCate = this.removeFromClicked("PHYS230TraditionalPlan", categoryName);
-                                if (element.classList.contains(categoryName+"-highlighted")) {
-                                    this.unHighlightElement(element, categoryName);
-                                    if (prevCate != "") {
-                                        this.highlightElement(element, prevCate);
-                                    }
-                                }
-     var element = document.getElementById("MATE201TraditionalPlan");
-                            var prevCate = this.removeFromClicked("MATE201TraditionalPlan", categoryName);
                                 if (element.classList.contains(categoryName+"-highlighted")) {
                                     this.unHighlightElement(element, categoryName);
                                     if (prevCate != "") {
@@ -2795,24 +2587,8 @@ switch(categoryName) {
                                         this.highlightElement(element, prevCate);
                                     }
                                 }
-     var element = document.getElementById("MATE201CoopPlan1");
-                            var prevCate = this.removeFromClicked("MATE201CoopPlan1", categoryName);
-                                if (element.classList.contains(categoryName+"-highlighted")) {
-                                    this.unHighlightElement(element, categoryName);
-                                    if (prevCate != "") {
-                                        this.highlightElement(element, prevCate);
-                                    }
-                                }
      var element = document.getElementById("PHYS230CoopPlan1");
                             var prevCate = this.removeFromClicked("PHYS230CoopPlan1", categoryName);
-                                if (element.classList.contains(categoryName+"-highlighted")) {
-                                    this.unHighlightElement(element, categoryName);
-                                    if (prevCate != "") {
-                                        this.highlightElement(element, prevCate);
-                                    }
-                                }
-     var element = document.getElementById("MATE201CoopPlan1");
-                            var prevCate = this.removeFromClicked("MATE201CoopPlan1", categoryName);
                                 if (element.classList.contains(categoryName+"-highlighted")) {
                                     this.unHighlightElement(element, categoryName);
                                     if (prevCate != "") {
@@ -2869,24 +2645,8 @@ switch(categoryName) {
                                         this.highlightElement(element, prevCate);
                                     }
                                 }
-     var element = document.getElementById("MATE201NanoTraditionalPlan");
-                            var prevCate = this.removeFromClicked("MATE201NanoTraditionalPlan", categoryName);
-                                if (element.classList.contains(categoryName+"-highlighted")) {
-                                    this.unHighlightElement(element, categoryName);
-                                    if (prevCate != "") {
-                                        this.highlightElement(element, prevCate);
-                                    }
-                                }
      var element = document.getElementById("PHYS230NanoTraditionalPlan");
                             var prevCate = this.removeFromClicked("PHYS230NanoTraditionalPlan", categoryName);
-                                if (element.classList.contains(categoryName+"-highlighted")) {
-                                    this.unHighlightElement(element, categoryName);
-                                    if (prevCate != "") {
-                                        this.highlightElement(element, prevCate);
-                                    }
-                                }
-     var element = document.getElementById("MATE201NanoTraditionalPlan");
-                            var prevCate = this.removeFromClicked("MATE201NanoTraditionalPlan", categoryName);
                                 if (element.classList.contains(categoryName+"-highlighted")) {
                                     this.unHighlightElement(element, categoryName);
                                     if (prevCate != "") {
@@ -2943,24 +2703,8 @@ switch(categoryName) {
                                         this.highlightElement(element, prevCate);
                                     }
                                 }
-     var element = document.getElementById("MATE201NanoCoopPlan");
-                            var prevCate = this.removeFromClicked("MATE201NanoCoopPlan", categoryName);
-                                if (element.classList.contains(categoryName+"-highlighted")) {
-                                    this.unHighlightElement(element, categoryName);
-                                    if (prevCate != "") {
-                                        this.highlightElement(element, prevCate);
-                                    }
-                                }
      var element = document.getElementById("PHYS230NanoCoopPlan");
                             var prevCate = this.removeFromClicked("PHYS230NanoCoopPlan", categoryName);
-                                if (element.classList.contains(categoryName+"-highlighted")) {
-                                    this.unHighlightElement(element, categoryName);
-                                    if (prevCate != "") {
-                                        this.highlightElement(element, prevCate);
-                                    }
-                                }
-     var element = document.getElementById("MATE201NanoCoopPlan");
-                            var prevCate = this.removeFromClicked("MATE201NanoCoopPlan", categoryName);
                                 if (element.classList.contains(categoryName+"-highlighted")) {
                                     this.unHighlightElement(element, categoryName);
                                     if (prevCate != "") {
@@ -3677,22 +3421,6 @@ switch(categoryName) {
                                         this.highlightElement(element, prevCate);
                                     }
                                 }
-     var element = document.getElementById("CHE243TraditionalPlan");
-                            var prevCate = this.removeFromClicked("CHE243TraditionalPlan", categoryName);
-                                if (element.classList.contains(categoryName+"-highlighted")) {
-                                    this.unHighlightElement(element, categoryName);
-                                    if (prevCate != "") {
-                                        this.highlightElement(element, prevCate);
-                                    }
-                                }
-     var element = document.getElementById("MECE250TraditionalPlan");
-                            var prevCate = this.removeFromClicked("MECE250TraditionalPlan", categoryName);
-                                if (element.classList.contains(categoryName+"-highlighted")) {
-                                    this.unHighlightElement(element, categoryName);
-                                    if (prevCate != "") {
-                                        this.highlightElement(element, prevCate);
-                                    }
-                                }
      var element = document.getElementById("ECE203TraditionalPlan");
                             var prevCate = this.removeFromClicked("ECE203TraditionalPlan", categoryName);
                                 if (element.classList.contains(categoryName+"-highlighted")) {
@@ -3789,22 +3517,6 @@ switch(categoryName) {
                                         this.highlightElement(element, prevCate);
                                     }
                                 }
-     var element = document.getElementById("CHE243TraditionalPlan");
-                            var prevCate = this.removeFromClicked("CHE243TraditionalPlan", categoryName);
-                                if (element.classList.contains(categoryName+"-highlighted")) {
-                                    this.unHighlightElement(element, categoryName);
-                                    if (prevCate != "") {
-                                        this.highlightElement(element, prevCate);
-                                    }
-                                }
-     var element = document.getElementById("MECE250TraditionalPlan");
-                            var prevCate = this.removeFromClicked("MECE250TraditionalPlan", categoryName);
-                                if (element.classList.contains(categoryName+"-highlighted")) {
-                                    this.unHighlightElement(element, categoryName);
-                                    if (prevCate != "") {
-                                        this.highlightElement(element, prevCate);
-                                    }
-                                }
        break;
       case "CoopPlan1":
      var element = document.getElementById("ECE202CoopPlan1");
@@ -3817,22 +3529,6 @@ switch(categoryName) {
                                 }
      var element = document.getElementById("ECE210CoopPlan1");
                             var prevCate = this.removeFromClicked("ECE210CoopPlan1", categoryName);
-                                if (element.classList.contains(categoryName+"-highlighted")) {
-                                    this.unHighlightElement(element, categoryName);
-                                    if (prevCate != "") {
-                                        this.highlightElement(element, prevCate);
-                                    }
-                                }
-     var element = document.getElementById("CHE243CoopPlan1");
-                            var prevCate = this.removeFromClicked("CHE243CoopPlan1", categoryName);
-                                if (element.classList.contains(categoryName+"-highlighted")) {
-                                    this.unHighlightElement(element, categoryName);
-                                    if (prevCate != "") {
-                                        this.highlightElement(element, prevCate);
-                                    }
-                                }
-     var element = document.getElementById("MECE250CoopPlan1");
-                            var prevCate = this.removeFromClicked("MECE250CoopPlan1", categoryName);
                                 if (element.classList.contains(categoryName+"-highlighted")) {
                                     this.unHighlightElement(element, categoryName);
                                     if (prevCate != "") {
@@ -3935,22 +3631,6 @@ switch(categoryName) {
                                         this.highlightElement(element, prevCate);
                                     }
                                 }
-     var element = document.getElementById("CHE243CoopPlan1");
-                            var prevCate = this.removeFromClicked("CHE243CoopPlan1", categoryName);
-                                if (element.classList.contains(categoryName+"-highlighted")) {
-                                    this.unHighlightElement(element, categoryName);
-                                    if (prevCate != "") {
-                                        this.highlightElement(element, prevCate);
-                                    }
-                                }
-     var element = document.getElementById("MECE250CoopPlan1");
-                            var prevCate = this.removeFromClicked("MECE250CoopPlan1", categoryName);
-                                if (element.classList.contains(categoryName+"-highlighted")) {
-                                    this.unHighlightElement(element, categoryName);
-                                    if (prevCate != "") {
-                                        this.highlightElement(element, prevCate);
-                                    }
-                                }
        break;
       case "NanoTraditionalPlan":
      var element = document.getElementById("ECE202NanoTraditionalPlan");
@@ -3963,22 +3643,6 @@ switch(categoryName) {
                                 }
      var element = document.getElementById("ECE210NanoTraditionalPlan");
                             var prevCate = this.removeFromClicked("ECE210NanoTraditionalPlan", categoryName);
-                                if (element.classList.contains(categoryName+"-highlighted")) {
-                                    this.unHighlightElement(element, categoryName);
-                                    if (prevCate != "") {
-                                        this.highlightElement(element, prevCate);
-                                    }
-                                }
-     var element = document.getElementById("CHE243NanoTraditionalPlan");
-                            var prevCate = this.removeFromClicked("CHE243NanoTraditionalPlan", categoryName);
-                                if (element.classList.contains(categoryName+"-highlighted")) {
-                                    this.unHighlightElement(element, categoryName);
-                                    if (prevCate != "") {
-                                        this.highlightElement(element, prevCate);
-                                    }
-                                }
-     var element = document.getElementById("MECE250NanoTraditionalPlan");
-                            var prevCate = this.removeFromClicked("MECE250NanoTraditionalPlan", categoryName);
                                 if (element.classList.contains(categoryName+"-highlighted")) {
                                     this.unHighlightElement(element, categoryName);
                                     if (prevCate != "") {
@@ -4057,22 +3721,6 @@ switch(categoryName) {
                                         this.highlightElement(element, prevCate);
                                     }
                                 }
-     var element = document.getElementById("CHE243NanoTraditionalPlan");
-                            var prevCate = this.removeFromClicked("CHE243NanoTraditionalPlan", categoryName);
-                                if (element.classList.contains(categoryName+"-highlighted")) {
-                                    this.unHighlightElement(element, categoryName);
-                                    if (prevCate != "") {
-                                        this.highlightElement(element, prevCate);
-                                    }
-                                }
-     var element = document.getElementById("MECE250NanoTraditionalPlan");
-                            var prevCate = this.removeFromClicked("MECE250NanoTraditionalPlan", categoryName);
-                                if (element.classList.contains(categoryName+"-highlighted")) {
-                                    this.unHighlightElement(element, categoryName);
-                                    if (prevCate != "") {
-                                        this.highlightElement(element, prevCate);
-                                    }
-                                }
        break;
       case "NanoCoopPlan":
      var element = document.getElementById("ECE202NanoCoopPlan");
@@ -4085,22 +3733,6 @@ switch(categoryName) {
                                 }
      var element = document.getElementById("ECE210NanoCoopPlan");
                             var prevCate = this.removeFromClicked("ECE210NanoCoopPlan", categoryName);
-                                if (element.classList.contains(categoryName+"-highlighted")) {
-                                    this.unHighlightElement(element, categoryName);
-                                    if (prevCate != "") {
-                                        this.highlightElement(element, prevCate);
-                                    }
-                                }
-     var element = document.getElementById("CHE243NanoCoopPlan");
-                            var prevCate = this.removeFromClicked("CHE243NanoCoopPlan", categoryName);
-                                if (element.classList.contains(categoryName+"-highlighted")) {
-                                    this.unHighlightElement(element, categoryName);
-                                    if (prevCate != "") {
-                                        this.highlightElement(element, prevCate);
-                                    }
-                                }
-     var element = document.getElementById("MECE250NanoCoopPlan");
-                            var prevCate = this.removeFromClicked("MECE250NanoCoopPlan", categoryName);
                                 if (element.classList.contains(categoryName+"-highlighted")) {
                                     this.unHighlightElement(element, categoryName);
                                     if (prevCate != "") {
@@ -4179,22 +3811,83 @@ switch(categoryName) {
                                         this.highlightElement(element, prevCate);
                                     }
                                 }
-     var element = document.getElementById("CHE243NanoCoopPlan");
-                            var prevCate = this.removeFromClicked("CHE243NanoCoopPlan", categoryName);
-                                if (element.classList.contains(categoryName+"-highlighted")) {
-                                    this.unHighlightElement(element, categoryName);
-                                    if (prevCate != "") {
-                                        this.highlightElement(element, prevCate);
-                                    }
-                                }
-     var element = document.getElementById("MECE250NanoCoopPlan");
-                            var prevCate = this.removeFromClicked("MECE250NanoCoopPlan", categoryName);
-                                if (element.classList.contains(categoryName+"-highlighted")) {
-                                    this.unHighlightElement(element, categoryName);
-                                    if (prevCate != "") {
-                                        this.highlightElement(element, prevCate);
-                                    }
-                                }
+       break;
+       }
+      break;
+  case "PROG":
+  case "ProgramTechnicalElective":
+    switch(planName) {
+      case "TraditionalPlan":
+        var PROGelements = document.getElementsByClassName("PROG-highlighted");
+        var i = 0;        
+        while (PROGelements.length > 0) {
+          var currelement = document.getElementById(PROGelements.item(0).id);
+          var prevCate = this.removeFromClicked("ProgramTechnicalElectiveTraditionalPlan" + i, "PROG");
+                if (!currelement.classList.contains(categoryName+"-highlighted")) {
+                    return;
+                }
+                else {
+                    this.unHighlightElement(currelement, categoryName);
+                    if (prevCate != "") {
+                        this.highlightElement(currelement, prevCate);
+                    }
+                }      
+          i = i + 1;
+        }
+       break;
+      case "CoopPlan1":
+        var PROGelements = document.getElementsByClassName("PROG-highlighted");
+        var i = 0;        
+        while (PROGelements.length > 0) {
+          var currelement = document.getElementById(PROGelements.item(0).id);
+          var prevCate = this.removeFromClicked("ProgramTechnicalElectiveCoopPlan1" + i, "PROG");
+                if (!currelement.classList.contains(categoryName+"-highlighted")) {
+                    return;
+                }
+                else {
+                    this.unHighlightElement(currelement, categoryName);
+                    if (prevCate != "") {
+                        this.highlightElement(currelement, prevCate);
+                    }
+                }      
+          i = i + 1;
+        }
+       break;
+      case "NanoTraditionalPlan":
+        var PROGelements = document.getElementsByClassName("PROG-highlighted");
+        var i = 0;        
+        while (PROGelements.length > 0) {
+          var currelement = document.getElementById(PROGelements.item(0).id);
+          var prevCate = this.removeFromClicked("ProgramTechnicalElectiveNanoTraditionalPlan" + i, "PROG");
+                if (!currelement.classList.contains(categoryName+"-highlighted")) {
+                    return;
+                }
+                else {
+                    this.unHighlightElement(currelement, categoryName);
+                    if (prevCate != "") {
+                        this.highlightElement(currelement, prevCate);
+                    }
+                }      
+          i = i + 1;
+        }
+       break;
+      case "NanoCoopPlan":
+        var PROGelements = document.getElementsByClassName("PROG-highlighted");
+        var i = 0;        
+        while (PROGelements.length > 0) {
+          var currelement = document.getElementById(PROGelements.item(0).id);
+          var prevCate = this.removeFromClicked("ProgramTechnicalElectiveNanoCoopPlan" + i, "PROG");
+                if (!currelement.classList.contains(categoryName+"-highlighted")) {
+                    return;
+                }
+                else {
+                    this.unHighlightElement(currelement, categoryName);
+                    if (prevCate != "") {
+                        this.highlightElement(currelement, prevCate);
+                    }
+                }      
+          i = i + 1;
+        }
        break;
        }
       break;
@@ -4325,83 +4018,6 @@ switch(categoryName) {
         while (COMPelements.length > 0) {
           var currelement = document.getElementById(COMPelements.item(0).id);
           var prevCate = this.removeFromClicked("ComplementaryElectiveNanoCoopPlan" + i, "COMP");
-                if (!currelement.classList.contains(categoryName+"-highlighted")) {
-                    return;
-                }
-                else {
-                    this.unHighlightElement(currelement, categoryName);
-                    if (prevCate != "") {
-                        this.highlightElement(currelement, prevCate);
-                    }
-                }      
-          i = i + 1;
-        }
-       break;
-       }
-      break;
-  case "PROG":
-  case "ProgramTechnicalElective":
-    switch(planName) {
-      case "TraditionalPlan":
-        var PROGelements = document.getElementsByClassName("PROG-highlighted");
-        var i = 0;        
-        while (PROGelements.length > 0) {
-          var currelement = document.getElementById(PROGelements.item(0).id);
-          var prevCate = this.removeFromClicked("ProgramTechnicalElectiveTraditionalPlan" + i, "PROG");
-                if (!currelement.classList.contains(categoryName+"-highlighted")) {
-                    return;
-                }
-                else {
-                    this.unHighlightElement(currelement, categoryName);
-                    if (prevCate != "") {
-                        this.highlightElement(currelement, prevCate);
-                    }
-                }      
-          i = i + 1;
-        }
-       break;
-      case "CoopPlan1":
-        var PROGelements = document.getElementsByClassName("PROG-highlighted");
-        var i = 0;        
-        while (PROGelements.length > 0) {
-          var currelement = document.getElementById(PROGelements.item(0).id);
-          var prevCate = this.removeFromClicked("ProgramTechnicalElectiveCoopPlan1" + i, "PROG");
-                if (!currelement.classList.contains(categoryName+"-highlighted")) {
-                    return;
-                }
-                else {
-                    this.unHighlightElement(currelement, categoryName);
-                    if (prevCate != "") {
-                        this.highlightElement(currelement, prevCate);
-                    }
-                }      
-          i = i + 1;
-        }
-       break;
-      case "NanoTraditionalPlan":
-        var PROGelements = document.getElementsByClassName("PROG-highlighted");
-        var i = 0;        
-        while (PROGelements.length > 0) {
-          var currelement = document.getElementById(PROGelements.item(0).id);
-          var prevCate = this.removeFromClicked("ProgramTechnicalElectiveNanoTraditionalPlan" + i, "PROG");
-                if (!currelement.classList.contains(categoryName+"-highlighted")) {
-                    return;
-                }
-                else {
-                    this.unHighlightElement(currelement, categoryName);
-                    if (prevCate != "") {
-                        this.highlightElement(currelement, prevCate);
-                    }
-                }      
-          i = i + 1;
-        }
-       break;
-      case "NanoCoopPlan":
-        var PROGelements = document.getElementsByClassName("PROG-highlighted");
-        var i = 0;        
-        while (PROGelements.length > 0) {
-          var currelement = document.getElementById(PROGelements.item(0).id);
-          var prevCate = this.removeFromClicked("ProgramTechnicalElectiveNanoCoopPlan" + i, "PROG");
                 if (!currelement.classList.contains(categoryName+"-highlighted")) {
                     return;
                 }
@@ -4664,18 +4280,10 @@ this.TraditionalPlanClickedMap.set("MATH201TraditionalPlan", []);
   var MATH209TraditionalPlanrflag = false;
  var MATH209TraditionalPlanTime = new Date().getTime();
 this.TraditionalPlanClickedMap.set("MATH209TraditionalPlan", []);
-  var CHE243TraditionalPlanflag = false;
-  var CHE243TraditionalPlanrflag = false;
- var CHE243TraditionalPlanTime = new Date().getTime();
-this.TraditionalPlanClickedMap.set("CHE243TraditionalPlan", []);
-  var MATE201TraditionalPlanflag = false;
-  var MATE201TraditionalPlanrflag = false;
- var MATE201TraditionalPlanTime = new Date().getTime();
-this.TraditionalPlanClickedMap.set("MATE201TraditionalPlan", []);
-  var MECE250TraditionalPlanflag = false;
-  var MECE250TraditionalPlanrflag = false;
- var MECE250TraditionalPlanTime = new Date().getTime();
-this.TraditionalPlanClickedMap.set("MECE250TraditionalPlan", []);
+  var ProgramTechnicalElectiveTraditionalPlan0flag = false;
+  var ProgramTechnicalElectiveTraditionalPlan0rflag = false;
+ var ProgramTechnicalElectiveTraditionalPlan0Time = new Date().getTime();
+this.TraditionalPlanClickedMap.set("ProgramTechnicalElectiveTraditionalPlan0", []);
   var ComplementaryElectiveTraditionalPlan0flag = false;
   var ComplementaryElectiveTraditionalPlan0rflag = false;
  var ComplementaryElectiveTraditionalPlan0Time = new Date().getTime();
@@ -4756,22 +4364,6 @@ this.TraditionalPlanClickedMap.set("ECE490TraditionalPlan", []);
   var ENGG404TraditionalPlanrflag = false;
  var ENGG404TraditionalPlanTime = new Date().getTime();
 this.TraditionalPlanClickedMap.set("ENGG404TraditionalPlan", []);
-  var CHE243TraditionalPlanflag = false;
-  var CHE243TraditionalPlanrflag = false;
- var CHE243TraditionalPlanTime = new Date().getTime();
-this.TraditionalPlanClickedMap.set("CHE243TraditionalPlan", []);
-  var MATE201TraditionalPlanflag = false;
-  var MATE201TraditionalPlanrflag = false;
- var MATE201TraditionalPlanTime = new Date().getTime();
-this.TraditionalPlanClickedMap.set("MATE201TraditionalPlan", []);
-  var MECE250TraditionalPlanflag = false;
-  var MECE250TraditionalPlanrflag = false;
- var MECE250TraditionalPlanTime = new Date().getTime();
-this.TraditionalPlanClickedMap.set("MECE250TraditionalPlan", []);
-  var ProgramTechnicalElectiveTraditionalPlan0flag = false;
-  var ProgramTechnicalElectiveTraditionalPlan0rflag = false;
- var ProgramTechnicalElectiveTraditionalPlan0Time = new Date().getTime();
-this.TraditionalPlanClickedMap.set("ProgramTechnicalElectiveTraditionalPlan0", []);
   var ProgramTechnicalElectiveTraditionalPlan1flag = false;
   var ProgramTechnicalElectiveTraditionalPlan1rflag = false;
  var ProgramTechnicalElectiveTraditionalPlan1Time = new Date().getTime();
@@ -4780,6 +4372,14 @@ this.TraditionalPlanClickedMap.set("ProgramTechnicalElectiveTraditionalPlan1", [
   var ProgramTechnicalElectiveTraditionalPlan2rflag = false;
  var ProgramTechnicalElectiveTraditionalPlan2Time = new Date().getTime();
 this.TraditionalPlanClickedMap.set("ProgramTechnicalElectiveTraditionalPlan2", []);
+  var ProgramTechnicalElectiveTraditionalPlan3flag = false;
+  var ProgramTechnicalElectiveTraditionalPlan3rflag = false;
+ var ProgramTechnicalElectiveTraditionalPlan3Time = new Date().getTime();
+this.TraditionalPlanClickedMap.set("ProgramTechnicalElectiveTraditionalPlan3", []);
+  var ProgramTechnicalElectiveTraditionalPlan4flag = false;
+  var ProgramTechnicalElectiveTraditionalPlan4rflag = false;
+ var ProgramTechnicalElectiveTraditionalPlan4Time = new Date().getTime();
+this.TraditionalPlanClickedMap.set("ProgramTechnicalElectiveTraditionalPlan4", []);
   var ENGM310TraditionalPlanflag = false;
   var ENGM310TraditionalPlanrflag = false;
  var ENGM310TraditionalPlanTime = new Date().getTime();
@@ -4800,18 +4400,18 @@ this.TraditionalPlanClickedMap.set("ECE491TraditionalPlan", []);
   var ITSElectiveTraditionalPlan0rflag = false;
  var ITSElectiveTraditionalPlan0Time = new Date().getTime();
 this.TraditionalPlanClickedMap.set("ITSElectiveTraditionalPlan0", []);
-  var ProgramTechnicalElectiveTraditionalPlan3flag = false;
-  var ProgramTechnicalElectiveTraditionalPlan3rflag = false;
- var ProgramTechnicalElectiveTraditionalPlan3Time = new Date().getTime();
-this.TraditionalPlanClickedMap.set("ProgramTechnicalElectiveTraditionalPlan3", []);
-  var ProgramTechnicalElectiveTraditionalPlan4flag = false;
-  var ProgramTechnicalElectiveTraditionalPlan4rflag = false;
- var ProgramTechnicalElectiveTraditionalPlan4Time = new Date().getTime();
-this.TraditionalPlanClickedMap.set("ProgramTechnicalElectiveTraditionalPlan4", []);
   var ProgramTechnicalElectiveTraditionalPlan5flag = false;
   var ProgramTechnicalElectiveTraditionalPlan5rflag = false;
  var ProgramTechnicalElectiveTraditionalPlan5Time = new Date().getTime();
 this.TraditionalPlanClickedMap.set("ProgramTechnicalElectiveTraditionalPlan5", []);
+  var ProgramTechnicalElectiveTraditionalPlan6flag = false;
+  var ProgramTechnicalElectiveTraditionalPlan6rflag = false;
+ var ProgramTechnicalElectiveTraditionalPlan6Time = new Date().getTime();
+this.TraditionalPlanClickedMap.set("ProgramTechnicalElectiveTraditionalPlan6", []);
+  var ProgramTechnicalElectiveTraditionalPlan7flag = false;
+  var ProgramTechnicalElectiveTraditionalPlan7rflag = false;
+ var ProgramTechnicalElectiveTraditionalPlan7Time = new Date().getTime();
+this.TraditionalPlanClickedMap.set("ProgramTechnicalElectiveTraditionalPlan7", []);
 $scope.CHEM103TraditionalPlanListener = function () {
 var currentTime = new Date().getTime();
 if (currentTime - CHEM103TraditionalPlanTime <= 200) { 
@@ -4905,8 +4505,6 @@ ENGG130TraditionalPlanTime = currentTime;
     }}
       that.addLine(getLine0());
       that.addLine(getLine5());
-      that.addLine(getLine16());
-      that.addLine(getLine46());
      that.highlightElement(ENGG130TraditionalPlanelement, "NaturalSciences");
      that.addToClicked("ENGG130TraditionalPlan", "NaturalSciences");
       ENGG130TraditionalPlanflag=true
@@ -4914,8 +4512,6 @@ ENGG130TraditionalPlanTime = currentTime;
  else {
       that.removeLine(getLine0());
       that.removeLine(getLine5());
-      that.removeLine(getLine16());
-      that.removeLine(getLine46());
      that.unHighlightElement(ENGG130TraditionalPlanelement, "NaturalSciences");
      var category = that.removeFromClicked("ENGG130TraditionalPlan", "NaturalSciences");
   if (category != "") { 
@@ -4986,7 +4582,7 @@ MATH100TraditionalPlanTime = currentTime;
       that.addLine(getLine4());
       that.addLine(getLine7());
       that.addLine(getLine8());
-      that.addLine(getLine26());
+      that.addLine(getLine21());
      that.highlightElement(MATH100TraditionalPlanelement, "Math");
      that.addToClicked("MATH100TraditionalPlan", "Math");
       MATH100TraditionalPlanflag=true
@@ -4997,7 +4593,7 @@ MATH100TraditionalPlanTime = currentTime;
       that.removeLine(getLine4());
       that.removeLine(getLine7());
       that.removeLine(getLine8());
-      that.removeLine(getLine26());
+      that.removeLine(getLine21());
      that.unHighlightElement(MATH100TraditionalPlanelement, "Math");
      var category = that.removeFromClicked("MATH100TraditionalPlan", "Math");
   if (category != "") { 
@@ -5028,14 +4624,14 @@ PHYS130TraditionalPlanTime = currentTime;
         return;
     }}
       that.addLine(getLine1());
-      that.addLine(getLine25());
+      that.addLine(getLine20());
      that.highlightElement(PHYS130TraditionalPlanelement, "NaturalSciences");
      that.addToClicked("PHYS130TraditionalPlan", "NaturalSciences");
       PHYS130TraditionalPlanflag=true
   }
  else {
       that.removeLine(getLine1());
-      that.removeLine(getLine25());
+      that.removeLine(getLine20());
      that.unHighlightElement(PHYS130TraditionalPlanelement, "NaturalSciences");
      var category = that.removeFromClicked("PHYS130TraditionalPlan", "NaturalSciences");
   if (category != "") { 
@@ -5066,16 +4662,12 @@ CHEM105TraditionalPlanTime = currentTime;
         return;
     }}
       that.addLine(getLine2());
-      that.addLine(getLine15());
-      that.addLine(getLine45());
      that.highlightElement(CHEM105TraditionalPlanelement, "NaturalSciences");
      that.addToClicked("CHEM105TraditionalPlan", "NaturalSciences");
       CHEM105TraditionalPlanflag=true
   }
  else {
       that.removeLine(getLine2());
-      that.removeLine(getLine15());
-      that.removeLine(getLine45());
      that.unHighlightElement(CHEM105TraditionalPlanelement, "NaturalSciences");
      var category = that.removeFromClicked("CHEM105TraditionalPlan", "NaturalSciences");
   if (category != "") { 
@@ -5105,13 +4697,13 @@ ENCMP100TraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine22());
+      that.addLine(getLine17());
      that.highlightElement(ENCMP100TraditionalPlanelement, "NaturalSciences");
      that.addToClicked("ENCMP100TraditionalPlan", "NaturalSciences");
       ENCMP100TraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine22());
+      that.removeLine(getLine17());
      that.unHighlightElement(ENCMP100TraditionalPlanelement, "NaturalSciences");
      var category = that.removeFromClicked("ENCMP100TraditionalPlan", "NaturalSciences");
   if (category != "") { 
@@ -5180,8 +4772,6 @@ ENPH131TraditionalPlanTime = currentTime;
       that.addLine(getLine4());
       that.addLine(getLine5());
       that.addLine(getLine6());
-      that.addLine(getLine17());
-      that.addLine(getLine47());
      that.highlightElement(ENPH131TraditionalPlanelement, "NaturalSciences");
      that.addToClicked("ENPH131TraditionalPlan", "NaturalSciences");
       ENPH131TraditionalPlanflag=true
@@ -5190,8 +4780,6 @@ ENPH131TraditionalPlanTime = currentTime;
       that.removeLine(getLine4());
       that.removeLine(getLine5());
       that.removeLine(getLine6());
-      that.removeLine(getLine17());
-      that.removeLine(getLine47());
      that.unHighlightElement(ENPH131TraditionalPlanelement, "NaturalSciences");
      var category = that.removeFromClicked("ENPH131TraditionalPlan", "NaturalSciences");
   if (category != "") { 
@@ -5225,11 +4813,7 @@ MATH101TraditionalPlanTime = currentTime;
       that.addLine(getLine7());
       that.addLine(getLine9());
       that.addLine(getLine12());
-      that.addLine(getLine14());
-      that.addLine(getLine18());
-      that.addLine(getLine27());
-      that.addLine(getLine44());
-      that.addLine(getLine48());
+      that.addLine(getLine22());
      that.highlightElement(MATH101TraditionalPlanelement, "Math");
      that.addToClicked("MATH101TraditionalPlan", "Math");
       MATH101TraditionalPlanflag=true
@@ -5239,11 +4823,7 @@ MATH101TraditionalPlanTime = currentTime;
       that.removeLine(getLine7());
       that.removeLine(getLine9());
       that.removeLine(getLine12());
-      that.removeLine(getLine14());
-      that.removeLine(getLine18());
-      that.removeLine(getLine27());
-      that.removeLine(getLine44());
-      that.removeLine(getLine48());
+      that.removeLine(getLine22());
      that.unHighlightElement(MATH101TraditionalPlanelement, "Math");
      var category = that.removeFromClicked("MATH101TraditionalPlan", "Math");
   if (category != "") { 
@@ -5276,7 +4856,7 @@ MATH102TraditionalPlanTime = currentTime;
       that.addLine(getLine8());
       that.addLine(getLine10());
       that.addLine(getLine13());
-      that.addLine(getLine34());
+      that.addLine(getLine29());
      that.highlightElement(MATH102TraditionalPlanelement, "Math");
      that.addToClicked("MATH102TraditionalPlan", "Math");
       MATH102TraditionalPlanflag=true
@@ -5285,7 +4865,7 @@ MATH102TraditionalPlanTime = currentTime;
       that.removeLine(getLine8());
       that.removeLine(getLine10());
       that.removeLine(getLine13());
-      that.removeLine(getLine34());
+      that.removeLine(getLine29());
      that.unHighlightElement(MATH102TraditionalPlanelement, "Math");
      var category = that.removeFromClicked("MATH102TraditionalPlan", "Math");
   if (category != "") { 
@@ -5317,8 +4897,8 @@ ECE202TraditionalPlanTime = currentTime;
     }}
       that.addLine(getLine9());
       that.addLine(getLine10());
-      that.addLine(getLine19());
-      that.addLine(getLine23());
+      that.addLine(getLine14());
+      that.addLine(getLine18());
      that.highlightElement(ECE202TraditionalPlanelement, "EngineeringSciences");
      that.addToClicked("ECE202TraditionalPlan", "EngineeringSciences");
       ECE202TraditionalPlanflag=true
@@ -5326,8 +4906,8 @@ ECE202TraditionalPlanTime = currentTime;
  else {
       that.removeLine(getLine9());
       that.removeLine(getLine10());
-      that.removeLine(getLine19());
-      that.removeLine(getLine23());
+      that.removeLine(getLine14());
+      that.removeLine(getLine18());
      that.unHighlightElement(ECE202TraditionalPlanelement, "EngineeringSciences");
      var category = that.removeFromClicked("ECE202TraditionalPlan", "EngineeringSciences");
   if (category != "") { 
@@ -5357,13 +4937,13 @@ ECE210TraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine21());
+      that.addLine(getLine16());
      that.highlightElement(ECE210TraditionalPlanelement, "EngineeringSciences");
      that.addToClicked("ECE210TraditionalPlan", "EngineeringSciences");
       ECE210TraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine21());
+      that.removeLine(getLine16());
      that.unHighlightElement(ECE210TraditionalPlanelement, "EngineeringSciences");
      var category = that.removeFromClicked("ECE210TraditionalPlan", "EngineeringSciences");
   if (category != "") { 
@@ -5394,14 +4974,14 @@ MATH201TraditionalPlanTime = currentTime;
         return;
     }}
       that.addLine(getLine11());
-      that.addLine(getLine24());
+      that.addLine(getLine19());
      that.highlightElement(MATH201TraditionalPlanelement, "Math");
      that.addToClicked("MATH201TraditionalPlan", "Math");
       MATH201TraditionalPlanflag=true
   }
  else {
       that.removeLine(getLine11());
-      that.removeLine(getLine24());
+      that.removeLine(getLine19());
      that.unHighlightElement(MATH201TraditionalPlanelement, "Math");
      var category = that.removeFromClicked("MATH201TraditionalPlan", "Math");
   if (category != "") { 
@@ -5434,9 +5014,9 @@ MATH209TraditionalPlanTime = currentTime;
       that.addLine(getLine11());
       that.addLine(getLine12());
       that.addLine(getLine13());
+      that.addLine(getLine30());
+      that.addLine(getLine32());
       that.addLine(getLine35());
-      that.addLine(getLine37());
-      that.addLine(getLine40());
      that.highlightElement(MATH209TraditionalPlanelement, "Math");
      that.addToClicked("MATH209TraditionalPlan", "Math");
       MATH209TraditionalPlanflag=true
@@ -5445,9 +5025,9 @@ MATH209TraditionalPlanTime = currentTime;
       that.removeLine(getLine11());
       that.removeLine(getLine12());
       that.removeLine(getLine13());
+      that.removeLine(getLine30());
+      that.removeLine(getLine32());
       that.removeLine(getLine35());
-      that.removeLine(getLine37());
-      that.removeLine(getLine40());
      that.unHighlightElement(MATH209TraditionalPlanelement, "Math");
      var category = that.removeFromClicked("MATH209TraditionalPlan", "Math");
   if (category != "") { 
@@ -5456,126 +5036,38 @@ MATH209TraditionalPlanTime = currentTime;
       MATH209TraditionalPlanflag=false
   }
 };
-$scope.CHE243TraditionalPlanListener = function () {
+$scope.ProgramTechnicalElectiveTraditionalPlan0Listener = function () {
 var currentTime = new Date().getTime();
-if (currentTime - CHE243TraditionalPlanTime <= 200) { 
-        CHE243TraditionalPlanTime = currentTime;
+if (currentTime - ProgramTechnicalElectiveTraditionalPlan0Time <= 200) { 
+        ProgramTechnicalElectiveTraditionalPlan0Time = currentTime;
         return;
     }
-CHE243TraditionalPlanTime = currentTime;
-  var CHE243TraditionalPlanelement = document.getElementById("CHE243TraditionalPlan");
- if (!CHE243TraditionalPlanflag) {
-     if (that.TraditionalPlanClickedMap.get("CHE243TraditionalPlan").length > 0) { 
+ProgramTechnicalElectiveTraditionalPlan0Time = currentTime;
+  var ProgramTechnicalElectiveTraditionalPlan0element = document.getElementById("ProgramTechnicalElectiveTraditionalPlan0");
+ if (!ProgramTechnicalElectiveTraditionalPlan0flag) {
+     if (that.TraditionalPlanClickedMap.get("ProgramTechnicalElectiveTraditionalPlan0").length > 0) { 
  var trueCounter = 0;
-          for (let i = 0; i < that.TraditionalPlanClickedMap.get("CHE243TraditionalPlan").length; i++) { 
-        var cate = that.TraditionalPlanClickedMap.get("CHE243TraditionalPlan")[i];
-        if (CHE243TraditionalPlanelement.classList.contains(cate + "-highlighted")) {
+          for (let i = 0; i < that.TraditionalPlanClickedMap.get("ProgramTechnicalElectiveTraditionalPlan0").length; i++) { 
+        var cate = that.TraditionalPlanClickedMap.get("ProgramTechnicalElectiveTraditionalPlan0")[i];
+        if (ProgramTechnicalElectiveTraditionalPlan0element.classList.contains(cate + "-highlighted")) {
             trueCounter++;
-            that.unHighlightElement(CHE243TraditionalPlanelement, cate);
+            that.unHighlightElement(ProgramTechnicalElectiveTraditionalPlan0element, cate);
         }
     }
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine14());
-      that.addLine(getLine44());
-     that.highlightElement(CHE243TraditionalPlanelement, "EngineeringSciences");
-     that.addToClicked("CHE243TraditionalPlan", "EngineeringSciences");
-      CHE243TraditionalPlanflag=true
+     that.highlightElement(ProgramTechnicalElectiveTraditionalPlan0element, "PROG");
+     that.addToClicked("ProgramTechnicalElectiveTraditionalPlan0", "PROG");
+      ProgramTechnicalElectiveTraditionalPlan0flag=true
   }
  else {
-      that.removeLine(getLine14());
-      that.removeLine(getLine44());
-     that.unHighlightElement(CHE243TraditionalPlanelement, "EngineeringSciences");
-     var category = that.removeFromClicked("CHE243TraditionalPlan", "EngineeringSciences");
+     that.unHighlightElement(ProgramTechnicalElectiveTraditionalPlan0element, "PROG");
+     var category = that.removeFromClicked("ProgramTechnicalElectiveTraditionalPlan0", "PROG");
   if (category != "") { 
-     that.highlightElement(CHE243TraditionalPlanelement, category);
+     that.highlightElement(ProgramTechnicalElectiveTraditionalPlan0element, category);
 }
-      CHE243TraditionalPlanflag=false
-  }
-};
-$scope.MATE201TraditionalPlanListener = function () {
-var currentTime = new Date().getTime();
-if (currentTime - MATE201TraditionalPlanTime <= 200) { 
-        MATE201TraditionalPlanTime = currentTime;
-        return;
-    }
-MATE201TraditionalPlanTime = currentTime;
-  var MATE201TraditionalPlanelement = document.getElementById("MATE201TraditionalPlan");
- if (!MATE201TraditionalPlanflag) {
-     if (that.TraditionalPlanClickedMap.get("MATE201TraditionalPlan").length > 0) { 
- var trueCounter = 0;
-          for (let i = 0; i < that.TraditionalPlanClickedMap.get("MATE201TraditionalPlan").length; i++) { 
-        var cate = that.TraditionalPlanClickedMap.get("MATE201TraditionalPlan")[i];
-        if (MATE201TraditionalPlanelement.classList.contains(cate + "-highlighted")) {
-            trueCounter++;
-            that.unHighlightElement(MATE201TraditionalPlanelement, cate);
-        }
-    }
-    if (trueCounter > 0) {
-        return;
-    }}
-      that.addLine(getLine15());
-      that.addLine(getLine45());
-     that.highlightElement(MATE201TraditionalPlanelement, "NaturalSciences");
-     that.addToClicked("MATE201TraditionalPlan", "NaturalSciences");
-      MATE201TraditionalPlanflag=true
-  }
- else {
-      that.removeLine(getLine15());
-      that.removeLine(getLine45());
-     that.unHighlightElement(MATE201TraditionalPlanelement, "NaturalSciences");
-     var category = that.removeFromClicked("MATE201TraditionalPlan", "NaturalSciences");
-  if (category != "") { 
-     that.highlightElement(MATE201TraditionalPlanelement, category);
-}
-      MATE201TraditionalPlanflag=false
-  }
-};
-$scope.MECE250TraditionalPlanListener = function () {
-var currentTime = new Date().getTime();
-if (currentTime - MECE250TraditionalPlanTime <= 200) { 
-        MECE250TraditionalPlanTime = currentTime;
-        return;
-    }
-MECE250TraditionalPlanTime = currentTime;
-  var MECE250TraditionalPlanelement = document.getElementById("MECE250TraditionalPlan");
- if (!MECE250TraditionalPlanflag) {
-     if (that.TraditionalPlanClickedMap.get("MECE250TraditionalPlan").length > 0) { 
- var trueCounter = 0;
-          for (let i = 0; i < that.TraditionalPlanClickedMap.get("MECE250TraditionalPlan").length; i++) { 
-        var cate = that.TraditionalPlanClickedMap.get("MECE250TraditionalPlan")[i];
-        if (MECE250TraditionalPlanelement.classList.contains(cate + "-highlighted")) {
-            trueCounter++;
-            that.unHighlightElement(MECE250TraditionalPlanelement, cate);
-        }
-    }
-    if (trueCounter > 0) {
-        return;
-    }}
-      that.addLine(getLine16());
-      that.addLine(getLine17());
-      that.addLine(getLine18());
-      that.addLine(getLine46());
-      that.addLine(getLine47());
-      that.addLine(getLine48());
-     that.highlightElement(MECE250TraditionalPlanelement, "EngineeringSciences");
-     that.addToClicked("MECE250TraditionalPlan", "EngineeringSciences");
-      MECE250TraditionalPlanflag=true
-  }
- else {
-      that.removeLine(getLine16());
-      that.removeLine(getLine17());
-      that.removeLine(getLine18());
-      that.removeLine(getLine46());
-      that.removeLine(getLine47());
-      that.removeLine(getLine48());
-     that.unHighlightElement(MECE250TraditionalPlanelement, "EngineeringSciences");
-     var category = that.removeFromClicked("MECE250TraditionalPlan", "EngineeringSciences");
-  if (category != "") { 
-     that.highlightElement(MECE250TraditionalPlanelement, category);
-}
-      MECE250TraditionalPlanflag=false
+      ProgramTechnicalElectiveTraditionalPlan0flag=false
   }
 };
 $scope.ComplementaryElectiveTraditionalPlan0Listener = function () {
@@ -5633,21 +5125,21 @@ ECE203TraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine19());
-      that.addLine(getLine20());
-      that.addLine(getLine28());
-      that.addLine(getLine32());
-      that.addLine(getLine41());
+      that.addLine(getLine14());
+      that.addLine(getLine15());
+      that.addLine(getLine23());
+      that.addLine(getLine27());
+      that.addLine(getLine36());
      that.highlightElement(ECE203TraditionalPlanelement, "EngineeringSciences");
      that.addToClicked("ECE203TraditionalPlan", "EngineeringSciences");
       ECE203TraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine19());
-      that.removeLine(getLine20());
-      that.removeLine(getLine28());
-      that.removeLine(getLine32());
-      that.removeLine(getLine41());
+      that.removeLine(getLine14());
+      that.removeLine(getLine15());
+      that.removeLine(getLine23());
+      that.removeLine(getLine27());
+      that.removeLine(getLine36());
      that.unHighlightElement(ECE203TraditionalPlanelement, "EngineeringSciences");
      var category = that.removeFromClicked("ECE203TraditionalPlan", "EngineeringSciences");
   if (category != "") { 
@@ -5677,15 +5169,15 @@ ECE212TraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine21());
-      that.addLine(getLine30());
+      that.addLine(getLine16());
+      that.addLine(getLine25());
      that.highlightElement(ECE212TraditionalPlanelement, "EngineeringSciences");
      that.addToClicked("ECE212TraditionalPlan", "EngineeringSciences");
       ECE212TraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine21());
-      that.removeLine(getLine30());
+      that.removeLine(getLine16());
+      that.removeLine(getLine25());
      that.unHighlightElement(ECE212TraditionalPlanelement, "EngineeringSciences");
      var category = that.removeFromClicked("ECE212TraditionalPlan", "EngineeringSciences");
   if (category != "") { 
@@ -5715,15 +5207,15 @@ ECE220TraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine22());
-      that.addLine(getLine29());
+      that.addLine(getLine17());
+      that.addLine(getLine24());
      that.highlightElement(ECE220TraditionalPlanelement, "EngineeringSciences");
      that.addToClicked("ECE220TraditionalPlan", "EngineeringSciences");
       ECE220TraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine22());
-      that.removeLine(getLine29());
+      that.removeLine(getLine17());
+      that.removeLine(getLine24());
      that.unHighlightElement(ECE220TraditionalPlanelement, "EngineeringSciences");
      var category = that.removeFromClicked("ECE220TraditionalPlan", "EngineeringSciences");
   if (category != "") { 
@@ -5753,23 +5245,23 @@ ECE240TraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine20());
-      that.addLine(getLine23());
-      that.addLine(getLine24());
-      that.addLine(getLine33());
-      that.addLine(getLine42());
-      that.addLine(getLine43());
+      that.addLine(getLine15());
+      that.addLine(getLine18());
+      that.addLine(getLine19());
+      that.addLine(getLine28());
+      that.addLine(getLine37());
+      that.addLine(getLine38());
      that.highlightElement(ECE240TraditionalPlanelement, "EngineeringSciences");
      that.addToClicked("ECE240TraditionalPlan", "EngineeringSciences");
       ECE240TraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine20());
-      that.removeLine(getLine23());
-      that.removeLine(getLine24());
-      that.removeLine(getLine33());
-      that.removeLine(getLine42());
-      that.removeLine(getLine43());
+      that.removeLine(getLine15());
+      that.removeLine(getLine18());
+      that.removeLine(getLine19());
+      that.removeLine(getLine28());
+      that.removeLine(getLine37());
+      that.removeLine(getLine38());
      that.unHighlightElement(ECE240TraditionalPlanelement, "EngineeringSciences");
      var category = that.removeFromClicked("ECE240TraditionalPlan", "EngineeringSciences");
   if (category != "") { 
@@ -5799,19 +5291,19 @@ PHYS230TraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine25());
-      that.addLine(getLine26());
-      that.addLine(getLine27());
-      that.addLine(getLine36());
+      that.addLine(getLine20());
+      that.addLine(getLine21());
+      that.addLine(getLine22());
+      that.addLine(getLine31());
      that.highlightElement(PHYS230TraditionalPlanelement, "NaturalSciences");
      that.addToClicked("PHYS230TraditionalPlan", "NaturalSciences");
       PHYS230TraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine25());
-      that.removeLine(getLine26());
-      that.removeLine(getLine27());
-      that.removeLine(getLine36());
+      that.removeLine(getLine20());
+      that.removeLine(getLine21());
+      that.removeLine(getLine22());
+      that.removeLine(getLine31());
      that.unHighlightElement(PHYS230TraditionalPlanelement, "NaturalSciences");
      var category = that.removeFromClicked("PHYS230TraditionalPlan", "NaturalSciences");
   if (category != "") { 
@@ -5875,15 +5367,15 @@ ECE302TraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine28());
-      that.addLine(getLine38());
+      that.addLine(getLine23());
+      that.addLine(getLine33());
      that.highlightElement(ECE302TraditionalPlanelement, "EngineeringSciences");
      that.addToClicked("ECE302TraditionalPlan", "EngineeringSciences");
       ECE302TraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine28());
-      that.removeLine(getLine38());
+      that.removeLine(getLine23());
+      that.removeLine(getLine33());
      that.unHighlightElement(ECE302TraditionalPlanelement, "EngineeringSciences");
      var category = that.removeFromClicked("ECE302TraditionalPlan", "EngineeringSciences");
   if (category != "") { 
@@ -5913,17 +5405,17 @@ ECE312TraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine29());
-      that.addLine(getLine30());
-      that.addLine(getLine31());
+      that.addLine(getLine24());
+      that.addLine(getLine25());
+      that.addLine(getLine26());
      that.highlightElement(ECE312TraditionalPlanelement, "EngineeringDesign");
      that.addToClicked("ECE312TraditionalPlan", "EngineeringDesign");
       ECE312TraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine29());
-      that.removeLine(getLine30());
-      that.removeLine(getLine31());
+      that.removeLine(getLine24());
+      that.removeLine(getLine25());
+      that.removeLine(getLine26());
      that.unHighlightElement(ECE312TraditionalPlanelement, "EngineeringDesign");
      var category = that.removeFromClicked("ECE312TraditionalPlan", "EngineeringDesign");
   if (category != "") { 
@@ -5953,15 +5445,15 @@ ECE330TraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine32());
-      that.addLine(getLine39());
+      that.addLine(getLine27());
+      that.addLine(getLine34());
      that.highlightElement(ECE330TraditionalPlanelement, "EngineeringSciences");
      that.addToClicked("ECE330TraditionalPlan", "EngineeringSciences");
       ECE330TraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine32());
-      that.removeLine(getLine39());
+      that.removeLine(getLine27());
+      that.removeLine(getLine34());
      that.unHighlightElement(ECE330TraditionalPlanelement, "EngineeringSciences");
      var category = that.removeFromClicked("ECE330TraditionalPlan", "EngineeringSciences");
   if (category != "") { 
@@ -5991,15 +5483,15 @@ ECE340TraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine31());
-      that.addLine(getLine33());
+      that.addLine(getLine26());
+      that.addLine(getLine28());
      that.highlightElement(ECE340TraditionalPlanelement, "EngineeringSciences");
      that.addToClicked("ECE340TraditionalPlan", "EngineeringSciences");
       ECE340TraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine31());
-      that.removeLine(getLine33());
+      that.removeLine(getLine26());
+      that.removeLine(getLine28());
      that.unHighlightElement(ECE340TraditionalPlanelement, "EngineeringSciences");
      var category = that.removeFromClicked("ECE340TraditionalPlan", "EngineeringSciences");
   if (category != "") { 
@@ -6029,17 +5521,17 @@ ECE370TraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine34());
-      that.addLine(getLine35());
-      that.addLine(getLine36());
+      that.addLine(getLine29());
+      that.addLine(getLine30());
+      that.addLine(getLine31());
      that.highlightElement(ECE370TraditionalPlanelement, "EngineeringSciences");
      that.addToClicked("ECE370TraditionalPlan", "EngineeringSciences");
       ECE370TraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine34());
-      that.removeLine(getLine35());
-      that.removeLine(getLine36());
+      that.removeLine(getLine29());
+      that.removeLine(getLine30());
+      that.removeLine(getLine31());
      that.unHighlightElement(ECE370TraditionalPlanelement, "EngineeringSciences");
      var category = that.removeFromClicked("ECE370TraditionalPlan", "EngineeringSciences");
   if (category != "") { 
@@ -6069,13 +5561,13 @@ MATH309TraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine37());
+      that.addLine(getLine32());
      that.highlightElement(MATH309TraditionalPlanelement, "Math");
      that.addToClicked("MATH309TraditionalPlan", "Math");
       MATH309TraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine37());
+      that.removeLine(getLine32());
      that.unHighlightElement(MATH309TraditionalPlanelement, "Math");
      var category = that.removeFromClicked("MATH309TraditionalPlan", "Math");
   if (category != "") { 
@@ -6105,13 +5597,13 @@ ECE303TraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine38());
+      that.addLine(getLine33());
      that.highlightElement(ECE303TraditionalPlanelement, "EngineeringSciences");
      that.addToClicked("ECE303TraditionalPlan", "EngineeringSciences");
       ECE303TraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine38());
+      that.removeLine(getLine33());
      that.unHighlightElement(ECE303TraditionalPlanelement, "EngineeringSciences");
      var category = that.removeFromClicked("ECE303TraditionalPlan", "EngineeringSciences");
   if (category != "") { 
@@ -6141,13 +5633,13 @@ ECE332TraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine39());
+      that.addLine(getLine34());
      that.highlightElement(ECE332TraditionalPlanelement, "EngineeringSciences");
      that.addToClicked("ECE332TraditionalPlan", "EngineeringSciences");
       ECE332TraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine39());
+      that.removeLine(getLine34());
      that.unHighlightElement(ECE332TraditionalPlanelement, "EngineeringSciences");
      var category = that.removeFromClicked("ECE332TraditionalPlan", "EngineeringSciences");
   if (category != "") { 
@@ -6177,13 +5669,13 @@ ECE342TraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine40());
+      that.addLine(getLine35());
      that.highlightElement(ECE342TraditionalPlanelement, "Math");
      that.addToClicked("ECE342TraditionalPlan", "Math");
       ECE342TraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine40());
+      that.removeLine(getLine35());
      that.unHighlightElement(ECE342TraditionalPlanelement, "Math");
      var category = that.removeFromClicked("ECE342TraditionalPlan", "Math");
   if (category != "") { 
@@ -6213,15 +5705,15 @@ ECE360TraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine41());
-      that.addLine(getLine42());
+      that.addLine(getLine36());
+      that.addLine(getLine37());
      that.highlightElement(ECE360TraditionalPlanelement, "EngineeringSciences");
      that.addToClicked("ECE360TraditionalPlan", "EngineeringSciences");
       ECE360TraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine41());
-      that.removeLine(getLine42());
+      that.removeLine(getLine36());
+      that.removeLine(getLine37());
      that.unHighlightElement(ECE360TraditionalPlanelement, "EngineeringSciences");
      var category = that.removeFromClicked("ECE360TraditionalPlan", "EngineeringSciences");
   if (category != "") { 
@@ -6251,13 +5743,13 @@ ECE380TraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine43());
+      that.addLine(getLine38());
      that.highlightElement(ECE380TraditionalPlanelement, "EngineeringSciences");
      that.addToClicked("ECE380TraditionalPlan", "EngineeringSciences");
       ECE380TraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine43());
+      that.removeLine(getLine38());
      that.unHighlightElement(ECE380TraditionalPlanelement, "EngineeringSciences");
      var category = that.removeFromClicked("ECE380TraditionalPlan", "EngineeringSciences");
   if (category != "") { 
@@ -6287,13 +5779,13 @@ ECE490TraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine49());
+      that.addLine(getLine39());
      that.highlightElement(ECE490TraditionalPlanelement, "EngineeringDesign");
      that.addToClicked("ECE490TraditionalPlan", "EngineeringDesign");
       ECE490TraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine49());
+      that.removeLine(getLine39());
      that.unHighlightElement(ECE490TraditionalPlanelement, "EngineeringDesign");
      var category = that.removeFromClicked("ECE490TraditionalPlan", "EngineeringDesign");
   if (category != "") { 
@@ -6334,162 +5826,6 @@ ENGG404TraditionalPlanTime = currentTime;
      that.highlightElement(ENGG404TraditionalPlanelement, category);
 }
       ENGG404TraditionalPlanflag=false
-  }
-};
-$scope.CHE243TraditionalPlanListener = function () {
-var currentTime = new Date().getTime();
-if (currentTime - CHE243TraditionalPlanTime <= 200) { 
-        CHE243TraditionalPlanTime = currentTime;
-        return;
-    }
-CHE243TraditionalPlanTime = currentTime;
-  var CHE243TraditionalPlanelement = document.getElementById("CHE243TraditionalPlan");
- if (!CHE243TraditionalPlanflag) {
-     if (that.TraditionalPlanClickedMap.get("CHE243TraditionalPlan").length > 0) { 
- var trueCounter = 0;
-          for (let i = 0; i < that.TraditionalPlanClickedMap.get("CHE243TraditionalPlan").length; i++) { 
-        var cate = that.TraditionalPlanClickedMap.get("CHE243TraditionalPlan")[i];
-        if (CHE243TraditionalPlanelement.classList.contains(cate + "-highlighted")) {
-            trueCounter++;
-            that.unHighlightElement(CHE243TraditionalPlanelement, cate);
-        }
-    }
-    if (trueCounter > 0) {
-        return;
-    }}
-      that.addLine(getLine14());
-      that.addLine(getLine44());
-     that.highlightElement(CHE243TraditionalPlanelement, "EngineeringSciences");
-     that.addToClicked("CHE243TraditionalPlan", "EngineeringSciences");
-      CHE243TraditionalPlanflag=true
-  }
- else {
-      that.removeLine(getLine14());
-      that.removeLine(getLine44());
-     that.unHighlightElement(CHE243TraditionalPlanelement, "EngineeringSciences");
-     var category = that.removeFromClicked("CHE243TraditionalPlan", "EngineeringSciences");
-  if (category != "") { 
-     that.highlightElement(CHE243TraditionalPlanelement, category);
-}
-      CHE243TraditionalPlanflag=false
-  }
-};
-$scope.MATE201TraditionalPlanListener = function () {
-var currentTime = new Date().getTime();
-if (currentTime - MATE201TraditionalPlanTime <= 200) { 
-        MATE201TraditionalPlanTime = currentTime;
-        return;
-    }
-MATE201TraditionalPlanTime = currentTime;
-  var MATE201TraditionalPlanelement = document.getElementById("MATE201TraditionalPlan");
- if (!MATE201TraditionalPlanflag) {
-     if (that.TraditionalPlanClickedMap.get("MATE201TraditionalPlan").length > 0) { 
- var trueCounter = 0;
-          for (let i = 0; i < that.TraditionalPlanClickedMap.get("MATE201TraditionalPlan").length; i++) { 
-        var cate = that.TraditionalPlanClickedMap.get("MATE201TraditionalPlan")[i];
-        if (MATE201TraditionalPlanelement.classList.contains(cate + "-highlighted")) {
-            trueCounter++;
-            that.unHighlightElement(MATE201TraditionalPlanelement, cate);
-        }
-    }
-    if (trueCounter > 0) {
-        return;
-    }}
-      that.addLine(getLine15());
-      that.addLine(getLine45());
-     that.highlightElement(MATE201TraditionalPlanelement, "NaturalSciences");
-     that.addToClicked("MATE201TraditionalPlan", "NaturalSciences");
-      MATE201TraditionalPlanflag=true
-  }
- else {
-      that.removeLine(getLine15());
-      that.removeLine(getLine45());
-     that.unHighlightElement(MATE201TraditionalPlanelement, "NaturalSciences");
-     var category = that.removeFromClicked("MATE201TraditionalPlan", "NaturalSciences");
-  if (category != "") { 
-     that.highlightElement(MATE201TraditionalPlanelement, category);
-}
-      MATE201TraditionalPlanflag=false
-  }
-};
-$scope.MECE250TraditionalPlanListener = function () {
-var currentTime = new Date().getTime();
-if (currentTime - MECE250TraditionalPlanTime <= 200) { 
-        MECE250TraditionalPlanTime = currentTime;
-        return;
-    }
-MECE250TraditionalPlanTime = currentTime;
-  var MECE250TraditionalPlanelement = document.getElementById("MECE250TraditionalPlan");
- if (!MECE250TraditionalPlanflag) {
-     if (that.TraditionalPlanClickedMap.get("MECE250TraditionalPlan").length > 0) { 
- var trueCounter = 0;
-          for (let i = 0; i < that.TraditionalPlanClickedMap.get("MECE250TraditionalPlan").length; i++) { 
-        var cate = that.TraditionalPlanClickedMap.get("MECE250TraditionalPlan")[i];
-        if (MECE250TraditionalPlanelement.classList.contains(cate + "-highlighted")) {
-            trueCounter++;
-            that.unHighlightElement(MECE250TraditionalPlanelement, cate);
-        }
-    }
-    if (trueCounter > 0) {
-        return;
-    }}
-      that.addLine(getLine16());
-      that.addLine(getLine17());
-      that.addLine(getLine18());
-      that.addLine(getLine46());
-      that.addLine(getLine47());
-      that.addLine(getLine48());
-     that.highlightElement(MECE250TraditionalPlanelement, "EngineeringSciences");
-     that.addToClicked("MECE250TraditionalPlan", "EngineeringSciences");
-      MECE250TraditionalPlanflag=true
-  }
- else {
-      that.removeLine(getLine16());
-      that.removeLine(getLine17());
-      that.removeLine(getLine18());
-      that.removeLine(getLine46());
-      that.removeLine(getLine47());
-      that.removeLine(getLine48());
-     that.unHighlightElement(MECE250TraditionalPlanelement, "EngineeringSciences");
-     var category = that.removeFromClicked("MECE250TraditionalPlan", "EngineeringSciences");
-  if (category != "") { 
-     that.highlightElement(MECE250TraditionalPlanelement, category);
-}
-      MECE250TraditionalPlanflag=false
-  }
-};
-$scope.ProgramTechnicalElectiveTraditionalPlan0Listener = function () {
-var currentTime = new Date().getTime();
-if (currentTime - ProgramTechnicalElectiveTraditionalPlan0Time <= 200) { 
-        ProgramTechnicalElectiveTraditionalPlan0Time = currentTime;
-        return;
-    }
-ProgramTechnicalElectiveTraditionalPlan0Time = currentTime;
-  var ProgramTechnicalElectiveTraditionalPlan0element = document.getElementById("ProgramTechnicalElectiveTraditionalPlan0");
- if (!ProgramTechnicalElectiveTraditionalPlan0flag) {
-     if (that.TraditionalPlanClickedMap.get("ProgramTechnicalElectiveTraditionalPlan0").length > 0) { 
- var trueCounter = 0;
-          for (let i = 0; i < that.TraditionalPlanClickedMap.get("ProgramTechnicalElectiveTraditionalPlan0").length; i++) { 
-        var cate = that.TraditionalPlanClickedMap.get("ProgramTechnicalElectiveTraditionalPlan0")[i];
-        if (ProgramTechnicalElectiveTraditionalPlan0element.classList.contains(cate + "-highlighted")) {
-            trueCounter++;
-            that.unHighlightElement(ProgramTechnicalElectiveTraditionalPlan0element, cate);
-        }
-    }
-    if (trueCounter > 0) {
-        return;
-    }}
-     that.highlightElement(ProgramTechnicalElectiveTraditionalPlan0element, "PROG");
-     that.addToClicked("ProgramTechnicalElectiveTraditionalPlan0", "PROG");
-      ProgramTechnicalElectiveTraditionalPlan0flag=true
-  }
- else {
-     that.unHighlightElement(ProgramTechnicalElectiveTraditionalPlan0element, "PROG");
-     var category = that.removeFromClicked("ProgramTechnicalElectiveTraditionalPlan0", "PROG");
-  if (category != "") { 
-     that.highlightElement(ProgramTechnicalElectiveTraditionalPlan0element, category);
-}
-      ProgramTechnicalElectiveTraditionalPlan0flag=false
   }
 };
 $scope.ProgramTechnicalElectiveTraditionalPlan1Listener = function () {
@@ -6558,6 +5894,74 @@ ProgramTechnicalElectiveTraditionalPlan2Time = currentTime;
      that.highlightElement(ProgramTechnicalElectiveTraditionalPlan2element, category);
 }
       ProgramTechnicalElectiveTraditionalPlan2flag=false
+  }
+};
+$scope.ProgramTechnicalElectiveTraditionalPlan3Listener = function () {
+var currentTime = new Date().getTime();
+if (currentTime - ProgramTechnicalElectiveTraditionalPlan3Time <= 200) { 
+        ProgramTechnicalElectiveTraditionalPlan3Time = currentTime;
+        return;
+    }
+ProgramTechnicalElectiveTraditionalPlan3Time = currentTime;
+  var ProgramTechnicalElectiveTraditionalPlan3element = document.getElementById("ProgramTechnicalElectiveTraditionalPlan3");
+ if (!ProgramTechnicalElectiveTraditionalPlan3flag) {
+     if (that.TraditionalPlanClickedMap.get("ProgramTechnicalElectiveTraditionalPlan3").length > 0) { 
+ var trueCounter = 0;
+          for (let i = 0; i < that.TraditionalPlanClickedMap.get("ProgramTechnicalElectiveTraditionalPlan3").length; i++) { 
+        var cate = that.TraditionalPlanClickedMap.get("ProgramTechnicalElectiveTraditionalPlan3")[i];
+        if (ProgramTechnicalElectiveTraditionalPlan3element.classList.contains(cate + "-highlighted")) {
+            trueCounter++;
+            that.unHighlightElement(ProgramTechnicalElectiveTraditionalPlan3element, cate);
+        }
+    }
+    if (trueCounter > 0) {
+        return;
+    }}
+     that.highlightElement(ProgramTechnicalElectiveTraditionalPlan3element, "PROG");
+     that.addToClicked("ProgramTechnicalElectiveTraditionalPlan3", "PROG");
+      ProgramTechnicalElectiveTraditionalPlan3flag=true
+  }
+ else {
+     that.unHighlightElement(ProgramTechnicalElectiveTraditionalPlan3element, "PROG");
+     var category = that.removeFromClicked("ProgramTechnicalElectiveTraditionalPlan3", "PROG");
+  if (category != "") { 
+     that.highlightElement(ProgramTechnicalElectiveTraditionalPlan3element, category);
+}
+      ProgramTechnicalElectiveTraditionalPlan3flag=false
+  }
+};
+$scope.ProgramTechnicalElectiveTraditionalPlan4Listener = function () {
+var currentTime = new Date().getTime();
+if (currentTime - ProgramTechnicalElectiveTraditionalPlan4Time <= 200) { 
+        ProgramTechnicalElectiveTraditionalPlan4Time = currentTime;
+        return;
+    }
+ProgramTechnicalElectiveTraditionalPlan4Time = currentTime;
+  var ProgramTechnicalElectiveTraditionalPlan4element = document.getElementById("ProgramTechnicalElectiveTraditionalPlan4");
+ if (!ProgramTechnicalElectiveTraditionalPlan4flag) {
+     if (that.TraditionalPlanClickedMap.get("ProgramTechnicalElectiveTraditionalPlan4").length > 0) { 
+ var trueCounter = 0;
+          for (let i = 0; i < that.TraditionalPlanClickedMap.get("ProgramTechnicalElectiveTraditionalPlan4").length; i++) { 
+        var cate = that.TraditionalPlanClickedMap.get("ProgramTechnicalElectiveTraditionalPlan4")[i];
+        if (ProgramTechnicalElectiveTraditionalPlan4element.classList.contains(cate + "-highlighted")) {
+            trueCounter++;
+            that.unHighlightElement(ProgramTechnicalElectiveTraditionalPlan4element, cate);
+        }
+    }
+    if (trueCounter > 0) {
+        return;
+    }}
+     that.highlightElement(ProgramTechnicalElectiveTraditionalPlan4element, "PROG");
+     that.addToClicked("ProgramTechnicalElectiveTraditionalPlan4", "PROG");
+      ProgramTechnicalElectiveTraditionalPlan4flag=true
+  }
+ else {
+     that.unHighlightElement(ProgramTechnicalElectiveTraditionalPlan4element, "PROG");
+     var category = that.removeFromClicked("ProgramTechnicalElectiveTraditionalPlan4", "PROG");
+  if (category != "") { 
+     that.highlightElement(ProgramTechnicalElectiveTraditionalPlan4element, category);
+}
+      ProgramTechnicalElectiveTraditionalPlan4flag=false
   }
 };
 $scope.ENGM310TraditionalPlanListener = function () {
@@ -6683,13 +6087,13 @@ ECE491TraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine49());
+      that.addLine(getLine39());
      that.highlightElement(ECE491TraditionalPlanelement, "EngineeringDesign");
      that.addToClicked("ECE491TraditionalPlan", "EngineeringDesign");
       ECE491TraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine49());
+      that.removeLine(getLine39());
      that.unHighlightElement(ECE491TraditionalPlanelement, "EngineeringDesign");
      var category = that.removeFromClicked("ECE491TraditionalPlan", "EngineeringDesign");
   if (category != "") { 
@@ -6732,74 +6136,6 @@ ITSElectiveTraditionalPlan0Time = currentTime;
       ITSElectiveTraditionalPlan0flag=false
   }
 };
-$scope.ProgramTechnicalElectiveTraditionalPlan3Listener = function () {
-var currentTime = new Date().getTime();
-if (currentTime - ProgramTechnicalElectiveTraditionalPlan3Time <= 200) { 
-        ProgramTechnicalElectiveTraditionalPlan3Time = currentTime;
-        return;
-    }
-ProgramTechnicalElectiveTraditionalPlan3Time = currentTime;
-  var ProgramTechnicalElectiveTraditionalPlan3element = document.getElementById("ProgramTechnicalElectiveTraditionalPlan3");
- if (!ProgramTechnicalElectiveTraditionalPlan3flag) {
-     if (that.TraditionalPlanClickedMap.get("ProgramTechnicalElectiveTraditionalPlan3").length > 0) { 
- var trueCounter = 0;
-          for (let i = 0; i < that.TraditionalPlanClickedMap.get("ProgramTechnicalElectiveTraditionalPlan3").length; i++) { 
-        var cate = that.TraditionalPlanClickedMap.get("ProgramTechnicalElectiveTraditionalPlan3")[i];
-        if (ProgramTechnicalElectiveTraditionalPlan3element.classList.contains(cate + "-highlighted")) {
-            trueCounter++;
-            that.unHighlightElement(ProgramTechnicalElectiveTraditionalPlan3element, cate);
-        }
-    }
-    if (trueCounter > 0) {
-        return;
-    }}
-     that.highlightElement(ProgramTechnicalElectiveTraditionalPlan3element, "PROG");
-     that.addToClicked("ProgramTechnicalElectiveTraditionalPlan3", "PROG");
-      ProgramTechnicalElectiveTraditionalPlan3flag=true
-  }
- else {
-     that.unHighlightElement(ProgramTechnicalElectiveTraditionalPlan3element, "PROG");
-     var category = that.removeFromClicked("ProgramTechnicalElectiveTraditionalPlan3", "PROG");
-  if (category != "") { 
-     that.highlightElement(ProgramTechnicalElectiveTraditionalPlan3element, category);
-}
-      ProgramTechnicalElectiveTraditionalPlan3flag=false
-  }
-};
-$scope.ProgramTechnicalElectiveTraditionalPlan4Listener = function () {
-var currentTime = new Date().getTime();
-if (currentTime - ProgramTechnicalElectiveTraditionalPlan4Time <= 200) { 
-        ProgramTechnicalElectiveTraditionalPlan4Time = currentTime;
-        return;
-    }
-ProgramTechnicalElectiveTraditionalPlan4Time = currentTime;
-  var ProgramTechnicalElectiveTraditionalPlan4element = document.getElementById("ProgramTechnicalElectiveTraditionalPlan4");
- if (!ProgramTechnicalElectiveTraditionalPlan4flag) {
-     if (that.TraditionalPlanClickedMap.get("ProgramTechnicalElectiveTraditionalPlan4").length > 0) { 
- var trueCounter = 0;
-          for (let i = 0; i < that.TraditionalPlanClickedMap.get("ProgramTechnicalElectiveTraditionalPlan4").length; i++) { 
-        var cate = that.TraditionalPlanClickedMap.get("ProgramTechnicalElectiveTraditionalPlan4")[i];
-        if (ProgramTechnicalElectiveTraditionalPlan4element.classList.contains(cate + "-highlighted")) {
-            trueCounter++;
-            that.unHighlightElement(ProgramTechnicalElectiveTraditionalPlan4element, cate);
-        }
-    }
-    if (trueCounter > 0) {
-        return;
-    }}
-     that.highlightElement(ProgramTechnicalElectiveTraditionalPlan4element, "PROG");
-     that.addToClicked("ProgramTechnicalElectiveTraditionalPlan4", "PROG");
-      ProgramTechnicalElectiveTraditionalPlan4flag=true
-  }
- else {
-     that.unHighlightElement(ProgramTechnicalElectiveTraditionalPlan4element, "PROG");
-     var category = that.removeFromClicked("ProgramTechnicalElectiveTraditionalPlan4", "PROG");
-  if (category != "") { 
-     that.highlightElement(ProgramTechnicalElectiveTraditionalPlan4element, category);
-}
-      ProgramTechnicalElectiveTraditionalPlan4flag=false
-  }
-};
 $scope.ProgramTechnicalElectiveTraditionalPlan5Listener = function () {
 var currentTime = new Date().getTime();
 if (currentTime - ProgramTechnicalElectiveTraditionalPlan5Time <= 200) { 
@@ -6832,6 +6168,74 @@ ProgramTechnicalElectiveTraditionalPlan5Time = currentTime;
      that.highlightElement(ProgramTechnicalElectiveTraditionalPlan5element, category);
 }
       ProgramTechnicalElectiveTraditionalPlan5flag=false
+  }
+};
+$scope.ProgramTechnicalElectiveTraditionalPlan6Listener = function () {
+var currentTime = new Date().getTime();
+if (currentTime - ProgramTechnicalElectiveTraditionalPlan6Time <= 200) { 
+        ProgramTechnicalElectiveTraditionalPlan6Time = currentTime;
+        return;
+    }
+ProgramTechnicalElectiveTraditionalPlan6Time = currentTime;
+  var ProgramTechnicalElectiveTraditionalPlan6element = document.getElementById("ProgramTechnicalElectiveTraditionalPlan6");
+ if (!ProgramTechnicalElectiveTraditionalPlan6flag) {
+     if (that.TraditionalPlanClickedMap.get("ProgramTechnicalElectiveTraditionalPlan6").length > 0) { 
+ var trueCounter = 0;
+          for (let i = 0; i < that.TraditionalPlanClickedMap.get("ProgramTechnicalElectiveTraditionalPlan6").length; i++) { 
+        var cate = that.TraditionalPlanClickedMap.get("ProgramTechnicalElectiveTraditionalPlan6")[i];
+        if (ProgramTechnicalElectiveTraditionalPlan6element.classList.contains(cate + "-highlighted")) {
+            trueCounter++;
+            that.unHighlightElement(ProgramTechnicalElectiveTraditionalPlan6element, cate);
+        }
+    }
+    if (trueCounter > 0) {
+        return;
+    }}
+     that.highlightElement(ProgramTechnicalElectiveTraditionalPlan6element, "PROG");
+     that.addToClicked("ProgramTechnicalElectiveTraditionalPlan6", "PROG");
+      ProgramTechnicalElectiveTraditionalPlan6flag=true
+  }
+ else {
+     that.unHighlightElement(ProgramTechnicalElectiveTraditionalPlan6element, "PROG");
+     var category = that.removeFromClicked("ProgramTechnicalElectiveTraditionalPlan6", "PROG");
+  if (category != "") { 
+     that.highlightElement(ProgramTechnicalElectiveTraditionalPlan6element, category);
+}
+      ProgramTechnicalElectiveTraditionalPlan6flag=false
+  }
+};
+$scope.ProgramTechnicalElectiveTraditionalPlan7Listener = function () {
+var currentTime = new Date().getTime();
+if (currentTime - ProgramTechnicalElectiveTraditionalPlan7Time <= 200) { 
+        ProgramTechnicalElectiveTraditionalPlan7Time = currentTime;
+        return;
+    }
+ProgramTechnicalElectiveTraditionalPlan7Time = currentTime;
+  var ProgramTechnicalElectiveTraditionalPlan7element = document.getElementById("ProgramTechnicalElectiveTraditionalPlan7");
+ if (!ProgramTechnicalElectiveTraditionalPlan7flag) {
+     if (that.TraditionalPlanClickedMap.get("ProgramTechnicalElectiveTraditionalPlan7").length > 0) { 
+ var trueCounter = 0;
+          for (let i = 0; i < that.TraditionalPlanClickedMap.get("ProgramTechnicalElectiveTraditionalPlan7").length; i++) { 
+        var cate = that.TraditionalPlanClickedMap.get("ProgramTechnicalElectiveTraditionalPlan7")[i];
+        if (ProgramTechnicalElectiveTraditionalPlan7element.classList.contains(cate + "-highlighted")) {
+            trueCounter++;
+            that.unHighlightElement(ProgramTechnicalElectiveTraditionalPlan7element, cate);
+        }
+    }
+    if (trueCounter > 0) {
+        return;
+    }}
+     that.highlightElement(ProgramTechnicalElectiveTraditionalPlan7element, "PROG");
+     that.addToClicked("ProgramTechnicalElectiveTraditionalPlan7", "PROG");
+      ProgramTechnicalElectiveTraditionalPlan7flag=true
+  }
+ else {
+     that.unHighlightElement(ProgramTechnicalElectiveTraditionalPlan7element, "PROG");
+     var category = that.removeFromClicked("ProgramTechnicalElectiveTraditionalPlan7", "PROG");
+  if (category != "") { 
+     that.highlightElement(ProgramTechnicalElectiveTraditionalPlan7element, category);
+}
+      ProgramTechnicalElectiveTraditionalPlan7flag=false
   }
 };
 $scope.CHEM103TraditionalPlanRCListener = function () {
@@ -7202,9 +6606,9 @@ $scope.MATH209TraditionalPlanRCListener = function () {
       MATH209TraditionalPlanrflag=false
   }
 };
-$scope.CHE243TraditionalPlanRCListener = function () {
-  var element = document.getElementById("CHE243TraditionalPlandesc");
- if (!CHE243TraditionalPlanrflag) {
+$scope.ProgramTechnicalElectiveTraditionalPlan0RCListener = function () {
+  var element = document.getElementById("ProgramTechnicalElectiveTraditionalPlan0desc");
+ if (!ProgramTechnicalElectiveTraditionalPlan0rflag) {
        if (element.classList.contains("tooltiptextleft")) {
         element.classList.remove("tooltiptextleft");
         element.classList.add("tooltiptextleft-locked");
@@ -7212,7 +6616,7 @@ $scope.CHE243TraditionalPlanRCListener = function () {
         element.classList.remove("tooltiptextright");
         element.classList.add("tooltiptextright-locked");
     }
-      CHE243TraditionalPlanrflag=true
+      ProgramTechnicalElectiveTraditionalPlan0rflag=true
   }
  else {
        if (element.classList.contains("tooltiptextleft-locked")) {
@@ -7222,53 +6626,7 @@ $scope.CHE243TraditionalPlanRCListener = function () {
         element.classList.remove("tooltiptextright-locked");
         element.classList.add("tooltiptextright");
     }
-      CHE243TraditionalPlanrflag=false
-  }
-};
-$scope.MATE201TraditionalPlanRCListener = function () {
-  var element = document.getElementById("MATE201TraditionalPlandesc");
- if (!MATE201TraditionalPlanrflag) {
-       if (element.classList.contains("tooltiptextleft")) {
-        element.classList.remove("tooltiptextleft");
-        element.classList.add("tooltiptextleft-locked");
-    } else {
-        element.classList.remove("tooltiptextright");
-        element.classList.add("tooltiptextright-locked");
-    }
-      MATE201TraditionalPlanrflag=true
-  }
- else {
-       if (element.classList.contains("tooltiptextleft-locked")) {
-        element.classList.remove("tooltiptextleft-locked");
-        element.classList.add("tooltiptextleft");
-    } else {
-        element.classList.remove("tooltiptextright-locked");
-        element.classList.add("tooltiptextright");
-    }
-      MATE201TraditionalPlanrflag=false
-  }
-};
-$scope.MECE250TraditionalPlanRCListener = function () {
-  var element = document.getElementById("MECE250TraditionalPlandesc");
- if (!MECE250TraditionalPlanrflag) {
-       if (element.classList.contains("tooltiptextleft")) {
-        element.classList.remove("tooltiptextleft");
-        element.classList.add("tooltiptextleft-locked");
-    } else {
-        element.classList.remove("tooltiptextright");
-        element.classList.add("tooltiptextright-locked");
-    }
-      MECE250TraditionalPlanrflag=true
-  }
- else {
-       if (element.classList.contains("tooltiptextleft-locked")) {
-        element.classList.remove("tooltiptextleft-locked");
-        element.classList.add("tooltiptextleft");
-    } else {
-        element.classList.remove("tooltiptextright-locked");
-        element.classList.add("tooltiptextright");
-    }
-      MECE250TraditionalPlanrflag=false
+      ProgramTechnicalElectiveTraditionalPlan0rflag=false
   }
 };
 $scope.ComplementaryElectiveTraditionalPlan0RCListener = function () {
@@ -7731,98 +7089,6 @@ $scope.ENGG404TraditionalPlanRCListener = function () {
       ENGG404TraditionalPlanrflag=false
   }
 };
-$scope.CHE243TraditionalPlanRCListener = function () {
-  var element = document.getElementById("CHE243TraditionalPlandesc");
- if (!CHE243TraditionalPlanrflag) {
-       if (element.classList.contains("tooltiptextleft")) {
-        element.classList.remove("tooltiptextleft");
-        element.classList.add("tooltiptextleft-locked");
-    } else {
-        element.classList.remove("tooltiptextright");
-        element.classList.add("tooltiptextright-locked");
-    }
-      CHE243TraditionalPlanrflag=true
-  }
- else {
-       if (element.classList.contains("tooltiptextleft-locked")) {
-        element.classList.remove("tooltiptextleft-locked");
-        element.classList.add("tooltiptextleft");
-    } else {
-        element.classList.remove("tooltiptextright-locked");
-        element.classList.add("tooltiptextright");
-    }
-      CHE243TraditionalPlanrflag=false
-  }
-};
-$scope.MATE201TraditionalPlanRCListener = function () {
-  var element = document.getElementById("MATE201TraditionalPlandesc");
- if (!MATE201TraditionalPlanrflag) {
-       if (element.classList.contains("tooltiptextleft")) {
-        element.classList.remove("tooltiptextleft");
-        element.classList.add("tooltiptextleft-locked");
-    } else {
-        element.classList.remove("tooltiptextright");
-        element.classList.add("tooltiptextright-locked");
-    }
-      MATE201TraditionalPlanrflag=true
-  }
- else {
-       if (element.classList.contains("tooltiptextleft-locked")) {
-        element.classList.remove("tooltiptextleft-locked");
-        element.classList.add("tooltiptextleft");
-    } else {
-        element.classList.remove("tooltiptextright-locked");
-        element.classList.add("tooltiptextright");
-    }
-      MATE201TraditionalPlanrflag=false
-  }
-};
-$scope.MECE250TraditionalPlanRCListener = function () {
-  var element = document.getElementById("MECE250TraditionalPlandesc");
- if (!MECE250TraditionalPlanrflag) {
-       if (element.classList.contains("tooltiptextleft")) {
-        element.classList.remove("tooltiptextleft");
-        element.classList.add("tooltiptextleft-locked");
-    } else {
-        element.classList.remove("tooltiptextright");
-        element.classList.add("tooltiptextright-locked");
-    }
-      MECE250TraditionalPlanrflag=true
-  }
- else {
-       if (element.classList.contains("tooltiptextleft-locked")) {
-        element.classList.remove("tooltiptextleft-locked");
-        element.classList.add("tooltiptextleft");
-    } else {
-        element.classList.remove("tooltiptextright-locked");
-        element.classList.add("tooltiptextright");
-    }
-      MECE250TraditionalPlanrflag=false
-  }
-};
-$scope.ProgramTechnicalElectiveTraditionalPlan0RCListener = function () {
-  var element = document.getElementById("ProgramTechnicalElectiveTraditionalPlan0desc");
- if (!ProgramTechnicalElectiveTraditionalPlan0rflag) {
-       if (element.classList.contains("tooltiptextleft")) {
-        element.classList.remove("tooltiptextleft");
-        element.classList.add("tooltiptextleft-locked");
-    } else {
-        element.classList.remove("tooltiptextright");
-        element.classList.add("tooltiptextright-locked");
-    }
-      ProgramTechnicalElectiveTraditionalPlan0rflag=true
-  }
- else {
-       if (element.classList.contains("tooltiptextleft-locked")) {
-        element.classList.remove("tooltiptextleft-locked");
-        element.classList.add("tooltiptextleft");
-    } else {
-        element.classList.remove("tooltiptextright-locked");
-        element.classList.add("tooltiptextright");
-    }
-      ProgramTechnicalElectiveTraditionalPlan0rflag=false
-  }
-};
 $scope.ProgramTechnicalElectiveTraditionalPlan1RCListener = function () {
   var element = document.getElementById("ProgramTechnicalElectiveTraditionalPlan1desc");
  if (!ProgramTechnicalElectiveTraditionalPlan1rflag) {
@@ -7867,6 +7133,52 @@ $scope.ProgramTechnicalElectiveTraditionalPlan2RCListener = function () {
         element.classList.add("tooltiptextright");
     }
       ProgramTechnicalElectiveTraditionalPlan2rflag=false
+  }
+};
+$scope.ProgramTechnicalElectiveTraditionalPlan3RCListener = function () {
+  var element = document.getElementById("ProgramTechnicalElectiveTraditionalPlan3desc");
+ if (!ProgramTechnicalElectiveTraditionalPlan3rflag) {
+       if (element.classList.contains("tooltiptextleft")) {
+        element.classList.remove("tooltiptextleft");
+        element.classList.add("tooltiptextleft-locked");
+    } else {
+        element.classList.remove("tooltiptextright");
+        element.classList.add("tooltiptextright-locked");
+    }
+      ProgramTechnicalElectiveTraditionalPlan3rflag=true
+  }
+ else {
+       if (element.classList.contains("tooltiptextleft-locked")) {
+        element.classList.remove("tooltiptextleft-locked");
+        element.classList.add("tooltiptextleft");
+    } else {
+        element.classList.remove("tooltiptextright-locked");
+        element.classList.add("tooltiptextright");
+    }
+      ProgramTechnicalElectiveTraditionalPlan3rflag=false
+  }
+};
+$scope.ProgramTechnicalElectiveTraditionalPlan4RCListener = function () {
+  var element = document.getElementById("ProgramTechnicalElectiveTraditionalPlan4desc");
+ if (!ProgramTechnicalElectiveTraditionalPlan4rflag) {
+       if (element.classList.contains("tooltiptextleft")) {
+        element.classList.remove("tooltiptextleft");
+        element.classList.add("tooltiptextleft-locked");
+    } else {
+        element.classList.remove("tooltiptextright");
+        element.classList.add("tooltiptextright-locked");
+    }
+      ProgramTechnicalElectiveTraditionalPlan4rflag=true
+  }
+ else {
+       if (element.classList.contains("tooltiptextleft-locked")) {
+        element.classList.remove("tooltiptextleft-locked");
+        element.classList.add("tooltiptextleft");
+    } else {
+        element.classList.remove("tooltiptextright-locked");
+        element.classList.add("tooltiptextright");
+    }
+      ProgramTechnicalElectiveTraditionalPlan4rflag=false
   }
 };
 $scope.ENGM310TraditionalPlanRCListener = function () {
@@ -7984,52 +7296,6 @@ $scope.ITSElectiveTraditionalPlan0RCListener = function () {
       ITSElectiveTraditionalPlan0rflag=false
   }
 };
-$scope.ProgramTechnicalElectiveTraditionalPlan3RCListener = function () {
-  var element = document.getElementById("ProgramTechnicalElectiveTraditionalPlan3desc");
- if (!ProgramTechnicalElectiveTraditionalPlan3rflag) {
-       if (element.classList.contains("tooltiptextleft")) {
-        element.classList.remove("tooltiptextleft");
-        element.classList.add("tooltiptextleft-locked");
-    } else {
-        element.classList.remove("tooltiptextright");
-        element.classList.add("tooltiptextright-locked");
-    }
-      ProgramTechnicalElectiveTraditionalPlan3rflag=true
-  }
- else {
-       if (element.classList.contains("tooltiptextleft-locked")) {
-        element.classList.remove("tooltiptextleft-locked");
-        element.classList.add("tooltiptextleft");
-    } else {
-        element.classList.remove("tooltiptextright-locked");
-        element.classList.add("tooltiptextright");
-    }
-      ProgramTechnicalElectiveTraditionalPlan3rflag=false
-  }
-};
-$scope.ProgramTechnicalElectiveTraditionalPlan4RCListener = function () {
-  var element = document.getElementById("ProgramTechnicalElectiveTraditionalPlan4desc");
- if (!ProgramTechnicalElectiveTraditionalPlan4rflag) {
-       if (element.classList.contains("tooltiptextleft")) {
-        element.classList.remove("tooltiptextleft");
-        element.classList.add("tooltiptextleft-locked");
-    } else {
-        element.classList.remove("tooltiptextright");
-        element.classList.add("tooltiptextright-locked");
-    }
-      ProgramTechnicalElectiveTraditionalPlan4rflag=true
-  }
- else {
-       if (element.classList.contains("tooltiptextleft-locked")) {
-        element.classList.remove("tooltiptextleft-locked");
-        element.classList.add("tooltiptextleft");
-    } else {
-        element.classList.remove("tooltiptextright-locked");
-        element.classList.add("tooltiptextright");
-    }
-      ProgramTechnicalElectiveTraditionalPlan4rflag=false
-  }
-};
 $scope.ProgramTechnicalElectiveTraditionalPlan5RCListener = function () {
   var element = document.getElementById("ProgramTechnicalElectiveTraditionalPlan5desc");
  if (!ProgramTechnicalElectiveTraditionalPlan5rflag) {
@@ -8051,6 +7317,52 @@ $scope.ProgramTechnicalElectiveTraditionalPlan5RCListener = function () {
         element.classList.add("tooltiptextright");
     }
       ProgramTechnicalElectiveTraditionalPlan5rflag=false
+  }
+};
+$scope.ProgramTechnicalElectiveTraditionalPlan6RCListener = function () {
+  var element = document.getElementById("ProgramTechnicalElectiveTraditionalPlan6desc");
+ if (!ProgramTechnicalElectiveTraditionalPlan6rflag) {
+       if (element.classList.contains("tooltiptextleft")) {
+        element.classList.remove("tooltiptextleft");
+        element.classList.add("tooltiptextleft-locked");
+    } else {
+        element.classList.remove("tooltiptextright");
+        element.classList.add("tooltiptextright-locked");
+    }
+      ProgramTechnicalElectiveTraditionalPlan6rflag=true
+  }
+ else {
+       if (element.classList.contains("tooltiptextleft-locked")) {
+        element.classList.remove("tooltiptextleft-locked");
+        element.classList.add("tooltiptextleft");
+    } else {
+        element.classList.remove("tooltiptextright-locked");
+        element.classList.add("tooltiptextright");
+    }
+      ProgramTechnicalElectiveTraditionalPlan6rflag=false
+  }
+};
+$scope.ProgramTechnicalElectiveTraditionalPlan7RCListener = function () {
+  var element = document.getElementById("ProgramTechnicalElectiveTraditionalPlan7desc");
+ if (!ProgramTechnicalElectiveTraditionalPlan7rflag) {
+       if (element.classList.contains("tooltiptextleft")) {
+        element.classList.remove("tooltiptextleft");
+        element.classList.add("tooltiptextleft-locked");
+    } else {
+        element.classList.remove("tooltiptextright");
+        element.classList.add("tooltiptextright-locked");
+    }
+      ProgramTechnicalElectiveTraditionalPlan7rflag=true
+  }
+ else {
+       if (element.classList.contains("tooltiptextleft-locked")) {
+        element.classList.remove("tooltiptextleft-locked");
+        element.classList.add("tooltiptextleft");
+    } else {
+        element.classList.remove("tooltiptextright-locked");
+        element.classList.add("tooltiptextright");
+    }
+      ProgramTechnicalElectiveTraditionalPlan7rflag=false
   }
 };
   var CHEM103CoopPlan1flag = false;
@@ -8121,18 +7433,10 @@ this.CoopPlan1ClickedMap.set("MATH201CoopPlan1", []);
   var MATH209CoopPlan1rflag = false;
  var MATH209CoopPlan1Time = new Date().getTime();
 this.CoopPlan1ClickedMap.set("MATH209CoopPlan1", []);
-  var CHE243CoopPlan1flag = false;
-  var CHE243CoopPlan1rflag = false;
- var CHE243CoopPlan1Time = new Date().getTime();
-this.CoopPlan1ClickedMap.set("CHE243CoopPlan1", []);
-  var MATE201CoopPlan1flag = false;
-  var MATE201CoopPlan1rflag = false;
- var MATE201CoopPlan1Time = new Date().getTime();
-this.CoopPlan1ClickedMap.set("MATE201CoopPlan1", []);
-  var MECE250CoopPlan1flag = false;
-  var MECE250CoopPlan1rflag = false;
- var MECE250CoopPlan1Time = new Date().getTime();
-this.CoopPlan1ClickedMap.set("MECE250CoopPlan1", []);
+  var ProgramTechnicalElectiveCoopPlan10flag = false;
+  var ProgramTechnicalElectiveCoopPlan10rflag = false;
+ var ProgramTechnicalElectiveCoopPlan10Time = new Date().getTime();
+this.CoopPlan1ClickedMap.set("ProgramTechnicalElectiveCoopPlan10", []);
   var ECE203CoopPlan1flag = false;
   var ECE203CoopPlan1rflag = false;
  var ECE203CoopPlan1Time = new Date().getTime();
@@ -8233,22 +7537,6 @@ this.CoopPlan1ClickedMap.set("ECE490CoopPlan1", []);
   var ENGG404CoopPlan1rflag = false;
  var ENGG404CoopPlan1Time = new Date().getTime();
 this.CoopPlan1ClickedMap.set("ENGG404CoopPlan1", []);
-  var CHE243CoopPlan1flag = false;
-  var CHE243CoopPlan1rflag = false;
- var CHE243CoopPlan1Time = new Date().getTime();
-this.CoopPlan1ClickedMap.set("CHE243CoopPlan1", []);
-  var MATE201CoopPlan1flag = false;
-  var MATE201CoopPlan1rflag = false;
- var MATE201CoopPlan1Time = new Date().getTime();
-this.CoopPlan1ClickedMap.set("MATE201CoopPlan1", []);
-  var MECE250CoopPlan1flag = false;
-  var MECE250CoopPlan1rflag = false;
- var MECE250CoopPlan1Time = new Date().getTime();
-this.CoopPlan1ClickedMap.set("MECE250CoopPlan1", []);
-  var ProgramTechnicalElectiveCoopPlan10flag = false;
-  var ProgramTechnicalElectiveCoopPlan10rflag = false;
- var ProgramTechnicalElectiveCoopPlan10Time = new Date().getTime();
-this.CoopPlan1ClickedMap.set("ProgramTechnicalElectiveCoopPlan10", []);
   var ProgramTechnicalElectiveCoopPlan11flag = false;
   var ProgramTechnicalElectiveCoopPlan11rflag = false;
  var ProgramTechnicalElectiveCoopPlan11Time = new Date().getTime();
@@ -8257,6 +7545,14 @@ this.CoopPlan1ClickedMap.set("ProgramTechnicalElectiveCoopPlan11", []);
   var ProgramTechnicalElectiveCoopPlan12rflag = false;
  var ProgramTechnicalElectiveCoopPlan12Time = new Date().getTime();
 this.CoopPlan1ClickedMap.set("ProgramTechnicalElectiveCoopPlan12", []);
+  var ProgramTechnicalElectiveCoopPlan13flag = false;
+  var ProgramTechnicalElectiveCoopPlan13rflag = false;
+ var ProgramTechnicalElectiveCoopPlan13Time = new Date().getTime();
+this.CoopPlan1ClickedMap.set("ProgramTechnicalElectiveCoopPlan13", []);
+  var ProgramTechnicalElectiveCoopPlan14flag = false;
+  var ProgramTechnicalElectiveCoopPlan14rflag = false;
+ var ProgramTechnicalElectiveCoopPlan14Time = new Date().getTime();
+this.CoopPlan1ClickedMap.set("ProgramTechnicalElectiveCoopPlan14", []);
   var ECE491CoopPlan1flag = false;
   var ECE491CoopPlan1rflag = false;
  var ECE491CoopPlan1Time = new Date().getTime();
@@ -8273,18 +7569,18 @@ this.CoopPlan1ClickedMap.set("ENGM401CoopPlan1", []);
   var ENGG400CoopPlan1rflag = false;
  var ENGG400CoopPlan1Time = new Date().getTime();
 this.CoopPlan1ClickedMap.set("ENGG400CoopPlan1", []);
-  var ProgramTechnicalElectiveCoopPlan13flag = false;
-  var ProgramTechnicalElectiveCoopPlan13rflag = false;
- var ProgramTechnicalElectiveCoopPlan13Time = new Date().getTime();
-this.CoopPlan1ClickedMap.set("ProgramTechnicalElectiveCoopPlan13", []);
-  var ProgramTechnicalElectiveCoopPlan14flag = false;
-  var ProgramTechnicalElectiveCoopPlan14rflag = false;
- var ProgramTechnicalElectiveCoopPlan14Time = new Date().getTime();
-this.CoopPlan1ClickedMap.set("ProgramTechnicalElectiveCoopPlan14", []);
   var ProgramTechnicalElectiveCoopPlan15flag = false;
   var ProgramTechnicalElectiveCoopPlan15rflag = false;
  var ProgramTechnicalElectiveCoopPlan15Time = new Date().getTime();
 this.CoopPlan1ClickedMap.set("ProgramTechnicalElectiveCoopPlan15", []);
+  var ProgramTechnicalElectiveCoopPlan16flag = false;
+  var ProgramTechnicalElectiveCoopPlan16rflag = false;
+ var ProgramTechnicalElectiveCoopPlan16Time = new Date().getTime();
+this.CoopPlan1ClickedMap.set("ProgramTechnicalElectiveCoopPlan16", []);
+  var ProgramTechnicalElectiveCoopPlan17flag = false;
+  var ProgramTechnicalElectiveCoopPlan17rflag = false;
+ var ProgramTechnicalElectiveCoopPlan17Time = new Date().getTime();
+this.CoopPlan1ClickedMap.set("ProgramTechnicalElectiveCoopPlan17", []);
   var ITSElectiveCoopPlan10flag = false;
   var ITSElectiveCoopPlan10rflag = false;
  var ITSElectiveCoopPlan10Time = new Date().getTime();
@@ -8310,13 +7606,13 @@ CHEM103CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine52());
+      that.addLine(getLine42());
      that.highlightElement(CHEM103CoopPlan1element, "NaturalSciences");
      that.addToClicked("CHEM103CoopPlan1", "NaturalSciences");
       CHEM103CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine52());
+      that.removeLine(getLine42());
      that.unHighlightElement(CHEM103CoopPlan1element, "NaturalSciences");
      var category = that.removeFromClicked("CHEM103CoopPlan1", "NaturalSciences");
   if (category != "") { 
@@ -8380,19 +7676,15 @@ ENGG130CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine50());
-      that.addLine(getLine55());
-      that.addLine(getLine66());
-      that.addLine(getLine101());
+      that.addLine(getLine40());
+      that.addLine(getLine45());
      that.highlightElement(ENGG130CoopPlan1element, "NaturalSciences");
      that.addToClicked("ENGG130CoopPlan1", "NaturalSciences");
       ENGG130CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine50());
-      that.removeLine(getLine55());
-      that.removeLine(getLine66());
-      that.removeLine(getLine101());
+      that.removeLine(getLine40());
+      that.removeLine(getLine45());
      that.unHighlightElement(ENGG130CoopPlan1element, "NaturalSciences");
      var category = that.removeFromClicked("ENGG130CoopPlan1", "NaturalSciences");
   if (category != "") { 
@@ -8422,13 +7714,13 @@ ENGL199CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine53());
+      that.addLine(getLine43());
      that.highlightElement(ENGL199CoopPlan1element, "Other");
      that.addToClicked("ENGL199CoopPlan1", "Other");
       ENGL199CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine53());
+      that.removeLine(getLine43());
      that.unHighlightElement(ENGL199CoopPlan1element, "Other");
      var category = that.removeFromClicked("ENGL199CoopPlan1", "Other");
   if (category != "") { 
@@ -8458,23 +7750,23 @@ MATH100CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine50());
-      that.addLine(getLine51());
-      that.addLine(getLine54());
-      that.addLine(getLine57());
-      that.addLine(getLine58());
-      that.addLine(getLine76());
+      that.addLine(getLine40());
+      that.addLine(getLine41());
+      that.addLine(getLine44());
+      that.addLine(getLine47());
+      that.addLine(getLine48());
+      that.addLine(getLine61());
      that.highlightElement(MATH100CoopPlan1element, "Math");
      that.addToClicked("MATH100CoopPlan1", "Math");
       MATH100CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine50());
-      that.removeLine(getLine51());
-      that.removeLine(getLine54());
-      that.removeLine(getLine57());
-      that.removeLine(getLine58());
-      that.removeLine(getLine76());
+      that.removeLine(getLine40());
+      that.removeLine(getLine41());
+      that.removeLine(getLine44());
+      that.removeLine(getLine47());
+      that.removeLine(getLine48());
+      that.removeLine(getLine61());
      that.unHighlightElement(MATH100CoopPlan1element, "Math");
      var category = that.removeFromClicked("MATH100CoopPlan1", "Math");
   if (category != "") { 
@@ -8504,15 +7796,15 @@ PHYS130CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine51());
-      that.addLine(getLine75());
+      that.addLine(getLine41());
+      that.addLine(getLine60());
      that.highlightElement(PHYS130CoopPlan1element, "NaturalSciences");
      that.addToClicked("PHYS130CoopPlan1", "NaturalSciences");
       PHYS130CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine51());
-      that.removeLine(getLine75());
+      that.removeLine(getLine41());
+      that.removeLine(getLine60());
      that.unHighlightElement(PHYS130CoopPlan1element, "NaturalSciences");
      var category = that.removeFromClicked("PHYS130CoopPlan1", "NaturalSciences");
   if (category != "") { 
@@ -8542,17 +7834,13 @@ CHEM105CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine52());
-      that.addLine(getLine65());
-      that.addLine(getLine100());
+      that.addLine(getLine42());
      that.highlightElement(CHEM105CoopPlan1element, "NaturalSciences");
      that.addToClicked("CHEM105CoopPlan1", "NaturalSciences");
       CHEM105CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine52());
-      that.removeLine(getLine65());
-      that.removeLine(getLine100());
+      that.removeLine(getLine42());
      that.unHighlightElement(CHEM105CoopPlan1element, "NaturalSciences");
      var category = that.removeFromClicked("CHEM105CoopPlan1", "NaturalSciences");
   if (category != "") { 
@@ -8582,13 +7870,13 @@ ENCMP100CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine72());
+      that.addLine(getLine57());
      that.highlightElement(ENCMP100CoopPlan1element, "NaturalSciences");
      that.addToClicked("ENCMP100CoopPlan1", "NaturalSciences");
       ENCMP100CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine72());
+      that.removeLine(getLine57());
      that.unHighlightElement(ENCMP100CoopPlan1element, "NaturalSciences");
      var category = that.removeFromClicked("ENCMP100CoopPlan1", "NaturalSciences");
   if (category != "") { 
@@ -8618,13 +7906,13 @@ ENGG160CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine53());
+      that.addLine(getLine43());
      that.highlightElement(ENGG160CoopPlan1element, "EngineeringDesign");
      that.addToClicked("ENGG160CoopPlan1", "EngineeringDesign");
       ENGG160CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine53());
+      that.removeLine(getLine43());
      that.unHighlightElement(ENGG160CoopPlan1element, "EngineeringDesign");
      var category = that.removeFromClicked("ENGG160CoopPlan1", "EngineeringDesign");
   if (category != "") { 
@@ -8654,21 +7942,17 @@ ENPH131CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine54());
-      that.addLine(getLine55());
-      that.addLine(getLine56());
-      that.addLine(getLine67());
-      that.addLine(getLine102());
+      that.addLine(getLine44());
+      that.addLine(getLine45());
+      that.addLine(getLine46());
      that.highlightElement(ENPH131CoopPlan1element, "NaturalSciences");
      that.addToClicked("ENPH131CoopPlan1", "NaturalSciences");
       ENPH131CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine54());
-      that.removeLine(getLine55());
-      that.removeLine(getLine56());
-      that.removeLine(getLine67());
-      that.removeLine(getLine102());
+      that.removeLine(getLine44());
+      that.removeLine(getLine45());
+      that.removeLine(getLine46());
      that.unHighlightElement(ENPH131CoopPlan1element, "NaturalSciences");
      var category = that.removeFromClicked("ENPH131CoopPlan1", "NaturalSciences");
   if (category != "") { 
@@ -8698,29 +7982,21 @@ MATH101CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine56());
-      that.addLine(getLine57());
-      that.addLine(getLine59());
+      that.addLine(getLine46());
+      that.addLine(getLine47());
+      that.addLine(getLine49());
+      that.addLine(getLine52());
       that.addLine(getLine62());
-      that.addLine(getLine64());
-      that.addLine(getLine68());
-      that.addLine(getLine77());
-      that.addLine(getLine99());
-      that.addLine(getLine103());
      that.highlightElement(MATH101CoopPlan1element, "Math");
      that.addToClicked("MATH101CoopPlan1", "Math");
       MATH101CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine56());
-      that.removeLine(getLine57());
-      that.removeLine(getLine59());
+      that.removeLine(getLine46());
+      that.removeLine(getLine47());
+      that.removeLine(getLine49());
+      that.removeLine(getLine52());
       that.removeLine(getLine62());
-      that.removeLine(getLine64());
-      that.removeLine(getLine68());
-      that.removeLine(getLine77());
-      that.removeLine(getLine99());
-      that.removeLine(getLine103());
      that.unHighlightElement(MATH101CoopPlan1element, "Math");
      var category = that.removeFromClicked("MATH101CoopPlan1", "Math");
   if (category != "") { 
@@ -8750,19 +8026,19 @@ MATH102CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine58());
-      that.addLine(getLine60());
-      that.addLine(getLine63());
-      that.addLine(getLine85());
+      that.addLine(getLine48());
+      that.addLine(getLine50());
+      that.addLine(getLine53());
+      that.addLine(getLine70());
      that.highlightElement(MATH102CoopPlan1element, "Math");
      that.addToClicked("MATH102CoopPlan1", "Math");
       MATH102CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine58());
-      that.removeLine(getLine60());
-      that.removeLine(getLine63());
-      that.removeLine(getLine85());
+      that.removeLine(getLine48());
+      that.removeLine(getLine50());
+      that.removeLine(getLine53());
+      that.removeLine(getLine70());
      that.unHighlightElement(MATH102CoopPlan1element, "Math");
      var category = that.removeFromClicked("MATH102CoopPlan1", "Math");
   if (category != "") { 
@@ -8792,19 +8068,19 @@ ECE202CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine59());
-      that.addLine(getLine60());
-      that.addLine(getLine69());
-      that.addLine(getLine73());
+      that.addLine(getLine49());
+      that.addLine(getLine50());
+      that.addLine(getLine54());
+      that.addLine(getLine58());
      that.highlightElement(ECE202CoopPlan1element, "EngineeringSciences");
      that.addToClicked("ECE202CoopPlan1", "EngineeringSciences");
       ECE202CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine59());
-      that.removeLine(getLine60());
-      that.removeLine(getLine69());
-      that.removeLine(getLine73());
+      that.removeLine(getLine49());
+      that.removeLine(getLine50());
+      that.removeLine(getLine54());
+      that.removeLine(getLine58());
      that.unHighlightElement(ECE202CoopPlan1element, "EngineeringSciences");
      var category = that.removeFromClicked("ECE202CoopPlan1", "EngineeringSciences");
   if (category != "") { 
@@ -8834,13 +8110,13 @@ ECE210CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine71());
+      that.addLine(getLine56());
      that.highlightElement(ECE210CoopPlan1element, "EngineeringSciences");
      that.addToClicked("ECE210CoopPlan1", "EngineeringSciences");
       ECE210CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine71());
+      that.removeLine(getLine56());
      that.unHighlightElement(ECE210CoopPlan1element, "EngineeringSciences");
      var category = that.removeFromClicked("ECE210CoopPlan1", "EngineeringSciences");
   if (category != "") { 
@@ -8870,13 +8146,13 @@ ENGG299CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine78());
+      that.addLine(getLine63());
      that.highlightElement(ENGG299CoopPlan1element, "EngineeringProfession");
      that.addToClicked("ENGG299CoopPlan1", "EngineeringProfession");
       ENGG299CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine78());
+      that.removeLine(getLine63());
      that.unHighlightElement(ENGG299CoopPlan1element, "EngineeringProfession");
      var category = that.removeFromClicked("ENGG299CoopPlan1", "EngineeringProfession");
   if (category != "") { 
@@ -8906,15 +8182,15 @@ MATH201CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine61());
-      that.addLine(getLine74());
+      that.addLine(getLine51());
+      that.addLine(getLine59());
      that.highlightElement(MATH201CoopPlan1element, "Math");
      that.addToClicked("MATH201CoopPlan1", "Math");
       MATH201CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine61());
-      that.removeLine(getLine74());
+      that.removeLine(getLine51());
+      that.removeLine(getLine59());
      that.unHighlightElement(MATH201CoopPlan1element, "Math");
      var category = that.removeFromClicked("MATH201CoopPlan1", "Math");
   if (category != "") { 
@@ -8944,23 +8220,23 @@ MATH209CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine61());
-      that.addLine(getLine62());
-      that.addLine(getLine63());
-      that.addLine(getLine86());
-      that.addLine(getLine88());
-      that.addLine(getLine93());
+      that.addLine(getLine51());
+      that.addLine(getLine52());
+      that.addLine(getLine53());
+      that.addLine(getLine71());
+      that.addLine(getLine73());
+      that.addLine(getLine78());
      that.highlightElement(MATH209CoopPlan1element, "Math");
      that.addToClicked("MATH209CoopPlan1", "Math");
       MATH209CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine61());
-      that.removeLine(getLine62());
-      that.removeLine(getLine63());
-      that.removeLine(getLine86());
-      that.removeLine(getLine88());
-      that.removeLine(getLine93());
+      that.removeLine(getLine51());
+      that.removeLine(getLine52());
+      that.removeLine(getLine53());
+      that.removeLine(getLine71());
+      that.removeLine(getLine73());
+      that.removeLine(getLine78());
      that.unHighlightElement(MATH209CoopPlan1element, "Math");
      var category = that.removeFromClicked("MATH209CoopPlan1", "Math");
   if (category != "") { 
@@ -8969,126 +8245,38 @@ MATH209CoopPlan1Time = currentTime;
       MATH209CoopPlan1flag=false
   }
 };
-$scope.CHE243CoopPlan1Listener = function () {
+$scope.ProgramTechnicalElectiveCoopPlan10Listener = function () {
 var currentTime = new Date().getTime();
-if (currentTime - CHE243CoopPlan1Time <= 200) { 
-        CHE243CoopPlan1Time = currentTime;
+if (currentTime - ProgramTechnicalElectiveCoopPlan10Time <= 200) { 
+        ProgramTechnicalElectiveCoopPlan10Time = currentTime;
         return;
     }
-CHE243CoopPlan1Time = currentTime;
-  var CHE243CoopPlan1element = document.getElementById("CHE243CoopPlan1");
- if (!CHE243CoopPlan1flag) {
-     if (that.CoopPlan1ClickedMap.get("CHE243CoopPlan1").length > 0) { 
+ProgramTechnicalElectiveCoopPlan10Time = currentTime;
+  var ProgramTechnicalElectiveCoopPlan10element = document.getElementById("ProgramTechnicalElectiveCoopPlan10");
+ if (!ProgramTechnicalElectiveCoopPlan10flag) {
+     if (that.CoopPlan1ClickedMap.get("ProgramTechnicalElectiveCoopPlan10").length > 0) { 
  var trueCounter = 0;
-          for (let i = 0; i < that.CoopPlan1ClickedMap.get("CHE243CoopPlan1").length; i++) { 
-        var cate = that.CoopPlan1ClickedMap.get("CHE243CoopPlan1")[i];
-        if (CHE243CoopPlan1element.classList.contains(cate + "-highlighted")) {
+          for (let i = 0; i < that.CoopPlan1ClickedMap.get("ProgramTechnicalElectiveCoopPlan10").length; i++) { 
+        var cate = that.CoopPlan1ClickedMap.get("ProgramTechnicalElectiveCoopPlan10")[i];
+        if (ProgramTechnicalElectiveCoopPlan10element.classList.contains(cate + "-highlighted")) {
             trueCounter++;
-            that.unHighlightElement(CHE243CoopPlan1element, cate);
+            that.unHighlightElement(ProgramTechnicalElectiveCoopPlan10element, cate);
         }
     }
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine64());
-      that.addLine(getLine99());
-     that.highlightElement(CHE243CoopPlan1element, "EngineeringSciences");
-     that.addToClicked("CHE243CoopPlan1", "EngineeringSciences");
-      CHE243CoopPlan1flag=true
+     that.highlightElement(ProgramTechnicalElectiveCoopPlan10element, "PROG");
+     that.addToClicked("ProgramTechnicalElectiveCoopPlan10", "PROG");
+      ProgramTechnicalElectiveCoopPlan10flag=true
   }
  else {
-      that.removeLine(getLine64());
-      that.removeLine(getLine99());
-     that.unHighlightElement(CHE243CoopPlan1element, "EngineeringSciences");
-     var category = that.removeFromClicked("CHE243CoopPlan1", "EngineeringSciences");
+     that.unHighlightElement(ProgramTechnicalElectiveCoopPlan10element, "PROG");
+     var category = that.removeFromClicked("ProgramTechnicalElectiveCoopPlan10", "PROG");
   if (category != "") { 
-     that.highlightElement(CHE243CoopPlan1element, category);
+     that.highlightElement(ProgramTechnicalElectiveCoopPlan10element, category);
 }
-      CHE243CoopPlan1flag=false
-  }
-};
-$scope.MATE201CoopPlan1Listener = function () {
-var currentTime = new Date().getTime();
-if (currentTime - MATE201CoopPlan1Time <= 200) { 
-        MATE201CoopPlan1Time = currentTime;
-        return;
-    }
-MATE201CoopPlan1Time = currentTime;
-  var MATE201CoopPlan1element = document.getElementById("MATE201CoopPlan1");
- if (!MATE201CoopPlan1flag) {
-     if (that.CoopPlan1ClickedMap.get("MATE201CoopPlan1").length > 0) { 
- var trueCounter = 0;
-          for (let i = 0; i < that.CoopPlan1ClickedMap.get("MATE201CoopPlan1").length; i++) { 
-        var cate = that.CoopPlan1ClickedMap.get("MATE201CoopPlan1")[i];
-        if (MATE201CoopPlan1element.classList.contains(cate + "-highlighted")) {
-            trueCounter++;
-            that.unHighlightElement(MATE201CoopPlan1element, cate);
-        }
-    }
-    if (trueCounter > 0) {
-        return;
-    }}
-      that.addLine(getLine65());
-      that.addLine(getLine100());
-     that.highlightElement(MATE201CoopPlan1element, "NaturalSciences");
-     that.addToClicked("MATE201CoopPlan1", "NaturalSciences");
-      MATE201CoopPlan1flag=true
-  }
- else {
-      that.removeLine(getLine65());
-      that.removeLine(getLine100());
-     that.unHighlightElement(MATE201CoopPlan1element, "NaturalSciences");
-     var category = that.removeFromClicked("MATE201CoopPlan1", "NaturalSciences");
-  if (category != "") { 
-     that.highlightElement(MATE201CoopPlan1element, category);
-}
-      MATE201CoopPlan1flag=false
-  }
-};
-$scope.MECE250CoopPlan1Listener = function () {
-var currentTime = new Date().getTime();
-if (currentTime - MECE250CoopPlan1Time <= 200) { 
-        MECE250CoopPlan1Time = currentTime;
-        return;
-    }
-MECE250CoopPlan1Time = currentTime;
-  var MECE250CoopPlan1element = document.getElementById("MECE250CoopPlan1");
- if (!MECE250CoopPlan1flag) {
-     if (that.CoopPlan1ClickedMap.get("MECE250CoopPlan1").length > 0) { 
- var trueCounter = 0;
-          for (let i = 0; i < that.CoopPlan1ClickedMap.get("MECE250CoopPlan1").length; i++) { 
-        var cate = that.CoopPlan1ClickedMap.get("MECE250CoopPlan1")[i];
-        if (MECE250CoopPlan1element.classList.contains(cate + "-highlighted")) {
-            trueCounter++;
-            that.unHighlightElement(MECE250CoopPlan1element, cate);
-        }
-    }
-    if (trueCounter > 0) {
-        return;
-    }}
-      that.addLine(getLine66());
-      that.addLine(getLine67());
-      that.addLine(getLine68());
-      that.addLine(getLine101());
-      that.addLine(getLine102());
-      that.addLine(getLine103());
-     that.highlightElement(MECE250CoopPlan1element, "EngineeringSciences");
-     that.addToClicked("MECE250CoopPlan1", "EngineeringSciences");
-      MECE250CoopPlan1flag=true
-  }
- else {
-      that.removeLine(getLine66());
-      that.removeLine(getLine67());
-      that.removeLine(getLine68());
-      that.removeLine(getLine101());
-      that.removeLine(getLine102());
-      that.removeLine(getLine103());
-     that.unHighlightElement(MECE250CoopPlan1element, "EngineeringSciences");
-     var category = that.removeFromClicked("MECE250CoopPlan1", "EngineeringSciences");
-  if (category != "") { 
-     that.highlightElement(MECE250CoopPlan1element, category);
-}
-      MECE250CoopPlan1flag=false
+      ProgramTechnicalElectiveCoopPlan10flag=false
   }
 };
 $scope.ECE203CoopPlan1Listener = function () {
@@ -9112,21 +8300,21 @@ ECE203CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine69());
-      that.addLine(getLine70());
+      that.addLine(getLine54());
+      that.addLine(getLine55());
+      that.addLine(getLine64());
+      that.addLine(getLine68());
       that.addLine(getLine79());
-      that.addLine(getLine83());
-      that.addLine(getLine94());
      that.highlightElement(ECE203CoopPlan1element, "EngineeringSciences");
      that.addToClicked("ECE203CoopPlan1", "EngineeringSciences");
       ECE203CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine69());
-      that.removeLine(getLine70());
+      that.removeLine(getLine54());
+      that.removeLine(getLine55());
+      that.removeLine(getLine64());
+      that.removeLine(getLine68());
       that.removeLine(getLine79());
-      that.removeLine(getLine83());
-      that.removeLine(getLine94());
      that.unHighlightElement(ECE203CoopPlan1element, "EngineeringSciences");
      var category = that.removeFromClicked("ECE203CoopPlan1", "EngineeringSciences");
   if (category != "") { 
@@ -9156,15 +8344,15 @@ ECE212CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine71());
-      that.addLine(getLine81());
+      that.addLine(getLine56());
+      that.addLine(getLine66());
      that.highlightElement(ECE212CoopPlan1element, "EngineeringSciences");
      that.addToClicked("ECE212CoopPlan1", "EngineeringSciences");
       ECE212CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine71());
-      that.removeLine(getLine81());
+      that.removeLine(getLine56());
+      that.removeLine(getLine66());
      that.unHighlightElement(ECE212CoopPlan1element, "EngineeringSciences");
      var category = that.removeFromClicked("ECE212CoopPlan1", "EngineeringSciences");
   if (category != "") { 
@@ -9194,15 +8382,15 @@ ECE220CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine72());
-      that.addLine(getLine80());
+      that.addLine(getLine57());
+      that.addLine(getLine65());
      that.highlightElement(ECE220CoopPlan1element, "EngineeringSciences");
      that.addToClicked("ECE220CoopPlan1", "EngineeringSciences");
       ECE220CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine72());
-      that.removeLine(getLine80());
+      that.removeLine(getLine57());
+      that.removeLine(getLine65());
      that.unHighlightElement(ECE220CoopPlan1element, "EngineeringSciences");
      var category = that.removeFromClicked("ECE220CoopPlan1", "EngineeringSciences");
   if (category != "") { 
@@ -9232,23 +8420,23 @@ ECE240CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine70());
-      that.addLine(getLine73());
-      that.addLine(getLine74());
-      that.addLine(getLine84());
-      that.addLine(getLine95());
-      that.addLine(getLine96());
+      that.addLine(getLine55());
+      that.addLine(getLine58());
+      that.addLine(getLine59());
+      that.addLine(getLine69());
+      that.addLine(getLine80());
+      that.addLine(getLine81());
      that.highlightElement(ECE240CoopPlan1element, "EngineeringSciences");
      that.addToClicked("ECE240CoopPlan1", "EngineeringSciences");
       ECE240CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine70());
-      that.removeLine(getLine73());
-      that.removeLine(getLine74());
-      that.removeLine(getLine84());
-      that.removeLine(getLine95());
-      that.removeLine(getLine96());
+      that.removeLine(getLine55());
+      that.removeLine(getLine58());
+      that.removeLine(getLine59());
+      that.removeLine(getLine69());
+      that.removeLine(getLine80());
+      that.removeLine(getLine81());
      that.unHighlightElement(ECE240CoopPlan1element, "EngineeringSciences");
      var category = that.removeFromClicked("ECE240CoopPlan1", "EngineeringSciences");
   if (category != "") { 
@@ -9278,19 +8466,19 @@ PHYS230CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine75());
-      that.addLine(getLine76());
-      that.addLine(getLine77());
-      that.addLine(getLine87());
+      that.addLine(getLine60());
+      that.addLine(getLine61());
+      that.addLine(getLine62());
+      that.addLine(getLine72());
      that.highlightElement(PHYS230CoopPlan1element, "NaturalSciences");
      that.addToClicked("PHYS230CoopPlan1", "NaturalSciences");
       PHYS230CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine75());
-      that.removeLine(getLine76());
-      that.removeLine(getLine77());
-      that.removeLine(getLine87());
+      that.removeLine(getLine60());
+      that.removeLine(getLine61());
+      that.removeLine(getLine62());
+      that.removeLine(getLine72());
      that.unHighlightElement(PHYS230CoopPlan1element, "NaturalSciences");
      var category = that.removeFromClicked("PHYS230CoopPlan1", "NaturalSciences");
   if (category != "") { 
@@ -9354,15 +8542,15 @@ WKEXP901CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine78());
-      that.addLine(getLine89());
+      that.addLine(getLine63());
+      that.addLine(getLine74());
      that.highlightElement(WKEXP901CoopPlan1element, "EngineeringProfession");
      that.addToClicked("WKEXP901CoopPlan1", "EngineeringProfession");
       WKEXP901CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine78());
-      that.removeLine(getLine89());
+      that.removeLine(getLine63());
+      that.removeLine(getLine74());
      that.unHighlightElement(WKEXP901CoopPlan1element, "EngineeringProfession");
      var category = that.removeFromClicked("WKEXP901CoopPlan1", "EngineeringProfession");
   if (category != "") { 
@@ -9392,15 +8580,15 @@ ECE302CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine79());
-      that.addLine(getLine91());
+      that.addLine(getLine64());
+      that.addLine(getLine76());
      that.highlightElement(ECE302CoopPlan1element, "EngineeringSciences");
      that.addToClicked("ECE302CoopPlan1", "EngineeringSciences");
       ECE302CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine79());
-      that.removeLine(getLine91());
+      that.removeLine(getLine64());
+      that.removeLine(getLine76());
      that.unHighlightElement(ECE302CoopPlan1element, "EngineeringSciences");
      var category = that.removeFromClicked("ECE302CoopPlan1", "EngineeringSciences");
   if (category != "") { 
@@ -9430,17 +8618,17 @@ ECE312CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine80());
-      that.addLine(getLine81());
-      that.addLine(getLine82());
+      that.addLine(getLine65());
+      that.addLine(getLine66());
+      that.addLine(getLine67());
      that.highlightElement(ECE312CoopPlan1element, "EngineeringDesign");
      that.addToClicked("ECE312CoopPlan1", "EngineeringDesign");
       ECE312CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine80());
-      that.removeLine(getLine81());
-      that.removeLine(getLine82());
+      that.removeLine(getLine65());
+      that.removeLine(getLine66());
+      that.removeLine(getLine67());
      that.unHighlightElement(ECE312CoopPlan1element, "EngineeringDesign");
      var category = that.removeFromClicked("ECE312CoopPlan1", "EngineeringDesign");
   if (category != "") { 
@@ -9470,15 +8658,15 @@ ECE330CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine83());
-      that.addLine(getLine92());
+      that.addLine(getLine68());
+      that.addLine(getLine77());
      that.highlightElement(ECE330CoopPlan1element, "EngineeringSciences");
      that.addToClicked("ECE330CoopPlan1", "EngineeringSciences");
       ECE330CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine83());
-      that.removeLine(getLine92());
+      that.removeLine(getLine68());
+      that.removeLine(getLine77());
      that.unHighlightElement(ECE330CoopPlan1element, "EngineeringSciences");
      var category = that.removeFromClicked("ECE330CoopPlan1", "EngineeringSciences");
   if (category != "") { 
@@ -9508,15 +8696,15 @@ ECE340CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine82());
-      that.addLine(getLine84());
+      that.addLine(getLine67());
+      that.addLine(getLine69());
      that.highlightElement(ECE340CoopPlan1element, "EngineeringSciences");
      that.addToClicked("ECE340CoopPlan1", "EngineeringSciences");
       ECE340CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine82());
-      that.removeLine(getLine84());
+      that.removeLine(getLine67());
+      that.removeLine(getLine69());
      that.unHighlightElement(ECE340CoopPlan1element, "EngineeringSciences");
      var category = that.removeFromClicked("ECE340CoopPlan1", "EngineeringSciences");
   if (category != "") { 
@@ -9546,17 +8734,17 @@ ECE370CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine85());
-      that.addLine(getLine86());
-      that.addLine(getLine87());
+      that.addLine(getLine70());
+      that.addLine(getLine71());
+      that.addLine(getLine72());
      that.highlightElement(ECE370CoopPlan1element, "EngineeringSciences");
      that.addToClicked("ECE370CoopPlan1", "EngineeringSciences");
       ECE370CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine85());
-      that.removeLine(getLine86());
-      that.removeLine(getLine87());
+      that.removeLine(getLine70());
+      that.removeLine(getLine71());
+      that.removeLine(getLine72());
      that.unHighlightElement(ECE370CoopPlan1element, "EngineeringSciences");
      var category = that.removeFromClicked("ECE370CoopPlan1", "EngineeringSciences");
   if (category != "") { 
@@ -9586,13 +8774,13 @@ MATH309CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine88());
+      that.addLine(getLine73());
      that.highlightElement(MATH309CoopPlan1element, "Math");
      that.addToClicked("MATH309CoopPlan1", "Math");
       MATH309CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine88());
+      that.removeLine(getLine73());
      that.unHighlightElement(MATH309CoopPlan1element, "Math");
      var category = that.removeFromClicked("MATH309CoopPlan1", "Math");
   if (category != "") { 
@@ -9622,15 +8810,15 @@ WKEXP902CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine89());
-      that.addLine(getLine90());
+      that.addLine(getLine74());
+      that.addLine(getLine75());
      that.highlightElement(WKEXP902CoopPlan1element, "EngineeringProfession");
      that.addToClicked("WKEXP902CoopPlan1", "EngineeringProfession");
       WKEXP902CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine89());
-      that.removeLine(getLine90());
+      that.removeLine(getLine74());
+      that.removeLine(getLine75());
      that.unHighlightElement(WKEXP902CoopPlan1element, "EngineeringProfession");
      var category = that.removeFromClicked("WKEXP902CoopPlan1", "EngineeringProfession");
   if (category != "") { 
@@ -9660,15 +8848,15 @@ WKEXP903CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine90());
-      that.addLine(getLine97());
+      that.addLine(getLine75());
+      that.addLine(getLine82());
      that.highlightElement(WKEXP903CoopPlan1element, "EngineeringProfession");
      that.addToClicked("WKEXP903CoopPlan1", "EngineeringProfession");
       WKEXP903CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine90());
-      that.removeLine(getLine97());
+      that.removeLine(getLine75());
+      that.removeLine(getLine82());
      that.unHighlightElement(WKEXP903CoopPlan1element, "EngineeringProfession");
      var category = that.removeFromClicked("WKEXP903CoopPlan1", "EngineeringProfession");
   if (category != "") { 
@@ -9698,13 +8886,13 @@ ECE303CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine91());
+      that.addLine(getLine76());
      that.highlightElement(ECE303CoopPlan1element, "EngineeringSciences");
      that.addToClicked("ECE303CoopPlan1", "EngineeringSciences");
       ECE303CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine91());
+      that.removeLine(getLine76());
      that.unHighlightElement(ECE303CoopPlan1element, "EngineeringSciences");
      var category = that.removeFromClicked("ECE303CoopPlan1", "EngineeringSciences");
   if (category != "") { 
@@ -9734,13 +8922,13 @@ ECE332CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine92());
+      that.addLine(getLine77());
      that.highlightElement(ECE332CoopPlan1element, "EngineeringSciences");
      that.addToClicked("ECE332CoopPlan1", "EngineeringSciences");
       ECE332CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine92());
+      that.removeLine(getLine77());
      that.unHighlightElement(ECE332CoopPlan1element, "EngineeringSciences");
      var category = that.removeFromClicked("ECE332CoopPlan1", "EngineeringSciences");
   if (category != "") { 
@@ -9770,13 +8958,13 @@ ECE342CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine93());
+      that.addLine(getLine78());
      that.highlightElement(ECE342CoopPlan1element, "Math");
      that.addToClicked("ECE342CoopPlan1", "Math");
       ECE342CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine93());
+      that.removeLine(getLine78());
      that.unHighlightElement(ECE342CoopPlan1element, "Math");
      var category = that.removeFromClicked("ECE342CoopPlan1", "Math");
   if (category != "") { 
@@ -9806,15 +8994,15 @@ ECE360CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine94());
-      that.addLine(getLine95());
+      that.addLine(getLine79());
+      that.addLine(getLine80());
      that.highlightElement(ECE360CoopPlan1element, "EngineeringSciences");
      that.addToClicked("ECE360CoopPlan1", "EngineeringSciences");
       ECE360CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine94());
-      that.removeLine(getLine95());
+      that.removeLine(getLine79());
+      that.removeLine(getLine80());
      that.unHighlightElement(ECE360CoopPlan1element, "EngineeringSciences");
      var category = that.removeFromClicked("ECE360CoopPlan1", "EngineeringSciences");
   if (category != "") { 
@@ -9844,13 +9032,13 @@ ECE380CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine96());
+      that.addLine(getLine81());
      that.highlightElement(ECE380CoopPlan1element, "EngineeringSciences");
      that.addToClicked("ECE380CoopPlan1", "EngineeringSciences");
       ECE380CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine96());
+      that.removeLine(getLine81());
      that.unHighlightElement(ECE380CoopPlan1element, "EngineeringSciences");
      var category = that.removeFromClicked("ECE380CoopPlan1", "EngineeringSciences");
   if (category != "") { 
@@ -9914,15 +9102,15 @@ WKEXP904CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine97());
-      that.addLine(getLine98());
+      that.addLine(getLine82());
+      that.addLine(getLine83());
      that.highlightElement(WKEXP904CoopPlan1element, "EngineeringProfession");
      that.addToClicked("WKEXP904CoopPlan1", "EngineeringProfession");
       WKEXP904CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine97());
-      that.removeLine(getLine98());
+      that.removeLine(getLine82());
+      that.removeLine(getLine83());
      that.unHighlightElement(WKEXP904CoopPlan1element, "EngineeringProfession");
      var category = that.removeFromClicked("WKEXP904CoopPlan1", "EngineeringProfession");
   if (category != "") { 
@@ -9952,13 +9140,13 @@ WKEXP905CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine98());
+      that.addLine(getLine83());
      that.highlightElement(WKEXP905CoopPlan1element, "EngineeringProfession");
      that.addToClicked("WKEXP905CoopPlan1", "EngineeringProfession");
       WKEXP905CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine98());
+      that.removeLine(getLine83());
      that.unHighlightElement(WKEXP905CoopPlan1element, "EngineeringProfession");
      var category = that.removeFromClicked("WKEXP905CoopPlan1", "EngineeringProfession");
   if (category != "") { 
@@ -9988,13 +9176,13 @@ ECE490CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine104());
+      that.addLine(getLine84());
      that.highlightElement(ECE490CoopPlan1element, "EngineeringDesign");
      that.addToClicked("ECE490CoopPlan1", "EngineeringDesign");
       ECE490CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine104());
+      that.removeLine(getLine84());
      that.unHighlightElement(ECE490CoopPlan1element, "EngineeringDesign");
      var category = that.removeFromClicked("ECE490CoopPlan1", "EngineeringDesign");
   if (category != "") { 
@@ -10035,162 +9223,6 @@ ENGG404CoopPlan1Time = currentTime;
      that.highlightElement(ENGG404CoopPlan1element, category);
 }
       ENGG404CoopPlan1flag=false
-  }
-};
-$scope.CHE243CoopPlan1Listener = function () {
-var currentTime = new Date().getTime();
-if (currentTime - CHE243CoopPlan1Time <= 200) { 
-        CHE243CoopPlan1Time = currentTime;
-        return;
-    }
-CHE243CoopPlan1Time = currentTime;
-  var CHE243CoopPlan1element = document.getElementById("CHE243CoopPlan1");
- if (!CHE243CoopPlan1flag) {
-     if (that.CoopPlan1ClickedMap.get("CHE243CoopPlan1").length > 0) { 
- var trueCounter = 0;
-          for (let i = 0; i < that.CoopPlan1ClickedMap.get("CHE243CoopPlan1").length; i++) { 
-        var cate = that.CoopPlan1ClickedMap.get("CHE243CoopPlan1")[i];
-        if (CHE243CoopPlan1element.classList.contains(cate + "-highlighted")) {
-            trueCounter++;
-            that.unHighlightElement(CHE243CoopPlan1element, cate);
-        }
-    }
-    if (trueCounter > 0) {
-        return;
-    }}
-      that.addLine(getLine64());
-      that.addLine(getLine99());
-     that.highlightElement(CHE243CoopPlan1element, "EngineeringSciences");
-     that.addToClicked("CHE243CoopPlan1", "EngineeringSciences");
-      CHE243CoopPlan1flag=true
-  }
- else {
-      that.removeLine(getLine64());
-      that.removeLine(getLine99());
-     that.unHighlightElement(CHE243CoopPlan1element, "EngineeringSciences");
-     var category = that.removeFromClicked("CHE243CoopPlan1", "EngineeringSciences");
-  if (category != "") { 
-     that.highlightElement(CHE243CoopPlan1element, category);
-}
-      CHE243CoopPlan1flag=false
-  }
-};
-$scope.MATE201CoopPlan1Listener = function () {
-var currentTime = new Date().getTime();
-if (currentTime - MATE201CoopPlan1Time <= 200) { 
-        MATE201CoopPlan1Time = currentTime;
-        return;
-    }
-MATE201CoopPlan1Time = currentTime;
-  var MATE201CoopPlan1element = document.getElementById("MATE201CoopPlan1");
- if (!MATE201CoopPlan1flag) {
-     if (that.CoopPlan1ClickedMap.get("MATE201CoopPlan1").length > 0) { 
- var trueCounter = 0;
-          for (let i = 0; i < that.CoopPlan1ClickedMap.get("MATE201CoopPlan1").length; i++) { 
-        var cate = that.CoopPlan1ClickedMap.get("MATE201CoopPlan1")[i];
-        if (MATE201CoopPlan1element.classList.contains(cate + "-highlighted")) {
-            trueCounter++;
-            that.unHighlightElement(MATE201CoopPlan1element, cate);
-        }
-    }
-    if (trueCounter > 0) {
-        return;
-    }}
-      that.addLine(getLine65());
-      that.addLine(getLine100());
-     that.highlightElement(MATE201CoopPlan1element, "NaturalSciences");
-     that.addToClicked("MATE201CoopPlan1", "NaturalSciences");
-      MATE201CoopPlan1flag=true
-  }
- else {
-      that.removeLine(getLine65());
-      that.removeLine(getLine100());
-     that.unHighlightElement(MATE201CoopPlan1element, "NaturalSciences");
-     var category = that.removeFromClicked("MATE201CoopPlan1", "NaturalSciences");
-  if (category != "") { 
-     that.highlightElement(MATE201CoopPlan1element, category);
-}
-      MATE201CoopPlan1flag=false
-  }
-};
-$scope.MECE250CoopPlan1Listener = function () {
-var currentTime = new Date().getTime();
-if (currentTime - MECE250CoopPlan1Time <= 200) { 
-        MECE250CoopPlan1Time = currentTime;
-        return;
-    }
-MECE250CoopPlan1Time = currentTime;
-  var MECE250CoopPlan1element = document.getElementById("MECE250CoopPlan1");
- if (!MECE250CoopPlan1flag) {
-     if (that.CoopPlan1ClickedMap.get("MECE250CoopPlan1").length > 0) { 
- var trueCounter = 0;
-          for (let i = 0; i < that.CoopPlan1ClickedMap.get("MECE250CoopPlan1").length; i++) { 
-        var cate = that.CoopPlan1ClickedMap.get("MECE250CoopPlan1")[i];
-        if (MECE250CoopPlan1element.classList.contains(cate + "-highlighted")) {
-            trueCounter++;
-            that.unHighlightElement(MECE250CoopPlan1element, cate);
-        }
-    }
-    if (trueCounter > 0) {
-        return;
-    }}
-      that.addLine(getLine66());
-      that.addLine(getLine67());
-      that.addLine(getLine68());
-      that.addLine(getLine101());
-      that.addLine(getLine102());
-      that.addLine(getLine103());
-     that.highlightElement(MECE250CoopPlan1element, "EngineeringSciences");
-     that.addToClicked("MECE250CoopPlan1", "EngineeringSciences");
-      MECE250CoopPlan1flag=true
-  }
- else {
-      that.removeLine(getLine66());
-      that.removeLine(getLine67());
-      that.removeLine(getLine68());
-      that.removeLine(getLine101());
-      that.removeLine(getLine102());
-      that.removeLine(getLine103());
-     that.unHighlightElement(MECE250CoopPlan1element, "EngineeringSciences");
-     var category = that.removeFromClicked("MECE250CoopPlan1", "EngineeringSciences");
-  if (category != "") { 
-     that.highlightElement(MECE250CoopPlan1element, category);
-}
-      MECE250CoopPlan1flag=false
-  }
-};
-$scope.ProgramTechnicalElectiveCoopPlan10Listener = function () {
-var currentTime = new Date().getTime();
-if (currentTime - ProgramTechnicalElectiveCoopPlan10Time <= 200) { 
-        ProgramTechnicalElectiveCoopPlan10Time = currentTime;
-        return;
-    }
-ProgramTechnicalElectiveCoopPlan10Time = currentTime;
-  var ProgramTechnicalElectiveCoopPlan10element = document.getElementById("ProgramTechnicalElectiveCoopPlan10");
- if (!ProgramTechnicalElectiveCoopPlan10flag) {
-     if (that.CoopPlan1ClickedMap.get("ProgramTechnicalElectiveCoopPlan10").length > 0) { 
- var trueCounter = 0;
-          for (let i = 0; i < that.CoopPlan1ClickedMap.get("ProgramTechnicalElectiveCoopPlan10").length; i++) { 
-        var cate = that.CoopPlan1ClickedMap.get("ProgramTechnicalElectiveCoopPlan10")[i];
-        if (ProgramTechnicalElectiveCoopPlan10element.classList.contains(cate + "-highlighted")) {
-            trueCounter++;
-            that.unHighlightElement(ProgramTechnicalElectiveCoopPlan10element, cate);
-        }
-    }
-    if (trueCounter > 0) {
-        return;
-    }}
-     that.highlightElement(ProgramTechnicalElectiveCoopPlan10element, "PROG");
-     that.addToClicked("ProgramTechnicalElectiveCoopPlan10", "PROG");
-      ProgramTechnicalElectiveCoopPlan10flag=true
-  }
- else {
-     that.unHighlightElement(ProgramTechnicalElectiveCoopPlan10element, "PROG");
-     var category = that.removeFromClicked("ProgramTechnicalElectiveCoopPlan10", "PROG");
-  if (category != "") { 
-     that.highlightElement(ProgramTechnicalElectiveCoopPlan10element, category);
-}
-      ProgramTechnicalElectiveCoopPlan10flag=false
   }
 };
 $scope.ProgramTechnicalElectiveCoopPlan11Listener = function () {
@@ -10261,6 +9293,74 @@ ProgramTechnicalElectiveCoopPlan12Time = currentTime;
       ProgramTechnicalElectiveCoopPlan12flag=false
   }
 };
+$scope.ProgramTechnicalElectiveCoopPlan13Listener = function () {
+var currentTime = new Date().getTime();
+if (currentTime - ProgramTechnicalElectiveCoopPlan13Time <= 200) { 
+        ProgramTechnicalElectiveCoopPlan13Time = currentTime;
+        return;
+    }
+ProgramTechnicalElectiveCoopPlan13Time = currentTime;
+  var ProgramTechnicalElectiveCoopPlan13element = document.getElementById("ProgramTechnicalElectiveCoopPlan13");
+ if (!ProgramTechnicalElectiveCoopPlan13flag) {
+     if (that.CoopPlan1ClickedMap.get("ProgramTechnicalElectiveCoopPlan13").length > 0) { 
+ var trueCounter = 0;
+          for (let i = 0; i < that.CoopPlan1ClickedMap.get("ProgramTechnicalElectiveCoopPlan13").length; i++) { 
+        var cate = that.CoopPlan1ClickedMap.get("ProgramTechnicalElectiveCoopPlan13")[i];
+        if (ProgramTechnicalElectiveCoopPlan13element.classList.contains(cate + "-highlighted")) {
+            trueCounter++;
+            that.unHighlightElement(ProgramTechnicalElectiveCoopPlan13element, cate);
+        }
+    }
+    if (trueCounter > 0) {
+        return;
+    }}
+     that.highlightElement(ProgramTechnicalElectiveCoopPlan13element, "PROG");
+     that.addToClicked("ProgramTechnicalElectiveCoopPlan13", "PROG");
+      ProgramTechnicalElectiveCoopPlan13flag=true
+  }
+ else {
+     that.unHighlightElement(ProgramTechnicalElectiveCoopPlan13element, "PROG");
+     var category = that.removeFromClicked("ProgramTechnicalElectiveCoopPlan13", "PROG");
+  if (category != "") { 
+     that.highlightElement(ProgramTechnicalElectiveCoopPlan13element, category);
+}
+      ProgramTechnicalElectiveCoopPlan13flag=false
+  }
+};
+$scope.ProgramTechnicalElectiveCoopPlan14Listener = function () {
+var currentTime = new Date().getTime();
+if (currentTime - ProgramTechnicalElectiveCoopPlan14Time <= 200) { 
+        ProgramTechnicalElectiveCoopPlan14Time = currentTime;
+        return;
+    }
+ProgramTechnicalElectiveCoopPlan14Time = currentTime;
+  var ProgramTechnicalElectiveCoopPlan14element = document.getElementById("ProgramTechnicalElectiveCoopPlan14");
+ if (!ProgramTechnicalElectiveCoopPlan14flag) {
+     if (that.CoopPlan1ClickedMap.get("ProgramTechnicalElectiveCoopPlan14").length > 0) { 
+ var trueCounter = 0;
+          for (let i = 0; i < that.CoopPlan1ClickedMap.get("ProgramTechnicalElectiveCoopPlan14").length; i++) { 
+        var cate = that.CoopPlan1ClickedMap.get("ProgramTechnicalElectiveCoopPlan14")[i];
+        if (ProgramTechnicalElectiveCoopPlan14element.classList.contains(cate + "-highlighted")) {
+            trueCounter++;
+            that.unHighlightElement(ProgramTechnicalElectiveCoopPlan14element, cate);
+        }
+    }
+    if (trueCounter > 0) {
+        return;
+    }}
+     that.highlightElement(ProgramTechnicalElectiveCoopPlan14element, "PROG");
+     that.addToClicked("ProgramTechnicalElectiveCoopPlan14", "PROG");
+      ProgramTechnicalElectiveCoopPlan14flag=true
+  }
+ else {
+     that.unHighlightElement(ProgramTechnicalElectiveCoopPlan14element, "PROG");
+     var category = that.removeFromClicked("ProgramTechnicalElectiveCoopPlan14", "PROG");
+  if (category != "") { 
+     that.highlightElement(ProgramTechnicalElectiveCoopPlan14element, category);
+}
+      ProgramTechnicalElectiveCoopPlan14flag=false
+  }
+};
 $scope.ECE491CoopPlan1Listener = function () {
 var currentTime = new Date().getTime();
 if (currentTime - ECE491CoopPlan1Time <= 200) { 
@@ -10282,13 +9382,13 @@ ECE491CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine104());
+      that.addLine(getLine84());
      that.highlightElement(ECE491CoopPlan1element, "EngineeringDesign");
      that.addToClicked("ECE491CoopPlan1", "EngineeringDesign");
       ECE491CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine104());
+      that.removeLine(getLine84());
      that.unHighlightElement(ECE491CoopPlan1element, "EngineeringDesign");
      var category = that.removeFromClicked("ECE491CoopPlan1", "EngineeringDesign");
   if (category != "") { 
@@ -10399,74 +9499,6 @@ ENGG400CoopPlan1Time = currentTime;
       ENGG400CoopPlan1flag=false
   }
 };
-$scope.ProgramTechnicalElectiveCoopPlan13Listener = function () {
-var currentTime = new Date().getTime();
-if (currentTime - ProgramTechnicalElectiveCoopPlan13Time <= 200) { 
-        ProgramTechnicalElectiveCoopPlan13Time = currentTime;
-        return;
-    }
-ProgramTechnicalElectiveCoopPlan13Time = currentTime;
-  var ProgramTechnicalElectiveCoopPlan13element = document.getElementById("ProgramTechnicalElectiveCoopPlan13");
- if (!ProgramTechnicalElectiveCoopPlan13flag) {
-     if (that.CoopPlan1ClickedMap.get("ProgramTechnicalElectiveCoopPlan13").length > 0) { 
- var trueCounter = 0;
-          for (let i = 0; i < that.CoopPlan1ClickedMap.get("ProgramTechnicalElectiveCoopPlan13").length; i++) { 
-        var cate = that.CoopPlan1ClickedMap.get("ProgramTechnicalElectiveCoopPlan13")[i];
-        if (ProgramTechnicalElectiveCoopPlan13element.classList.contains(cate + "-highlighted")) {
-            trueCounter++;
-            that.unHighlightElement(ProgramTechnicalElectiveCoopPlan13element, cate);
-        }
-    }
-    if (trueCounter > 0) {
-        return;
-    }}
-     that.highlightElement(ProgramTechnicalElectiveCoopPlan13element, "PROG");
-     that.addToClicked("ProgramTechnicalElectiveCoopPlan13", "PROG");
-      ProgramTechnicalElectiveCoopPlan13flag=true
-  }
- else {
-     that.unHighlightElement(ProgramTechnicalElectiveCoopPlan13element, "PROG");
-     var category = that.removeFromClicked("ProgramTechnicalElectiveCoopPlan13", "PROG");
-  if (category != "") { 
-     that.highlightElement(ProgramTechnicalElectiveCoopPlan13element, category);
-}
-      ProgramTechnicalElectiveCoopPlan13flag=false
-  }
-};
-$scope.ProgramTechnicalElectiveCoopPlan14Listener = function () {
-var currentTime = new Date().getTime();
-if (currentTime - ProgramTechnicalElectiveCoopPlan14Time <= 200) { 
-        ProgramTechnicalElectiveCoopPlan14Time = currentTime;
-        return;
-    }
-ProgramTechnicalElectiveCoopPlan14Time = currentTime;
-  var ProgramTechnicalElectiveCoopPlan14element = document.getElementById("ProgramTechnicalElectiveCoopPlan14");
- if (!ProgramTechnicalElectiveCoopPlan14flag) {
-     if (that.CoopPlan1ClickedMap.get("ProgramTechnicalElectiveCoopPlan14").length > 0) { 
- var trueCounter = 0;
-          for (let i = 0; i < that.CoopPlan1ClickedMap.get("ProgramTechnicalElectiveCoopPlan14").length; i++) { 
-        var cate = that.CoopPlan1ClickedMap.get("ProgramTechnicalElectiveCoopPlan14")[i];
-        if (ProgramTechnicalElectiveCoopPlan14element.classList.contains(cate + "-highlighted")) {
-            trueCounter++;
-            that.unHighlightElement(ProgramTechnicalElectiveCoopPlan14element, cate);
-        }
-    }
-    if (trueCounter > 0) {
-        return;
-    }}
-     that.highlightElement(ProgramTechnicalElectiveCoopPlan14element, "PROG");
-     that.addToClicked("ProgramTechnicalElectiveCoopPlan14", "PROG");
-      ProgramTechnicalElectiveCoopPlan14flag=true
-  }
- else {
-     that.unHighlightElement(ProgramTechnicalElectiveCoopPlan14element, "PROG");
-     var category = that.removeFromClicked("ProgramTechnicalElectiveCoopPlan14", "PROG");
-  if (category != "") { 
-     that.highlightElement(ProgramTechnicalElectiveCoopPlan14element, category);
-}
-      ProgramTechnicalElectiveCoopPlan14flag=false
-  }
-};
 $scope.ProgramTechnicalElectiveCoopPlan15Listener = function () {
 var currentTime = new Date().getTime();
 if (currentTime - ProgramTechnicalElectiveCoopPlan15Time <= 200) { 
@@ -10499,6 +9531,74 @@ ProgramTechnicalElectiveCoopPlan15Time = currentTime;
      that.highlightElement(ProgramTechnicalElectiveCoopPlan15element, category);
 }
       ProgramTechnicalElectiveCoopPlan15flag=false
+  }
+};
+$scope.ProgramTechnicalElectiveCoopPlan16Listener = function () {
+var currentTime = new Date().getTime();
+if (currentTime - ProgramTechnicalElectiveCoopPlan16Time <= 200) { 
+        ProgramTechnicalElectiveCoopPlan16Time = currentTime;
+        return;
+    }
+ProgramTechnicalElectiveCoopPlan16Time = currentTime;
+  var ProgramTechnicalElectiveCoopPlan16element = document.getElementById("ProgramTechnicalElectiveCoopPlan16");
+ if (!ProgramTechnicalElectiveCoopPlan16flag) {
+     if (that.CoopPlan1ClickedMap.get("ProgramTechnicalElectiveCoopPlan16").length > 0) { 
+ var trueCounter = 0;
+          for (let i = 0; i < that.CoopPlan1ClickedMap.get("ProgramTechnicalElectiveCoopPlan16").length; i++) { 
+        var cate = that.CoopPlan1ClickedMap.get("ProgramTechnicalElectiveCoopPlan16")[i];
+        if (ProgramTechnicalElectiveCoopPlan16element.classList.contains(cate + "-highlighted")) {
+            trueCounter++;
+            that.unHighlightElement(ProgramTechnicalElectiveCoopPlan16element, cate);
+        }
+    }
+    if (trueCounter > 0) {
+        return;
+    }}
+     that.highlightElement(ProgramTechnicalElectiveCoopPlan16element, "PROG");
+     that.addToClicked("ProgramTechnicalElectiveCoopPlan16", "PROG");
+      ProgramTechnicalElectiveCoopPlan16flag=true
+  }
+ else {
+     that.unHighlightElement(ProgramTechnicalElectiveCoopPlan16element, "PROG");
+     var category = that.removeFromClicked("ProgramTechnicalElectiveCoopPlan16", "PROG");
+  if (category != "") { 
+     that.highlightElement(ProgramTechnicalElectiveCoopPlan16element, category);
+}
+      ProgramTechnicalElectiveCoopPlan16flag=false
+  }
+};
+$scope.ProgramTechnicalElectiveCoopPlan17Listener = function () {
+var currentTime = new Date().getTime();
+if (currentTime - ProgramTechnicalElectiveCoopPlan17Time <= 200) { 
+        ProgramTechnicalElectiveCoopPlan17Time = currentTime;
+        return;
+    }
+ProgramTechnicalElectiveCoopPlan17Time = currentTime;
+  var ProgramTechnicalElectiveCoopPlan17element = document.getElementById("ProgramTechnicalElectiveCoopPlan17");
+ if (!ProgramTechnicalElectiveCoopPlan17flag) {
+     if (that.CoopPlan1ClickedMap.get("ProgramTechnicalElectiveCoopPlan17").length > 0) { 
+ var trueCounter = 0;
+          for (let i = 0; i < that.CoopPlan1ClickedMap.get("ProgramTechnicalElectiveCoopPlan17").length; i++) { 
+        var cate = that.CoopPlan1ClickedMap.get("ProgramTechnicalElectiveCoopPlan17")[i];
+        if (ProgramTechnicalElectiveCoopPlan17element.classList.contains(cate + "-highlighted")) {
+            trueCounter++;
+            that.unHighlightElement(ProgramTechnicalElectiveCoopPlan17element, cate);
+        }
+    }
+    if (trueCounter > 0) {
+        return;
+    }}
+     that.highlightElement(ProgramTechnicalElectiveCoopPlan17element, "PROG");
+     that.addToClicked("ProgramTechnicalElectiveCoopPlan17", "PROG");
+      ProgramTechnicalElectiveCoopPlan17flag=true
+  }
+ else {
+     that.unHighlightElement(ProgramTechnicalElectiveCoopPlan17element, "PROG");
+     var category = that.removeFromClicked("ProgramTechnicalElectiveCoopPlan17", "PROG");
+  if (category != "") { 
+     that.highlightElement(ProgramTechnicalElectiveCoopPlan17element, category);
+}
+      ProgramTechnicalElectiveCoopPlan17flag=false
   }
 };
 $scope.ITSElectiveCoopPlan10Listener = function () {
@@ -10926,9 +10026,9 @@ $scope.MATH209CoopPlan1RCListener = function () {
       MATH209CoopPlan1rflag=false
   }
 };
-$scope.CHE243CoopPlan1RCListener = function () {
-  var element = document.getElementById("CHE243CoopPlan1desc");
- if (!CHE243CoopPlan1rflag) {
+$scope.ProgramTechnicalElectiveCoopPlan10RCListener = function () {
+  var element = document.getElementById("ProgramTechnicalElectiveCoopPlan10desc");
+ if (!ProgramTechnicalElectiveCoopPlan10rflag) {
        if (element.classList.contains("tooltiptextleft")) {
         element.classList.remove("tooltiptextleft");
         element.classList.add("tooltiptextleft-locked");
@@ -10936,7 +10036,7 @@ $scope.CHE243CoopPlan1RCListener = function () {
         element.classList.remove("tooltiptextright");
         element.classList.add("tooltiptextright-locked");
     }
-      CHE243CoopPlan1rflag=true
+      ProgramTechnicalElectiveCoopPlan10rflag=true
   }
  else {
        if (element.classList.contains("tooltiptextleft-locked")) {
@@ -10946,53 +10046,7 @@ $scope.CHE243CoopPlan1RCListener = function () {
         element.classList.remove("tooltiptextright-locked");
         element.classList.add("tooltiptextright");
     }
-      CHE243CoopPlan1rflag=false
-  }
-};
-$scope.MATE201CoopPlan1RCListener = function () {
-  var element = document.getElementById("MATE201CoopPlan1desc");
- if (!MATE201CoopPlan1rflag) {
-       if (element.classList.contains("tooltiptextleft")) {
-        element.classList.remove("tooltiptextleft");
-        element.classList.add("tooltiptextleft-locked");
-    } else {
-        element.classList.remove("tooltiptextright");
-        element.classList.add("tooltiptextright-locked");
-    }
-      MATE201CoopPlan1rflag=true
-  }
- else {
-       if (element.classList.contains("tooltiptextleft-locked")) {
-        element.classList.remove("tooltiptextleft-locked");
-        element.classList.add("tooltiptextleft");
-    } else {
-        element.classList.remove("tooltiptextright-locked");
-        element.classList.add("tooltiptextright");
-    }
-      MATE201CoopPlan1rflag=false
-  }
-};
-$scope.MECE250CoopPlan1RCListener = function () {
-  var element = document.getElementById("MECE250CoopPlan1desc");
- if (!MECE250CoopPlan1rflag) {
-       if (element.classList.contains("tooltiptextleft")) {
-        element.classList.remove("tooltiptextleft");
-        element.classList.add("tooltiptextleft-locked");
-    } else {
-        element.classList.remove("tooltiptextright");
-        element.classList.add("tooltiptextright-locked");
-    }
-      MECE250CoopPlan1rflag=true
-  }
- else {
-       if (element.classList.contains("tooltiptextleft-locked")) {
-        element.classList.remove("tooltiptextleft-locked");
-        element.classList.add("tooltiptextleft");
-    } else {
-        element.classList.remove("tooltiptextright-locked");
-        element.classList.add("tooltiptextright");
-    }
-      MECE250CoopPlan1rflag=false
+      ProgramTechnicalElectiveCoopPlan10rflag=false
   }
 };
 $scope.ECE203CoopPlan1RCListener = function () {
@@ -11570,98 +10624,6 @@ $scope.ENGG404CoopPlan1RCListener = function () {
       ENGG404CoopPlan1rflag=false
   }
 };
-$scope.CHE243CoopPlan1RCListener = function () {
-  var element = document.getElementById("CHE243CoopPlan1desc");
- if (!CHE243CoopPlan1rflag) {
-       if (element.classList.contains("tooltiptextleft")) {
-        element.classList.remove("tooltiptextleft");
-        element.classList.add("tooltiptextleft-locked");
-    } else {
-        element.classList.remove("tooltiptextright");
-        element.classList.add("tooltiptextright-locked");
-    }
-      CHE243CoopPlan1rflag=true
-  }
- else {
-       if (element.classList.contains("tooltiptextleft-locked")) {
-        element.classList.remove("tooltiptextleft-locked");
-        element.classList.add("tooltiptextleft");
-    } else {
-        element.classList.remove("tooltiptextright-locked");
-        element.classList.add("tooltiptextright");
-    }
-      CHE243CoopPlan1rflag=false
-  }
-};
-$scope.MATE201CoopPlan1RCListener = function () {
-  var element = document.getElementById("MATE201CoopPlan1desc");
- if (!MATE201CoopPlan1rflag) {
-       if (element.classList.contains("tooltiptextleft")) {
-        element.classList.remove("tooltiptextleft");
-        element.classList.add("tooltiptextleft-locked");
-    } else {
-        element.classList.remove("tooltiptextright");
-        element.classList.add("tooltiptextright-locked");
-    }
-      MATE201CoopPlan1rflag=true
-  }
- else {
-       if (element.classList.contains("tooltiptextleft-locked")) {
-        element.classList.remove("tooltiptextleft-locked");
-        element.classList.add("tooltiptextleft");
-    } else {
-        element.classList.remove("tooltiptextright-locked");
-        element.classList.add("tooltiptextright");
-    }
-      MATE201CoopPlan1rflag=false
-  }
-};
-$scope.MECE250CoopPlan1RCListener = function () {
-  var element = document.getElementById("MECE250CoopPlan1desc");
- if (!MECE250CoopPlan1rflag) {
-       if (element.classList.contains("tooltiptextleft")) {
-        element.classList.remove("tooltiptextleft");
-        element.classList.add("tooltiptextleft-locked");
-    } else {
-        element.classList.remove("tooltiptextright");
-        element.classList.add("tooltiptextright-locked");
-    }
-      MECE250CoopPlan1rflag=true
-  }
- else {
-       if (element.classList.contains("tooltiptextleft-locked")) {
-        element.classList.remove("tooltiptextleft-locked");
-        element.classList.add("tooltiptextleft");
-    } else {
-        element.classList.remove("tooltiptextright-locked");
-        element.classList.add("tooltiptextright");
-    }
-      MECE250CoopPlan1rflag=false
-  }
-};
-$scope.ProgramTechnicalElectiveCoopPlan10RCListener = function () {
-  var element = document.getElementById("ProgramTechnicalElectiveCoopPlan10desc");
- if (!ProgramTechnicalElectiveCoopPlan10rflag) {
-       if (element.classList.contains("tooltiptextleft")) {
-        element.classList.remove("tooltiptextleft");
-        element.classList.add("tooltiptextleft-locked");
-    } else {
-        element.classList.remove("tooltiptextright");
-        element.classList.add("tooltiptextright-locked");
-    }
-      ProgramTechnicalElectiveCoopPlan10rflag=true
-  }
- else {
-       if (element.classList.contains("tooltiptextleft-locked")) {
-        element.classList.remove("tooltiptextleft-locked");
-        element.classList.add("tooltiptextleft");
-    } else {
-        element.classList.remove("tooltiptextright-locked");
-        element.classList.add("tooltiptextright");
-    }
-      ProgramTechnicalElectiveCoopPlan10rflag=false
-  }
-};
 $scope.ProgramTechnicalElectiveCoopPlan11RCListener = function () {
   var element = document.getElementById("ProgramTechnicalElectiveCoopPlan11desc");
  if (!ProgramTechnicalElectiveCoopPlan11rflag) {
@@ -11706,6 +10668,52 @@ $scope.ProgramTechnicalElectiveCoopPlan12RCListener = function () {
         element.classList.add("tooltiptextright");
     }
       ProgramTechnicalElectiveCoopPlan12rflag=false
+  }
+};
+$scope.ProgramTechnicalElectiveCoopPlan13RCListener = function () {
+  var element = document.getElementById("ProgramTechnicalElectiveCoopPlan13desc");
+ if (!ProgramTechnicalElectiveCoopPlan13rflag) {
+       if (element.classList.contains("tooltiptextleft")) {
+        element.classList.remove("tooltiptextleft");
+        element.classList.add("tooltiptextleft-locked");
+    } else {
+        element.classList.remove("tooltiptextright");
+        element.classList.add("tooltiptextright-locked");
+    }
+      ProgramTechnicalElectiveCoopPlan13rflag=true
+  }
+ else {
+       if (element.classList.contains("tooltiptextleft-locked")) {
+        element.classList.remove("tooltiptextleft-locked");
+        element.classList.add("tooltiptextleft");
+    } else {
+        element.classList.remove("tooltiptextright-locked");
+        element.classList.add("tooltiptextright");
+    }
+      ProgramTechnicalElectiveCoopPlan13rflag=false
+  }
+};
+$scope.ProgramTechnicalElectiveCoopPlan14RCListener = function () {
+  var element = document.getElementById("ProgramTechnicalElectiveCoopPlan14desc");
+ if (!ProgramTechnicalElectiveCoopPlan14rflag) {
+       if (element.classList.contains("tooltiptextleft")) {
+        element.classList.remove("tooltiptextleft");
+        element.classList.add("tooltiptextleft-locked");
+    } else {
+        element.classList.remove("tooltiptextright");
+        element.classList.add("tooltiptextright-locked");
+    }
+      ProgramTechnicalElectiveCoopPlan14rflag=true
+  }
+ else {
+       if (element.classList.contains("tooltiptextleft-locked")) {
+        element.classList.remove("tooltiptextleft-locked");
+        element.classList.add("tooltiptextleft");
+    } else {
+        element.classList.remove("tooltiptextright-locked");
+        element.classList.add("tooltiptextright");
+    }
+      ProgramTechnicalElectiveCoopPlan14rflag=false
   }
 };
 $scope.ECE491CoopPlan1RCListener = function () {
@@ -11800,52 +10808,6 @@ $scope.ENGG400CoopPlan1RCListener = function () {
       ENGG400CoopPlan1rflag=false
   }
 };
-$scope.ProgramTechnicalElectiveCoopPlan13RCListener = function () {
-  var element = document.getElementById("ProgramTechnicalElectiveCoopPlan13desc");
- if (!ProgramTechnicalElectiveCoopPlan13rflag) {
-       if (element.classList.contains("tooltiptextleft")) {
-        element.classList.remove("tooltiptextleft");
-        element.classList.add("tooltiptextleft-locked");
-    } else {
-        element.classList.remove("tooltiptextright");
-        element.classList.add("tooltiptextright-locked");
-    }
-      ProgramTechnicalElectiveCoopPlan13rflag=true
-  }
- else {
-       if (element.classList.contains("tooltiptextleft-locked")) {
-        element.classList.remove("tooltiptextleft-locked");
-        element.classList.add("tooltiptextleft");
-    } else {
-        element.classList.remove("tooltiptextright-locked");
-        element.classList.add("tooltiptextright");
-    }
-      ProgramTechnicalElectiveCoopPlan13rflag=false
-  }
-};
-$scope.ProgramTechnicalElectiveCoopPlan14RCListener = function () {
-  var element = document.getElementById("ProgramTechnicalElectiveCoopPlan14desc");
- if (!ProgramTechnicalElectiveCoopPlan14rflag) {
-       if (element.classList.contains("tooltiptextleft")) {
-        element.classList.remove("tooltiptextleft");
-        element.classList.add("tooltiptextleft-locked");
-    } else {
-        element.classList.remove("tooltiptextright");
-        element.classList.add("tooltiptextright-locked");
-    }
-      ProgramTechnicalElectiveCoopPlan14rflag=true
-  }
- else {
-       if (element.classList.contains("tooltiptextleft-locked")) {
-        element.classList.remove("tooltiptextleft-locked");
-        element.classList.add("tooltiptextleft");
-    } else {
-        element.classList.remove("tooltiptextright-locked");
-        element.classList.add("tooltiptextright");
-    }
-      ProgramTechnicalElectiveCoopPlan14rflag=false
-  }
-};
 $scope.ProgramTechnicalElectiveCoopPlan15RCListener = function () {
   var element = document.getElementById("ProgramTechnicalElectiveCoopPlan15desc");
  if (!ProgramTechnicalElectiveCoopPlan15rflag) {
@@ -11867,6 +10829,52 @@ $scope.ProgramTechnicalElectiveCoopPlan15RCListener = function () {
         element.classList.add("tooltiptextright");
     }
       ProgramTechnicalElectiveCoopPlan15rflag=false
+  }
+};
+$scope.ProgramTechnicalElectiveCoopPlan16RCListener = function () {
+  var element = document.getElementById("ProgramTechnicalElectiveCoopPlan16desc");
+ if (!ProgramTechnicalElectiveCoopPlan16rflag) {
+       if (element.classList.contains("tooltiptextleft")) {
+        element.classList.remove("tooltiptextleft");
+        element.classList.add("tooltiptextleft-locked");
+    } else {
+        element.classList.remove("tooltiptextright");
+        element.classList.add("tooltiptextright-locked");
+    }
+      ProgramTechnicalElectiveCoopPlan16rflag=true
+  }
+ else {
+       if (element.classList.contains("tooltiptextleft-locked")) {
+        element.classList.remove("tooltiptextleft-locked");
+        element.classList.add("tooltiptextleft");
+    } else {
+        element.classList.remove("tooltiptextright-locked");
+        element.classList.add("tooltiptextright");
+    }
+      ProgramTechnicalElectiveCoopPlan16rflag=false
+  }
+};
+$scope.ProgramTechnicalElectiveCoopPlan17RCListener = function () {
+  var element = document.getElementById("ProgramTechnicalElectiveCoopPlan17desc");
+ if (!ProgramTechnicalElectiveCoopPlan17rflag) {
+       if (element.classList.contains("tooltiptextleft")) {
+        element.classList.remove("tooltiptextleft");
+        element.classList.add("tooltiptextleft-locked");
+    } else {
+        element.classList.remove("tooltiptextright");
+        element.classList.add("tooltiptextright-locked");
+    }
+      ProgramTechnicalElectiveCoopPlan17rflag=true
+  }
+ else {
+       if (element.classList.contains("tooltiptextleft-locked")) {
+        element.classList.remove("tooltiptextleft-locked");
+        element.classList.add("tooltiptextleft");
+    } else {
+        element.classList.remove("tooltiptextright-locked");
+        element.classList.add("tooltiptextright");
+    }
+      ProgramTechnicalElectiveCoopPlan17rflag=false
   }
 };
 $scope.ITSElectiveCoopPlan10RCListener = function () {
@@ -11956,18 +10964,10 @@ this.NanoTraditionalPlanClickedMap.set("MATH201NanoTraditionalPlan", []);
   var MATH209NanoTraditionalPlanrflag = false;
  var MATH209NanoTraditionalPlanTime = new Date().getTime();
 this.NanoTraditionalPlanClickedMap.set("MATH209NanoTraditionalPlan", []);
-  var CHE243NanoTraditionalPlanflag = false;
-  var CHE243NanoTraditionalPlanrflag = false;
- var CHE243NanoTraditionalPlanTime = new Date().getTime();
-this.NanoTraditionalPlanClickedMap.set("CHE243NanoTraditionalPlan", []);
-  var MATE201NanoTraditionalPlanflag = false;
-  var MATE201NanoTraditionalPlanrflag = false;
- var MATE201NanoTraditionalPlanTime = new Date().getTime();
-this.NanoTraditionalPlanClickedMap.set("MATE201NanoTraditionalPlan", []);
-  var MECE250NanoTraditionalPlanflag = false;
-  var MECE250NanoTraditionalPlanrflag = false;
- var MECE250NanoTraditionalPlanTime = new Date().getTime();
-this.NanoTraditionalPlanClickedMap.set("MECE250NanoTraditionalPlan", []);
+  var ProgramTechnicalElectiveNanoTraditionalPlan0flag = false;
+  var ProgramTechnicalElectiveNanoTraditionalPlan0rflag = false;
+ var ProgramTechnicalElectiveNanoTraditionalPlan0Time = new Date().getTime();
+this.NanoTraditionalPlanClickedMap.set("ProgramTechnicalElectiveNanoTraditionalPlan0", []);
   var ComplementaryElectiveNanoTraditionalPlan0flag = false;
   var ComplementaryElectiveNanoTraditionalPlan0rflag = false;
  var ComplementaryElectiveNanoTraditionalPlan0Time = new Date().getTime();
@@ -12056,22 +11056,14 @@ this.NanoTraditionalPlanClickedMap.set("ECE490NanoTraditionalPlan", []);
   var ENGG404NanoTraditionalPlanrflag = false;
  var ENGG404NanoTraditionalPlanTime = new Date().getTime();
 this.NanoTraditionalPlanClickedMap.set("ENGG404NanoTraditionalPlan", []);
-  var CHE243NanoTraditionalPlanflag = false;
-  var CHE243NanoTraditionalPlanrflag = false;
- var CHE243NanoTraditionalPlanTime = new Date().getTime();
-this.NanoTraditionalPlanClickedMap.set("CHE243NanoTraditionalPlan", []);
-  var MATE201NanoTraditionalPlanflag = false;
-  var MATE201NanoTraditionalPlanrflag = false;
- var MATE201NanoTraditionalPlanTime = new Date().getTime();
-this.NanoTraditionalPlanClickedMap.set("MATE201NanoTraditionalPlan", []);
-  var MECE250NanoTraditionalPlanflag = false;
-  var MECE250NanoTraditionalPlanrflag = false;
- var MECE250NanoTraditionalPlanTime = new Date().getTime();
-this.NanoTraditionalPlanClickedMap.set("MECE250NanoTraditionalPlan", []);
-  var ProgramTechnicalElectiveNanoTraditionalPlan0flag = false;
-  var ProgramTechnicalElectiveNanoTraditionalPlan0rflag = false;
- var ProgramTechnicalElectiveNanoTraditionalPlan0Time = new Date().getTime();
-this.NanoTraditionalPlanClickedMap.set("ProgramTechnicalElectiveNanoTraditionalPlan0", []);
+  var ProgramTechnicalElectiveNanoTraditionalPlan1flag = false;
+  var ProgramTechnicalElectiveNanoTraditionalPlan1rflag = false;
+ var ProgramTechnicalElectiveNanoTraditionalPlan1Time = new Date().getTime();
+this.NanoTraditionalPlanClickedMap.set("ProgramTechnicalElectiveNanoTraditionalPlan1", []);
+  var ProgramTechnicalElectiveNanoTraditionalPlan2flag = false;
+  var ProgramTechnicalElectiveNanoTraditionalPlan2rflag = false;
+ var ProgramTechnicalElectiveNanoTraditionalPlan2Time = new Date().getTime();
+this.NanoTraditionalPlanClickedMap.set("ProgramTechnicalElectiveNanoTraditionalPlan2", []);
   var ECE450NanoTraditionalPlanflag = false;
   var ECE450NanoTraditionalPlanrflag = false;
  var ECE450NanoTraditionalPlanTime = new Date().getTime();
@@ -12096,14 +11088,14 @@ this.NanoTraditionalPlanClickedMap.set("ENGM401NanoTraditionalPlan", []);
   var ENGG400NanoTraditionalPlanrflag = false;
  var ENGG400NanoTraditionalPlanTime = new Date().getTime();
 this.NanoTraditionalPlanClickedMap.set("ENGG400NanoTraditionalPlan", []);
-  var ProgramTechnicalElectiveNanoTraditionalPlan1flag = false;
-  var ProgramTechnicalElectiveNanoTraditionalPlan1rflag = false;
- var ProgramTechnicalElectiveNanoTraditionalPlan1Time = new Date().getTime();
-this.NanoTraditionalPlanClickedMap.set("ProgramTechnicalElectiveNanoTraditionalPlan1", []);
-  var ProgramTechnicalElectiveNanoTraditionalPlan2flag = false;
-  var ProgramTechnicalElectiveNanoTraditionalPlan2rflag = false;
- var ProgramTechnicalElectiveNanoTraditionalPlan2Time = new Date().getTime();
-this.NanoTraditionalPlanClickedMap.set("ProgramTechnicalElectiveNanoTraditionalPlan2", []);
+  var ProgramTechnicalElectiveNanoTraditionalPlan3flag = false;
+  var ProgramTechnicalElectiveNanoTraditionalPlan3rflag = false;
+ var ProgramTechnicalElectiveNanoTraditionalPlan3Time = new Date().getTime();
+this.NanoTraditionalPlanClickedMap.set("ProgramTechnicalElectiveNanoTraditionalPlan3", []);
+  var ProgramTechnicalElectiveNanoTraditionalPlan4flag = false;
+  var ProgramTechnicalElectiveNanoTraditionalPlan4rflag = false;
+ var ProgramTechnicalElectiveNanoTraditionalPlan4Time = new Date().getTime();
+this.NanoTraditionalPlanClickedMap.set("ProgramTechnicalElectiveNanoTraditionalPlan4", []);
 $scope.CHEM103NanoTraditionalPlanListener = function () {
 var currentTime = new Date().getTime();
 if (currentTime - CHEM103NanoTraditionalPlanTime <= 200) { 
@@ -12125,13 +11117,13 @@ CHEM103NanoTraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine107());
+      that.addLine(getLine87());
      that.highlightElement(CHEM103NanoTraditionalPlanelement, "NaturalSciences");
      that.addToClicked("CHEM103NanoTraditionalPlan", "NaturalSciences");
       CHEM103NanoTraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine107());
+      that.removeLine(getLine87());
      that.unHighlightElement(CHEM103NanoTraditionalPlanelement, "NaturalSciences");
      var category = that.removeFromClicked("CHEM103NanoTraditionalPlan", "NaturalSciences");
   if (category != "") { 
@@ -12195,19 +11187,15 @@ ENGG130NanoTraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine105());
-      that.addLine(getLine110());
-      that.addLine(getLine121());
-      that.addLine(getLine152());
+      that.addLine(getLine85());
+      that.addLine(getLine90());
      that.highlightElement(ENGG130NanoTraditionalPlanelement, "NaturalSciences");
      that.addToClicked("ENGG130NanoTraditionalPlan", "NaturalSciences");
       ENGG130NanoTraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine105());
-      that.removeLine(getLine110());
-      that.removeLine(getLine121());
-      that.removeLine(getLine152());
+      that.removeLine(getLine85());
+      that.removeLine(getLine90());
      that.unHighlightElement(ENGG130NanoTraditionalPlanelement, "NaturalSciences");
      var category = that.removeFromClicked("ENGG130NanoTraditionalPlan", "NaturalSciences");
   if (category != "") { 
@@ -12237,13 +11225,13 @@ ENGL199NanoTraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine108());
+      that.addLine(getLine88());
      that.highlightElement(ENGL199NanoTraditionalPlanelement, "Other");
      that.addToClicked("ENGL199NanoTraditionalPlan", "Other");
       ENGL199NanoTraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine108());
+      that.removeLine(getLine88());
      that.unHighlightElement(ENGL199NanoTraditionalPlanelement, "Other");
      var category = that.removeFromClicked("ENGL199NanoTraditionalPlan", "Other");
   if (category != "") { 
@@ -12273,23 +11261,23 @@ MATH100NanoTraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine105());
+      that.addLine(getLine85());
+      that.addLine(getLine86());
+      that.addLine(getLine89());
+      that.addLine(getLine92());
+      that.addLine(getLine93());
       that.addLine(getLine106());
-      that.addLine(getLine109());
-      that.addLine(getLine112());
-      that.addLine(getLine113());
-      that.addLine(getLine131());
      that.highlightElement(MATH100NanoTraditionalPlanelement, "Math");
      that.addToClicked("MATH100NanoTraditionalPlan", "Math");
       MATH100NanoTraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine105());
+      that.removeLine(getLine85());
+      that.removeLine(getLine86());
+      that.removeLine(getLine89());
+      that.removeLine(getLine92());
+      that.removeLine(getLine93());
       that.removeLine(getLine106());
-      that.removeLine(getLine109());
-      that.removeLine(getLine112());
-      that.removeLine(getLine113());
-      that.removeLine(getLine131());
      that.unHighlightElement(MATH100NanoTraditionalPlanelement, "Math");
      var category = that.removeFromClicked("MATH100NanoTraditionalPlan", "Math");
   if (category != "") { 
@@ -12319,15 +11307,15 @@ PHYS130NanoTraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine106());
-      that.addLine(getLine130());
+      that.addLine(getLine86());
+      that.addLine(getLine105());
      that.highlightElement(PHYS130NanoTraditionalPlanelement, "NaturalSciences");
      that.addToClicked("PHYS130NanoTraditionalPlan", "NaturalSciences");
       PHYS130NanoTraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine106());
-      that.removeLine(getLine130());
+      that.removeLine(getLine86());
+      that.removeLine(getLine105());
      that.unHighlightElement(PHYS130NanoTraditionalPlanelement, "NaturalSciences");
      var category = that.removeFromClicked("PHYS130NanoTraditionalPlan", "NaturalSciences");
   if (category != "") { 
@@ -12357,17 +11345,13 @@ CHEM105NanoTraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine107());
-      that.addLine(getLine120());
-      that.addLine(getLine151());
+      that.addLine(getLine87());
      that.highlightElement(CHEM105NanoTraditionalPlanelement, "NaturalSciences");
      that.addToClicked("CHEM105NanoTraditionalPlan", "NaturalSciences");
       CHEM105NanoTraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine107());
-      that.removeLine(getLine120());
-      that.removeLine(getLine151());
+      that.removeLine(getLine87());
      that.unHighlightElement(CHEM105NanoTraditionalPlanelement, "NaturalSciences");
      var category = that.removeFromClicked("CHEM105NanoTraditionalPlan", "NaturalSciences");
   if (category != "") { 
@@ -12397,13 +11381,13 @@ ENCMP100NanoTraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine127());
+      that.addLine(getLine102());
      that.highlightElement(ENCMP100NanoTraditionalPlanelement, "NaturalSciences");
      that.addToClicked("ENCMP100NanoTraditionalPlan", "NaturalSciences");
       ENCMP100NanoTraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine127());
+      that.removeLine(getLine102());
      that.unHighlightElement(ENCMP100NanoTraditionalPlanelement, "NaturalSciences");
      var category = that.removeFromClicked("ENCMP100NanoTraditionalPlan", "NaturalSciences");
   if (category != "") { 
@@ -12433,13 +11417,13 @@ ENGG160NanoTraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine108());
+      that.addLine(getLine88());
      that.highlightElement(ENGG160NanoTraditionalPlanelement, "EngineeringDesign");
      that.addToClicked("ENGG160NanoTraditionalPlan", "EngineeringDesign");
       ENGG160NanoTraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine108());
+      that.removeLine(getLine88());
      that.unHighlightElement(ENGG160NanoTraditionalPlanelement, "EngineeringDesign");
      var category = that.removeFromClicked("ENGG160NanoTraditionalPlan", "EngineeringDesign");
   if (category != "") { 
@@ -12469,21 +11453,17 @@ ENPH131NanoTraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine109());
-      that.addLine(getLine110());
-      that.addLine(getLine111());
-      that.addLine(getLine122());
-      that.addLine(getLine153());
+      that.addLine(getLine89());
+      that.addLine(getLine90());
+      that.addLine(getLine91());
      that.highlightElement(ENPH131NanoTraditionalPlanelement, "NaturalSciences");
      that.addToClicked("ENPH131NanoTraditionalPlan", "NaturalSciences");
       ENPH131NanoTraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine109());
-      that.removeLine(getLine110());
-      that.removeLine(getLine111());
-      that.removeLine(getLine122());
-      that.removeLine(getLine153());
+      that.removeLine(getLine89());
+      that.removeLine(getLine90());
+      that.removeLine(getLine91());
      that.unHighlightElement(ENPH131NanoTraditionalPlanelement, "NaturalSciences");
      var category = that.removeFromClicked("ENPH131NanoTraditionalPlan", "NaturalSciences");
   if (category != "") { 
@@ -12513,29 +11493,21 @@ MATH101NanoTraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine111());
-      that.addLine(getLine112());
-      that.addLine(getLine114());
-      that.addLine(getLine117());
-      that.addLine(getLine119());
-      that.addLine(getLine123());
-      that.addLine(getLine132());
-      that.addLine(getLine150());
-      that.addLine(getLine154());
+      that.addLine(getLine91());
+      that.addLine(getLine92());
+      that.addLine(getLine94());
+      that.addLine(getLine97());
+      that.addLine(getLine107());
      that.highlightElement(MATH101NanoTraditionalPlanelement, "Math");
      that.addToClicked("MATH101NanoTraditionalPlan", "Math");
       MATH101NanoTraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine111());
-      that.removeLine(getLine112());
-      that.removeLine(getLine114());
-      that.removeLine(getLine117());
-      that.removeLine(getLine119());
-      that.removeLine(getLine123());
-      that.removeLine(getLine132());
-      that.removeLine(getLine150());
-      that.removeLine(getLine154());
+      that.removeLine(getLine91());
+      that.removeLine(getLine92());
+      that.removeLine(getLine94());
+      that.removeLine(getLine97());
+      that.removeLine(getLine107());
      that.unHighlightElement(MATH101NanoTraditionalPlanelement, "Math");
      var category = that.removeFromClicked("MATH101NanoTraditionalPlan", "Math");
   if (category != "") { 
@@ -12565,19 +11537,19 @@ MATH102NanoTraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
+      that.addLine(getLine93());
+      that.addLine(getLine95());
+      that.addLine(getLine98());
       that.addLine(getLine113());
-      that.addLine(getLine115());
-      that.addLine(getLine118());
-      that.addLine(getLine138());
      that.highlightElement(MATH102NanoTraditionalPlanelement, "Math");
      that.addToClicked("MATH102NanoTraditionalPlan", "Math");
       MATH102NanoTraditionalPlanflag=true
   }
  else {
+      that.removeLine(getLine93());
+      that.removeLine(getLine95());
+      that.removeLine(getLine98());
       that.removeLine(getLine113());
-      that.removeLine(getLine115());
-      that.removeLine(getLine118());
-      that.removeLine(getLine138());
      that.unHighlightElement(MATH102NanoTraditionalPlanelement, "Math");
      var category = that.removeFromClicked("MATH102NanoTraditionalPlan", "Math");
   if (category != "") { 
@@ -12607,19 +11579,19 @@ ECE202NanoTraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine114());
-      that.addLine(getLine115());
-      that.addLine(getLine124());
-      that.addLine(getLine128());
+      that.addLine(getLine94());
+      that.addLine(getLine95());
+      that.addLine(getLine99());
+      that.addLine(getLine103());
      that.highlightElement(ECE202NanoTraditionalPlanelement, "EngineeringSciences");
      that.addToClicked("ECE202NanoTraditionalPlan", "EngineeringSciences");
       ECE202NanoTraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine114());
-      that.removeLine(getLine115());
-      that.removeLine(getLine124());
-      that.removeLine(getLine128());
+      that.removeLine(getLine94());
+      that.removeLine(getLine95());
+      that.removeLine(getLine99());
+      that.removeLine(getLine103());
      that.unHighlightElement(ECE202NanoTraditionalPlanelement, "EngineeringSciences");
      var category = that.removeFromClicked("ECE202NanoTraditionalPlan", "EngineeringSciences");
   if (category != "") { 
@@ -12649,13 +11621,13 @@ ECE210NanoTraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine126());
+      that.addLine(getLine101());
      that.highlightElement(ECE210NanoTraditionalPlanelement, "EngineeringSciences");
      that.addToClicked("ECE210NanoTraditionalPlan", "EngineeringSciences");
       ECE210NanoTraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine126());
+      that.removeLine(getLine101());
      that.unHighlightElement(ECE210NanoTraditionalPlanelement, "EngineeringSciences");
      var category = that.removeFromClicked("ECE210NanoTraditionalPlan", "EngineeringSciences");
   if (category != "") { 
@@ -12685,15 +11657,15 @@ MATH201NanoTraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine116());
-      that.addLine(getLine129());
+      that.addLine(getLine96());
+      that.addLine(getLine104());
      that.highlightElement(MATH201NanoTraditionalPlanelement, "Math");
      that.addToClicked("MATH201NanoTraditionalPlan", "Math");
       MATH201NanoTraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine116());
-      that.removeLine(getLine129());
+      that.removeLine(getLine96());
+      that.removeLine(getLine104());
      that.unHighlightElement(MATH201NanoTraditionalPlanelement, "Math");
      var category = that.removeFromClicked("MATH201NanoTraditionalPlan", "Math");
   if (category != "") { 
@@ -12723,23 +11695,23 @@ MATH209NanoTraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine116());
+      that.addLine(getLine96());
+      that.addLine(getLine97());
+      that.addLine(getLine98());
+      that.addLine(getLine114());
       that.addLine(getLine117());
-      that.addLine(getLine118());
-      that.addLine(getLine139());
-      that.addLine(getLine142());
-      that.addLine(getLine146());
+      that.addLine(getLine121());
      that.highlightElement(MATH209NanoTraditionalPlanelement, "Math");
      that.addToClicked("MATH209NanoTraditionalPlan", "Math");
       MATH209NanoTraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine116());
+      that.removeLine(getLine96());
+      that.removeLine(getLine97());
+      that.removeLine(getLine98());
+      that.removeLine(getLine114());
       that.removeLine(getLine117());
-      that.removeLine(getLine118());
-      that.removeLine(getLine139());
-      that.removeLine(getLine142());
-      that.removeLine(getLine146());
+      that.removeLine(getLine121());
      that.unHighlightElement(MATH209NanoTraditionalPlanelement, "Math");
      var category = that.removeFromClicked("MATH209NanoTraditionalPlan", "Math");
   if (category != "") { 
@@ -12748,126 +11720,38 @@ MATH209NanoTraditionalPlanTime = currentTime;
       MATH209NanoTraditionalPlanflag=false
   }
 };
-$scope.CHE243NanoTraditionalPlanListener = function () {
+$scope.ProgramTechnicalElectiveNanoTraditionalPlan0Listener = function () {
 var currentTime = new Date().getTime();
-if (currentTime - CHE243NanoTraditionalPlanTime <= 200) { 
-        CHE243NanoTraditionalPlanTime = currentTime;
+if (currentTime - ProgramTechnicalElectiveNanoTraditionalPlan0Time <= 200) { 
+        ProgramTechnicalElectiveNanoTraditionalPlan0Time = currentTime;
         return;
     }
-CHE243NanoTraditionalPlanTime = currentTime;
-  var CHE243NanoTraditionalPlanelement = document.getElementById("CHE243NanoTraditionalPlan");
- if (!CHE243NanoTraditionalPlanflag) {
-     if (that.NanoTraditionalPlanClickedMap.get("CHE243NanoTraditionalPlan").length > 0) { 
+ProgramTechnicalElectiveNanoTraditionalPlan0Time = currentTime;
+  var ProgramTechnicalElectiveNanoTraditionalPlan0element = document.getElementById("ProgramTechnicalElectiveNanoTraditionalPlan0");
+ if (!ProgramTechnicalElectiveNanoTraditionalPlan0flag) {
+     if (that.NanoTraditionalPlanClickedMap.get("ProgramTechnicalElectiveNanoTraditionalPlan0").length > 0) { 
  var trueCounter = 0;
-          for (let i = 0; i < that.NanoTraditionalPlanClickedMap.get("CHE243NanoTraditionalPlan").length; i++) { 
-        var cate = that.NanoTraditionalPlanClickedMap.get("CHE243NanoTraditionalPlan")[i];
-        if (CHE243NanoTraditionalPlanelement.classList.contains(cate + "-highlighted")) {
+          for (let i = 0; i < that.NanoTraditionalPlanClickedMap.get("ProgramTechnicalElectiveNanoTraditionalPlan0").length; i++) { 
+        var cate = that.NanoTraditionalPlanClickedMap.get("ProgramTechnicalElectiveNanoTraditionalPlan0")[i];
+        if (ProgramTechnicalElectiveNanoTraditionalPlan0element.classList.contains(cate + "-highlighted")) {
             trueCounter++;
-            that.unHighlightElement(CHE243NanoTraditionalPlanelement, cate);
+            that.unHighlightElement(ProgramTechnicalElectiveNanoTraditionalPlan0element, cate);
         }
     }
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine119());
-      that.addLine(getLine150());
-     that.highlightElement(CHE243NanoTraditionalPlanelement, "EngineeringSciences");
-     that.addToClicked("CHE243NanoTraditionalPlan", "EngineeringSciences");
-      CHE243NanoTraditionalPlanflag=true
+     that.highlightElement(ProgramTechnicalElectiveNanoTraditionalPlan0element, "PROG");
+     that.addToClicked("ProgramTechnicalElectiveNanoTraditionalPlan0", "PROG");
+      ProgramTechnicalElectiveNanoTraditionalPlan0flag=true
   }
  else {
-      that.removeLine(getLine119());
-      that.removeLine(getLine150());
-     that.unHighlightElement(CHE243NanoTraditionalPlanelement, "EngineeringSciences");
-     var category = that.removeFromClicked("CHE243NanoTraditionalPlan", "EngineeringSciences");
+     that.unHighlightElement(ProgramTechnicalElectiveNanoTraditionalPlan0element, "PROG");
+     var category = that.removeFromClicked("ProgramTechnicalElectiveNanoTraditionalPlan0", "PROG");
   if (category != "") { 
-     that.highlightElement(CHE243NanoTraditionalPlanelement, category);
+     that.highlightElement(ProgramTechnicalElectiveNanoTraditionalPlan0element, category);
 }
-      CHE243NanoTraditionalPlanflag=false
-  }
-};
-$scope.MATE201NanoTraditionalPlanListener = function () {
-var currentTime = new Date().getTime();
-if (currentTime - MATE201NanoTraditionalPlanTime <= 200) { 
-        MATE201NanoTraditionalPlanTime = currentTime;
-        return;
-    }
-MATE201NanoTraditionalPlanTime = currentTime;
-  var MATE201NanoTraditionalPlanelement = document.getElementById("MATE201NanoTraditionalPlan");
- if (!MATE201NanoTraditionalPlanflag) {
-     if (that.NanoTraditionalPlanClickedMap.get("MATE201NanoTraditionalPlan").length > 0) { 
- var trueCounter = 0;
-          for (let i = 0; i < that.NanoTraditionalPlanClickedMap.get("MATE201NanoTraditionalPlan").length; i++) { 
-        var cate = that.NanoTraditionalPlanClickedMap.get("MATE201NanoTraditionalPlan")[i];
-        if (MATE201NanoTraditionalPlanelement.classList.contains(cate + "-highlighted")) {
-            trueCounter++;
-            that.unHighlightElement(MATE201NanoTraditionalPlanelement, cate);
-        }
-    }
-    if (trueCounter > 0) {
-        return;
-    }}
-      that.addLine(getLine120());
-      that.addLine(getLine151());
-     that.highlightElement(MATE201NanoTraditionalPlanelement, "NaturalSciences");
-     that.addToClicked("MATE201NanoTraditionalPlan", "NaturalSciences");
-      MATE201NanoTraditionalPlanflag=true
-  }
- else {
-      that.removeLine(getLine120());
-      that.removeLine(getLine151());
-     that.unHighlightElement(MATE201NanoTraditionalPlanelement, "NaturalSciences");
-     var category = that.removeFromClicked("MATE201NanoTraditionalPlan", "NaturalSciences");
-  if (category != "") { 
-     that.highlightElement(MATE201NanoTraditionalPlanelement, category);
-}
-      MATE201NanoTraditionalPlanflag=false
-  }
-};
-$scope.MECE250NanoTraditionalPlanListener = function () {
-var currentTime = new Date().getTime();
-if (currentTime - MECE250NanoTraditionalPlanTime <= 200) { 
-        MECE250NanoTraditionalPlanTime = currentTime;
-        return;
-    }
-MECE250NanoTraditionalPlanTime = currentTime;
-  var MECE250NanoTraditionalPlanelement = document.getElementById("MECE250NanoTraditionalPlan");
- if (!MECE250NanoTraditionalPlanflag) {
-     if (that.NanoTraditionalPlanClickedMap.get("MECE250NanoTraditionalPlan").length > 0) { 
- var trueCounter = 0;
-          for (let i = 0; i < that.NanoTraditionalPlanClickedMap.get("MECE250NanoTraditionalPlan").length; i++) { 
-        var cate = that.NanoTraditionalPlanClickedMap.get("MECE250NanoTraditionalPlan")[i];
-        if (MECE250NanoTraditionalPlanelement.classList.contains(cate + "-highlighted")) {
-            trueCounter++;
-            that.unHighlightElement(MECE250NanoTraditionalPlanelement, cate);
-        }
-    }
-    if (trueCounter > 0) {
-        return;
-    }}
-      that.addLine(getLine121());
-      that.addLine(getLine122());
-      that.addLine(getLine123());
-      that.addLine(getLine152());
-      that.addLine(getLine153());
-      that.addLine(getLine154());
-     that.highlightElement(MECE250NanoTraditionalPlanelement, "EngineeringSciences");
-     that.addToClicked("MECE250NanoTraditionalPlan", "EngineeringSciences");
-      MECE250NanoTraditionalPlanflag=true
-  }
- else {
-      that.removeLine(getLine121());
-      that.removeLine(getLine122());
-      that.removeLine(getLine123());
-      that.removeLine(getLine152());
-      that.removeLine(getLine153());
-      that.removeLine(getLine154());
-     that.unHighlightElement(MECE250NanoTraditionalPlanelement, "EngineeringSciences");
-     var category = that.removeFromClicked("MECE250NanoTraditionalPlan", "EngineeringSciences");
-  if (category != "") { 
-     that.highlightElement(MECE250NanoTraditionalPlanelement, category);
-}
-      MECE250NanoTraditionalPlanflag=false
+      ProgramTechnicalElectiveNanoTraditionalPlan0flag=false
   }
 };
 $scope.ComplementaryElectiveNanoTraditionalPlan0Listener = function () {
@@ -12925,19 +11809,19 @@ ECE203NanoTraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine124());
-      that.addLine(getLine125());
-      that.addLine(getLine133());
-      that.addLine(getLine148());
+      that.addLine(getLine99());
+      that.addLine(getLine100());
+      that.addLine(getLine108());
+      that.addLine(getLine123());
      that.highlightElement(ECE203NanoTraditionalPlanelement, "EngineeringSciences");
      that.addToClicked("ECE203NanoTraditionalPlan", "EngineeringSciences");
       ECE203NanoTraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine124());
-      that.removeLine(getLine125());
-      that.removeLine(getLine133());
-      that.removeLine(getLine148());
+      that.removeLine(getLine99());
+      that.removeLine(getLine100());
+      that.removeLine(getLine108());
+      that.removeLine(getLine123());
      that.unHighlightElement(ECE203NanoTraditionalPlanelement, "EngineeringSciences");
      var category = that.removeFromClicked("ECE203NanoTraditionalPlan", "EngineeringSciences");
   if (category != "") { 
@@ -12967,15 +11851,15 @@ ECE212NanoTraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine126());
-      that.addLine(getLine135());
+      that.addLine(getLine101());
+      that.addLine(getLine110());
      that.highlightElement(ECE212NanoTraditionalPlanelement, "EngineeringSciences");
      that.addToClicked("ECE212NanoTraditionalPlan", "EngineeringSciences");
       ECE212NanoTraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine126());
-      that.removeLine(getLine135());
+      that.removeLine(getLine101());
+      that.removeLine(getLine110());
      that.unHighlightElement(ECE212NanoTraditionalPlanelement, "EngineeringSciences");
      var category = that.removeFromClicked("ECE212NanoTraditionalPlan", "EngineeringSciences");
   if (category != "") { 
@@ -13005,15 +11889,15 @@ ECE220NanoTraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine127());
-      that.addLine(getLine134());
+      that.addLine(getLine102());
+      that.addLine(getLine109());
      that.highlightElement(ECE220NanoTraditionalPlanelement, "EngineeringSciences");
      that.addToClicked("ECE220NanoTraditionalPlan", "EngineeringSciences");
       ECE220NanoTraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine127());
-      that.removeLine(getLine134());
+      that.removeLine(getLine102());
+      that.removeLine(getLine109());
      that.unHighlightElement(ECE220NanoTraditionalPlanelement, "EngineeringSciences");
      var category = that.removeFromClicked("ECE220NanoTraditionalPlan", "EngineeringSciences");
   if (category != "") { 
@@ -13043,23 +11927,23 @@ ECE240NanoTraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine125());
-      that.addLine(getLine128());
-      that.addLine(getLine129());
-      that.addLine(getLine137());
-      that.addLine(getLine144());
-      that.addLine(getLine149());
+      that.addLine(getLine100());
+      that.addLine(getLine103());
+      that.addLine(getLine104());
+      that.addLine(getLine112());
+      that.addLine(getLine119());
+      that.addLine(getLine124());
      that.highlightElement(ECE240NanoTraditionalPlanelement, "EngineeringSciences");
      that.addToClicked("ECE240NanoTraditionalPlan", "EngineeringSciences");
       ECE240NanoTraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine125());
-      that.removeLine(getLine128());
-      that.removeLine(getLine129());
-      that.removeLine(getLine137());
-      that.removeLine(getLine144());
-      that.removeLine(getLine149());
+      that.removeLine(getLine100());
+      that.removeLine(getLine103());
+      that.removeLine(getLine104());
+      that.removeLine(getLine112());
+      that.removeLine(getLine119());
+      that.removeLine(getLine124());
      that.unHighlightElement(ECE240NanoTraditionalPlanelement, "EngineeringSciences");
      var category = that.removeFromClicked("ECE240NanoTraditionalPlan", "EngineeringSciences");
   if (category != "") { 
@@ -13089,19 +11973,19 @@ PHYS230NanoTraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine130());
-      that.addLine(getLine131());
-      that.addLine(getLine132());
-      that.addLine(getLine140());
+      that.addLine(getLine105());
+      that.addLine(getLine106());
+      that.addLine(getLine107());
+      that.addLine(getLine115());
      that.highlightElement(PHYS230NanoTraditionalPlanelement, "NaturalSciences");
      that.addToClicked("PHYS230NanoTraditionalPlan", "NaturalSciences");
       PHYS230NanoTraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine130());
-      that.removeLine(getLine131());
-      that.removeLine(getLine132());
-      that.removeLine(getLine140());
+      that.removeLine(getLine105());
+      that.removeLine(getLine106());
+      that.removeLine(getLine107());
+      that.removeLine(getLine115());
      that.unHighlightElement(PHYS230NanoTraditionalPlanelement, "NaturalSciences");
      var category = that.removeFromClicked("PHYS230NanoTraditionalPlan", "NaturalSciences");
   if (category != "") { 
@@ -13165,21 +12049,21 @@ ECE302NanoTraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine133());
-      that.addLine(getLine143());
-      that.addLine(getLine147());
-      that.addLine(getLine155());
-      that.addLine(getLine156());
+      that.addLine(getLine108());
+      that.addLine(getLine118());
+      that.addLine(getLine122());
+      that.addLine(getLine125());
+      that.addLine(getLine126());
      that.highlightElement(ECE302NanoTraditionalPlanelement, "EngineeringSciences");
      that.addToClicked("ECE302NanoTraditionalPlan", "EngineeringSciences");
       ECE302NanoTraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine133());
-      that.removeLine(getLine143());
-      that.removeLine(getLine147());
-      that.removeLine(getLine155());
-      that.removeLine(getLine156());
+      that.removeLine(getLine108());
+      that.removeLine(getLine118());
+      that.removeLine(getLine122());
+      that.removeLine(getLine125());
+      that.removeLine(getLine126());
      that.unHighlightElement(ECE302NanoTraditionalPlanelement, "EngineeringSciences");
      var category = that.removeFromClicked("ECE302NanoTraditionalPlan", "EngineeringSciences");
   if (category != "") { 
@@ -13209,17 +12093,17 @@ ECE312NanoTraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine134());
-      that.addLine(getLine135());
-      that.addLine(getLine136());
+      that.addLine(getLine109());
+      that.addLine(getLine110());
+      that.addLine(getLine111());
      that.highlightElement(ECE312NanoTraditionalPlanelement, "EngineeringDesign");
      that.addToClicked("ECE312NanoTraditionalPlan", "EngineeringDesign");
       ECE312NanoTraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine134());
-      that.removeLine(getLine135());
-      that.removeLine(getLine136());
+      that.removeLine(getLine109());
+      that.removeLine(getLine110());
+      that.removeLine(getLine111());
      that.unHighlightElement(ECE312NanoTraditionalPlanelement, "EngineeringDesign");
      var category = that.removeFromClicked("ECE312NanoTraditionalPlan", "EngineeringDesign");
   if (category != "") { 
@@ -13249,15 +12133,15 @@ ECE340NanoTraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine136());
-      that.addLine(getLine137());
+      that.addLine(getLine111());
+      that.addLine(getLine112());
      that.highlightElement(ECE340NanoTraditionalPlanelement, "EngineeringSciences");
      that.addToClicked("ECE340NanoTraditionalPlan", "EngineeringSciences");
       ECE340NanoTraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine136());
-      that.removeLine(getLine137());
+      that.removeLine(getLine111());
+      that.removeLine(getLine112());
      that.unHighlightElement(ECE340NanoTraditionalPlanelement, "EngineeringSciences");
      var category = that.removeFromClicked("ECE340NanoTraditionalPlan", "EngineeringSciences");
   if (category != "") { 
@@ -13287,19 +12171,19 @@ ECE370NanoTraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine138());
-      that.addLine(getLine139());
-      that.addLine(getLine140());
-      that.addLine(getLine141());
+      that.addLine(getLine113());
+      that.addLine(getLine114());
+      that.addLine(getLine115());
+      that.addLine(getLine116());
      that.highlightElement(ECE370NanoTraditionalPlanelement, "EngineeringSciences");
      that.addToClicked("ECE370NanoTraditionalPlan", "EngineeringSciences");
       ECE370NanoTraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine138());
-      that.removeLine(getLine139());
-      that.removeLine(getLine140());
-      that.removeLine(getLine141());
+      that.removeLine(getLine113());
+      that.removeLine(getLine114());
+      that.removeLine(getLine115());
+      that.removeLine(getLine116());
      that.unHighlightElement(ECE370NanoTraditionalPlanelement, "EngineeringSciences");
      var category = that.removeFromClicked("ECE370NanoTraditionalPlan", "EngineeringSciences");
   if (category != "") { 
@@ -13329,13 +12213,13 @@ ECE471NanoTraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine141());
+      that.addLine(getLine116());
      that.highlightElement(ECE471NanoTraditionalPlanelement, "course");
      that.addToClicked("ECE471NanoTraditionalPlan", "course");
       ECE471NanoTraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine141());
+      that.removeLine(getLine116());
      that.unHighlightElement(ECE471NanoTraditionalPlanelement, "course");
      var category = that.removeFromClicked("ECE471NanoTraditionalPlan", "course");
   if (category != "") { 
@@ -13365,15 +12249,15 @@ MATH309NanoTraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine142());
-      that.addLine(getLine145());
+      that.addLine(getLine117());
+      that.addLine(getLine120());
      that.highlightElement(MATH309NanoTraditionalPlanelement, "Math");
      that.addToClicked("MATH309NanoTraditionalPlan", "Math");
       MATH309NanoTraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine142());
-      that.removeLine(getLine145());
+      that.removeLine(getLine117());
+      that.removeLine(getLine120());
      that.unHighlightElement(MATH309NanoTraditionalPlanelement, "Math");
      var category = that.removeFromClicked("MATH309NanoTraditionalPlan", "Math");
   if (category != "") { 
@@ -13403,13 +12287,13 @@ ECE303NanoTraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine143());
+      that.addLine(getLine118());
      that.highlightElement(ECE303NanoTraditionalPlanelement, "EngineeringSciences");
      that.addToClicked("ECE303NanoTraditionalPlan", "EngineeringSciences");
       ECE303NanoTraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine143());
+      that.removeLine(getLine118());
      that.unHighlightElement(ECE303NanoTraditionalPlanelement, "EngineeringSciences");
      var category = that.removeFromClicked("ECE303NanoTraditionalPlan", "EngineeringSciences");
   if (category != "") { 
@@ -13439,15 +12323,15 @@ ECE341NanoTraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine144());
-      that.addLine(getLine145());
+      that.addLine(getLine119());
+      that.addLine(getLine120());
      that.highlightElement(ECE341NanoTraditionalPlanelement, "course");
      that.addToClicked("ECE341NanoTraditionalPlan", "course");
       ECE341NanoTraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine144());
-      that.removeLine(getLine145());
+      that.removeLine(getLine119());
+      that.removeLine(getLine120());
      that.unHighlightElement(ECE341NanoTraditionalPlanelement, "course");
      var category = that.removeFromClicked("ECE341NanoTraditionalPlan", "course");
   if (category != "") { 
@@ -13477,13 +12361,13 @@ ECE342NanoTraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine146());
+      that.addLine(getLine121());
      that.highlightElement(ECE342NanoTraditionalPlanelement, "Math");
      that.addToClicked("ECE342NanoTraditionalPlan", "Math");
       ECE342NanoTraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine146());
+      that.removeLine(getLine121());
      that.unHighlightElement(ECE342NanoTraditionalPlanelement, "Math");
      var category = that.removeFromClicked("ECE342NanoTraditionalPlan", "Math");
   if (category != "") { 
@@ -13513,13 +12397,13 @@ ECE456NanoTraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine147());
+      that.addLine(getLine122());
      that.highlightElement(ECE456NanoTraditionalPlanelement, "course");
      that.addToClicked("ECE456NanoTraditionalPlan", "course");
       ECE456NanoTraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine147());
+      that.removeLine(getLine122());
      that.unHighlightElement(ECE456NanoTraditionalPlanelement, "course");
      var category = that.removeFromClicked("ECE456NanoTraditionalPlan", "course");
   if (category != "") { 
@@ -13583,15 +12467,15 @@ ECE360NanoTraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine148());
-      that.addLine(getLine149());
+      that.addLine(getLine123());
+      that.addLine(getLine124());
      that.highlightElement(ECE360NanoTraditionalPlanelement, "EngineeringSciences");
      that.addToClicked("ECE360NanoTraditionalPlan", "EngineeringSciences");
       ECE360NanoTraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine148());
-      that.removeLine(getLine149());
+      that.removeLine(getLine123());
+      that.removeLine(getLine124());
      that.unHighlightElement(ECE360NanoTraditionalPlanelement, "EngineeringSciences");
      var category = that.removeFromClicked("ECE360NanoTraditionalPlan", "EngineeringSciences");
   if (category != "") { 
@@ -13655,13 +12539,13 @@ ECE490NanoTraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine157());
+      that.addLine(getLine127());
      that.highlightElement(ECE490NanoTraditionalPlanelement, "EngineeringDesign");
      that.addToClicked("ECE490NanoTraditionalPlan", "EngineeringDesign");
       ECE490NanoTraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine157());
+      that.removeLine(getLine127());
      that.unHighlightElement(ECE490NanoTraditionalPlanelement, "EngineeringDesign");
      var category = that.removeFromClicked("ECE490NanoTraditionalPlan", "EngineeringDesign");
   if (category != "") { 
@@ -13704,160 +12588,72 @@ ENGG404NanoTraditionalPlanTime = currentTime;
       ENGG404NanoTraditionalPlanflag=false
   }
 };
-$scope.CHE243NanoTraditionalPlanListener = function () {
+$scope.ProgramTechnicalElectiveNanoTraditionalPlan1Listener = function () {
 var currentTime = new Date().getTime();
-if (currentTime - CHE243NanoTraditionalPlanTime <= 200) { 
-        CHE243NanoTraditionalPlanTime = currentTime;
+if (currentTime - ProgramTechnicalElectiveNanoTraditionalPlan1Time <= 200) { 
+        ProgramTechnicalElectiveNanoTraditionalPlan1Time = currentTime;
         return;
     }
-CHE243NanoTraditionalPlanTime = currentTime;
-  var CHE243NanoTraditionalPlanelement = document.getElementById("CHE243NanoTraditionalPlan");
- if (!CHE243NanoTraditionalPlanflag) {
-     if (that.NanoTraditionalPlanClickedMap.get("CHE243NanoTraditionalPlan").length > 0) { 
+ProgramTechnicalElectiveNanoTraditionalPlan1Time = currentTime;
+  var ProgramTechnicalElectiveNanoTraditionalPlan1element = document.getElementById("ProgramTechnicalElectiveNanoTraditionalPlan1");
+ if (!ProgramTechnicalElectiveNanoTraditionalPlan1flag) {
+     if (that.NanoTraditionalPlanClickedMap.get("ProgramTechnicalElectiveNanoTraditionalPlan1").length > 0) { 
  var trueCounter = 0;
-          for (let i = 0; i < that.NanoTraditionalPlanClickedMap.get("CHE243NanoTraditionalPlan").length; i++) { 
-        var cate = that.NanoTraditionalPlanClickedMap.get("CHE243NanoTraditionalPlan")[i];
-        if (CHE243NanoTraditionalPlanelement.classList.contains(cate + "-highlighted")) {
+          for (let i = 0; i < that.NanoTraditionalPlanClickedMap.get("ProgramTechnicalElectiveNanoTraditionalPlan1").length; i++) { 
+        var cate = that.NanoTraditionalPlanClickedMap.get("ProgramTechnicalElectiveNanoTraditionalPlan1")[i];
+        if (ProgramTechnicalElectiveNanoTraditionalPlan1element.classList.contains(cate + "-highlighted")) {
             trueCounter++;
-            that.unHighlightElement(CHE243NanoTraditionalPlanelement, cate);
+            that.unHighlightElement(ProgramTechnicalElectiveNanoTraditionalPlan1element, cate);
         }
     }
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine119());
-      that.addLine(getLine150());
-     that.highlightElement(CHE243NanoTraditionalPlanelement, "EngineeringSciences");
-     that.addToClicked("CHE243NanoTraditionalPlan", "EngineeringSciences");
-      CHE243NanoTraditionalPlanflag=true
+     that.highlightElement(ProgramTechnicalElectiveNanoTraditionalPlan1element, "PROG");
+     that.addToClicked("ProgramTechnicalElectiveNanoTraditionalPlan1", "PROG");
+      ProgramTechnicalElectiveNanoTraditionalPlan1flag=true
   }
  else {
-      that.removeLine(getLine119());
-      that.removeLine(getLine150());
-     that.unHighlightElement(CHE243NanoTraditionalPlanelement, "EngineeringSciences");
-     var category = that.removeFromClicked("CHE243NanoTraditionalPlan", "EngineeringSciences");
+     that.unHighlightElement(ProgramTechnicalElectiveNanoTraditionalPlan1element, "PROG");
+     var category = that.removeFromClicked("ProgramTechnicalElectiveNanoTraditionalPlan1", "PROG");
   if (category != "") { 
-     that.highlightElement(CHE243NanoTraditionalPlanelement, category);
+     that.highlightElement(ProgramTechnicalElectiveNanoTraditionalPlan1element, category);
 }
-      CHE243NanoTraditionalPlanflag=false
+      ProgramTechnicalElectiveNanoTraditionalPlan1flag=false
   }
 };
-$scope.MATE201NanoTraditionalPlanListener = function () {
+$scope.ProgramTechnicalElectiveNanoTraditionalPlan2Listener = function () {
 var currentTime = new Date().getTime();
-if (currentTime - MATE201NanoTraditionalPlanTime <= 200) { 
-        MATE201NanoTraditionalPlanTime = currentTime;
+if (currentTime - ProgramTechnicalElectiveNanoTraditionalPlan2Time <= 200) { 
+        ProgramTechnicalElectiveNanoTraditionalPlan2Time = currentTime;
         return;
     }
-MATE201NanoTraditionalPlanTime = currentTime;
-  var MATE201NanoTraditionalPlanelement = document.getElementById("MATE201NanoTraditionalPlan");
- if (!MATE201NanoTraditionalPlanflag) {
-     if (that.NanoTraditionalPlanClickedMap.get("MATE201NanoTraditionalPlan").length > 0) { 
+ProgramTechnicalElectiveNanoTraditionalPlan2Time = currentTime;
+  var ProgramTechnicalElectiveNanoTraditionalPlan2element = document.getElementById("ProgramTechnicalElectiveNanoTraditionalPlan2");
+ if (!ProgramTechnicalElectiveNanoTraditionalPlan2flag) {
+     if (that.NanoTraditionalPlanClickedMap.get("ProgramTechnicalElectiveNanoTraditionalPlan2").length > 0) { 
  var trueCounter = 0;
-          for (let i = 0; i < that.NanoTraditionalPlanClickedMap.get("MATE201NanoTraditionalPlan").length; i++) { 
-        var cate = that.NanoTraditionalPlanClickedMap.get("MATE201NanoTraditionalPlan")[i];
-        if (MATE201NanoTraditionalPlanelement.classList.contains(cate + "-highlighted")) {
+          for (let i = 0; i < that.NanoTraditionalPlanClickedMap.get("ProgramTechnicalElectiveNanoTraditionalPlan2").length; i++) { 
+        var cate = that.NanoTraditionalPlanClickedMap.get("ProgramTechnicalElectiveNanoTraditionalPlan2")[i];
+        if (ProgramTechnicalElectiveNanoTraditionalPlan2element.classList.contains(cate + "-highlighted")) {
             trueCounter++;
-            that.unHighlightElement(MATE201NanoTraditionalPlanelement, cate);
+            that.unHighlightElement(ProgramTechnicalElectiveNanoTraditionalPlan2element, cate);
         }
     }
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine120());
-      that.addLine(getLine151());
-     that.highlightElement(MATE201NanoTraditionalPlanelement, "NaturalSciences");
-     that.addToClicked("MATE201NanoTraditionalPlan", "NaturalSciences");
-      MATE201NanoTraditionalPlanflag=true
+     that.highlightElement(ProgramTechnicalElectiveNanoTraditionalPlan2element, "PROG");
+     that.addToClicked("ProgramTechnicalElectiveNanoTraditionalPlan2", "PROG");
+      ProgramTechnicalElectiveNanoTraditionalPlan2flag=true
   }
  else {
-      that.removeLine(getLine120());
-      that.removeLine(getLine151());
-     that.unHighlightElement(MATE201NanoTraditionalPlanelement, "NaturalSciences");
-     var category = that.removeFromClicked("MATE201NanoTraditionalPlan", "NaturalSciences");
+     that.unHighlightElement(ProgramTechnicalElectiveNanoTraditionalPlan2element, "PROG");
+     var category = that.removeFromClicked("ProgramTechnicalElectiveNanoTraditionalPlan2", "PROG");
   if (category != "") { 
-     that.highlightElement(MATE201NanoTraditionalPlanelement, category);
+     that.highlightElement(ProgramTechnicalElectiveNanoTraditionalPlan2element, category);
 }
-      MATE201NanoTraditionalPlanflag=false
-  }
-};
-$scope.MECE250NanoTraditionalPlanListener = function () {
-var currentTime = new Date().getTime();
-if (currentTime - MECE250NanoTraditionalPlanTime <= 200) { 
-        MECE250NanoTraditionalPlanTime = currentTime;
-        return;
-    }
-MECE250NanoTraditionalPlanTime = currentTime;
-  var MECE250NanoTraditionalPlanelement = document.getElementById("MECE250NanoTraditionalPlan");
- if (!MECE250NanoTraditionalPlanflag) {
-     if (that.NanoTraditionalPlanClickedMap.get("MECE250NanoTraditionalPlan").length > 0) { 
- var trueCounter = 0;
-          for (let i = 0; i < that.NanoTraditionalPlanClickedMap.get("MECE250NanoTraditionalPlan").length; i++) { 
-        var cate = that.NanoTraditionalPlanClickedMap.get("MECE250NanoTraditionalPlan")[i];
-        if (MECE250NanoTraditionalPlanelement.classList.contains(cate + "-highlighted")) {
-            trueCounter++;
-            that.unHighlightElement(MECE250NanoTraditionalPlanelement, cate);
-        }
-    }
-    if (trueCounter > 0) {
-        return;
-    }}
-      that.addLine(getLine121());
-      that.addLine(getLine122());
-      that.addLine(getLine123());
-      that.addLine(getLine152());
-      that.addLine(getLine153());
-      that.addLine(getLine154());
-     that.highlightElement(MECE250NanoTraditionalPlanelement, "EngineeringSciences");
-     that.addToClicked("MECE250NanoTraditionalPlan", "EngineeringSciences");
-      MECE250NanoTraditionalPlanflag=true
-  }
- else {
-      that.removeLine(getLine121());
-      that.removeLine(getLine122());
-      that.removeLine(getLine123());
-      that.removeLine(getLine152());
-      that.removeLine(getLine153());
-      that.removeLine(getLine154());
-     that.unHighlightElement(MECE250NanoTraditionalPlanelement, "EngineeringSciences");
-     var category = that.removeFromClicked("MECE250NanoTraditionalPlan", "EngineeringSciences");
-  if (category != "") { 
-     that.highlightElement(MECE250NanoTraditionalPlanelement, category);
-}
-      MECE250NanoTraditionalPlanflag=false
-  }
-};
-$scope.ProgramTechnicalElectiveNanoTraditionalPlan0Listener = function () {
-var currentTime = new Date().getTime();
-if (currentTime - ProgramTechnicalElectiveNanoTraditionalPlan0Time <= 200) { 
-        ProgramTechnicalElectiveNanoTraditionalPlan0Time = currentTime;
-        return;
-    }
-ProgramTechnicalElectiveNanoTraditionalPlan0Time = currentTime;
-  var ProgramTechnicalElectiveNanoTraditionalPlan0element = document.getElementById("ProgramTechnicalElectiveNanoTraditionalPlan0");
- if (!ProgramTechnicalElectiveNanoTraditionalPlan0flag) {
-     if (that.NanoTraditionalPlanClickedMap.get("ProgramTechnicalElectiveNanoTraditionalPlan0").length > 0) { 
- var trueCounter = 0;
-          for (let i = 0; i < that.NanoTraditionalPlanClickedMap.get("ProgramTechnicalElectiveNanoTraditionalPlan0").length; i++) { 
-        var cate = that.NanoTraditionalPlanClickedMap.get("ProgramTechnicalElectiveNanoTraditionalPlan0")[i];
-        if (ProgramTechnicalElectiveNanoTraditionalPlan0element.classList.contains(cate + "-highlighted")) {
-            trueCounter++;
-            that.unHighlightElement(ProgramTechnicalElectiveNanoTraditionalPlan0element, cate);
-        }
-    }
-    if (trueCounter > 0) {
-        return;
-    }}
-     that.highlightElement(ProgramTechnicalElectiveNanoTraditionalPlan0element, "PROG");
-     that.addToClicked("ProgramTechnicalElectiveNanoTraditionalPlan0", "PROG");
-      ProgramTechnicalElectiveNanoTraditionalPlan0flag=true
-  }
- else {
-     that.unHighlightElement(ProgramTechnicalElectiveNanoTraditionalPlan0element, "PROG");
-     var category = that.removeFromClicked("ProgramTechnicalElectiveNanoTraditionalPlan0", "PROG");
-  if (category != "") { 
-     that.highlightElement(ProgramTechnicalElectiveNanoTraditionalPlan0element, category);
-}
-      ProgramTechnicalElectiveNanoTraditionalPlan0flag=false
+      ProgramTechnicalElectiveNanoTraditionalPlan2flag=false
   }
 };
 $scope.ECE450NanoTraditionalPlanListener = function () {
@@ -13881,13 +12677,13 @@ ECE450NanoTraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine155());
+      that.addLine(getLine125());
      that.highlightElement(ECE450NanoTraditionalPlanelement, "course");
      that.addToClicked("ECE450NanoTraditionalPlan", "course");
       ECE450NanoTraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine155());
+      that.removeLine(getLine125());
      that.unHighlightElement(ECE450NanoTraditionalPlanelement, "course");
      var category = that.removeFromClicked("ECE450NanoTraditionalPlan", "course");
   if (category != "") { 
@@ -13917,13 +12713,13 @@ ECE475NanoTraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine156());
+      that.addLine(getLine126());
      that.highlightElement(ECE475NanoTraditionalPlanelement, "course");
      that.addToClicked("ECE475NanoTraditionalPlan", "course");
       ECE475NanoTraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine156());
+      that.removeLine(getLine126());
      that.unHighlightElement(ECE475NanoTraditionalPlanelement, "course");
      var category = that.removeFromClicked("ECE475NanoTraditionalPlan", "course");
   if (category != "") { 
@@ -13953,13 +12749,13 @@ ECE491NanoTraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine157());
+      that.addLine(getLine127());
      that.highlightElement(ECE491NanoTraditionalPlanelement, "EngineeringDesign");
      that.addToClicked("ECE491NanoTraditionalPlan", "EngineeringDesign");
       ECE491NanoTraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine157());
+      that.removeLine(getLine127());
      that.unHighlightElement(ECE491NanoTraditionalPlanelement, "EngineeringDesign");
      var category = that.removeFromClicked("ECE491NanoTraditionalPlan", "EngineeringDesign");
   if (category != "") { 
@@ -14070,72 +12866,72 @@ ENGG400NanoTraditionalPlanTime = currentTime;
       ENGG400NanoTraditionalPlanflag=false
   }
 };
-$scope.ProgramTechnicalElectiveNanoTraditionalPlan1Listener = function () {
+$scope.ProgramTechnicalElectiveNanoTraditionalPlan3Listener = function () {
 var currentTime = new Date().getTime();
-if (currentTime - ProgramTechnicalElectiveNanoTraditionalPlan1Time <= 200) { 
-        ProgramTechnicalElectiveNanoTraditionalPlan1Time = currentTime;
+if (currentTime - ProgramTechnicalElectiveNanoTraditionalPlan3Time <= 200) { 
+        ProgramTechnicalElectiveNanoTraditionalPlan3Time = currentTime;
         return;
     }
-ProgramTechnicalElectiveNanoTraditionalPlan1Time = currentTime;
-  var ProgramTechnicalElectiveNanoTraditionalPlan1element = document.getElementById("ProgramTechnicalElectiveNanoTraditionalPlan1");
- if (!ProgramTechnicalElectiveNanoTraditionalPlan1flag) {
-     if (that.NanoTraditionalPlanClickedMap.get("ProgramTechnicalElectiveNanoTraditionalPlan1").length > 0) { 
+ProgramTechnicalElectiveNanoTraditionalPlan3Time = currentTime;
+  var ProgramTechnicalElectiveNanoTraditionalPlan3element = document.getElementById("ProgramTechnicalElectiveNanoTraditionalPlan3");
+ if (!ProgramTechnicalElectiveNanoTraditionalPlan3flag) {
+     if (that.NanoTraditionalPlanClickedMap.get("ProgramTechnicalElectiveNanoTraditionalPlan3").length > 0) { 
  var trueCounter = 0;
-          for (let i = 0; i < that.NanoTraditionalPlanClickedMap.get("ProgramTechnicalElectiveNanoTraditionalPlan1").length; i++) { 
-        var cate = that.NanoTraditionalPlanClickedMap.get("ProgramTechnicalElectiveNanoTraditionalPlan1")[i];
-        if (ProgramTechnicalElectiveNanoTraditionalPlan1element.classList.contains(cate + "-highlighted")) {
+          for (let i = 0; i < that.NanoTraditionalPlanClickedMap.get("ProgramTechnicalElectiveNanoTraditionalPlan3").length; i++) { 
+        var cate = that.NanoTraditionalPlanClickedMap.get("ProgramTechnicalElectiveNanoTraditionalPlan3")[i];
+        if (ProgramTechnicalElectiveNanoTraditionalPlan3element.classList.contains(cate + "-highlighted")) {
             trueCounter++;
-            that.unHighlightElement(ProgramTechnicalElectiveNanoTraditionalPlan1element, cate);
+            that.unHighlightElement(ProgramTechnicalElectiveNanoTraditionalPlan3element, cate);
         }
     }
     if (trueCounter > 0) {
         return;
     }}
-     that.highlightElement(ProgramTechnicalElectiveNanoTraditionalPlan1element, "PROG");
-     that.addToClicked("ProgramTechnicalElectiveNanoTraditionalPlan1", "PROG");
-      ProgramTechnicalElectiveNanoTraditionalPlan1flag=true
+     that.highlightElement(ProgramTechnicalElectiveNanoTraditionalPlan3element, "PROG");
+     that.addToClicked("ProgramTechnicalElectiveNanoTraditionalPlan3", "PROG");
+      ProgramTechnicalElectiveNanoTraditionalPlan3flag=true
   }
  else {
-     that.unHighlightElement(ProgramTechnicalElectiveNanoTraditionalPlan1element, "PROG");
-     var category = that.removeFromClicked("ProgramTechnicalElectiveNanoTraditionalPlan1", "PROG");
+     that.unHighlightElement(ProgramTechnicalElectiveNanoTraditionalPlan3element, "PROG");
+     var category = that.removeFromClicked("ProgramTechnicalElectiveNanoTraditionalPlan3", "PROG");
   if (category != "") { 
-     that.highlightElement(ProgramTechnicalElectiveNanoTraditionalPlan1element, category);
+     that.highlightElement(ProgramTechnicalElectiveNanoTraditionalPlan3element, category);
 }
-      ProgramTechnicalElectiveNanoTraditionalPlan1flag=false
+      ProgramTechnicalElectiveNanoTraditionalPlan3flag=false
   }
 };
-$scope.ProgramTechnicalElectiveNanoTraditionalPlan2Listener = function () {
+$scope.ProgramTechnicalElectiveNanoTraditionalPlan4Listener = function () {
 var currentTime = new Date().getTime();
-if (currentTime - ProgramTechnicalElectiveNanoTraditionalPlan2Time <= 200) { 
-        ProgramTechnicalElectiveNanoTraditionalPlan2Time = currentTime;
+if (currentTime - ProgramTechnicalElectiveNanoTraditionalPlan4Time <= 200) { 
+        ProgramTechnicalElectiveNanoTraditionalPlan4Time = currentTime;
         return;
     }
-ProgramTechnicalElectiveNanoTraditionalPlan2Time = currentTime;
-  var ProgramTechnicalElectiveNanoTraditionalPlan2element = document.getElementById("ProgramTechnicalElectiveNanoTraditionalPlan2");
- if (!ProgramTechnicalElectiveNanoTraditionalPlan2flag) {
-     if (that.NanoTraditionalPlanClickedMap.get("ProgramTechnicalElectiveNanoTraditionalPlan2").length > 0) { 
+ProgramTechnicalElectiveNanoTraditionalPlan4Time = currentTime;
+  var ProgramTechnicalElectiveNanoTraditionalPlan4element = document.getElementById("ProgramTechnicalElectiveNanoTraditionalPlan4");
+ if (!ProgramTechnicalElectiveNanoTraditionalPlan4flag) {
+     if (that.NanoTraditionalPlanClickedMap.get("ProgramTechnicalElectiveNanoTraditionalPlan4").length > 0) { 
  var trueCounter = 0;
-          for (let i = 0; i < that.NanoTraditionalPlanClickedMap.get("ProgramTechnicalElectiveNanoTraditionalPlan2").length; i++) { 
-        var cate = that.NanoTraditionalPlanClickedMap.get("ProgramTechnicalElectiveNanoTraditionalPlan2")[i];
-        if (ProgramTechnicalElectiveNanoTraditionalPlan2element.classList.contains(cate + "-highlighted")) {
+          for (let i = 0; i < that.NanoTraditionalPlanClickedMap.get("ProgramTechnicalElectiveNanoTraditionalPlan4").length; i++) { 
+        var cate = that.NanoTraditionalPlanClickedMap.get("ProgramTechnicalElectiveNanoTraditionalPlan4")[i];
+        if (ProgramTechnicalElectiveNanoTraditionalPlan4element.classList.contains(cate + "-highlighted")) {
             trueCounter++;
-            that.unHighlightElement(ProgramTechnicalElectiveNanoTraditionalPlan2element, cate);
+            that.unHighlightElement(ProgramTechnicalElectiveNanoTraditionalPlan4element, cate);
         }
     }
     if (trueCounter > 0) {
         return;
     }}
-     that.highlightElement(ProgramTechnicalElectiveNanoTraditionalPlan2element, "PROG");
-     that.addToClicked("ProgramTechnicalElectiveNanoTraditionalPlan2", "PROG");
-      ProgramTechnicalElectiveNanoTraditionalPlan2flag=true
+     that.highlightElement(ProgramTechnicalElectiveNanoTraditionalPlan4element, "PROG");
+     that.addToClicked("ProgramTechnicalElectiveNanoTraditionalPlan4", "PROG");
+      ProgramTechnicalElectiveNanoTraditionalPlan4flag=true
   }
  else {
-     that.unHighlightElement(ProgramTechnicalElectiveNanoTraditionalPlan2element, "PROG");
-     var category = that.removeFromClicked("ProgramTechnicalElectiveNanoTraditionalPlan2", "PROG");
+     that.unHighlightElement(ProgramTechnicalElectiveNanoTraditionalPlan4element, "PROG");
+     var category = that.removeFromClicked("ProgramTechnicalElectiveNanoTraditionalPlan4", "PROG");
   if (category != "") { 
-     that.highlightElement(ProgramTechnicalElectiveNanoTraditionalPlan2element, category);
+     that.highlightElement(ProgramTechnicalElectiveNanoTraditionalPlan4element, category);
 }
-      ProgramTechnicalElectiveNanoTraditionalPlan2flag=false
+      ProgramTechnicalElectiveNanoTraditionalPlan4flag=false
   }
 };
 $scope.CHEM103NanoTraditionalPlanRCListener = function () {
@@ -14506,9 +13302,9 @@ $scope.MATH209NanoTraditionalPlanRCListener = function () {
       MATH209NanoTraditionalPlanrflag=false
   }
 };
-$scope.CHE243NanoTraditionalPlanRCListener = function () {
-  var element = document.getElementById("CHE243NanoTraditionalPlandesc");
- if (!CHE243NanoTraditionalPlanrflag) {
+$scope.ProgramTechnicalElectiveNanoTraditionalPlan0RCListener = function () {
+  var element = document.getElementById("ProgramTechnicalElectiveNanoTraditionalPlan0desc");
+ if (!ProgramTechnicalElectiveNanoTraditionalPlan0rflag) {
        if (element.classList.contains("tooltiptextleft")) {
         element.classList.remove("tooltiptextleft");
         element.classList.add("tooltiptextleft-locked");
@@ -14516,7 +13312,7 @@ $scope.CHE243NanoTraditionalPlanRCListener = function () {
         element.classList.remove("tooltiptextright");
         element.classList.add("tooltiptextright-locked");
     }
-      CHE243NanoTraditionalPlanrflag=true
+      ProgramTechnicalElectiveNanoTraditionalPlan0rflag=true
   }
  else {
        if (element.classList.contains("tooltiptextleft-locked")) {
@@ -14526,53 +13322,7 @@ $scope.CHE243NanoTraditionalPlanRCListener = function () {
         element.classList.remove("tooltiptextright-locked");
         element.classList.add("tooltiptextright");
     }
-      CHE243NanoTraditionalPlanrflag=false
-  }
-};
-$scope.MATE201NanoTraditionalPlanRCListener = function () {
-  var element = document.getElementById("MATE201NanoTraditionalPlandesc");
- if (!MATE201NanoTraditionalPlanrflag) {
-       if (element.classList.contains("tooltiptextleft")) {
-        element.classList.remove("tooltiptextleft");
-        element.classList.add("tooltiptextleft-locked");
-    } else {
-        element.classList.remove("tooltiptextright");
-        element.classList.add("tooltiptextright-locked");
-    }
-      MATE201NanoTraditionalPlanrflag=true
-  }
- else {
-       if (element.classList.contains("tooltiptextleft-locked")) {
-        element.classList.remove("tooltiptextleft-locked");
-        element.classList.add("tooltiptextleft");
-    } else {
-        element.classList.remove("tooltiptextright-locked");
-        element.classList.add("tooltiptextright");
-    }
-      MATE201NanoTraditionalPlanrflag=false
-  }
-};
-$scope.MECE250NanoTraditionalPlanRCListener = function () {
-  var element = document.getElementById("MECE250NanoTraditionalPlandesc");
- if (!MECE250NanoTraditionalPlanrflag) {
-       if (element.classList.contains("tooltiptextleft")) {
-        element.classList.remove("tooltiptextleft");
-        element.classList.add("tooltiptextleft-locked");
-    } else {
-        element.classList.remove("tooltiptextright");
-        element.classList.add("tooltiptextright-locked");
-    }
-      MECE250NanoTraditionalPlanrflag=true
-  }
- else {
-       if (element.classList.contains("tooltiptextleft-locked")) {
-        element.classList.remove("tooltiptextleft-locked");
-        element.classList.add("tooltiptextleft");
-    } else {
-        element.classList.remove("tooltiptextright-locked");
-        element.classList.add("tooltiptextright");
-    }
-      MECE250NanoTraditionalPlanrflag=false
+      ProgramTechnicalElectiveNanoTraditionalPlan0rflag=false
   }
 };
 $scope.ComplementaryElectiveNanoTraditionalPlan0RCListener = function () {
@@ -15081,9 +13831,9 @@ $scope.ENGG404NanoTraditionalPlanRCListener = function () {
       ENGG404NanoTraditionalPlanrflag=false
   }
 };
-$scope.CHE243NanoTraditionalPlanRCListener = function () {
-  var element = document.getElementById("CHE243NanoTraditionalPlandesc");
- if (!CHE243NanoTraditionalPlanrflag) {
+$scope.ProgramTechnicalElectiveNanoTraditionalPlan1RCListener = function () {
+  var element = document.getElementById("ProgramTechnicalElectiveNanoTraditionalPlan1desc");
+ if (!ProgramTechnicalElectiveNanoTraditionalPlan1rflag) {
        if (element.classList.contains("tooltiptextleft")) {
         element.classList.remove("tooltiptextleft");
         element.classList.add("tooltiptextleft-locked");
@@ -15091,7 +13841,7 @@ $scope.CHE243NanoTraditionalPlanRCListener = function () {
         element.classList.remove("tooltiptextright");
         element.classList.add("tooltiptextright-locked");
     }
-      CHE243NanoTraditionalPlanrflag=true
+      ProgramTechnicalElectiveNanoTraditionalPlan1rflag=true
   }
  else {
        if (element.classList.contains("tooltiptextleft-locked")) {
@@ -15101,12 +13851,12 @@ $scope.CHE243NanoTraditionalPlanRCListener = function () {
         element.classList.remove("tooltiptextright-locked");
         element.classList.add("tooltiptextright");
     }
-      CHE243NanoTraditionalPlanrflag=false
+      ProgramTechnicalElectiveNanoTraditionalPlan1rflag=false
   }
 };
-$scope.MATE201NanoTraditionalPlanRCListener = function () {
-  var element = document.getElementById("MATE201NanoTraditionalPlandesc");
- if (!MATE201NanoTraditionalPlanrflag) {
+$scope.ProgramTechnicalElectiveNanoTraditionalPlan2RCListener = function () {
+  var element = document.getElementById("ProgramTechnicalElectiveNanoTraditionalPlan2desc");
+ if (!ProgramTechnicalElectiveNanoTraditionalPlan2rflag) {
        if (element.classList.contains("tooltiptextleft")) {
         element.classList.remove("tooltiptextleft");
         element.classList.add("tooltiptextleft-locked");
@@ -15114,7 +13864,7 @@ $scope.MATE201NanoTraditionalPlanRCListener = function () {
         element.classList.remove("tooltiptextright");
         element.classList.add("tooltiptextright-locked");
     }
-      MATE201NanoTraditionalPlanrflag=true
+      ProgramTechnicalElectiveNanoTraditionalPlan2rflag=true
   }
  else {
        if (element.classList.contains("tooltiptextleft-locked")) {
@@ -15124,53 +13874,7 @@ $scope.MATE201NanoTraditionalPlanRCListener = function () {
         element.classList.remove("tooltiptextright-locked");
         element.classList.add("tooltiptextright");
     }
-      MATE201NanoTraditionalPlanrflag=false
-  }
-};
-$scope.MECE250NanoTraditionalPlanRCListener = function () {
-  var element = document.getElementById("MECE250NanoTraditionalPlandesc");
- if (!MECE250NanoTraditionalPlanrflag) {
-       if (element.classList.contains("tooltiptextleft")) {
-        element.classList.remove("tooltiptextleft");
-        element.classList.add("tooltiptextleft-locked");
-    } else {
-        element.classList.remove("tooltiptextright");
-        element.classList.add("tooltiptextright-locked");
-    }
-      MECE250NanoTraditionalPlanrflag=true
-  }
- else {
-       if (element.classList.contains("tooltiptextleft-locked")) {
-        element.classList.remove("tooltiptextleft-locked");
-        element.classList.add("tooltiptextleft");
-    } else {
-        element.classList.remove("tooltiptextright-locked");
-        element.classList.add("tooltiptextright");
-    }
-      MECE250NanoTraditionalPlanrflag=false
-  }
-};
-$scope.ProgramTechnicalElectiveNanoTraditionalPlan0RCListener = function () {
-  var element = document.getElementById("ProgramTechnicalElectiveNanoTraditionalPlan0desc");
- if (!ProgramTechnicalElectiveNanoTraditionalPlan0rflag) {
-       if (element.classList.contains("tooltiptextleft")) {
-        element.classList.remove("tooltiptextleft");
-        element.classList.add("tooltiptextleft-locked");
-    } else {
-        element.classList.remove("tooltiptextright");
-        element.classList.add("tooltiptextright-locked");
-    }
-      ProgramTechnicalElectiveNanoTraditionalPlan0rflag=true
-  }
- else {
-       if (element.classList.contains("tooltiptextleft-locked")) {
-        element.classList.remove("tooltiptextleft-locked");
-        element.classList.add("tooltiptextleft");
-    } else {
-        element.classList.remove("tooltiptextright-locked");
-        element.classList.add("tooltiptextright");
-    }
-      ProgramTechnicalElectiveNanoTraditionalPlan0rflag=false
+      ProgramTechnicalElectiveNanoTraditionalPlan2rflag=false
   }
 };
 $scope.ECE450NanoTraditionalPlanRCListener = function () {
@@ -15311,9 +14015,9 @@ $scope.ENGG400NanoTraditionalPlanRCListener = function () {
       ENGG400NanoTraditionalPlanrflag=false
   }
 };
-$scope.ProgramTechnicalElectiveNanoTraditionalPlan1RCListener = function () {
-  var element = document.getElementById("ProgramTechnicalElectiveNanoTraditionalPlan1desc");
- if (!ProgramTechnicalElectiveNanoTraditionalPlan1rflag) {
+$scope.ProgramTechnicalElectiveNanoTraditionalPlan3RCListener = function () {
+  var element = document.getElementById("ProgramTechnicalElectiveNanoTraditionalPlan3desc");
+ if (!ProgramTechnicalElectiveNanoTraditionalPlan3rflag) {
        if (element.classList.contains("tooltiptextleft")) {
         element.classList.remove("tooltiptextleft");
         element.classList.add("tooltiptextleft-locked");
@@ -15321,7 +14025,7 @@ $scope.ProgramTechnicalElectiveNanoTraditionalPlan1RCListener = function () {
         element.classList.remove("tooltiptextright");
         element.classList.add("tooltiptextright-locked");
     }
-      ProgramTechnicalElectiveNanoTraditionalPlan1rflag=true
+      ProgramTechnicalElectiveNanoTraditionalPlan3rflag=true
   }
  else {
        if (element.classList.contains("tooltiptextleft-locked")) {
@@ -15331,12 +14035,12 @@ $scope.ProgramTechnicalElectiveNanoTraditionalPlan1RCListener = function () {
         element.classList.remove("tooltiptextright-locked");
         element.classList.add("tooltiptextright");
     }
-      ProgramTechnicalElectiveNanoTraditionalPlan1rflag=false
+      ProgramTechnicalElectiveNanoTraditionalPlan3rflag=false
   }
 };
-$scope.ProgramTechnicalElectiveNanoTraditionalPlan2RCListener = function () {
-  var element = document.getElementById("ProgramTechnicalElectiveNanoTraditionalPlan2desc");
- if (!ProgramTechnicalElectiveNanoTraditionalPlan2rflag) {
+$scope.ProgramTechnicalElectiveNanoTraditionalPlan4RCListener = function () {
+  var element = document.getElementById("ProgramTechnicalElectiveNanoTraditionalPlan4desc");
+ if (!ProgramTechnicalElectiveNanoTraditionalPlan4rflag) {
        if (element.classList.contains("tooltiptextleft")) {
         element.classList.remove("tooltiptextleft");
         element.classList.add("tooltiptextleft-locked");
@@ -15344,7 +14048,7 @@ $scope.ProgramTechnicalElectiveNanoTraditionalPlan2RCListener = function () {
         element.classList.remove("tooltiptextright");
         element.classList.add("tooltiptextright-locked");
     }
-      ProgramTechnicalElectiveNanoTraditionalPlan2rflag=true
+      ProgramTechnicalElectiveNanoTraditionalPlan4rflag=true
   }
  else {
        if (element.classList.contains("tooltiptextleft-locked")) {
@@ -15354,7 +14058,7 @@ $scope.ProgramTechnicalElectiveNanoTraditionalPlan2RCListener = function () {
         element.classList.remove("tooltiptextright-locked");
         element.classList.add("tooltiptextright");
     }
-      ProgramTechnicalElectiveNanoTraditionalPlan2rflag=false
+      ProgramTechnicalElectiveNanoTraditionalPlan4rflag=false
   }
 };
   var CHEM103NanoCoopPlanflag = false;
@@ -15425,18 +14129,10 @@ this.NanoCoopPlanClickedMap.set("MATH201NanoCoopPlan", []);
   var MATH209NanoCoopPlanrflag = false;
  var MATH209NanoCoopPlanTime = new Date().getTime();
 this.NanoCoopPlanClickedMap.set("MATH209NanoCoopPlan", []);
-  var CHE243NanoCoopPlanflag = false;
-  var CHE243NanoCoopPlanrflag = false;
- var CHE243NanoCoopPlanTime = new Date().getTime();
-this.NanoCoopPlanClickedMap.set("CHE243NanoCoopPlan", []);
-  var MATE201NanoCoopPlanflag = false;
-  var MATE201NanoCoopPlanrflag = false;
- var MATE201NanoCoopPlanTime = new Date().getTime();
-this.NanoCoopPlanClickedMap.set("MATE201NanoCoopPlan", []);
-  var MECE250NanoCoopPlanflag = false;
-  var MECE250NanoCoopPlanrflag = false;
- var MECE250NanoCoopPlanTime = new Date().getTime();
-this.NanoCoopPlanClickedMap.set("MECE250NanoCoopPlan", []);
+  var ProgramTechnicalElectiveNanoCoopPlan0flag = false;
+  var ProgramTechnicalElectiveNanoCoopPlan0rflag = false;
+ var ProgramTechnicalElectiveNanoCoopPlan0Time = new Date().getTime();
+this.NanoCoopPlanClickedMap.set("ProgramTechnicalElectiveNanoCoopPlan0", []);
   var ECE203NanoCoopPlanflag = false;
   var ECE203NanoCoopPlanrflag = false;
  var ECE203NanoCoopPlanTime = new Date().getTime();
@@ -15545,22 +14241,14 @@ this.NanoCoopPlanClickedMap.set("ECE490NanoCoopPlan", []);
   var ENGG404NanoCoopPlanrflag = false;
  var ENGG404NanoCoopPlanTime = new Date().getTime();
 this.NanoCoopPlanClickedMap.set("ENGG404NanoCoopPlan", []);
-  var CHE243NanoCoopPlanflag = false;
-  var CHE243NanoCoopPlanrflag = false;
- var CHE243NanoCoopPlanTime = new Date().getTime();
-this.NanoCoopPlanClickedMap.set("CHE243NanoCoopPlan", []);
-  var MATE201NanoCoopPlanflag = false;
-  var MATE201NanoCoopPlanrflag = false;
- var MATE201NanoCoopPlanTime = new Date().getTime();
-this.NanoCoopPlanClickedMap.set("MATE201NanoCoopPlan", []);
-  var MECE250NanoCoopPlanflag = false;
-  var MECE250NanoCoopPlanrflag = false;
- var MECE250NanoCoopPlanTime = new Date().getTime();
-this.NanoCoopPlanClickedMap.set("MECE250NanoCoopPlan", []);
-  var ProgramTechnicalElectiveNanoCoopPlan0flag = false;
-  var ProgramTechnicalElectiveNanoCoopPlan0rflag = false;
- var ProgramTechnicalElectiveNanoCoopPlan0Time = new Date().getTime();
-this.NanoCoopPlanClickedMap.set("ProgramTechnicalElectiveNanoCoopPlan0", []);
+  var ProgramTechnicalElectiveNanoCoopPlan1flag = false;
+  var ProgramTechnicalElectiveNanoCoopPlan1rflag = false;
+ var ProgramTechnicalElectiveNanoCoopPlan1Time = new Date().getTime();
+this.NanoCoopPlanClickedMap.set("ProgramTechnicalElectiveNanoCoopPlan1", []);
+  var ProgramTechnicalElectiveNanoCoopPlan2flag = false;
+  var ProgramTechnicalElectiveNanoCoopPlan2rflag = false;
+ var ProgramTechnicalElectiveNanoCoopPlan2Time = new Date().getTime();
+this.NanoCoopPlanClickedMap.set("ProgramTechnicalElectiveNanoCoopPlan2", []);
   var ECE450NanoCoopPlanflag = false;
   var ECE450NanoCoopPlanrflag = false;
  var ECE450NanoCoopPlanTime = new Date().getTime();
@@ -15585,14 +14273,14 @@ this.NanoCoopPlanClickedMap.set("ENGM401NanoCoopPlan", []);
   var ENGG400NanoCoopPlanrflag = false;
  var ENGG400NanoCoopPlanTime = new Date().getTime();
 this.NanoCoopPlanClickedMap.set("ENGG400NanoCoopPlan", []);
-  var ProgramTechnicalElectiveNanoCoopPlan1flag = false;
-  var ProgramTechnicalElectiveNanoCoopPlan1rflag = false;
- var ProgramTechnicalElectiveNanoCoopPlan1Time = new Date().getTime();
-this.NanoCoopPlanClickedMap.set("ProgramTechnicalElectiveNanoCoopPlan1", []);
-  var ProgramTechnicalElectiveNanoCoopPlan2flag = false;
-  var ProgramTechnicalElectiveNanoCoopPlan2rflag = false;
- var ProgramTechnicalElectiveNanoCoopPlan2Time = new Date().getTime();
-this.NanoCoopPlanClickedMap.set("ProgramTechnicalElectiveNanoCoopPlan2", []);
+  var ProgramTechnicalElectiveNanoCoopPlan3flag = false;
+  var ProgramTechnicalElectiveNanoCoopPlan3rflag = false;
+ var ProgramTechnicalElectiveNanoCoopPlan3Time = new Date().getTime();
+this.NanoCoopPlanClickedMap.set("ProgramTechnicalElectiveNanoCoopPlan3", []);
+  var ProgramTechnicalElectiveNanoCoopPlan4flag = false;
+  var ProgramTechnicalElectiveNanoCoopPlan4rflag = false;
+ var ProgramTechnicalElectiveNanoCoopPlan4Time = new Date().getTime();
+this.NanoCoopPlanClickedMap.set("ProgramTechnicalElectiveNanoCoopPlan4", []);
 $scope.CHEM103NanoCoopPlanListener = function () {
 var currentTime = new Date().getTime();
 if (currentTime - CHEM103NanoCoopPlanTime <= 200) { 
@@ -15614,13 +14302,13 @@ CHEM103NanoCoopPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine160());
+      that.addLine(getLine130());
      that.highlightElement(CHEM103NanoCoopPlanelement, "NaturalSciences");
      that.addToClicked("CHEM103NanoCoopPlan", "NaturalSciences");
       CHEM103NanoCoopPlanflag=true
   }
  else {
-      that.removeLine(getLine160());
+      that.removeLine(getLine130());
      that.unHighlightElement(CHEM103NanoCoopPlanelement, "NaturalSciences");
      var category = that.removeFromClicked("CHEM103NanoCoopPlan", "NaturalSciences");
   if (category != "") { 
@@ -15684,19 +14372,15 @@ ENGG130NanoCoopPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine158());
-      that.addLine(getLine163());
-      that.addLine(getLine174());
-      that.addLine(getLine210());
+      that.addLine(getLine128());
+      that.addLine(getLine133());
      that.highlightElement(ENGG130NanoCoopPlanelement, "NaturalSciences");
      that.addToClicked("ENGG130NanoCoopPlan", "NaturalSciences");
       ENGG130NanoCoopPlanflag=true
   }
  else {
-      that.removeLine(getLine158());
-      that.removeLine(getLine163());
-      that.removeLine(getLine174());
-      that.removeLine(getLine210());
+      that.removeLine(getLine128());
+      that.removeLine(getLine133());
      that.unHighlightElement(ENGG130NanoCoopPlanelement, "NaturalSciences");
      var category = that.removeFromClicked("ENGG130NanoCoopPlan", "NaturalSciences");
   if (category != "") { 
@@ -15726,13 +14410,13 @@ ENGL199NanoCoopPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine161());
+      that.addLine(getLine131());
      that.highlightElement(ENGL199NanoCoopPlanelement, "Other");
      that.addToClicked("ENGL199NanoCoopPlan", "Other");
       ENGL199NanoCoopPlanflag=true
   }
  else {
-      that.removeLine(getLine161());
+      that.removeLine(getLine131());
      that.unHighlightElement(ENGL199NanoCoopPlanelement, "Other");
      var category = that.removeFromClicked("ENGL199NanoCoopPlan", "Other");
   if (category != "") { 
@@ -15762,23 +14446,23 @@ MATH100NanoCoopPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine158());
-      that.addLine(getLine159());
-      that.addLine(getLine162());
-      that.addLine(getLine165());
-      that.addLine(getLine166());
-      that.addLine(getLine184());
+      that.addLine(getLine128());
+      that.addLine(getLine129());
+      that.addLine(getLine132());
+      that.addLine(getLine135());
+      that.addLine(getLine136());
+      that.addLine(getLine149());
      that.highlightElement(MATH100NanoCoopPlanelement, "Math");
      that.addToClicked("MATH100NanoCoopPlan", "Math");
       MATH100NanoCoopPlanflag=true
   }
  else {
-      that.removeLine(getLine158());
-      that.removeLine(getLine159());
-      that.removeLine(getLine162());
-      that.removeLine(getLine165());
-      that.removeLine(getLine166());
-      that.removeLine(getLine184());
+      that.removeLine(getLine128());
+      that.removeLine(getLine129());
+      that.removeLine(getLine132());
+      that.removeLine(getLine135());
+      that.removeLine(getLine136());
+      that.removeLine(getLine149());
      that.unHighlightElement(MATH100NanoCoopPlanelement, "Math");
      var category = that.removeFromClicked("MATH100NanoCoopPlan", "Math");
   if (category != "") { 
@@ -15808,15 +14492,15 @@ PHYS130NanoCoopPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine159());
-      that.addLine(getLine183());
+      that.addLine(getLine129());
+      that.addLine(getLine148());
      that.highlightElement(PHYS130NanoCoopPlanelement, "NaturalSciences");
      that.addToClicked("PHYS130NanoCoopPlan", "NaturalSciences");
       PHYS130NanoCoopPlanflag=true
   }
  else {
-      that.removeLine(getLine159());
-      that.removeLine(getLine183());
+      that.removeLine(getLine129());
+      that.removeLine(getLine148());
      that.unHighlightElement(PHYS130NanoCoopPlanelement, "NaturalSciences");
      var category = that.removeFromClicked("PHYS130NanoCoopPlan", "NaturalSciences");
   if (category != "") { 
@@ -15846,17 +14530,13 @@ CHEM105NanoCoopPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine160());
-      that.addLine(getLine173());
-      that.addLine(getLine209());
+      that.addLine(getLine130());
      that.highlightElement(CHEM105NanoCoopPlanelement, "NaturalSciences");
      that.addToClicked("CHEM105NanoCoopPlan", "NaturalSciences");
       CHEM105NanoCoopPlanflag=true
   }
  else {
-      that.removeLine(getLine160());
-      that.removeLine(getLine173());
-      that.removeLine(getLine209());
+      that.removeLine(getLine130());
      that.unHighlightElement(CHEM105NanoCoopPlanelement, "NaturalSciences");
      var category = that.removeFromClicked("CHEM105NanoCoopPlan", "NaturalSciences");
   if (category != "") { 
@@ -15886,13 +14566,13 @@ ENCMP100NanoCoopPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine180());
+      that.addLine(getLine145());
      that.highlightElement(ENCMP100NanoCoopPlanelement, "NaturalSciences");
      that.addToClicked("ENCMP100NanoCoopPlan", "NaturalSciences");
       ENCMP100NanoCoopPlanflag=true
   }
  else {
-      that.removeLine(getLine180());
+      that.removeLine(getLine145());
      that.unHighlightElement(ENCMP100NanoCoopPlanelement, "NaturalSciences");
      var category = that.removeFromClicked("ENCMP100NanoCoopPlan", "NaturalSciences");
   if (category != "") { 
@@ -15922,13 +14602,13 @@ ENGG160NanoCoopPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine161());
+      that.addLine(getLine131());
      that.highlightElement(ENGG160NanoCoopPlanelement, "EngineeringDesign");
      that.addToClicked("ENGG160NanoCoopPlan", "EngineeringDesign");
       ENGG160NanoCoopPlanflag=true
   }
  else {
-      that.removeLine(getLine161());
+      that.removeLine(getLine131());
      that.unHighlightElement(ENGG160NanoCoopPlanelement, "EngineeringDesign");
      var category = that.removeFromClicked("ENGG160NanoCoopPlan", "EngineeringDesign");
   if (category != "") { 
@@ -15958,21 +14638,17 @@ ENPH131NanoCoopPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine162());
-      that.addLine(getLine163());
-      that.addLine(getLine164());
-      that.addLine(getLine175());
-      that.addLine(getLine211());
+      that.addLine(getLine132());
+      that.addLine(getLine133());
+      that.addLine(getLine134());
      that.highlightElement(ENPH131NanoCoopPlanelement, "NaturalSciences");
      that.addToClicked("ENPH131NanoCoopPlan", "NaturalSciences");
       ENPH131NanoCoopPlanflag=true
   }
  else {
-      that.removeLine(getLine162());
-      that.removeLine(getLine163());
-      that.removeLine(getLine164());
-      that.removeLine(getLine175());
-      that.removeLine(getLine211());
+      that.removeLine(getLine132());
+      that.removeLine(getLine133());
+      that.removeLine(getLine134());
      that.unHighlightElement(ENPH131NanoCoopPlanelement, "NaturalSciences");
      var category = that.removeFromClicked("ENPH131NanoCoopPlan", "NaturalSciences");
   if (category != "") { 
@@ -16002,29 +14678,21 @@ MATH101NanoCoopPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine164());
-      that.addLine(getLine165());
-      that.addLine(getLine167());
-      that.addLine(getLine170());
-      that.addLine(getLine172());
-      that.addLine(getLine176());
-      that.addLine(getLine185());
-      that.addLine(getLine208());
-      that.addLine(getLine212());
+      that.addLine(getLine134());
+      that.addLine(getLine135());
+      that.addLine(getLine137());
+      that.addLine(getLine140());
+      that.addLine(getLine150());
      that.highlightElement(MATH101NanoCoopPlanelement, "Math");
      that.addToClicked("MATH101NanoCoopPlan", "Math");
       MATH101NanoCoopPlanflag=true
   }
  else {
-      that.removeLine(getLine164());
-      that.removeLine(getLine165());
-      that.removeLine(getLine167());
-      that.removeLine(getLine170());
-      that.removeLine(getLine172());
-      that.removeLine(getLine176());
-      that.removeLine(getLine185());
-      that.removeLine(getLine208());
-      that.removeLine(getLine212());
+      that.removeLine(getLine134());
+      that.removeLine(getLine135());
+      that.removeLine(getLine137());
+      that.removeLine(getLine140());
+      that.removeLine(getLine150());
      that.unHighlightElement(MATH101NanoCoopPlanelement, "Math");
      var category = that.removeFromClicked("MATH101NanoCoopPlan", "Math");
   if (category != "") { 
@@ -16054,19 +14722,19 @@ MATH102NanoCoopPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine166());
-      that.addLine(getLine168());
-      that.addLine(getLine171());
-      that.addLine(getLine192());
+      that.addLine(getLine136());
+      that.addLine(getLine138());
+      that.addLine(getLine141());
+      that.addLine(getLine157());
      that.highlightElement(MATH102NanoCoopPlanelement, "Math");
      that.addToClicked("MATH102NanoCoopPlan", "Math");
       MATH102NanoCoopPlanflag=true
   }
  else {
-      that.removeLine(getLine166());
-      that.removeLine(getLine168());
-      that.removeLine(getLine171());
-      that.removeLine(getLine192());
+      that.removeLine(getLine136());
+      that.removeLine(getLine138());
+      that.removeLine(getLine141());
+      that.removeLine(getLine157());
      that.unHighlightElement(MATH102NanoCoopPlanelement, "Math");
      var category = that.removeFromClicked("MATH102NanoCoopPlan", "Math");
   if (category != "") { 
@@ -16096,19 +14764,19 @@ ECE202NanoCoopPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine167());
-      that.addLine(getLine168());
-      that.addLine(getLine177());
-      that.addLine(getLine181());
+      that.addLine(getLine137());
+      that.addLine(getLine138());
+      that.addLine(getLine142());
+      that.addLine(getLine146());
      that.highlightElement(ECE202NanoCoopPlanelement, "EngineeringSciences");
      that.addToClicked("ECE202NanoCoopPlan", "EngineeringSciences");
       ECE202NanoCoopPlanflag=true
   }
  else {
-      that.removeLine(getLine167());
-      that.removeLine(getLine168());
-      that.removeLine(getLine177());
-      that.removeLine(getLine181());
+      that.removeLine(getLine137());
+      that.removeLine(getLine138());
+      that.removeLine(getLine142());
+      that.removeLine(getLine146());
      that.unHighlightElement(ECE202NanoCoopPlanelement, "EngineeringSciences");
      var category = that.removeFromClicked("ECE202NanoCoopPlan", "EngineeringSciences");
   if (category != "") { 
@@ -16138,13 +14806,13 @@ ECE210NanoCoopPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine179());
+      that.addLine(getLine144());
      that.highlightElement(ECE210NanoCoopPlanelement, "EngineeringSciences");
      that.addToClicked("ECE210NanoCoopPlan", "EngineeringSciences");
       ECE210NanoCoopPlanflag=true
   }
  else {
-      that.removeLine(getLine179());
+      that.removeLine(getLine144());
      that.unHighlightElement(ECE210NanoCoopPlanelement, "EngineeringSciences");
      var category = that.removeFromClicked("ECE210NanoCoopPlan", "EngineeringSciences");
   if (category != "") { 
@@ -16174,13 +14842,13 @@ ENGG299NanoCoopPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine186());
+      that.addLine(getLine151());
      that.highlightElement(ENGG299NanoCoopPlanelement, "EngineeringProfession");
      that.addToClicked("ENGG299NanoCoopPlan", "EngineeringProfession");
       ENGG299NanoCoopPlanflag=true
   }
  else {
-      that.removeLine(getLine186());
+      that.removeLine(getLine151());
      that.unHighlightElement(ENGG299NanoCoopPlanelement, "EngineeringProfession");
      var category = that.removeFromClicked("ENGG299NanoCoopPlan", "EngineeringProfession");
   if (category != "") { 
@@ -16210,15 +14878,15 @@ MATH201NanoCoopPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine169());
-      that.addLine(getLine182());
+      that.addLine(getLine139());
+      that.addLine(getLine147());
      that.highlightElement(MATH201NanoCoopPlanelement, "Math");
      that.addToClicked("MATH201NanoCoopPlan", "Math");
       MATH201NanoCoopPlanflag=true
   }
  else {
-      that.removeLine(getLine169());
-      that.removeLine(getLine182());
+      that.removeLine(getLine139());
+      that.removeLine(getLine147());
      that.unHighlightElement(MATH201NanoCoopPlanelement, "Math");
      var category = that.removeFromClicked("MATH201NanoCoopPlan", "Math");
   if (category != "") { 
@@ -16248,23 +14916,23 @@ MATH209NanoCoopPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine169());
-      that.addLine(getLine170());
-      that.addLine(getLine171());
-      that.addLine(getLine193());
-      that.addLine(getLine196());
-      that.addLine(getLine203());
+      that.addLine(getLine139());
+      that.addLine(getLine140());
+      that.addLine(getLine141());
+      that.addLine(getLine158());
+      that.addLine(getLine161());
+      that.addLine(getLine168());
      that.highlightElement(MATH209NanoCoopPlanelement, "Math");
      that.addToClicked("MATH209NanoCoopPlan", "Math");
       MATH209NanoCoopPlanflag=true
   }
  else {
-      that.removeLine(getLine169());
-      that.removeLine(getLine170());
-      that.removeLine(getLine171());
-      that.removeLine(getLine193());
-      that.removeLine(getLine196());
-      that.removeLine(getLine203());
+      that.removeLine(getLine139());
+      that.removeLine(getLine140());
+      that.removeLine(getLine141());
+      that.removeLine(getLine158());
+      that.removeLine(getLine161());
+      that.removeLine(getLine168());
      that.unHighlightElement(MATH209NanoCoopPlanelement, "Math");
      var category = that.removeFromClicked("MATH209NanoCoopPlan", "Math");
   if (category != "") { 
@@ -16273,126 +14941,38 @@ MATH209NanoCoopPlanTime = currentTime;
       MATH209NanoCoopPlanflag=false
   }
 };
-$scope.CHE243NanoCoopPlanListener = function () {
+$scope.ProgramTechnicalElectiveNanoCoopPlan0Listener = function () {
 var currentTime = new Date().getTime();
-if (currentTime - CHE243NanoCoopPlanTime <= 200) { 
-        CHE243NanoCoopPlanTime = currentTime;
+if (currentTime - ProgramTechnicalElectiveNanoCoopPlan0Time <= 200) { 
+        ProgramTechnicalElectiveNanoCoopPlan0Time = currentTime;
         return;
     }
-CHE243NanoCoopPlanTime = currentTime;
-  var CHE243NanoCoopPlanelement = document.getElementById("CHE243NanoCoopPlan");
- if (!CHE243NanoCoopPlanflag) {
-     if (that.NanoCoopPlanClickedMap.get("CHE243NanoCoopPlan").length > 0) { 
+ProgramTechnicalElectiveNanoCoopPlan0Time = currentTime;
+  var ProgramTechnicalElectiveNanoCoopPlan0element = document.getElementById("ProgramTechnicalElectiveNanoCoopPlan0");
+ if (!ProgramTechnicalElectiveNanoCoopPlan0flag) {
+     if (that.NanoCoopPlanClickedMap.get("ProgramTechnicalElectiveNanoCoopPlan0").length > 0) { 
  var trueCounter = 0;
-          for (let i = 0; i < that.NanoCoopPlanClickedMap.get("CHE243NanoCoopPlan").length; i++) { 
-        var cate = that.NanoCoopPlanClickedMap.get("CHE243NanoCoopPlan")[i];
-        if (CHE243NanoCoopPlanelement.classList.contains(cate + "-highlighted")) {
+          for (let i = 0; i < that.NanoCoopPlanClickedMap.get("ProgramTechnicalElectiveNanoCoopPlan0").length; i++) { 
+        var cate = that.NanoCoopPlanClickedMap.get("ProgramTechnicalElectiveNanoCoopPlan0")[i];
+        if (ProgramTechnicalElectiveNanoCoopPlan0element.classList.contains(cate + "-highlighted")) {
             trueCounter++;
-            that.unHighlightElement(CHE243NanoCoopPlanelement, cate);
+            that.unHighlightElement(ProgramTechnicalElectiveNanoCoopPlan0element, cate);
         }
     }
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine172());
-      that.addLine(getLine208());
-     that.highlightElement(CHE243NanoCoopPlanelement, "EngineeringSciences");
-     that.addToClicked("CHE243NanoCoopPlan", "EngineeringSciences");
-      CHE243NanoCoopPlanflag=true
+     that.highlightElement(ProgramTechnicalElectiveNanoCoopPlan0element, "PROG");
+     that.addToClicked("ProgramTechnicalElectiveNanoCoopPlan0", "PROG");
+      ProgramTechnicalElectiveNanoCoopPlan0flag=true
   }
  else {
-      that.removeLine(getLine172());
-      that.removeLine(getLine208());
-     that.unHighlightElement(CHE243NanoCoopPlanelement, "EngineeringSciences");
-     var category = that.removeFromClicked("CHE243NanoCoopPlan", "EngineeringSciences");
+     that.unHighlightElement(ProgramTechnicalElectiveNanoCoopPlan0element, "PROG");
+     var category = that.removeFromClicked("ProgramTechnicalElectiveNanoCoopPlan0", "PROG");
   if (category != "") { 
-     that.highlightElement(CHE243NanoCoopPlanelement, category);
+     that.highlightElement(ProgramTechnicalElectiveNanoCoopPlan0element, category);
 }
-      CHE243NanoCoopPlanflag=false
-  }
-};
-$scope.MATE201NanoCoopPlanListener = function () {
-var currentTime = new Date().getTime();
-if (currentTime - MATE201NanoCoopPlanTime <= 200) { 
-        MATE201NanoCoopPlanTime = currentTime;
-        return;
-    }
-MATE201NanoCoopPlanTime = currentTime;
-  var MATE201NanoCoopPlanelement = document.getElementById("MATE201NanoCoopPlan");
- if (!MATE201NanoCoopPlanflag) {
-     if (that.NanoCoopPlanClickedMap.get("MATE201NanoCoopPlan").length > 0) { 
- var trueCounter = 0;
-          for (let i = 0; i < that.NanoCoopPlanClickedMap.get("MATE201NanoCoopPlan").length; i++) { 
-        var cate = that.NanoCoopPlanClickedMap.get("MATE201NanoCoopPlan")[i];
-        if (MATE201NanoCoopPlanelement.classList.contains(cate + "-highlighted")) {
-            trueCounter++;
-            that.unHighlightElement(MATE201NanoCoopPlanelement, cate);
-        }
-    }
-    if (trueCounter > 0) {
-        return;
-    }}
-      that.addLine(getLine173());
-      that.addLine(getLine209());
-     that.highlightElement(MATE201NanoCoopPlanelement, "NaturalSciences");
-     that.addToClicked("MATE201NanoCoopPlan", "NaturalSciences");
-      MATE201NanoCoopPlanflag=true
-  }
- else {
-      that.removeLine(getLine173());
-      that.removeLine(getLine209());
-     that.unHighlightElement(MATE201NanoCoopPlanelement, "NaturalSciences");
-     var category = that.removeFromClicked("MATE201NanoCoopPlan", "NaturalSciences");
-  if (category != "") { 
-     that.highlightElement(MATE201NanoCoopPlanelement, category);
-}
-      MATE201NanoCoopPlanflag=false
-  }
-};
-$scope.MECE250NanoCoopPlanListener = function () {
-var currentTime = new Date().getTime();
-if (currentTime - MECE250NanoCoopPlanTime <= 200) { 
-        MECE250NanoCoopPlanTime = currentTime;
-        return;
-    }
-MECE250NanoCoopPlanTime = currentTime;
-  var MECE250NanoCoopPlanelement = document.getElementById("MECE250NanoCoopPlan");
- if (!MECE250NanoCoopPlanflag) {
-     if (that.NanoCoopPlanClickedMap.get("MECE250NanoCoopPlan").length > 0) { 
- var trueCounter = 0;
-          for (let i = 0; i < that.NanoCoopPlanClickedMap.get("MECE250NanoCoopPlan").length; i++) { 
-        var cate = that.NanoCoopPlanClickedMap.get("MECE250NanoCoopPlan")[i];
-        if (MECE250NanoCoopPlanelement.classList.contains(cate + "-highlighted")) {
-            trueCounter++;
-            that.unHighlightElement(MECE250NanoCoopPlanelement, cate);
-        }
-    }
-    if (trueCounter > 0) {
-        return;
-    }}
-      that.addLine(getLine174());
-      that.addLine(getLine175());
-      that.addLine(getLine176());
-      that.addLine(getLine210());
-      that.addLine(getLine211());
-      that.addLine(getLine212());
-     that.highlightElement(MECE250NanoCoopPlanelement, "EngineeringSciences");
-     that.addToClicked("MECE250NanoCoopPlan", "EngineeringSciences");
-      MECE250NanoCoopPlanflag=true
-  }
- else {
-      that.removeLine(getLine174());
-      that.removeLine(getLine175());
-      that.removeLine(getLine176());
-      that.removeLine(getLine210());
-      that.removeLine(getLine211());
-      that.removeLine(getLine212());
-     that.unHighlightElement(MECE250NanoCoopPlanelement, "EngineeringSciences");
-     var category = that.removeFromClicked("MECE250NanoCoopPlan", "EngineeringSciences");
-  if (category != "") { 
-     that.highlightElement(MECE250NanoCoopPlanelement, category);
-}
-      MECE250NanoCoopPlanflag=false
+      ProgramTechnicalElectiveNanoCoopPlan0flag=false
   }
 };
 $scope.ECE203NanoCoopPlanListener = function () {
@@ -16416,19 +14996,19 @@ ECE203NanoCoopPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine177());
-      that.addLine(getLine178());
-      that.addLine(getLine187());
-      that.addLine(getLine206());
+      that.addLine(getLine142());
+      that.addLine(getLine143());
+      that.addLine(getLine152());
+      that.addLine(getLine171());
      that.highlightElement(ECE203NanoCoopPlanelement, "EngineeringSciences");
      that.addToClicked("ECE203NanoCoopPlan", "EngineeringSciences");
       ECE203NanoCoopPlanflag=true
   }
  else {
-      that.removeLine(getLine177());
-      that.removeLine(getLine178());
-      that.removeLine(getLine187());
-      that.removeLine(getLine206());
+      that.removeLine(getLine142());
+      that.removeLine(getLine143());
+      that.removeLine(getLine152());
+      that.removeLine(getLine171());
      that.unHighlightElement(ECE203NanoCoopPlanelement, "EngineeringSciences");
      var category = that.removeFromClicked("ECE203NanoCoopPlan", "EngineeringSciences");
   if (category != "") { 
@@ -16458,15 +15038,15 @@ ECE212NanoCoopPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine179());
-      that.addLine(getLine189());
+      that.addLine(getLine144());
+      that.addLine(getLine154());
      that.highlightElement(ECE212NanoCoopPlanelement, "EngineeringSciences");
      that.addToClicked("ECE212NanoCoopPlan", "EngineeringSciences");
       ECE212NanoCoopPlanflag=true
   }
  else {
-      that.removeLine(getLine179());
-      that.removeLine(getLine189());
+      that.removeLine(getLine144());
+      that.removeLine(getLine154());
      that.unHighlightElement(ECE212NanoCoopPlanelement, "EngineeringSciences");
      var category = that.removeFromClicked("ECE212NanoCoopPlan", "EngineeringSciences");
   if (category != "") { 
@@ -16496,15 +15076,15 @@ ECE220NanoCoopPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine180());
-      that.addLine(getLine188());
+      that.addLine(getLine145());
+      that.addLine(getLine153());
      that.highlightElement(ECE220NanoCoopPlanelement, "EngineeringSciences");
      that.addToClicked("ECE220NanoCoopPlan", "EngineeringSciences");
       ECE220NanoCoopPlanflag=true
   }
  else {
-      that.removeLine(getLine180());
-      that.removeLine(getLine188());
+      that.removeLine(getLine145());
+      that.removeLine(getLine153());
      that.unHighlightElement(ECE220NanoCoopPlanelement, "EngineeringSciences");
      var category = that.removeFromClicked("ECE220NanoCoopPlan", "EngineeringSciences");
   if (category != "") { 
@@ -16534,23 +15114,23 @@ ECE240NanoCoopPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine178());
-      that.addLine(getLine181());
-      that.addLine(getLine182());
-      that.addLine(getLine191());
-      that.addLine(getLine201());
-      that.addLine(getLine207());
+      that.addLine(getLine143());
+      that.addLine(getLine146());
+      that.addLine(getLine147());
+      that.addLine(getLine156());
+      that.addLine(getLine166());
+      that.addLine(getLine172());
      that.highlightElement(ECE240NanoCoopPlanelement, "EngineeringSciences");
      that.addToClicked("ECE240NanoCoopPlan", "EngineeringSciences");
       ECE240NanoCoopPlanflag=true
   }
  else {
-      that.removeLine(getLine178());
-      that.removeLine(getLine181());
-      that.removeLine(getLine182());
-      that.removeLine(getLine191());
-      that.removeLine(getLine201());
-      that.removeLine(getLine207());
+      that.removeLine(getLine143());
+      that.removeLine(getLine146());
+      that.removeLine(getLine147());
+      that.removeLine(getLine156());
+      that.removeLine(getLine166());
+      that.removeLine(getLine172());
      that.unHighlightElement(ECE240NanoCoopPlanelement, "EngineeringSciences");
      var category = that.removeFromClicked("ECE240NanoCoopPlan", "EngineeringSciences");
   if (category != "") { 
@@ -16580,19 +15160,19 @@ PHYS230NanoCoopPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine183());
-      that.addLine(getLine184());
-      that.addLine(getLine185());
-      that.addLine(getLine194());
+      that.addLine(getLine148());
+      that.addLine(getLine149());
+      that.addLine(getLine150());
+      that.addLine(getLine159());
      that.highlightElement(PHYS230NanoCoopPlanelement, "NaturalSciences");
      that.addToClicked("PHYS230NanoCoopPlan", "NaturalSciences");
       PHYS230NanoCoopPlanflag=true
   }
  else {
-      that.removeLine(getLine183());
-      that.removeLine(getLine184());
-      that.removeLine(getLine185());
-      that.removeLine(getLine194());
+      that.removeLine(getLine148());
+      that.removeLine(getLine149());
+      that.removeLine(getLine150());
+      that.removeLine(getLine159());
      that.unHighlightElement(PHYS230NanoCoopPlanelement, "NaturalSciences");
      var category = that.removeFromClicked("PHYS230NanoCoopPlan", "NaturalSciences");
   if (category != "") { 
@@ -16656,15 +15236,15 @@ WKEXP901NanoCoopPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine186());
-      that.addLine(getLine197());
+      that.addLine(getLine151());
+      that.addLine(getLine162());
      that.highlightElement(WKEXP901NanoCoopPlanelement, "EngineeringProfession");
      that.addToClicked("WKEXP901NanoCoopPlan", "EngineeringProfession");
       WKEXP901NanoCoopPlanflag=true
   }
  else {
-      that.removeLine(getLine186());
-      that.removeLine(getLine197());
+      that.removeLine(getLine151());
+      that.removeLine(getLine162());
      that.unHighlightElement(WKEXP901NanoCoopPlanelement, "EngineeringProfession");
      var category = that.removeFromClicked("WKEXP901NanoCoopPlan", "EngineeringProfession");
   if (category != "") { 
@@ -16694,21 +15274,21 @@ ECE302NanoCoopPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine187());
-      that.addLine(getLine200());
-      that.addLine(getLine204());
-      that.addLine(getLine213());
-      that.addLine(getLine214());
+      that.addLine(getLine152());
+      that.addLine(getLine165());
+      that.addLine(getLine169());
+      that.addLine(getLine173());
+      that.addLine(getLine174());
      that.highlightElement(ECE302NanoCoopPlanelement, "EngineeringSciences");
      that.addToClicked("ECE302NanoCoopPlan", "EngineeringSciences");
       ECE302NanoCoopPlanflag=true
   }
  else {
-      that.removeLine(getLine187());
-      that.removeLine(getLine200());
-      that.removeLine(getLine204());
-      that.removeLine(getLine213());
-      that.removeLine(getLine214());
+      that.removeLine(getLine152());
+      that.removeLine(getLine165());
+      that.removeLine(getLine169());
+      that.removeLine(getLine173());
+      that.removeLine(getLine174());
      that.unHighlightElement(ECE302NanoCoopPlanelement, "EngineeringSciences");
      var category = that.removeFromClicked("ECE302NanoCoopPlan", "EngineeringSciences");
   if (category != "") { 
@@ -16738,17 +15318,17 @@ ECE312NanoCoopPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine188());
-      that.addLine(getLine189());
-      that.addLine(getLine190());
+      that.addLine(getLine153());
+      that.addLine(getLine154());
+      that.addLine(getLine155());
      that.highlightElement(ECE312NanoCoopPlanelement, "EngineeringDesign");
      that.addToClicked("ECE312NanoCoopPlan", "EngineeringDesign");
       ECE312NanoCoopPlanflag=true
   }
  else {
-      that.removeLine(getLine188());
-      that.removeLine(getLine189());
-      that.removeLine(getLine190());
+      that.removeLine(getLine153());
+      that.removeLine(getLine154());
+      that.removeLine(getLine155());
      that.unHighlightElement(ECE312NanoCoopPlanelement, "EngineeringDesign");
      var category = that.removeFromClicked("ECE312NanoCoopPlan", "EngineeringDesign");
   if (category != "") { 
@@ -16778,15 +15358,15 @@ ECE340NanoCoopPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine190());
-      that.addLine(getLine191());
+      that.addLine(getLine155());
+      that.addLine(getLine156());
      that.highlightElement(ECE340NanoCoopPlanelement, "EngineeringSciences");
      that.addToClicked("ECE340NanoCoopPlan", "EngineeringSciences");
       ECE340NanoCoopPlanflag=true
   }
  else {
-      that.removeLine(getLine190());
-      that.removeLine(getLine191());
+      that.removeLine(getLine155());
+      that.removeLine(getLine156());
      that.unHighlightElement(ECE340NanoCoopPlanelement, "EngineeringSciences");
      var category = that.removeFromClicked("ECE340NanoCoopPlan", "EngineeringSciences");
   if (category != "") { 
@@ -16816,19 +15396,19 @@ ECE370NanoCoopPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine192());
-      that.addLine(getLine193());
-      that.addLine(getLine194());
-      that.addLine(getLine195());
+      that.addLine(getLine157());
+      that.addLine(getLine158());
+      that.addLine(getLine159());
+      that.addLine(getLine160());
      that.highlightElement(ECE370NanoCoopPlanelement, "EngineeringSciences");
      that.addToClicked("ECE370NanoCoopPlan", "EngineeringSciences");
       ECE370NanoCoopPlanflag=true
   }
  else {
-      that.removeLine(getLine192());
-      that.removeLine(getLine193());
-      that.removeLine(getLine194());
-      that.removeLine(getLine195());
+      that.removeLine(getLine157());
+      that.removeLine(getLine158());
+      that.removeLine(getLine159());
+      that.removeLine(getLine160());
      that.unHighlightElement(ECE370NanoCoopPlanelement, "EngineeringSciences");
      var category = that.removeFromClicked("ECE370NanoCoopPlan", "EngineeringSciences");
   if (category != "") { 
@@ -16858,13 +15438,13 @@ ECE471NanoCoopPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine195());
+      that.addLine(getLine160());
      that.highlightElement(ECE471NanoCoopPlanelement, "course");
      that.addToClicked("ECE471NanoCoopPlan", "course");
       ECE471NanoCoopPlanflag=true
   }
  else {
-      that.removeLine(getLine195());
+      that.removeLine(getLine160());
      that.unHighlightElement(ECE471NanoCoopPlanelement, "course");
      var category = that.removeFromClicked("ECE471NanoCoopPlan", "course");
   if (category != "") { 
@@ -16894,15 +15474,15 @@ MATH309NanoCoopPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine196());
-      that.addLine(getLine202());
+      that.addLine(getLine161());
+      that.addLine(getLine167());
      that.highlightElement(MATH309NanoCoopPlanelement, "Math");
      that.addToClicked("MATH309NanoCoopPlan", "Math");
       MATH309NanoCoopPlanflag=true
   }
  else {
-      that.removeLine(getLine196());
-      that.removeLine(getLine202());
+      that.removeLine(getLine161());
+      that.removeLine(getLine167());
      that.unHighlightElement(MATH309NanoCoopPlanelement, "Math");
      var category = that.removeFromClicked("MATH309NanoCoopPlan", "Math");
   if (category != "") { 
@@ -16932,15 +15512,15 @@ WKEXP902NanoCoopPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine197());
-      that.addLine(getLine198());
+      that.addLine(getLine162());
+      that.addLine(getLine163());
      that.highlightElement(WKEXP902NanoCoopPlanelement, "EngineeringProfession");
      that.addToClicked("WKEXP902NanoCoopPlan", "EngineeringProfession");
       WKEXP902NanoCoopPlanflag=true
   }
  else {
-      that.removeLine(getLine197());
-      that.removeLine(getLine198());
+      that.removeLine(getLine162());
+      that.removeLine(getLine163());
      that.unHighlightElement(WKEXP902NanoCoopPlanelement, "EngineeringProfession");
      var category = that.removeFromClicked("WKEXP902NanoCoopPlan", "EngineeringProfession");
   if (category != "") { 
@@ -16970,15 +15550,15 @@ WKEXP903NanoCoopPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine198());
-      that.addLine(getLine199());
+      that.addLine(getLine163());
+      that.addLine(getLine164());
      that.highlightElement(WKEXP903NanoCoopPlanelement, "EngineeringProfession");
      that.addToClicked("WKEXP903NanoCoopPlan", "EngineeringProfession");
       WKEXP903NanoCoopPlanflag=true
   }
  else {
-      that.removeLine(getLine198());
-      that.removeLine(getLine199());
+      that.removeLine(getLine163());
+      that.removeLine(getLine164());
      that.unHighlightElement(WKEXP903NanoCoopPlanelement, "EngineeringProfession");
      var category = that.removeFromClicked("WKEXP903NanoCoopPlan", "EngineeringProfession");
   if (category != "") { 
@@ -17008,15 +15588,15 @@ WKEXP904NanoCoopPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine199());
-      that.addLine(getLine205());
+      that.addLine(getLine164());
+      that.addLine(getLine170());
      that.highlightElement(WKEXP904NanoCoopPlanelement, "EngineeringProfession");
      that.addToClicked("WKEXP904NanoCoopPlan", "EngineeringProfession");
       WKEXP904NanoCoopPlanflag=true
   }
  else {
-      that.removeLine(getLine199());
-      that.removeLine(getLine205());
+      that.removeLine(getLine164());
+      that.removeLine(getLine170());
      that.unHighlightElement(WKEXP904NanoCoopPlanelement, "EngineeringProfession");
      var category = that.removeFromClicked("WKEXP904NanoCoopPlan", "EngineeringProfession");
   if (category != "") { 
@@ -17046,13 +15626,13 @@ ECE303NanoCoopPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine200());
+      that.addLine(getLine165());
      that.highlightElement(ECE303NanoCoopPlanelement, "EngineeringSciences");
      that.addToClicked("ECE303NanoCoopPlan", "EngineeringSciences");
       ECE303NanoCoopPlanflag=true
   }
  else {
-      that.removeLine(getLine200());
+      that.removeLine(getLine165());
      that.unHighlightElement(ECE303NanoCoopPlanelement, "EngineeringSciences");
      var category = that.removeFromClicked("ECE303NanoCoopPlan", "EngineeringSciences");
   if (category != "") { 
@@ -17082,15 +15662,15 @@ ECE341NanoCoopPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine201());
-      that.addLine(getLine202());
+      that.addLine(getLine166());
+      that.addLine(getLine167());
      that.highlightElement(ECE341NanoCoopPlanelement, "course");
      that.addToClicked("ECE341NanoCoopPlan", "course");
       ECE341NanoCoopPlanflag=true
   }
  else {
-      that.removeLine(getLine201());
-      that.removeLine(getLine202());
+      that.removeLine(getLine166());
+      that.removeLine(getLine167());
      that.unHighlightElement(ECE341NanoCoopPlanelement, "course");
      var category = that.removeFromClicked("ECE341NanoCoopPlan", "course");
   if (category != "") { 
@@ -17120,13 +15700,13 @@ ECE342NanoCoopPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine203());
+      that.addLine(getLine168());
      that.highlightElement(ECE342NanoCoopPlanelement, "Math");
      that.addToClicked("ECE342NanoCoopPlan", "Math");
       ECE342NanoCoopPlanflag=true
   }
  else {
-      that.removeLine(getLine203());
+      that.removeLine(getLine168());
      that.unHighlightElement(ECE342NanoCoopPlanelement, "Math");
      var category = that.removeFromClicked("ECE342NanoCoopPlan", "Math");
   if (category != "") { 
@@ -17156,13 +15736,13 @@ ECE456NanoCoopPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine204());
+      that.addLine(getLine169());
      that.highlightElement(ECE456NanoCoopPlanelement, "course");
      that.addToClicked("ECE456NanoCoopPlan", "course");
       ECE456NanoCoopPlanflag=true
   }
  else {
-      that.removeLine(getLine204());
+      that.removeLine(getLine169());
      that.unHighlightElement(ECE456NanoCoopPlanelement, "course");
      var category = that.removeFromClicked("ECE456NanoCoopPlan", "course");
   if (category != "") { 
@@ -17260,13 +15840,13 @@ WKEXP905NanoCoopPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine205());
+      that.addLine(getLine170());
      that.highlightElement(WKEXP905NanoCoopPlanelement, "EngineeringProfession");
      that.addToClicked("WKEXP905NanoCoopPlan", "EngineeringProfession");
       WKEXP905NanoCoopPlanflag=true
   }
  else {
-      that.removeLine(getLine205());
+      that.removeLine(getLine170());
      that.unHighlightElement(WKEXP905NanoCoopPlanelement, "EngineeringProfession");
      var category = that.removeFromClicked("WKEXP905NanoCoopPlan", "EngineeringProfession");
   if (category != "") { 
@@ -17296,15 +15876,15 @@ ECE360NanoCoopPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine206());
-      that.addLine(getLine207());
+      that.addLine(getLine171());
+      that.addLine(getLine172());
      that.highlightElement(ECE360NanoCoopPlanelement, "EngineeringSciences");
      that.addToClicked("ECE360NanoCoopPlan", "EngineeringSciences");
       ECE360NanoCoopPlanflag=true
   }
  else {
-      that.removeLine(getLine206());
-      that.removeLine(getLine207());
+      that.removeLine(getLine171());
+      that.removeLine(getLine172());
      that.unHighlightElement(ECE360NanoCoopPlanelement, "EngineeringSciences");
      var category = that.removeFromClicked("ECE360NanoCoopPlan", "EngineeringSciences");
   if (category != "") { 
@@ -17368,13 +15948,13 @@ ECE490NanoCoopPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine215());
+      that.addLine(getLine175());
      that.highlightElement(ECE490NanoCoopPlanelement, "EngineeringDesign");
      that.addToClicked("ECE490NanoCoopPlan", "EngineeringDesign");
       ECE490NanoCoopPlanflag=true
   }
  else {
-      that.removeLine(getLine215());
+      that.removeLine(getLine175());
      that.unHighlightElement(ECE490NanoCoopPlanelement, "EngineeringDesign");
      var category = that.removeFromClicked("ECE490NanoCoopPlan", "EngineeringDesign");
   if (category != "") { 
@@ -17417,160 +15997,72 @@ ENGG404NanoCoopPlanTime = currentTime;
       ENGG404NanoCoopPlanflag=false
   }
 };
-$scope.CHE243NanoCoopPlanListener = function () {
+$scope.ProgramTechnicalElectiveNanoCoopPlan1Listener = function () {
 var currentTime = new Date().getTime();
-if (currentTime - CHE243NanoCoopPlanTime <= 200) { 
-        CHE243NanoCoopPlanTime = currentTime;
+if (currentTime - ProgramTechnicalElectiveNanoCoopPlan1Time <= 200) { 
+        ProgramTechnicalElectiveNanoCoopPlan1Time = currentTime;
         return;
     }
-CHE243NanoCoopPlanTime = currentTime;
-  var CHE243NanoCoopPlanelement = document.getElementById("CHE243NanoCoopPlan");
- if (!CHE243NanoCoopPlanflag) {
-     if (that.NanoCoopPlanClickedMap.get("CHE243NanoCoopPlan").length > 0) { 
+ProgramTechnicalElectiveNanoCoopPlan1Time = currentTime;
+  var ProgramTechnicalElectiveNanoCoopPlan1element = document.getElementById("ProgramTechnicalElectiveNanoCoopPlan1");
+ if (!ProgramTechnicalElectiveNanoCoopPlan1flag) {
+     if (that.NanoCoopPlanClickedMap.get("ProgramTechnicalElectiveNanoCoopPlan1").length > 0) { 
  var trueCounter = 0;
-          for (let i = 0; i < that.NanoCoopPlanClickedMap.get("CHE243NanoCoopPlan").length; i++) { 
-        var cate = that.NanoCoopPlanClickedMap.get("CHE243NanoCoopPlan")[i];
-        if (CHE243NanoCoopPlanelement.classList.contains(cate + "-highlighted")) {
+          for (let i = 0; i < that.NanoCoopPlanClickedMap.get("ProgramTechnicalElectiveNanoCoopPlan1").length; i++) { 
+        var cate = that.NanoCoopPlanClickedMap.get("ProgramTechnicalElectiveNanoCoopPlan1")[i];
+        if (ProgramTechnicalElectiveNanoCoopPlan1element.classList.contains(cate + "-highlighted")) {
             trueCounter++;
-            that.unHighlightElement(CHE243NanoCoopPlanelement, cate);
+            that.unHighlightElement(ProgramTechnicalElectiveNanoCoopPlan1element, cate);
         }
     }
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine172());
-      that.addLine(getLine208());
-     that.highlightElement(CHE243NanoCoopPlanelement, "EngineeringSciences");
-     that.addToClicked("CHE243NanoCoopPlan", "EngineeringSciences");
-      CHE243NanoCoopPlanflag=true
+     that.highlightElement(ProgramTechnicalElectiveNanoCoopPlan1element, "PROG");
+     that.addToClicked("ProgramTechnicalElectiveNanoCoopPlan1", "PROG");
+      ProgramTechnicalElectiveNanoCoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine172());
-      that.removeLine(getLine208());
-     that.unHighlightElement(CHE243NanoCoopPlanelement, "EngineeringSciences");
-     var category = that.removeFromClicked("CHE243NanoCoopPlan", "EngineeringSciences");
+     that.unHighlightElement(ProgramTechnicalElectiveNanoCoopPlan1element, "PROG");
+     var category = that.removeFromClicked("ProgramTechnicalElectiveNanoCoopPlan1", "PROG");
   if (category != "") { 
-     that.highlightElement(CHE243NanoCoopPlanelement, category);
+     that.highlightElement(ProgramTechnicalElectiveNanoCoopPlan1element, category);
 }
-      CHE243NanoCoopPlanflag=false
+      ProgramTechnicalElectiveNanoCoopPlan1flag=false
   }
 };
-$scope.MATE201NanoCoopPlanListener = function () {
+$scope.ProgramTechnicalElectiveNanoCoopPlan2Listener = function () {
 var currentTime = new Date().getTime();
-if (currentTime - MATE201NanoCoopPlanTime <= 200) { 
-        MATE201NanoCoopPlanTime = currentTime;
+if (currentTime - ProgramTechnicalElectiveNanoCoopPlan2Time <= 200) { 
+        ProgramTechnicalElectiveNanoCoopPlan2Time = currentTime;
         return;
     }
-MATE201NanoCoopPlanTime = currentTime;
-  var MATE201NanoCoopPlanelement = document.getElementById("MATE201NanoCoopPlan");
- if (!MATE201NanoCoopPlanflag) {
-     if (that.NanoCoopPlanClickedMap.get("MATE201NanoCoopPlan").length > 0) { 
+ProgramTechnicalElectiveNanoCoopPlan2Time = currentTime;
+  var ProgramTechnicalElectiveNanoCoopPlan2element = document.getElementById("ProgramTechnicalElectiveNanoCoopPlan2");
+ if (!ProgramTechnicalElectiveNanoCoopPlan2flag) {
+     if (that.NanoCoopPlanClickedMap.get("ProgramTechnicalElectiveNanoCoopPlan2").length > 0) { 
  var trueCounter = 0;
-          for (let i = 0; i < that.NanoCoopPlanClickedMap.get("MATE201NanoCoopPlan").length; i++) { 
-        var cate = that.NanoCoopPlanClickedMap.get("MATE201NanoCoopPlan")[i];
-        if (MATE201NanoCoopPlanelement.classList.contains(cate + "-highlighted")) {
+          for (let i = 0; i < that.NanoCoopPlanClickedMap.get("ProgramTechnicalElectiveNanoCoopPlan2").length; i++) { 
+        var cate = that.NanoCoopPlanClickedMap.get("ProgramTechnicalElectiveNanoCoopPlan2")[i];
+        if (ProgramTechnicalElectiveNanoCoopPlan2element.classList.contains(cate + "-highlighted")) {
             trueCounter++;
-            that.unHighlightElement(MATE201NanoCoopPlanelement, cate);
+            that.unHighlightElement(ProgramTechnicalElectiveNanoCoopPlan2element, cate);
         }
     }
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine173());
-      that.addLine(getLine209());
-     that.highlightElement(MATE201NanoCoopPlanelement, "NaturalSciences");
-     that.addToClicked("MATE201NanoCoopPlan", "NaturalSciences");
-      MATE201NanoCoopPlanflag=true
+     that.highlightElement(ProgramTechnicalElectiveNanoCoopPlan2element, "PROG");
+     that.addToClicked("ProgramTechnicalElectiveNanoCoopPlan2", "PROG");
+      ProgramTechnicalElectiveNanoCoopPlan2flag=true
   }
  else {
-      that.removeLine(getLine173());
-      that.removeLine(getLine209());
-     that.unHighlightElement(MATE201NanoCoopPlanelement, "NaturalSciences");
-     var category = that.removeFromClicked("MATE201NanoCoopPlan", "NaturalSciences");
+     that.unHighlightElement(ProgramTechnicalElectiveNanoCoopPlan2element, "PROG");
+     var category = that.removeFromClicked("ProgramTechnicalElectiveNanoCoopPlan2", "PROG");
   if (category != "") { 
-     that.highlightElement(MATE201NanoCoopPlanelement, category);
+     that.highlightElement(ProgramTechnicalElectiveNanoCoopPlan2element, category);
 }
-      MATE201NanoCoopPlanflag=false
-  }
-};
-$scope.MECE250NanoCoopPlanListener = function () {
-var currentTime = new Date().getTime();
-if (currentTime - MECE250NanoCoopPlanTime <= 200) { 
-        MECE250NanoCoopPlanTime = currentTime;
-        return;
-    }
-MECE250NanoCoopPlanTime = currentTime;
-  var MECE250NanoCoopPlanelement = document.getElementById("MECE250NanoCoopPlan");
- if (!MECE250NanoCoopPlanflag) {
-     if (that.NanoCoopPlanClickedMap.get("MECE250NanoCoopPlan").length > 0) { 
- var trueCounter = 0;
-          for (let i = 0; i < that.NanoCoopPlanClickedMap.get("MECE250NanoCoopPlan").length; i++) { 
-        var cate = that.NanoCoopPlanClickedMap.get("MECE250NanoCoopPlan")[i];
-        if (MECE250NanoCoopPlanelement.classList.contains(cate + "-highlighted")) {
-            trueCounter++;
-            that.unHighlightElement(MECE250NanoCoopPlanelement, cate);
-        }
-    }
-    if (trueCounter > 0) {
-        return;
-    }}
-      that.addLine(getLine174());
-      that.addLine(getLine175());
-      that.addLine(getLine176());
-      that.addLine(getLine210());
-      that.addLine(getLine211());
-      that.addLine(getLine212());
-     that.highlightElement(MECE250NanoCoopPlanelement, "EngineeringSciences");
-     that.addToClicked("MECE250NanoCoopPlan", "EngineeringSciences");
-      MECE250NanoCoopPlanflag=true
-  }
- else {
-      that.removeLine(getLine174());
-      that.removeLine(getLine175());
-      that.removeLine(getLine176());
-      that.removeLine(getLine210());
-      that.removeLine(getLine211());
-      that.removeLine(getLine212());
-     that.unHighlightElement(MECE250NanoCoopPlanelement, "EngineeringSciences");
-     var category = that.removeFromClicked("MECE250NanoCoopPlan", "EngineeringSciences");
-  if (category != "") { 
-     that.highlightElement(MECE250NanoCoopPlanelement, category);
-}
-      MECE250NanoCoopPlanflag=false
-  }
-};
-$scope.ProgramTechnicalElectiveNanoCoopPlan0Listener = function () {
-var currentTime = new Date().getTime();
-if (currentTime - ProgramTechnicalElectiveNanoCoopPlan0Time <= 200) { 
-        ProgramTechnicalElectiveNanoCoopPlan0Time = currentTime;
-        return;
-    }
-ProgramTechnicalElectiveNanoCoopPlan0Time = currentTime;
-  var ProgramTechnicalElectiveNanoCoopPlan0element = document.getElementById("ProgramTechnicalElectiveNanoCoopPlan0");
- if (!ProgramTechnicalElectiveNanoCoopPlan0flag) {
-     if (that.NanoCoopPlanClickedMap.get("ProgramTechnicalElectiveNanoCoopPlan0").length > 0) { 
- var trueCounter = 0;
-          for (let i = 0; i < that.NanoCoopPlanClickedMap.get("ProgramTechnicalElectiveNanoCoopPlan0").length; i++) { 
-        var cate = that.NanoCoopPlanClickedMap.get("ProgramTechnicalElectiveNanoCoopPlan0")[i];
-        if (ProgramTechnicalElectiveNanoCoopPlan0element.classList.contains(cate + "-highlighted")) {
-            trueCounter++;
-            that.unHighlightElement(ProgramTechnicalElectiveNanoCoopPlan0element, cate);
-        }
-    }
-    if (trueCounter > 0) {
-        return;
-    }}
-     that.highlightElement(ProgramTechnicalElectiveNanoCoopPlan0element, "PROG");
-     that.addToClicked("ProgramTechnicalElectiveNanoCoopPlan0", "PROG");
-      ProgramTechnicalElectiveNanoCoopPlan0flag=true
-  }
- else {
-     that.unHighlightElement(ProgramTechnicalElectiveNanoCoopPlan0element, "PROG");
-     var category = that.removeFromClicked("ProgramTechnicalElectiveNanoCoopPlan0", "PROG");
-  if (category != "") { 
-     that.highlightElement(ProgramTechnicalElectiveNanoCoopPlan0element, category);
-}
-      ProgramTechnicalElectiveNanoCoopPlan0flag=false
+      ProgramTechnicalElectiveNanoCoopPlan2flag=false
   }
 };
 $scope.ECE450NanoCoopPlanListener = function () {
@@ -17594,13 +16086,13 @@ ECE450NanoCoopPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine213());
+      that.addLine(getLine173());
      that.highlightElement(ECE450NanoCoopPlanelement, "course");
      that.addToClicked("ECE450NanoCoopPlan", "course");
       ECE450NanoCoopPlanflag=true
   }
  else {
-      that.removeLine(getLine213());
+      that.removeLine(getLine173());
      that.unHighlightElement(ECE450NanoCoopPlanelement, "course");
      var category = that.removeFromClicked("ECE450NanoCoopPlan", "course");
   if (category != "") { 
@@ -17630,13 +16122,13 @@ ECE475NanoCoopPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine214());
+      that.addLine(getLine174());
      that.highlightElement(ECE475NanoCoopPlanelement, "course");
      that.addToClicked("ECE475NanoCoopPlan", "course");
       ECE475NanoCoopPlanflag=true
   }
  else {
-      that.removeLine(getLine214());
+      that.removeLine(getLine174());
      that.unHighlightElement(ECE475NanoCoopPlanelement, "course");
      var category = that.removeFromClicked("ECE475NanoCoopPlan", "course");
   if (category != "") { 
@@ -17666,13 +16158,13 @@ ECE491NanoCoopPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine215());
+      that.addLine(getLine175());
      that.highlightElement(ECE491NanoCoopPlanelement, "EngineeringDesign");
      that.addToClicked("ECE491NanoCoopPlan", "EngineeringDesign");
       ECE491NanoCoopPlanflag=true
   }
  else {
-      that.removeLine(getLine215());
+      that.removeLine(getLine175());
      that.unHighlightElement(ECE491NanoCoopPlanelement, "EngineeringDesign");
      var category = that.removeFromClicked("ECE491NanoCoopPlan", "EngineeringDesign");
   if (category != "") { 
@@ -17783,72 +16275,72 @@ ENGG400NanoCoopPlanTime = currentTime;
       ENGG400NanoCoopPlanflag=false
   }
 };
-$scope.ProgramTechnicalElectiveNanoCoopPlan1Listener = function () {
+$scope.ProgramTechnicalElectiveNanoCoopPlan3Listener = function () {
 var currentTime = new Date().getTime();
-if (currentTime - ProgramTechnicalElectiveNanoCoopPlan1Time <= 200) { 
-        ProgramTechnicalElectiveNanoCoopPlan1Time = currentTime;
+if (currentTime - ProgramTechnicalElectiveNanoCoopPlan3Time <= 200) { 
+        ProgramTechnicalElectiveNanoCoopPlan3Time = currentTime;
         return;
     }
-ProgramTechnicalElectiveNanoCoopPlan1Time = currentTime;
-  var ProgramTechnicalElectiveNanoCoopPlan1element = document.getElementById("ProgramTechnicalElectiveNanoCoopPlan1");
- if (!ProgramTechnicalElectiveNanoCoopPlan1flag) {
-     if (that.NanoCoopPlanClickedMap.get("ProgramTechnicalElectiveNanoCoopPlan1").length > 0) { 
+ProgramTechnicalElectiveNanoCoopPlan3Time = currentTime;
+  var ProgramTechnicalElectiveNanoCoopPlan3element = document.getElementById("ProgramTechnicalElectiveNanoCoopPlan3");
+ if (!ProgramTechnicalElectiveNanoCoopPlan3flag) {
+     if (that.NanoCoopPlanClickedMap.get("ProgramTechnicalElectiveNanoCoopPlan3").length > 0) { 
  var trueCounter = 0;
-          for (let i = 0; i < that.NanoCoopPlanClickedMap.get("ProgramTechnicalElectiveNanoCoopPlan1").length; i++) { 
-        var cate = that.NanoCoopPlanClickedMap.get("ProgramTechnicalElectiveNanoCoopPlan1")[i];
-        if (ProgramTechnicalElectiveNanoCoopPlan1element.classList.contains(cate + "-highlighted")) {
+          for (let i = 0; i < that.NanoCoopPlanClickedMap.get("ProgramTechnicalElectiveNanoCoopPlan3").length; i++) { 
+        var cate = that.NanoCoopPlanClickedMap.get("ProgramTechnicalElectiveNanoCoopPlan3")[i];
+        if (ProgramTechnicalElectiveNanoCoopPlan3element.classList.contains(cate + "-highlighted")) {
             trueCounter++;
-            that.unHighlightElement(ProgramTechnicalElectiveNanoCoopPlan1element, cate);
+            that.unHighlightElement(ProgramTechnicalElectiveNanoCoopPlan3element, cate);
         }
     }
     if (trueCounter > 0) {
         return;
     }}
-     that.highlightElement(ProgramTechnicalElectiveNanoCoopPlan1element, "PROG");
-     that.addToClicked("ProgramTechnicalElectiveNanoCoopPlan1", "PROG");
-      ProgramTechnicalElectiveNanoCoopPlan1flag=true
+     that.highlightElement(ProgramTechnicalElectiveNanoCoopPlan3element, "PROG");
+     that.addToClicked("ProgramTechnicalElectiveNanoCoopPlan3", "PROG");
+      ProgramTechnicalElectiveNanoCoopPlan3flag=true
   }
  else {
-     that.unHighlightElement(ProgramTechnicalElectiveNanoCoopPlan1element, "PROG");
-     var category = that.removeFromClicked("ProgramTechnicalElectiveNanoCoopPlan1", "PROG");
+     that.unHighlightElement(ProgramTechnicalElectiveNanoCoopPlan3element, "PROG");
+     var category = that.removeFromClicked("ProgramTechnicalElectiveNanoCoopPlan3", "PROG");
   if (category != "") { 
-     that.highlightElement(ProgramTechnicalElectiveNanoCoopPlan1element, category);
+     that.highlightElement(ProgramTechnicalElectiveNanoCoopPlan3element, category);
 }
-      ProgramTechnicalElectiveNanoCoopPlan1flag=false
+      ProgramTechnicalElectiveNanoCoopPlan3flag=false
   }
 };
-$scope.ProgramTechnicalElectiveNanoCoopPlan2Listener = function () {
+$scope.ProgramTechnicalElectiveNanoCoopPlan4Listener = function () {
 var currentTime = new Date().getTime();
-if (currentTime - ProgramTechnicalElectiveNanoCoopPlan2Time <= 200) { 
-        ProgramTechnicalElectiveNanoCoopPlan2Time = currentTime;
+if (currentTime - ProgramTechnicalElectiveNanoCoopPlan4Time <= 200) { 
+        ProgramTechnicalElectiveNanoCoopPlan4Time = currentTime;
         return;
     }
-ProgramTechnicalElectiveNanoCoopPlan2Time = currentTime;
-  var ProgramTechnicalElectiveNanoCoopPlan2element = document.getElementById("ProgramTechnicalElectiveNanoCoopPlan2");
- if (!ProgramTechnicalElectiveNanoCoopPlan2flag) {
-     if (that.NanoCoopPlanClickedMap.get("ProgramTechnicalElectiveNanoCoopPlan2").length > 0) { 
+ProgramTechnicalElectiveNanoCoopPlan4Time = currentTime;
+  var ProgramTechnicalElectiveNanoCoopPlan4element = document.getElementById("ProgramTechnicalElectiveNanoCoopPlan4");
+ if (!ProgramTechnicalElectiveNanoCoopPlan4flag) {
+     if (that.NanoCoopPlanClickedMap.get("ProgramTechnicalElectiveNanoCoopPlan4").length > 0) { 
  var trueCounter = 0;
-          for (let i = 0; i < that.NanoCoopPlanClickedMap.get("ProgramTechnicalElectiveNanoCoopPlan2").length; i++) { 
-        var cate = that.NanoCoopPlanClickedMap.get("ProgramTechnicalElectiveNanoCoopPlan2")[i];
-        if (ProgramTechnicalElectiveNanoCoopPlan2element.classList.contains(cate + "-highlighted")) {
+          for (let i = 0; i < that.NanoCoopPlanClickedMap.get("ProgramTechnicalElectiveNanoCoopPlan4").length; i++) { 
+        var cate = that.NanoCoopPlanClickedMap.get("ProgramTechnicalElectiveNanoCoopPlan4")[i];
+        if (ProgramTechnicalElectiveNanoCoopPlan4element.classList.contains(cate + "-highlighted")) {
             trueCounter++;
-            that.unHighlightElement(ProgramTechnicalElectiveNanoCoopPlan2element, cate);
+            that.unHighlightElement(ProgramTechnicalElectiveNanoCoopPlan4element, cate);
         }
     }
     if (trueCounter > 0) {
         return;
     }}
-     that.highlightElement(ProgramTechnicalElectiveNanoCoopPlan2element, "PROG");
-     that.addToClicked("ProgramTechnicalElectiveNanoCoopPlan2", "PROG");
-      ProgramTechnicalElectiveNanoCoopPlan2flag=true
+     that.highlightElement(ProgramTechnicalElectiveNanoCoopPlan4element, "PROG");
+     that.addToClicked("ProgramTechnicalElectiveNanoCoopPlan4", "PROG");
+      ProgramTechnicalElectiveNanoCoopPlan4flag=true
   }
  else {
-     that.unHighlightElement(ProgramTechnicalElectiveNanoCoopPlan2element, "PROG");
-     var category = that.removeFromClicked("ProgramTechnicalElectiveNanoCoopPlan2", "PROG");
+     that.unHighlightElement(ProgramTechnicalElectiveNanoCoopPlan4element, "PROG");
+     var category = that.removeFromClicked("ProgramTechnicalElectiveNanoCoopPlan4", "PROG");
   if (category != "") { 
-     that.highlightElement(ProgramTechnicalElectiveNanoCoopPlan2element, category);
+     that.highlightElement(ProgramTechnicalElectiveNanoCoopPlan4element, category);
 }
-      ProgramTechnicalElectiveNanoCoopPlan2flag=false
+      ProgramTechnicalElectiveNanoCoopPlan4flag=false
   }
 };
 $scope.CHEM103NanoCoopPlanRCListener = function () {
@@ -18242,9 +16734,9 @@ $scope.MATH209NanoCoopPlanRCListener = function () {
       MATH209NanoCoopPlanrflag=false
   }
 };
-$scope.CHE243NanoCoopPlanRCListener = function () {
-  var element = document.getElementById("CHE243NanoCoopPlandesc");
- if (!CHE243NanoCoopPlanrflag) {
+$scope.ProgramTechnicalElectiveNanoCoopPlan0RCListener = function () {
+  var element = document.getElementById("ProgramTechnicalElectiveNanoCoopPlan0desc");
+ if (!ProgramTechnicalElectiveNanoCoopPlan0rflag) {
        if (element.classList.contains("tooltiptextleft")) {
         element.classList.remove("tooltiptextleft");
         element.classList.add("tooltiptextleft-locked");
@@ -18252,7 +16744,7 @@ $scope.CHE243NanoCoopPlanRCListener = function () {
         element.classList.remove("tooltiptextright");
         element.classList.add("tooltiptextright-locked");
     }
-      CHE243NanoCoopPlanrflag=true
+      ProgramTechnicalElectiveNanoCoopPlan0rflag=true
   }
  else {
        if (element.classList.contains("tooltiptextleft-locked")) {
@@ -18262,53 +16754,7 @@ $scope.CHE243NanoCoopPlanRCListener = function () {
         element.classList.remove("tooltiptextright-locked");
         element.classList.add("tooltiptextright");
     }
-      CHE243NanoCoopPlanrflag=false
-  }
-};
-$scope.MATE201NanoCoopPlanRCListener = function () {
-  var element = document.getElementById("MATE201NanoCoopPlandesc");
- if (!MATE201NanoCoopPlanrflag) {
-       if (element.classList.contains("tooltiptextleft")) {
-        element.classList.remove("tooltiptextleft");
-        element.classList.add("tooltiptextleft-locked");
-    } else {
-        element.classList.remove("tooltiptextright");
-        element.classList.add("tooltiptextright-locked");
-    }
-      MATE201NanoCoopPlanrflag=true
-  }
- else {
-       if (element.classList.contains("tooltiptextleft-locked")) {
-        element.classList.remove("tooltiptextleft-locked");
-        element.classList.add("tooltiptextleft");
-    } else {
-        element.classList.remove("tooltiptextright-locked");
-        element.classList.add("tooltiptextright");
-    }
-      MATE201NanoCoopPlanrflag=false
-  }
-};
-$scope.MECE250NanoCoopPlanRCListener = function () {
-  var element = document.getElementById("MECE250NanoCoopPlandesc");
- if (!MECE250NanoCoopPlanrflag) {
-       if (element.classList.contains("tooltiptextleft")) {
-        element.classList.remove("tooltiptextleft");
-        element.classList.add("tooltiptextleft-locked");
-    } else {
-        element.classList.remove("tooltiptextright");
-        element.classList.add("tooltiptextright-locked");
-    }
-      MECE250NanoCoopPlanrflag=true
-  }
- else {
-       if (element.classList.contains("tooltiptextleft-locked")) {
-        element.classList.remove("tooltiptextleft-locked");
-        element.classList.add("tooltiptextleft");
-    } else {
-        element.classList.remove("tooltiptextright-locked");
-        element.classList.add("tooltiptextright");
-    }
-      MECE250NanoCoopPlanrflag=false
+      ProgramTechnicalElectiveNanoCoopPlan0rflag=false
   }
 };
 $scope.ECE203NanoCoopPlanRCListener = function () {
@@ -18932,9 +17378,9 @@ $scope.ENGG404NanoCoopPlanRCListener = function () {
       ENGG404NanoCoopPlanrflag=false
   }
 };
-$scope.CHE243NanoCoopPlanRCListener = function () {
-  var element = document.getElementById("CHE243NanoCoopPlandesc");
- if (!CHE243NanoCoopPlanrflag) {
+$scope.ProgramTechnicalElectiveNanoCoopPlan1RCListener = function () {
+  var element = document.getElementById("ProgramTechnicalElectiveNanoCoopPlan1desc");
+ if (!ProgramTechnicalElectiveNanoCoopPlan1rflag) {
        if (element.classList.contains("tooltiptextleft")) {
         element.classList.remove("tooltiptextleft");
         element.classList.add("tooltiptextleft-locked");
@@ -18942,7 +17388,7 @@ $scope.CHE243NanoCoopPlanRCListener = function () {
         element.classList.remove("tooltiptextright");
         element.classList.add("tooltiptextright-locked");
     }
-      CHE243NanoCoopPlanrflag=true
+      ProgramTechnicalElectiveNanoCoopPlan1rflag=true
   }
  else {
        if (element.classList.contains("tooltiptextleft-locked")) {
@@ -18952,12 +17398,12 @@ $scope.CHE243NanoCoopPlanRCListener = function () {
         element.classList.remove("tooltiptextright-locked");
         element.classList.add("tooltiptextright");
     }
-      CHE243NanoCoopPlanrflag=false
+      ProgramTechnicalElectiveNanoCoopPlan1rflag=false
   }
 };
-$scope.MATE201NanoCoopPlanRCListener = function () {
-  var element = document.getElementById("MATE201NanoCoopPlandesc");
- if (!MATE201NanoCoopPlanrflag) {
+$scope.ProgramTechnicalElectiveNanoCoopPlan2RCListener = function () {
+  var element = document.getElementById("ProgramTechnicalElectiveNanoCoopPlan2desc");
+ if (!ProgramTechnicalElectiveNanoCoopPlan2rflag) {
        if (element.classList.contains("tooltiptextleft")) {
         element.classList.remove("tooltiptextleft");
         element.classList.add("tooltiptextleft-locked");
@@ -18965,7 +17411,7 @@ $scope.MATE201NanoCoopPlanRCListener = function () {
         element.classList.remove("tooltiptextright");
         element.classList.add("tooltiptextright-locked");
     }
-      MATE201NanoCoopPlanrflag=true
+      ProgramTechnicalElectiveNanoCoopPlan2rflag=true
   }
  else {
        if (element.classList.contains("tooltiptextleft-locked")) {
@@ -18975,53 +17421,7 @@ $scope.MATE201NanoCoopPlanRCListener = function () {
         element.classList.remove("tooltiptextright-locked");
         element.classList.add("tooltiptextright");
     }
-      MATE201NanoCoopPlanrflag=false
-  }
-};
-$scope.MECE250NanoCoopPlanRCListener = function () {
-  var element = document.getElementById("MECE250NanoCoopPlandesc");
- if (!MECE250NanoCoopPlanrflag) {
-       if (element.classList.contains("tooltiptextleft")) {
-        element.classList.remove("tooltiptextleft");
-        element.classList.add("tooltiptextleft-locked");
-    } else {
-        element.classList.remove("tooltiptextright");
-        element.classList.add("tooltiptextright-locked");
-    }
-      MECE250NanoCoopPlanrflag=true
-  }
- else {
-       if (element.classList.contains("tooltiptextleft-locked")) {
-        element.classList.remove("tooltiptextleft-locked");
-        element.classList.add("tooltiptextleft");
-    } else {
-        element.classList.remove("tooltiptextright-locked");
-        element.classList.add("tooltiptextright");
-    }
-      MECE250NanoCoopPlanrflag=false
-  }
-};
-$scope.ProgramTechnicalElectiveNanoCoopPlan0RCListener = function () {
-  var element = document.getElementById("ProgramTechnicalElectiveNanoCoopPlan0desc");
- if (!ProgramTechnicalElectiveNanoCoopPlan0rflag) {
-       if (element.classList.contains("tooltiptextleft")) {
-        element.classList.remove("tooltiptextleft");
-        element.classList.add("tooltiptextleft-locked");
-    } else {
-        element.classList.remove("tooltiptextright");
-        element.classList.add("tooltiptextright-locked");
-    }
-      ProgramTechnicalElectiveNanoCoopPlan0rflag=true
-  }
- else {
-       if (element.classList.contains("tooltiptextleft-locked")) {
-        element.classList.remove("tooltiptextleft-locked");
-        element.classList.add("tooltiptextleft");
-    } else {
-        element.classList.remove("tooltiptextright-locked");
-        element.classList.add("tooltiptextright");
-    }
-      ProgramTechnicalElectiveNanoCoopPlan0rflag=false
+      ProgramTechnicalElectiveNanoCoopPlan2rflag=false
   }
 };
 $scope.ECE450NanoCoopPlanRCListener = function () {
@@ -19162,9 +17562,9 @@ $scope.ENGG400NanoCoopPlanRCListener = function () {
       ENGG400NanoCoopPlanrflag=false
   }
 };
-$scope.ProgramTechnicalElectiveNanoCoopPlan1RCListener = function () {
-  var element = document.getElementById("ProgramTechnicalElectiveNanoCoopPlan1desc");
- if (!ProgramTechnicalElectiveNanoCoopPlan1rflag) {
+$scope.ProgramTechnicalElectiveNanoCoopPlan3RCListener = function () {
+  var element = document.getElementById("ProgramTechnicalElectiveNanoCoopPlan3desc");
+ if (!ProgramTechnicalElectiveNanoCoopPlan3rflag) {
        if (element.classList.contains("tooltiptextleft")) {
         element.classList.remove("tooltiptextleft");
         element.classList.add("tooltiptextleft-locked");
@@ -19172,7 +17572,7 @@ $scope.ProgramTechnicalElectiveNanoCoopPlan1RCListener = function () {
         element.classList.remove("tooltiptextright");
         element.classList.add("tooltiptextright-locked");
     }
-      ProgramTechnicalElectiveNanoCoopPlan1rflag=true
+      ProgramTechnicalElectiveNanoCoopPlan3rflag=true
   }
  else {
        if (element.classList.contains("tooltiptextleft-locked")) {
@@ -19182,12 +17582,12 @@ $scope.ProgramTechnicalElectiveNanoCoopPlan1RCListener = function () {
         element.classList.remove("tooltiptextright-locked");
         element.classList.add("tooltiptextright");
     }
-      ProgramTechnicalElectiveNanoCoopPlan1rflag=false
+      ProgramTechnicalElectiveNanoCoopPlan3rflag=false
   }
 };
-$scope.ProgramTechnicalElectiveNanoCoopPlan2RCListener = function () {
-  var element = document.getElementById("ProgramTechnicalElectiveNanoCoopPlan2desc");
- if (!ProgramTechnicalElectiveNanoCoopPlan2rflag) {
+$scope.ProgramTechnicalElectiveNanoCoopPlan4RCListener = function () {
+  var element = document.getElementById("ProgramTechnicalElectiveNanoCoopPlan4desc");
+ if (!ProgramTechnicalElectiveNanoCoopPlan4rflag) {
        if (element.classList.contains("tooltiptextleft")) {
         element.classList.remove("tooltiptextleft");
         element.classList.add("tooltiptextleft-locked");
@@ -19195,7 +17595,7 @@ $scope.ProgramTechnicalElectiveNanoCoopPlan2RCListener = function () {
         element.classList.remove("tooltiptextright");
         element.classList.add("tooltiptextright-locked");
     }
-      ProgramTechnicalElectiveNanoCoopPlan2rflag=true
+      ProgramTechnicalElectiveNanoCoopPlan4rflag=true
   }
  else {
        if (element.classList.contains("tooltiptextleft-locked")) {
@@ -19205,7 +17605,7 @@ $scope.ProgramTechnicalElectiveNanoCoopPlan2RCListener = function () {
         element.classList.remove("tooltiptextright-locked");
         element.classList.add("tooltiptextright");
     }
-      ProgramTechnicalElectiveNanoCoopPlan2rflag=false
+      ProgramTechnicalElectiveNanoCoopPlan4rflag=false
   }
 };
 });
