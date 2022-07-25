@@ -117,10 +117,6 @@ this.disable = function(plan) {
   that.MCTRV1DeptLegendBtns.push(currbtn);
   that.MCTRV2FacultyLegendBtns.push(currbtn);
   that.MCTRV3DSNLegendBtns.push(currbtn);
-  var currbtn = document.getElementById("");
-  that.MCTRV1DeptLegendBtns.push(currbtn);
-  that.MCTRV2FacultyLegendBtns.push(currbtn);
-  that.MCTRV3DSNLegendBtns.push(currbtn);
   var currbtn = document.getElementById("ITS");
   that.MCTRV1DeptLegendBtns.push(currbtn);
   that.MCTRV2FacultyLegendBtns.push(currbtn);
@@ -600,32 +596,6 @@ $scope.EngineeringDesignclickListener = function() {
         var removeClick = "that." + planName + "LegendBtnsClicked.splice(index, 1)";
         eval(removeClick);
         var flagName = "EngineeringDesign" + planName + "flag";
-        eval(flagName + " = false");
-    }
-}
-$scope.clickListener = function() {
-    var planName = $scope.selectedPlan;
-    var pressedbtn = document.getElementById("");
-    var checkFlag = "!" + planName + "flag";
-    var flagBool = eval(checkFlag);
-    if (flagBool) {
-        that.highlightCategory("", planName);
-        pressedbtn.classList.remove("legendbutton");
-        pressedbtn.classList.add("legendbutton-pressed");
-        var addClick = "that." + planName + "LegendBtnsClicked.push(pressedbtn)";
-        eval(addClick);
-        var flagName = "" + planName + "flag";
-        eval(flagName + " = true");
-    }
-    else {
-        that.unhighlightCategory("", planName);
-        pressedbtn.classList.remove("legendbutton-pressed");
-        pressedbtn.classList.add("legendbutton");
-        var findIndex = "var index = that." + planName + "LegendBtnsClicked.findIndex((element) => element[0] == pressedbtn)";
-        eval(findIndex);
-        var removeClick = "that." + planName + "LegendBtnsClicked.splice(index, 1)";
-        eval(removeClick);
-        var flagName = "" + planName + "flag";
         eval(flagName + " = false");
     }
 }
@@ -1875,20 +1845,6 @@ switch(categoryName) {
        break;
        }
       break;
-  case "":
-    switch(planName) {
-      case "MCTRV1Dept":
- var element = document.getElementById("ECE360MCTRV1Dept");
-                            if (this.MCTRV1DeptClickedMap.get("ECE360MCTRV1Dept").length > 0) {
-                                var mapLen = this.MCTRV1DeptClickedMap.get("ECE360MCTRV1Dept").length - 1
-                                var prevCate = this.MCTRV1DeptClickedMap.get("ECE360MCTRV1Dept")[mapLen];
-                                this.unHighlightElement(element, prevCate);
-                            }
-                            this.highlightElement(element, categoryName);
-                            this.addToClicked("ECE360MCTRV1Dept", categoryName);
-       break;
-       }
-      break;
   case "ITS":
     switch(planName) {
       case "MCTRV1Dept":
@@ -2005,6 +1961,32 @@ switch(categoryName) {
           this.addToClicked("ProgramTechnicalElectiveMCTRV1Dept" + i, categoryName);
           i = i + 1;
         }
+        var PROGelements = document.getElementsByClassName("PROG");
+        var i = 0;
+        while (PROGelements.length > 0) {
+          var currelement = document.getElementById(PROGelements.item(0).id);
+          if (this.MCTRV1DeptClickedMap.get("ProgramTechnicalElectiveMCTRV1Dept" + i).length > 0) {
+                var mapLen = this.MCTRV1DeptClickedMap.get("ProgramTechnicalElectiveMCTRV1Dept" + i).length - 1
+                var prevCate = this.MCTRV1DeptClickedMap.get("ProgramTechnicalElectiveMCTRV1Dept" + i)[mapLen];
+                this.unHighlightElement(currelement, prevCate);
+          }
+          this.highlightElement(currelement, categoryName);
+          this.addToClicked("ProgramTechnicalElectiveMCTRV1Dept" + i, categoryName);
+          i = i + 1;
+        }
+        var PROGelements = document.getElementsByClassName("PROG");
+        var i = 0;
+        while (PROGelements.length > 0) {
+          var currelement = document.getElementById(PROGelements.item(0).id);
+          if (this.MCTRV1DeptClickedMap.get("ProgramTechnicalElectiveMCTRV1Dept" + i).length > 0) {
+                var mapLen = this.MCTRV1DeptClickedMap.get("ProgramTechnicalElectiveMCTRV1Dept" + i).length - 1
+                var prevCate = this.MCTRV1DeptClickedMap.get("ProgramTechnicalElectiveMCTRV1Dept" + i)[mapLen];
+                this.unHighlightElement(currelement, prevCate);
+          }
+          this.highlightElement(currelement, categoryName);
+          this.addToClicked("ProgramTechnicalElectiveMCTRV1Dept" + i, categoryName);
+          i = i + 1;
+        }
        break;
       case "MCTRV2Faculty":
         var PROGelements = document.getElementsByClassName("PROG");
@@ -2020,8 +2002,34 @@ switch(categoryName) {
           this.addToClicked("ProgramTechnicalElectiveMCTRV2Faculty" + i, categoryName);
           i = i + 1;
         }
+        var PROGelements = document.getElementsByClassName("PROG");
+        var i = 0;
+        while (PROGelements.length > 0) {
+          var currelement = document.getElementById(PROGelements.item(0).id);
+          if (this.MCTRV2FacultyClickedMap.get("ProgramTechnicalElectiveMCTRV2Faculty" + i).length > 0) {
+                var mapLen = this.MCTRV2FacultyClickedMap.get("ProgramTechnicalElectiveMCTRV2Faculty" + i).length - 1
+                var prevCate = this.MCTRV2FacultyClickedMap.get("ProgramTechnicalElectiveMCTRV2Faculty" + i)[mapLen];
+                this.unHighlightElement(currelement, prevCate);
+          }
+          this.highlightElement(currelement, categoryName);
+          this.addToClicked("ProgramTechnicalElectiveMCTRV2Faculty" + i, categoryName);
+          i = i + 1;
+        }
        break;
       case "MCTRV3DSN":
+        var PROGelements = document.getElementsByClassName("PROG");
+        var i = 0;
+        while (PROGelements.length > 0) {
+          var currelement = document.getElementById(PROGelements.item(0).id);
+          if (this.MCTRV3DSNClickedMap.get("ProgramTechnicalElectiveMCTRV3DSN" + i).length > 0) {
+                var mapLen = this.MCTRV3DSNClickedMap.get("ProgramTechnicalElectiveMCTRV3DSN" + i).length - 1
+                var prevCate = this.MCTRV3DSNClickedMap.get("ProgramTechnicalElectiveMCTRV3DSN" + i)[mapLen];
+                this.unHighlightElement(currelement, prevCate);
+          }
+          this.highlightElement(currelement, categoryName);
+          this.addToClicked("ProgramTechnicalElectiveMCTRV3DSN" + i, categoryName);
+          i = i + 1;
+        }
         var PROGelements = document.getElementsByClassName("PROG");
         var i = 0;
         while (PROGelements.length > 0) {
@@ -3210,20 +3218,6 @@ switch(categoryName) {
        break;
        }
       break;
-  case "":
-    switch(planName) {
-      case "MCTRV1Dept":
-     var element = document.getElementById("ECE360MCTRV1Dept");
-                            var prevCate = this.removeFromClicked("ECE360MCTRV1Dept", categoryName);
-                                if (element.classList.contains(categoryName+"-highlighted")) {
-                                    this.unHighlightElement(element, categoryName);
-                                    if (prevCate != "") {
-                                        this.highlightElement(element, prevCate);
-                                    }
-                                }
-       break;
-       }
-      break;
   case "ITS":
     switch(planName) {
       case "MCTRV1Dept":
@@ -3361,6 +3355,38 @@ switch(categoryName) {
                 }      
           i = i + 1;
         }
+        var PROGelements = document.getElementsByClassName("PROG-highlighted");
+        var i = 0;        
+        while (PROGelements.length > 0) {
+          var currelement = document.getElementById(PROGelements.item(0).id);
+          var prevCate = this.removeFromClicked("ProgramTechnicalElectiveMCTRV1Dept" + i, "PROG");
+                if (!currelement.classList.contains(categoryName+"-highlighted")) {
+                    return;
+                }
+                else {
+                    this.unHighlightElement(currelement, categoryName);
+                    if (prevCate != "") {
+                        this.highlightElement(currelement, prevCate);
+                    }
+                }      
+          i = i + 1;
+        }
+        var PROGelements = document.getElementsByClassName("PROG-highlighted");
+        var i = 0;        
+        while (PROGelements.length > 0) {
+          var currelement = document.getElementById(PROGelements.item(0).id);
+          var prevCate = this.removeFromClicked("ProgramTechnicalElectiveMCTRV1Dept" + i, "PROG");
+                if (!currelement.classList.contains(categoryName+"-highlighted")) {
+                    return;
+                }
+                else {
+                    this.unHighlightElement(currelement, categoryName);
+                    if (prevCate != "") {
+                        this.highlightElement(currelement, prevCate);
+                    }
+                }      
+          i = i + 1;
+        }
        break;
       case "MCTRV2Faculty":
         var PROGelements = document.getElementsByClassName("PROG-highlighted");
@@ -3379,8 +3405,40 @@ switch(categoryName) {
                 }      
           i = i + 1;
         }
+        var PROGelements = document.getElementsByClassName("PROG-highlighted");
+        var i = 0;        
+        while (PROGelements.length > 0) {
+          var currelement = document.getElementById(PROGelements.item(0).id);
+          var prevCate = this.removeFromClicked("ProgramTechnicalElectiveMCTRV2Faculty" + i, "PROG");
+                if (!currelement.classList.contains(categoryName+"-highlighted")) {
+                    return;
+                }
+                else {
+                    this.unHighlightElement(currelement, categoryName);
+                    if (prevCate != "") {
+                        this.highlightElement(currelement, prevCate);
+                    }
+                }      
+          i = i + 1;
+        }
        break;
       case "MCTRV3DSN":
+        var PROGelements = document.getElementsByClassName("PROG-highlighted");
+        var i = 0;        
+        while (PROGelements.length > 0) {
+          var currelement = document.getElementById(PROGelements.item(0).id);
+          var prevCate = this.removeFromClicked("ProgramTechnicalElectiveMCTRV3DSN" + i, "PROG");
+                if (!currelement.classList.contains(categoryName+"-highlighted")) {
+                    return;
+                }
+                else {
+                    this.unHighlightElement(currelement, categoryName);
+                    if (prevCate != "") {
+                        this.highlightElement(currelement, prevCate);
+                    }
+                }      
+          i = i + 1;
+        }
         var PROGelements = document.getElementsByClassName("PROG-highlighted");
         var i = 0;        
         while (PROGelements.length > 0) {

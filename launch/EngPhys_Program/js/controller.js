@@ -149,11 +149,6 @@ this.disable = function(plan) {
   that.CoopPlanLegendBtns.push(currbtn);
   that.NanoTraditionalPlanLegendBtns.push(currbtn);
   that.NanoCoopPlanLegendBtns.push(currbtn);
-  var currbtn = document.getElementById("");
-  that.TraditionalPlanLegendBtns.push(currbtn);
-  that.CoopPlanLegendBtns.push(currbtn);
-  that.NanoTraditionalPlanLegendBtns.push(currbtn);
-  that.NanoCoopPlanLegendBtns.push(currbtn);
 this.enable = function(plan) {
   switch(plan) {
     case "TraditionalPlan": 
@@ -755,32 +750,6 @@ $scope.ITSclickListener = function() {
         var removeClick = "that." + planName + "LegendBtnsClicked.splice(index, 1)";
         eval(removeClick);
         var flagName = "ITS" + planName + "flag";
-        eval(flagName + " = false");
-    }
-}
-$scope.clickListener = function() {
-    var planName = $scope.selectedPlan;
-    var pressedbtn = document.getElementById("");
-    var checkFlag = "!" + planName + "flag";
-    var flagBool = eval(checkFlag);
-    if (flagBool) {
-        that.highlightCategory("", planName);
-        pressedbtn.classList.remove("legendbutton");
-        pressedbtn.classList.add("legendbutton-pressed");
-        var addClick = "that." + planName + "LegendBtnsClicked.push(pressedbtn)";
-        eval(addClick);
-        var flagName = "" + planName + "flag";
-        eval(flagName + " = true");
-    }
-    else {
-        that.unhighlightCategory("", planName);
-        pressedbtn.classList.remove("legendbutton-pressed");
-        pressedbtn.classList.add("legendbutton");
-        var findIndex = "var index = that." + planName + "LegendBtnsClicked.findIndex((element) => element[0] == pressedbtn)";
-        eval(findIndex);
-        var removeClick = "that." + planName + "LegendBtnsClicked.splice(index, 1)";
-        eval(removeClick);
-        var flagName = "" + planName + "flag";
         eval(flagName + " = false");
     }
 }
@@ -2464,8 +2433,112 @@ switch(categoryName) {
           this.addToClicked("ProgramTechnicalElectiveTraditionalPlan" + i, categoryName);
           i = i + 1;
         }
+        var PROGelements = document.getElementsByClassName("PROG");
+        var i = 0;
+        while (PROGelements.length > 0) {
+          var currelement = document.getElementById(PROGelements.item(0).id);
+          if (this.TraditionalPlanClickedMap.get("ProgramTechnicalElectiveTraditionalPlan" + i).length > 0) {
+                var mapLen = this.TraditionalPlanClickedMap.get("ProgramTechnicalElectiveTraditionalPlan" + i).length - 1
+                var prevCate = this.TraditionalPlanClickedMap.get("ProgramTechnicalElectiveTraditionalPlan" + i)[mapLen];
+                this.unHighlightElement(currelement, prevCate);
+          }
+          this.highlightElement(currelement, categoryName);
+          this.addToClicked("ProgramTechnicalElectiveTraditionalPlan" + i, categoryName);
+          i = i + 1;
+        }
+        var PROGelements = document.getElementsByClassName("PROG");
+        var i = 0;
+        while (PROGelements.length > 0) {
+          var currelement = document.getElementById(PROGelements.item(0).id);
+          if (this.TraditionalPlanClickedMap.get("ProgramTechnicalElectiveTraditionalPlan" + i).length > 0) {
+                var mapLen = this.TraditionalPlanClickedMap.get("ProgramTechnicalElectiveTraditionalPlan" + i).length - 1
+                var prevCate = this.TraditionalPlanClickedMap.get("ProgramTechnicalElectiveTraditionalPlan" + i)[mapLen];
+                this.unHighlightElement(currelement, prevCate);
+          }
+          this.highlightElement(currelement, categoryName);
+          this.addToClicked("ProgramTechnicalElectiveTraditionalPlan" + i, categoryName);
+          i = i + 1;
+        }
+        var PROGelements = document.getElementsByClassName("PROG");
+        var i = 0;
+        while (PROGelements.length > 0) {
+          var currelement = document.getElementById(PROGelements.item(0).id);
+          if (this.TraditionalPlanClickedMap.get("ProgramTechnicalElectiveTraditionalPlan" + i).length > 0) {
+                var mapLen = this.TraditionalPlanClickedMap.get("ProgramTechnicalElectiveTraditionalPlan" + i).length - 1
+                var prevCate = this.TraditionalPlanClickedMap.get("ProgramTechnicalElectiveTraditionalPlan" + i)[mapLen];
+                this.unHighlightElement(currelement, prevCate);
+          }
+          this.highlightElement(currelement, categoryName);
+          this.addToClicked("ProgramTechnicalElectiveTraditionalPlan" + i, categoryName);
+          i = i + 1;
+        }
+        var PROGelements = document.getElementsByClassName("PROG");
+        var i = 0;
+        while (PROGelements.length > 0) {
+          var currelement = document.getElementById(PROGelements.item(0).id);
+          if (this.TraditionalPlanClickedMap.get("ProgramTechnicalElectiveTraditionalPlan" + i).length > 0) {
+                var mapLen = this.TraditionalPlanClickedMap.get("ProgramTechnicalElectiveTraditionalPlan" + i).length - 1
+                var prevCate = this.TraditionalPlanClickedMap.get("ProgramTechnicalElectiveTraditionalPlan" + i)[mapLen];
+                this.unHighlightElement(currelement, prevCate);
+          }
+          this.highlightElement(currelement, categoryName);
+          this.addToClicked("ProgramTechnicalElectiveTraditionalPlan" + i, categoryName);
+          i = i + 1;
+        }
        break;
       case "CoopPlan":
+        var PROGelements = document.getElementsByClassName("PROG");
+        var i = 0;
+        while (PROGelements.length > 0) {
+          var currelement = document.getElementById(PROGelements.item(0).id);
+          if (this.CoopPlanClickedMap.get("ProgramTechnicalElectiveCoopPlan" + i).length > 0) {
+                var mapLen = this.CoopPlanClickedMap.get("ProgramTechnicalElectiveCoopPlan" + i).length - 1
+                var prevCate = this.CoopPlanClickedMap.get("ProgramTechnicalElectiveCoopPlan" + i)[mapLen];
+                this.unHighlightElement(currelement, prevCate);
+          }
+          this.highlightElement(currelement, categoryName);
+          this.addToClicked("ProgramTechnicalElectiveCoopPlan" + i, categoryName);
+          i = i + 1;
+        }
+        var PROGelements = document.getElementsByClassName("PROG");
+        var i = 0;
+        while (PROGelements.length > 0) {
+          var currelement = document.getElementById(PROGelements.item(0).id);
+          if (this.CoopPlanClickedMap.get("ProgramTechnicalElectiveCoopPlan" + i).length > 0) {
+                var mapLen = this.CoopPlanClickedMap.get("ProgramTechnicalElectiveCoopPlan" + i).length - 1
+                var prevCate = this.CoopPlanClickedMap.get("ProgramTechnicalElectiveCoopPlan" + i)[mapLen];
+                this.unHighlightElement(currelement, prevCate);
+          }
+          this.highlightElement(currelement, categoryName);
+          this.addToClicked("ProgramTechnicalElectiveCoopPlan" + i, categoryName);
+          i = i + 1;
+        }
+        var PROGelements = document.getElementsByClassName("PROG");
+        var i = 0;
+        while (PROGelements.length > 0) {
+          var currelement = document.getElementById(PROGelements.item(0).id);
+          if (this.CoopPlanClickedMap.get("ProgramTechnicalElectiveCoopPlan" + i).length > 0) {
+                var mapLen = this.CoopPlanClickedMap.get("ProgramTechnicalElectiveCoopPlan" + i).length - 1
+                var prevCate = this.CoopPlanClickedMap.get("ProgramTechnicalElectiveCoopPlan" + i)[mapLen];
+                this.unHighlightElement(currelement, prevCate);
+          }
+          this.highlightElement(currelement, categoryName);
+          this.addToClicked("ProgramTechnicalElectiveCoopPlan" + i, categoryName);
+          i = i + 1;
+        }
+        var PROGelements = document.getElementsByClassName("PROG");
+        var i = 0;
+        while (PROGelements.length > 0) {
+          var currelement = document.getElementById(PROGelements.item(0).id);
+          if (this.CoopPlanClickedMap.get("ProgramTechnicalElectiveCoopPlan" + i).length > 0) {
+                var mapLen = this.CoopPlanClickedMap.get("ProgramTechnicalElectiveCoopPlan" + i).length - 1
+                var prevCate = this.CoopPlanClickedMap.get("ProgramTechnicalElectiveCoopPlan" + i)[mapLen];
+                this.unHighlightElement(currelement, prevCate);
+          }
+          this.highlightElement(currelement, categoryName);
+          this.addToClicked("ProgramTechnicalElectiveCoopPlan" + i, categoryName);
+          i = i + 1;
+        }
         var PROGelements = document.getElementsByClassName("PROG");
         var i = 0;
         while (PROGelements.length > 0) {
@@ -2494,8 +2567,34 @@ switch(categoryName) {
           this.addToClicked("ProgramTechnicalElectiveNanoTraditionalPlan" + i, categoryName);
           i = i + 1;
         }
+        var PROGelements = document.getElementsByClassName("PROG");
+        var i = 0;
+        while (PROGelements.length > 0) {
+          var currelement = document.getElementById(PROGelements.item(0).id);
+          if (this.NanoTraditionalPlanClickedMap.get("ProgramTechnicalElectiveNanoTraditionalPlan" + i).length > 0) {
+                var mapLen = this.NanoTraditionalPlanClickedMap.get("ProgramTechnicalElectiveNanoTraditionalPlan" + i).length - 1
+                var prevCate = this.NanoTraditionalPlanClickedMap.get("ProgramTechnicalElectiveNanoTraditionalPlan" + i)[mapLen];
+                this.unHighlightElement(currelement, prevCate);
+          }
+          this.highlightElement(currelement, categoryName);
+          this.addToClicked("ProgramTechnicalElectiveNanoTraditionalPlan" + i, categoryName);
+          i = i + 1;
+        }
        break;
       case "NanoCoopPlan":
+        var PROGelements = document.getElementsByClassName("PROG");
+        var i = 0;
+        while (PROGelements.length > 0) {
+          var currelement = document.getElementById(PROGelements.item(0).id);
+          if (this.NanoCoopPlanClickedMap.get("ProgramTechnicalElectiveNanoCoopPlan" + i).length > 0) {
+                var mapLen = this.NanoCoopPlanClickedMap.get("ProgramTechnicalElectiveNanoCoopPlan" + i).length - 1
+                var prevCate = this.NanoCoopPlanClickedMap.get("ProgramTechnicalElectiveNanoCoopPlan" + i)[mapLen];
+                this.unHighlightElement(currelement, prevCate);
+          }
+          this.highlightElement(currelement, categoryName);
+          this.addToClicked("ProgramTechnicalElectiveNanoCoopPlan" + i, categoryName);
+          i = i + 1;
+        }
         var PROGelements = document.getElementsByClassName("PROG");
         var i = 0;
         while (PROGelements.length > 0) {
@@ -2573,94 +2672,6 @@ switch(categoryName) {
           this.addToClicked("ITSElectiveNanoCoopPlan" + i, categoryName);
           i = i + 1;
         }
-       break;
-       }
-      break;
-  case "":
-    switch(planName) {
-      case "NanoTraditionalPlan":
- var element = document.getElementById("ECE457NanoTraditionalPlan");
-                            if (this.NanoTraditionalPlanClickedMap.get("ECE457NanoTraditionalPlan").length > 0) {
-                                var mapLen = this.NanoTraditionalPlanClickedMap.get("ECE457NanoTraditionalPlan").length - 1
-                                var prevCate = this.NanoTraditionalPlanClickedMap.get("ECE457NanoTraditionalPlan")[mapLen];
-                                this.unHighlightElement(element, prevCate);
-                            }
-                            this.highlightElement(element, categoryName);
-                            this.addToClicked("ECE457NanoTraditionalPlan", categoryName);
- var element = document.getElementById("ECE456NanoTraditionalPlan");
-                            if (this.NanoTraditionalPlanClickedMap.get("ECE456NanoTraditionalPlan").length > 0) {
-                                var mapLen = this.NanoTraditionalPlanClickedMap.get("ECE456NanoTraditionalPlan").length - 1
-                                var prevCate = this.NanoTraditionalPlanClickedMap.get("ECE456NanoTraditionalPlan")[mapLen];
-                                this.unHighlightElement(element, prevCate);
-                            }
-                            this.highlightElement(element, categoryName);
-                            this.addToClicked("ECE456NanoTraditionalPlan", categoryName);
- var element = document.getElementById("CHEM261NanoTraditionalPlan");
-                            if (this.NanoTraditionalPlanClickedMap.get("CHEM261NanoTraditionalPlan").length > 0) {
-                                var mapLen = this.NanoTraditionalPlanClickedMap.get("CHEM261NanoTraditionalPlan").length - 1
-                                var prevCate = this.NanoTraditionalPlanClickedMap.get("CHEM261NanoTraditionalPlan")[mapLen];
-                                this.unHighlightElement(element, prevCate);
-                            }
-                            this.highlightElement(element, categoryName);
-                            this.addToClicked("CHEM261NanoTraditionalPlan", categoryName);
- var element = document.getElementById("BIOCH200NanoTraditionalPlan");
-                            if (this.NanoTraditionalPlanClickedMap.get("BIOCH200NanoTraditionalPlan").length > 0) {
-                                var mapLen = this.NanoTraditionalPlanClickedMap.get("BIOCH200NanoTraditionalPlan").length - 1
-                                var prevCate = this.NanoTraditionalPlanClickedMap.get("BIOCH200NanoTraditionalPlan")[mapLen];
-                                this.unHighlightElement(element, prevCate);
-                            }
-                            this.highlightElement(element, categoryName);
-                            this.addToClicked("BIOCH200NanoTraditionalPlan", categoryName);
- var element = document.getElementById("ECE455NanoTraditionalPlan");
-                            if (this.NanoTraditionalPlanClickedMap.get("ECE455NanoTraditionalPlan").length > 0) {
-                                var mapLen = this.NanoTraditionalPlanClickedMap.get("ECE455NanoTraditionalPlan").length - 1
-                                var prevCate = this.NanoTraditionalPlanClickedMap.get("ECE455NanoTraditionalPlan")[mapLen];
-                                this.unHighlightElement(element, prevCate);
-                            }
-                            this.highlightElement(element, categoryName);
-                            this.addToClicked("ECE455NanoTraditionalPlan", categoryName);
-       break;
-      case "NanoCoopPlan":
- var element = document.getElementById("ECE457NanoCoopPlan");
-                            if (this.NanoCoopPlanClickedMap.get("ECE457NanoCoopPlan").length > 0) {
-                                var mapLen = this.NanoCoopPlanClickedMap.get("ECE457NanoCoopPlan").length - 1
-                                var prevCate = this.NanoCoopPlanClickedMap.get("ECE457NanoCoopPlan")[mapLen];
-                                this.unHighlightElement(element, prevCate);
-                            }
-                            this.highlightElement(element, categoryName);
-                            this.addToClicked("ECE457NanoCoopPlan", categoryName);
- var element = document.getElementById("ECE456NanoCoopPlan");
-                            if (this.NanoCoopPlanClickedMap.get("ECE456NanoCoopPlan").length > 0) {
-                                var mapLen = this.NanoCoopPlanClickedMap.get("ECE456NanoCoopPlan").length - 1
-                                var prevCate = this.NanoCoopPlanClickedMap.get("ECE456NanoCoopPlan")[mapLen];
-                                this.unHighlightElement(element, prevCate);
-                            }
-                            this.highlightElement(element, categoryName);
-                            this.addToClicked("ECE456NanoCoopPlan", categoryName);
- var element = document.getElementById("CHEM261NanoCoopPlan");
-                            if (this.NanoCoopPlanClickedMap.get("CHEM261NanoCoopPlan").length > 0) {
-                                var mapLen = this.NanoCoopPlanClickedMap.get("CHEM261NanoCoopPlan").length - 1
-                                var prevCate = this.NanoCoopPlanClickedMap.get("CHEM261NanoCoopPlan")[mapLen];
-                                this.unHighlightElement(element, prevCate);
-                            }
-                            this.highlightElement(element, categoryName);
-                            this.addToClicked("CHEM261NanoCoopPlan", categoryName);
- var element = document.getElementById("BIOCH200NanoCoopPlan");
-                            if (this.NanoCoopPlanClickedMap.get("BIOCH200NanoCoopPlan").length > 0) {
-                                var mapLen = this.NanoCoopPlanClickedMap.get("BIOCH200NanoCoopPlan").length - 1
-                                var prevCate = this.NanoCoopPlanClickedMap.get("BIOCH200NanoCoopPlan")[mapLen];
-                                this.unHighlightElement(element, prevCate);
-                            }
-                            this.highlightElement(element, categoryName);
-                            this.addToClicked("BIOCH200NanoCoopPlan", categoryName);
- var element = document.getElementById("ECE455NanoCoopPlan");
-                            if (this.NanoCoopPlanClickedMap.get("ECE455NanoCoopPlan").length > 0) {
-                                var mapLen = this.NanoCoopPlanClickedMap.get("ECE455NanoCoopPlan").length - 1
-                                var prevCate = this.NanoCoopPlanClickedMap.get("ECE455NanoCoopPlan")[mapLen];
-                                this.unHighlightElement(element, prevCate);
-                            }
-                            this.highlightElement(element, categoryName);
-                            this.addToClicked("ECE455NanoCoopPlan", categoryName);
        break;
        }
       break;
@@ -4375,8 +4386,136 @@ switch(categoryName) {
                 }      
           i = i + 1;
         }
+        var PROGelements = document.getElementsByClassName("PROG-highlighted");
+        var i = 0;        
+        while (PROGelements.length > 0) {
+          var currelement = document.getElementById(PROGelements.item(0).id);
+          var prevCate = this.removeFromClicked("ProgramTechnicalElectiveTraditionalPlan" + i, "PROG");
+                if (!currelement.classList.contains(categoryName+"-highlighted")) {
+                    return;
+                }
+                else {
+                    this.unHighlightElement(currelement, categoryName);
+                    if (prevCate != "") {
+                        this.highlightElement(currelement, prevCate);
+                    }
+                }      
+          i = i + 1;
+        }
+        var PROGelements = document.getElementsByClassName("PROG-highlighted");
+        var i = 0;        
+        while (PROGelements.length > 0) {
+          var currelement = document.getElementById(PROGelements.item(0).id);
+          var prevCate = this.removeFromClicked("ProgramTechnicalElectiveTraditionalPlan" + i, "PROG");
+                if (!currelement.classList.contains(categoryName+"-highlighted")) {
+                    return;
+                }
+                else {
+                    this.unHighlightElement(currelement, categoryName);
+                    if (prevCate != "") {
+                        this.highlightElement(currelement, prevCate);
+                    }
+                }      
+          i = i + 1;
+        }
+        var PROGelements = document.getElementsByClassName("PROG-highlighted");
+        var i = 0;        
+        while (PROGelements.length > 0) {
+          var currelement = document.getElementById(PROGelements.item(0).id);
+          var prevCate = this.removeFromClicked("ProgramTechnicalElectiveTraditionalPlan" + i, "PROG");
+                if (!currelement.classList.contains(categoryName+"-highlighted")) {
+                    return;
+                }
+                else {
+                    this.unHighlightElement(currelement, categoryName);
+                    if (prevCate != "") {
+                        this.highlightElement(currelement, prevCate);
+                    }
+                }      
+          i = i + 1;
+        }
+        var PROGelements = document.getElementsByClassName("PROG-highlighted");
+        var i = 0;        
+        while (PROGelements.length > 0) {
+          var currelement = document.getElementById(PROGelements.item(0).id);
+          var prevCate = this.removeFromClicked("ProgramTechnicalElectiveTraditionalPlan" + i, "PROG");
+                if (!currelement.classList.contains(categoryName+"-highlighted")) {
+                    return;
+                }
+                else {
+                    this.unHighlightElement(currelement, categoryName);
+                    if (prevCate != "") {
+                        this.highlightElement(currelement, prevCate);
+                    }
+                }      
+          i = i + 1;
+        }
        break;
       case "CoopPlan":
+        var PROGelements = document.getElementsByClassName("PROG-highlighted");
+        var i = 0;        
+        while (PROGelements.length > 0) {
+          var currelement = document.getElementById(PROGelements.item(0).id);
+          var prevCate = this.removeFromClicked("ProgramTechnicalElectiveCoopPlan" + i, "PROG");
+                if (!currelement.classList.contains(categoryName+"-highlighted")) {
+                    return;
+                }
+                else {
+                    this.unHighlightElement(currelement, categoryName);
+                    if (prevCate != "") {
+                        this.highlightElement(currelement, prevCate);
+                    }
+                }      
+          i = i + 1;
+        }
+        var PROGelements = document.getElementsByClassName("PROG-highlighted");
+        var i = 0;        
+        while (PROGelements.length > 0) {
+          var currelement = document.getElementById(PROGelements.item(0).id);
+          var prevCate = this.removeFromClicked("ProgramTechnicalElectiveCoopPlan" + i, "PROG");
+                if (!currelement.classList.contains(categoryName+"-highlighted")) {
+                    return;
+                }
+                else {
+                    this.unHighlightElement(currelement, categoryName);
+                    if (prevCate != "") {
+                        this.highlightElement(currelement, prevCate);
+                    }
+                }      
+          i = i + 1;
+        }
+        var PROGelements = document.getElementsByClassName("PROG-highlighted");
+        var i = 0;        
+        while (PROGelements.length > 0) {
+          var currelement = document.getElementById(PROGelements.item(0).id);
+          var prevCate = this.removeFromClicked("ProgramTechnicalElectiveCoopPlan" + i, "PROG");
+                if (!currelement.classList.contains(categoryName+"-highlighted")) {
+                    return;
+                }
+                else {
+                    this.unHighlightElement(currelement, categoryName);
+                    if (prevCate != "") {
+                        this.highlightElement(currelement, prevCate);
+                    }
+                }      
+          i = i + 1;
+        }
+        var PROGelements = document.getElementsByClassName("PROG-highlighted");
+        var i = 0;        
+        while (PROGelements.length > 0) {
+          var currelement = document.getElementById(PROGelements.item(0).id);
+          var prevCate = this.removeFromClicked("ProgramTechnicalElectiveCoopPlan" + i, "PROG");
+                if (!currelement.classList.contains(categoryName+"-highlighted")) {
+                    return;
+                }
+                else {
+                    this.unHighlightElement(currelement, categoryName);
+                    if (prevCate != "") {
+                        this.highlightElement(currelement, prevCate);
+                    }
+                }      
+          i = i + 1;
+        }
         var PROGelements = document.getElementsByClassName("PROG-highlighted");
         var i = 0;        
         while (PROGelements.length > 0) {
@@ -4411,8 +4550,40 @@ switch(categoryName) {
                 }      
           i = i + 1;
         }
+        var PROGelements = document.getElementsByClassName("PROG-highlighted");
+        var i = 0;        
+        while (PROGelements.length > 0) {
+          var currelement = document.getElementById(PROGelements.item(0).id);
+          var prevCate = this.removeFromClicked("ProgramTechnicalElectiveNanoTraditionalPlan" + i, "PROG");
+                if (!currelement.classList.contains(categoryName+"-highlighted")) {
+                    return;
+                }
+                else {
+                    this.unHighlightElement(currelement, categoryName);
+                    if (prevCate != "") {
+                        this.highlightElement(currelement, prevCate);
+                    }
+                }      
+          i = i + 1;
+        }
        break;
       case "NanoCoopPlan":
+        var PROGelements = document.getElementsByClassName("PROG-highlighted");
+        var i = 0;        
+        while (PROGelements.length > 0) {
+          var currelement = document.getElementById(PROGelements.item(0).id);
+          var prevCate = this.removeFromClicked("ProgramTechnicalElectiveNanoCoopPlan" + i, "PROG");
+                if (!currelement.classList.contains(categoryName+"-highlighted")) {
+                    return;
+                }
+                else {
+                    this.unHighlightElement(currelement, categoryName);
+                    if (prevCate != "") {
+                        this.highlightElement(currelement, prevCate);
+                    }
+                }      
+          i = i + 1;
+        }
         var PROGelements = document.getElementsByClassName("PROG-highlighted");
         var i = 0;        
         while (PROGelements.length > 0) {
@@ -4505,94 +4676,6 @@ switch(categoryName) {
                 }      
           i = i + 1;
         }
-       break;
-       }
-      break;
-  case "":
-    switch(planName) {
-      case "NanoTraditionalPlan":
-     var element = document.getElementById("ECE457NanoTraditionalPlan");
-                            var prevCate = this.removeFromClicked("ECE457NanoTraditionalPlan", categoryName);
-                                if (element.classList.contains(categoryName+"-highlighted")) {
-                                    this.unHighlightElement(element, categoryName);
-                                    if (prevCate != "") {
-                                        this.highlightElement(element, prevCate);
-                                    }
-                                }
-     var element = document.getElementById("ECE456NanoTraditionalPlan");
-                            var prevCate = this.removeFromClicked("ECE456NanoTraditionalPlan", categoryName);
-                                if (element.classList.contains(categoryName+"-highlighted")) {
-                                    this.unHighlightElement(element, categoryName);
-                                    if (prevCate != "") {
-                                        this.highlightElement(element, prevCate);
-                                    }
-                                }
-     var element = document.getElementById("CHEM261NanoTraditionalPlan");
-                            var prevCate = this.removeFromClicked("CHEM261NanoTraditionalPlan", categoryName);
-                                if (element.classList.contains(categoryName+"-highlighted")) {
-                                    this.unHighlightElement(element, categoryName);
-                                    if (prevCate != "") {
-                                        this.highlightElement(element, prevCate);
-                                    }
-                                }
-     var element = document.getElementById("BIOCH200NanoTraditionalPlan");
-                            var prevCate = this.removeFromClicked("BIOCH200NanoTraditionalPlan", categoryName);
-                                if (element.classList.contains(categoryName+"-highlighted")) {
-                                    this.unHighlightElement(element, categoryName);
-                                    if (prevCate != "") {
-                                        this.highlightElement(element, prevCate);
-                                    }
-                                }
-     var element = document.getElementById("ECE455NanoTraditionalPlan");
-                            var prevCate = this.removeFromClicked("ECE455NanoTraditionalPlan", categoryName);
-                                if (element.classList.contains(categoryName+"-highlighted")) {
-                                    this.unHighlightElement(element, categoryName);
-                                    if (prevCate != "") {
-                                        this.highlightElement(element, prevCate);
-                                    }
-                                }
-       break;
-      case "NanoCoopPlan":
-     var element = document.getElementById("ECE457NanoCoopPlan");
-                            var prevCate = this.removeFromClicked("ECE457NanoCoopPlan", categoryName);
-                                if (element.classList.contains(categoryName+"-highlighted")) {
-                                    this.unHighlightElement(element, categoryName);
-                                    if (prevCate != "") {
-                                        this.highlightElement(element, prevCate);
-                                    }
-                                }
-     var element = document.getElementById("ECE456NanoCoopPlan");
-                            var prevCate = this.removeFromClicked("ECE456NanoCoopPlan", categoryName);
-                                if (element.classList.contains(categoryName+"-highlighted")) {
-                                    this.unHighlightElement(element, categoryName);
-                                    if (prevCate != "") {
-                                        this.highlightElement(element, prevCate);
-                                    }
-                                }
-     var element = document.getElementById("CHEM261NanoCoopPlan");
-                            var prevCate = this.removeFromClicked("CHEM261NanoCoopPlan", categoryName);
-                                if (element.classList.contains(categoryName+"-highlighted")) {
-                                    this.unHighlightElement(element, categoryName);
-                                    if (prevCate != "") {
-                                        this.highlightElement(element, prevCate);
-                                    }
-                                }
-     var element = document.getElementById("BIOCH200NanoCoopPlan");
-                            var prevCate = this.removeFromClicked("BIOCH200NanoCoopPlan", categoryName);
-                                if (element.classList.contains(categoryName+"-highlighted")) {
-                                    this.unHighlightElement(element, categoryName);
-                                    if (prevCate != "") {
-                                        this.highlightElement(element, prevCate);
-                                    }
-                                }
-     var element = document.getElementById("ECE455NanoCoopPlan");
-                            var prevCate = this.removeFromClicked("ECE455NanoCoopPlan", categoryName);
-                                if (element.classList.contains(categoryName+"-highlighted")) {
-                                    this.unHighlightElement(element, categoryName);
-                                    if (prevCate != "") {
-                                        this.highlightElement(element, prevCate);
-                                    }
-                                }
        break;
        }
       break;
