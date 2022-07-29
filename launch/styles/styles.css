@@ -70,6 +70,7 @@ header {
     header .site-title {
         padding: 1.5vh 1vw 1vh 7.5vw;
         max-width: 55vw;
+        margin-top: -10px;
     }
 
     header .header a.site-title {
