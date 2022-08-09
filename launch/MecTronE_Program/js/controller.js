@@ -153,11 +153,15 @@ this.enable = function(plan) {
               }
           }
           if (found == false) {
+            if (this.MCTRV1DeptLegendBtns[i].classList.contains("legendbutton-pressed")) {
               this.MCTRV1DeptLegendBtns[i].classList.remove("legendbutton-pressed");
+            }
               this.MCTRV1DeptLegendBtns[i].classList.add("legendbutton");
           }
           if (found == true) {
+            if (this.MCTRV1DeptLegendBtns[i].classList.contains("legendbutton")) {
               this.MCTRV1DeptLegendBtns[i].classList.remove("legendbutton");
+            }
               this.MCTRV1DeptLegendBtns[i].classList.add("legendbutton-pressed");
           }
       }
@@ -184,11 +188,15 @@ this.enable = function(plan) {
               }
           }
           if (found == false) {
+            if (this.MCTRV2FacultyLegendBtns[i].classList.contains("legendbutton-pressed")) {
               this.MCTRV2FacultyLegendBtns[i].classList.remove("legendbutton-pressed");
+            }
               this.MCTRV2FacultyLegendBtns[i].classList.add("legendbutton");
           }
           if (found == true) {
+            if (this.MCTRV2FacultyLegendBtns[i].classList.contains("legendbutton")) {
               this.MCTRV2FacultyLegendBtns[i].classList.remove("legendbutton");
+            }
               this.MCTRV2FacultyLegendBtns[i].classList.add("legendbutton-pressed");
           }
       }
@@ -215,11 +223,15 @@ this.enable = function(plan) {
               }
           }
           if (found == false) {
+            if (this.MCTRV3DSNLegendBtns[i].classList.contains("legendbutton-pressed")) {
               this.MCTRV3DSNLegendBtns[i].classList.remove("legendbutton-pressed");
+            }
               this.MCTRV3DSNLegendBtns[i].classList.add("legendbutton");
           }
           if (found == true) {
+            if (this.MCTRV3DSNLegendBtns[i].classList.contains("legendbutton")) {
               this.MCTRV3DSNLegendBtns[i].classList.remove("legendbutton");
+            }
               this.MCTRV3DSNLegendBtns[i].classList.add("legendbutton-pressed");
           }
       }
@@ -424,7 +436,9 @@ $scope.NaturalSciencesclickListener = function() {
     var flagBool = eval(checkFlag);
     if (flagBool) {
         that.highlightCategory("NaturalSciences", planName);
-        pressedbtn.classList.remove("legendbutton");
+        if (pressedbtn.classList.contains("legendbutton")) {
+            pressedbtn.classList.remove("legendbutton");
+        }
         pressedbtn.classList.add("legendbutton-pressed");
         var addClick = "that." + planName + "LegendBtnsClicked.push(pressedbtn)";
         eval(addClick);
@@ -433,7 +447,9 @@ $scope.NaturalSciencesclickListener = function() {
     }
     else {
         that.unhighlightCategory("NaturalSciences", planName);
-        pressedbtn.classList.remove("legendbutton-pressed");
+        if (pressedbtn.classList.contains("legendbutton-pressed")) {
+            pressedbtn.classList.remove("legendbutton-pressed");
+        }
         pressedbtn.classList.add("legendbutton");
         var findIndex = "var index = that." + planName + "LegendBtnsClicked.findIndex((element) => element[0] == pressedbtn)";
         eval(findIndex);
@@ -450,7 +466,9 @@ $scope.EngineeringProfessionclickListener = function() {
     var flagBool = eval(checkFlag);
     if (flagBool) {
         that.highlightCategory("EngineeringProfession", planName);
-        pressedbtn.classList.remove("legendbutton");
+        if (pressedbtn.classList.contains("legendbutton")) {
+            pressedbtn.classList.remove("legendbutton");
+        }
         pressedbtn.classList.add("legendbutton-pressed");
         var addClick = "that." + planName + "LegendBtnsClicked.push(pressedbtn)";
         eval(addClick);
@@ -459,7 +477,9 @@ $scope.EngineeringProfessionclickListener = function() {
     }
     else {
         that.unhighlightCategory("EngineeringProfession", planName);
-        pressedbtn.classList.remove("legendbutton-pressed");
+        if (pressedbtn.classList.contains("legendbutton-pressed")) {
+            pressedbtn.classList.remove("legendbutton-pressed");
+        }
         pressedbtn.classList.add("legendbutton");
         var findIndex = "var index = that." + planName + "LegendBtnsClicked.findIndex((element) => element[0] == pressedbtn)";
         eval(findIndex);
@@ -476,7 +496,9 @@ $scope.MathclickListener = function() {
     var flagBool = eval(checkFlag);
     if (flagBool) {
         that.highlightCategory("Math", planName);
-        pressedbtn.classList.remove("legendbutton");
+        if (pressedbtn.classList.contains("legendbutton")) {
+            pressedbtn.classList.remove("legendbutton");
+        }
         pressedbtn.classList.add("legendbutton-pressed");
         var addClick = "that." + planName + "LegendBtnsClicked.push(pressedbtn)";
         eval(addClick);
@@ -485,7 +507,9 @@ $scope.MathclickListener = function() {
     }
     else {
         that.unhighlightCategory("Math", planName);
-        pressedbtn.classList.remove("legendbutton-pressed");
+        if (pressedbtn.classList.contains("legendbutton-pressed")) {
+            pressedbtn.classList.remove("legendbutton-pressed");
+        }
         pressedbtn.classList.add("legendbutton");
         var findIndex = "var index = that." + planName + "LegendBtnsClicked.findIndex((element) => element[0] == pressedbtn)";
         eval(findIndex);
@@ -502,7 +526,9 @@ $scope.OtherclickListener = function() {
     var flagBool = eval(checkFlag);
     if (flagBool) {
         that.highlightCategory("Other", planName);
-        pressedbtn.classList.remove("legendbutton");
+        if (pressedbtn.classList.contains("legendbutton")) {
+            pressedbtn.classList.remove("legendbutton");
+        }
         pressedbtn.classList.add("legendbutton-pressed");
         var addClick = "that." + planName + "LegendBtnsClicked.push(pressedbtn)";
         eval(addClick);
@@ -511,7 +537,9 @@ $scope.OtherclickListener = function() {
     }
     else {
         that.unhighlightCategory("Other", planName);
-        pressedbtn.classList.remove("legendbutton-pressed");
+        if (pressedbtn.classList.contains("legendbutton-pressed")) {
+            pressedbtn.classList.remove("legendbutton-pressed");
+        }
         pressedbtn.classList.add("legendbutton");
         var findIndex = "var index = that." + planName + "LegendBtnsClicked.findIndex((element) => element[0] == pressedbtn)";
         eval(findIndex);
@@ -528,7 +556,9 @@ $scope.MechatronicsclickListener = function() {
     var flagBool = eval(checkFlag);
     if (flagBool) {
         that.highlightCategory("Mechatronics", planName);
-        pressedbtn.classList.remove("legendbutton");
+        if (pressedbtn.classList.contains("legendbutton")) {
+            pressedbtn.classList.remove("legendbutton");
+        }
         pressedbtn.classList.add("legendbutton-pressed");
         var addClick = "that." + planName + "LegendBtnsClicked.push(pressedbtn)";
         eval(addClick);
@@ -537,7 +567,9 @@ $scope.MechatronicsclickListener = function() {
     }
     else {
         that.unhighlightCategory("Mechatronics", planName);
-        pressedbtn.classList.remove("legendbutton-pressed");
+        if (pressedbtn.classList.contains("legendbutton-pressed")) {
+            pressedbtn.classList.remove("legendbutton-pressed");
+        }
         pressedbtn.classList.add("legendbutton");
         var findIndex = "var index = that." + planName + "LegendBtnsClicked.findIndex((element) => element[0] == pressedbtn)";
         eval(findIndex);
@@ -554,7 +586,9 @@ $scope.EngineeringSciencesclickListener = function() {
     var flagBool = eval(checkFlag);
     if (flagBool) {
         that.highlightCategory("EngineeringSciences", planName);
-        pressedbtn.classList.remove("legendbutton");
+        if (pressedbtn.classList.contains("legendbutton")) {
+            pressedbtn.classList.remove("legendbutton");
+        }
         pressedbtn.classList.add("legendbutton-pressed");
         var addClick = "that." + planName + "LegendBtnsClicked.push(pressedbtn)";
         eval(addClick);
@@ -563,7 +597,9 @@ $scope.EngineeringSciencesclickListener = function() {
     }
     else {
         that.unhighlightCategory("EngineeringSciences", planName);
-        pressedbtn.classList.remove("legendbutton-pressed");
+        if (pressedbtn.classList.contains("legendbutton-pressed")) {
+            pressedbtn.classList.remove("legendbutton-pressed");
+        }
         pressedbtn.classList.add("legendbutton");
         var findIndex = "var index = that." + planName + "LegendBtnsClicked.findIndex((element) => element[0] == pressedbtn)";
         eval(findIndex);
@@ -580,7 +616,9 @@ $scope.EngineeringDesignclickListener = function() {
     var flagBool = eval(checkFlag);
     if (flagBool) {
         that.highlightCategory("EngineeringDesign", planName);
-        pressedbtn.classList.remove("legendbutton");
+        if (pressedbtn.classList.contains("legendbutton")) {
+            pressedbtn.classList.remove("legendbutton");
+        }
         pressedbtn.classList.add("legendbutton-pressed");
         var addClick = "that." + planName + "LegendBtnsClicked.push(pressedbtn)";
         eval(addClick);
@@ -589,7 +627,9 @@ $scope.EngineeringDesignclickListener = function() {
     }
     else {
         that.unhighlightCategory("EngineeringDesign", planName);
-        pressedbtn.classList.remove("legendbutton-pressed");
+        if (pressedbtn.classList.contains("legendbutton-pressed")) {
+            pressedbtn.classList.remove("legendbutton-pressed");
+        }
         pressedbtn.classList.add("legendbutton");
         var findIndex = "var index = that." + planName + "LegendBtnsClicked.findIndex((element) => element[0] == pressedbtn)";
         eval(findIndex);
@@ -606,7 +646,9 @@ $scope.ITSclickListener = function() {
     var flagBool = eval(checkFlag);
     if (flagBool) {
         that.highlightCategory("ITS", planName);
-        pressedbtn.classList.remove("legendbutton");
+        if (pressedbtn.classList.contains("legendbutton")) {
+            pressedbtn.classList.remove("legendbutton");
+        }
         pressedbtn.classList.add("legendbutton-pressed");
         var addClick = "that." + planName + "LegendBtnsClicked.push(pressedbtn)";
         eval(addClick);
@@ -615,7 +657,9 @@ $scope.ITSclickListener = function() {
     }
     else {
         that.unhighlightCategory("ITS", planName);
-        pressedbtn.classList.remove("legendbutton-pressed");
+        if (pressedbtn.classList.contains("legendbutton-pressed")) {
+            pressedbtn.classList.remove("legendbutton-pressed");
+        }
         pressedbtn.classList.add("legendbutton");
         var findIndex = "var index = that." + planName + "LegendBtnsClicked.findIndex((element) => element[0] == pressedbtn)";
         eval(findIndex);
@@ -632,7 +676,9 @@ $scope.COMPclickListener = function() {
     var flagBool = eval(checkFlag);
     if (flagBool) {
         that.highlightCategory("COMP", planName);
-        pressedbtn.classList.remove("legendbutton");
+        if (pressedbtn.classList.contains("legendbutton")) {
+            pressedbtn.classList.remove("legendbutton");
+        }
         pressedbtn.classList.add("legendbutton-pressed");
         var addClick = "that." + planName + "LegendBtnsClicked.push(pressedbtn)";
         eval(addClick);
@@ -641,7 +687,9 @@ $scope.COMPclickListener = function() {
     }
     else {
         that.unhighlightCategory("COMP", planName);
-        pressedbtn.classList.remove("legendbutton-pressed");
+        if (pressedbtn.classList.contains("legendbutton-pressed")) {
+            pressedbtn.classList.remove("legendbutton-pressed");
+        }
         pressedbtn.classList.add("legendbutton");
         var findIndex = "var index = that." + planName + "LegendBtnsClicked.findIndex((element) => element[0] == pressedbtn)";
         eval(findIndex);
@@ -658,7 +706,9 @@ $scope.PROGclickListener = function() {
     var flagBool = eval(checkFlag);
     if (flagBool) {
         that.highlightCategory("PROG", planName);
-        pressedbtn.classList.remove("legendbutton");
+        if (pressedbtn.classList.contains("legendbutton")) {
+            pressedbtn.classList.remove("legendbutton");
+        }
         pressedbtn.classList.add("legendbutton-pressed");
         var addClick = "that." + planName + "LegendBtnsClicked.push(pressedbtn)";
         eval(addClick);
@@ -667,7 +717,9 @@ $scope.PROGclickListener = function() {
     }
     else {
         that.unhighlightCategory("PROG", planName);
-        pressedbtn.classList.remove("legendbutton-pressed");
+        if (pressedbtn.classList.contains("legendbutton-pressed")) {
+            pressedbtn.classList.remove("legendbutton-pressed");
+        }
         pressedbtn.classList.add("legendbutton");
         var findIndex = "var index = that." + planName + "LegendBtnsClicked.findIndex((element) => element[0] == pressedbtn)";
         eval(findIndex);
