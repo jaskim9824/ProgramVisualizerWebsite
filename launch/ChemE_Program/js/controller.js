@@ -10270,12 +10270,14 @@ CHEM103TraditionalPlanTime = currentTime;
         return;
     }}
       that.addLine(getLine2());
+      that.addLine(getLine10());
      that.highlightElement(CHEM103TraditionalPlanelement, "NaturalSciences");
      that.addToClicked("CHEM103TraditionalPlan", "NaturalSciences");
       CHEM103TraditionalPlanflag=true
   }
  else {
       that.removeLine(getLine2());
+      that.removeLine(getLine10());
      that.unHighlightElement(CHEM103TraditionalPlanelement, "NaturalSciences");
      var category = that.removeFromClicked("CHEM103TraditionalPlan", "NaturalSciences");
   if (category != "") { 
@@ -10378,14 +10380,14 @@ ENGL199TraditionalPlanTime = currentTime;
         return;
     }}
       that.addLine(getLine3());
-      that.addLine(getLine30());
+      that.addLine(getLine31());
      that.highlightElement(ENGL199TraditionalPlanelement, "Other");
      that.addToClicked("ENGL199TraditionalPlan", "Other");
       ENGL199TraditionalPlanflag=true
   }
  else {
       that.removeLine(getLine3());
-      that.removeLine(getLine30());
+      that.removeLine(getLine31());
      that.unHighlightElement(ENGL199TraditionalPlanelement, "Other");
      var category = that.removeFromClicked("ENGL199TraditionalPlan", "Other");
   if (category != "") { 
@@ -10420,7 +10422,7 @@ MATH100TraditionalPlanTime = currentTime;
       that.addLine(getLine4());
       that.addLine(getLine7());
       that.addLine(getLine8());
-      that.addLine(getLine23());
+      that.addLine(getLine24());
      that.highlightElement(MATH100TraditionalPlanelement, "Math");
      that.addToClicked("MATH100TraditionalPlan", "Math");
       MATH100TraditionalPlanflag=true
@@ -10431,7 +10433,7 @@ MATH100TraditionalPlanTime = currentTime;
       that.removeLine(getLine4());
       that.removeLine(getLine7());
       that.removeLine(getLine8());
-      that.removeLine(getLine23());
+      that.removeLine(getLine24());
      that.unHighlightElement(MATH100TraditionalPlanelement, "Math");
      var category = that.removeFromClicked("MATH100TraditionalPlan", "Math");
   if (category != "") { 
@@ -10498,16 +10500,16 @@ CHEM105TraditionalPlanTime = currentTime;
         return;
     }}
       that.addLine(getLine2());
-      that.addLine(getLine12());
-      that.addLine(getLine22());
+      that.addLine(getLine13());
+      that.addLine(getLine23());
      that.highlightElement(CHEM105TraditionalPlanelement, "NaturalSciences");
      that.addToClicked("CHEM105TraditionalPlan", "NaturalSciences");
       CHEM105TraditionalPlanflag=true
   }
  else {
       that.removeLine(getLine2());
-      that.removeLine(getLine12());
-      that.removeLine(getLine22());
+      that.removeLine(getLine13());
+      that.removeLine(getLine23());
      that.unHighlightElement(CHEM105TraditionalPlanelement, "NaturalSciences");
      var category = that.removeFromClicked("CHEM105TraditionalPlan", "NaturalSciences");
   if (category != "") { 
@@ -10537,15 +10539,15 @@ ENCMP100TraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine10());
-      that.addLine(getLine34());
+      that.addLine(getLine11());
+      that.addLine(getLine35());
      that.highlightElement(ENCMP100TraditionalPlanelement, "NaturalSciences");
      that.addToClicked("ENCMP100TraditionalPlan", "NaturalSciences");
       ENCMP100TraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine10());
-      that.removeLine(getLine34());
+      that.removeLine(getLine11());
+      that.removeLine(getLine35());
      that.unHighlightElement(ENCMP100TraditionalPlanelement, "NaturalSciences");
      var category = that.removeFromClicked("ENCMP100TraditionalPlan", "NaturalSciences");
   if (category != "") { 
@@ -10614,7 +10616,7 @@ ENPH131TraditionalPlanTime = currentTime;
       that.addLine(getLine4());
       that.addLine(getLine5());
       that.addLine(getLine6());
-      that.addLine(getLine18());
+      that.addLine(getLine19());
      that.highlightElement(ENPH131TraditionalPlanelement, "NaturalSciences");
      that.addToClicked("ENPH131TraditionalPlan", "NaturalSciences");
       ENPH131TraditionalPlanflag=true
@@ -10623,7 +10625,7 @@ ENPH131TraditionalPlanTime = currentTime;
       that.removeLine(getLine4());
       that.removeLine(getLine5());
       that.removeLine(getLine6());
-      that.removeLine(getLine18());
+      that.removeLine(getLine19());
      that.unHighlightElement(ENPH131TraditionalPlanelement, "NaturalSciences");
      var category = that.removeFromClicked("ENPH131TraditionalPlan", "NaturalSciences");
   if (category != "") { 
@@ -10656,8 +10658,8 @@ MATH101TraditionalPlanTime = currentTime;
       that.addLine(getLine6());
       that.addLine(getLine7());
       that.addLine(getLine9());
-      that.addLine(getLine15());
-      that.addLine(getLine24());
+      that.addLine(getLine16());
+      that.addLine(getLine25());
      that.highlightElement(MATH101TraditionalPlanelement, "Math");
      that.addToClicked("MATH101TraditionalPlan", "Math");
       MATH101TraditionalPlanflag=true
@@ -10666,8 +10668,8 @@ MATH101TraditionalPlanTime = currentTime;
       that.removeLine(getLine6());
       that.removeLine(getLine7());
       that.removeLine(getLine9());
-      that.removeLine(getLine15());
-      that.removeLine(getLine24());
+      that.removeLine(getLine16());
+      that.removeLine(getLine25());
      that.unHighlightElement(MATH101TraditionalPlanelement, "Math");
      var category = that.removeFromClicked("MATH101TraditionalPlan", "Math");
   if (category != "") { 
@@ -10698,16 +10700,16 @@ MATH102TraditionalPlanTime = currentTime;
         return;
     }}
       that.addLine(getLine8());
-      that.addLine(getLine11());
-      that.addLine(getLine16());
+      that.addLine(getLine12());
+      that.addLine(getLine17());
      that.highlightElement(MATH102TraditionalPlanelement, "Math");
      that.addToClicked("MATH102TraditionalPlan", "Math");
       MATH102TraditionalPlanflag=true
   }
  else {
       that.removeLine(getLine8());
-      that.removeLine(getLine11());
-      that.removeLine(getLine16());
+      that.removeLine(getLine12());
+      that.removeLine(getLine17());
      that.unHighlightElement(MATH102TraditionalPlanelement, "Math");
      var category = that.removeFromClicked("MATH102TraditionalPlan", "Math");
   if (category != "") { 
@@ -10738,20 +10740,20 @@ CHE243TraditionalPlanTime = currentTime;
         return;
     }}
       that.addLine(getLine9());
-      that.addLine(getLine13());
-      that.addLine(getLine17());
-      that.addLine(getLine28());
-      that.addLine(getLine32());
+      that.addLine(getLine14());
+      that.addLine(getLine18());
+      that.addLine(getLine29());
+      that.addLine(getLine33());
      that.highlightElement(CHE243TraditionalPlanelement, "EngineeringSciences");
      that.addToClicked("CHE243TraditionalPlan", "EngineeringSciences");
       CHE243TraditionalPlanflag=true
   }
  else {
       that.removeLine(getLine9());
-      that.removeLine(getLine13());
-      that.removeLine(getLine17());
-      that.removeLine(getLine28());
-      that.removeLine(getLine32());
+      that.removeLine(getLine14());
+      that.removeLine(getLine18());
+      that.removeLine(getLine29());
+      that.removeLine(getLine33());
      that.unHighlightElement(CHE243TraditionalPlanelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE243TraditionalPlan", "EngineeringSciences");
   if (category != "") { 
@@ -10781,11 +10783,13 @@ CHEM261TraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
+      that.addLine(getLine10());
      that.highlightElement(CHEM261TraditionalPlanelement, "NaturalSciences");
      that.addToClicked("CHEM261TraditionalPlan", "NaturalSciences");
       CHEM261TraditionalPlanflag=true
   }
  else {
+      that.removeLine(getLine10());
      that.unHighlightElement(CHEM261TraditionalPlanelement, "NaturalSciences");
      var category = that.removeFromClicked("CHEM261TraditionalPlan", "NaturalSciences");
   if (category != "") { 
@@ -10849,31 +10853,31 @@ CME265TraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine10());
       that.addLine(getLine11());
       that.addLine(getLine12());
       that.addLine(getLine13());
       that.addLine(getLine14());
-      that.addLine(getLine29());
-      that.addLine(getLine31());
-      that.addLine(getLine38());
-      that.addLine(getLine42());
-      that.addLine(getLine52());
+      that.addLine(getLine15());
+      that.addLine(getLine30());
+      that.addLine(getLine32());
+      that.addLine(getLine39());
+      that.addLine(getLine43());
+      that.addLine(getLine53());
      that.highlightElement(CME265TraditionalPlanelement, "EngineeringSciences");
      that.addToClicked("CME265TraditionalPlan", "EngineeringSciences");
       CME265TraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine10());
       that.removeLine(getLine11());
       that.removeLine(getLine12());
       that.removeLine(getLine13());
       that.removeLine(getLine14());
-      that.removeLine(getLine29());
-      that.removeLine(getLine31());
-      that.removeLine(getLine38());
-      that.removeLine(getLine42());
-      that.removeLine(getLine52());
+      that.removeLine(getLine15());
+      that.removeLine(getLine30());
+      that.removeLine(getLine32());
+      that.removeLine(getLine39());
+      that.removeLine(getLine43());
+      that.removeLine(getLine53());
      that.unHighlightElement(CME265TraditionalPlanelement, "EngineeringSciences");
      var category = that.removeFromClicked("CME265TraditionalPlan", "EngineeringSciences");
   if (category != "") { 
@@ -10903,23 +10907,23 @@ MATH209TraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine14());
       that.addLine(getLine15());
       that.addLine(getLine16());
-      that.addLine(getLine19());
-      that.addLine(getLine21());
-      that.addLine(getLine54());
+      that.addLine(getLine17());
+      that.addLine(getLine20());
+      that.addLine(getLine22());
+      that.addLine(getLine55());
      that.highlightElement(MATH209TraditionalPlanelement, "Math");
      that.addToClicked("MATH209TraditionalPlan", "Math");
       MATH209TraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine14());
       that.removeLine(getLine15());
       that.removeLine(getLine16());
-      that.removeLine(getLine19());
-      that.removeLine(getLine21());
-      that.removeLine(getLine54());
+      that.removeLine(getLine17());
+      that.removeLine(getLine20());
+      that.removeLine(getLine22());
+      that.removeLine(getLine55());
      that.unHighlightElement(MATH209TraditionalPlanelement, "Math");
      var category = that.removeFromClicked("MATH209TraditionalPlan", "Math");
   if (category != "") { 
@@ -11017,27 +11021,27 @@ CHE312TraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine17());
       that.addLine(getLine18());
       that.addLine(getLine19());
       that.addLine(getLine20());
-      that.addLine(getLine26());
-      that.addLine(getLine33());
-      that.addLine(getLine39());
-      that.addLine(getLine55());
+      that.addLine(getLine21());
+      that.addLine(getLine27());
+      that.addLine(getLine34());
+      that.addLine(getLine40());
+      that.addLine(getLine56());
      that.highlightElement(CHE312TraditionalPlanelement, "EngineeringSciences");
      that.addToClicked("CHE312TraditionalPlan", "EngineeringSciences");
       CHE312TraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine17());
       that.removeLine(getLine18());
       that.removeLine(getLine19());
       that.removeLine(getLine20());
-      that.removeLine(getLine26());
-      that.removeLine(getLine33());
-      that.removeLine(getLine39());
-      that.removeLine(getLine55());
+      that.removeLine(getLine21());
+      that.removeLine(getLine27());
+      that.removeLine(getLine34());
+      that.removeLine(getLine40());
+      that.removeLine(getLine56());
      that.unHighlightElement(CHE312TraditionalPlanelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE312TraditionalPlan", "EngineeringSciences");
   if (category != "") { 
@@ -11101,19 +11105,19 @@ MATH201TraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine20());
       that.addLine(getLine21());
-      that.addLine(getLine25());
-      that.addLine(getLine53());
+      that.addLine(getLine22());
+      that.addLine(getLine26());
+      that.addLine(getLine54());
      that.highlightElement(MATH201TraditionalPlanelement, "Math");
      that.addToClicked("MATH201TraditionalPlan", "Math");
       MATH201TraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine20());
       that.removeLine(getLine21());
-      that.removeLine(getLine25());
-      that.removeLine(getLine53());
+      that.removeLine(getLine22());
+      that.removeLine(getLine26());
+      that.removeLine(getLine54());
      that.unHighlightElement(MATH201TraditionalPlanelement, "Math");
      var category = that.removeFromClicked("MATH201TraditionalPlan", "Math");
   if (category != "") { 
@@ -11143,13 +11147,13 @@ MATE202TraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine22());
+      that.addLine(getLine23());
      that.highlightElement(MATE202TraditionalPlanelement, "EngineeringSciences");
      that.addToClicked("MATE202TraditionalPlan", "EngineeringSciences");
       MATE202TraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine22());
+      that.removeLine(getLine23());
      that.unHighlightElement(MATE202TraditionalPlanelement, "EngineeringSciences");
      var category = that.removeFromClicked("MATE202TraditionalPlan", "EngineeringSciences");
   if (category != "") { 
@@ -11179,17 +11183,17 @@ STAT235TraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine23());
       that.addLine(getLine24());
-      that.addLine(getLine46());
+      that.addLine(getLine25());
+      that.addLine(getLine47());
      that.highlightElement(STAT235TraditionalPlanelement, "Math");
      that.addToClicked("STAT235TraditionalPlan", "Math");
       STAT235TraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine23());
       that.removeLine(getLine24());
-      that.removeLine(getLine46());
+      that.removeLine(getLine25());
+      that.removeLine(getLine47());
      that.unHighlightElement(STAT235TraditionalPlanelement, "Math");
      var category = that.removeFromClicked("STAT235TraditionalPlan", "Math");
   if (category != "") { 
@@ -11253,27 +11257,27 @@ CHE314TraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine25());
       that.addLine(getLine26());
       that.addLine(getLine27());
-      that.addLine(getLine36());
-      that.addLine(getLine41());
-      that.addLine(getLine47());
-      that.addLine(getLine49());
-      that.addLine(getLine56());
+      that.addLine(getLine28());
+      that.addLine(getLine37());
+      that.addLine(getLine42());
+      that.addLine(getLine48());
+      that.addLine(getLine50());
+      that.addLine(getLine57());
      that.highlightElement(CHE314TraditionalPlanelement, "EngineeringSciences");
      that.addToClicked("CHE314TraditionalPlan", "EngineeringSciences");
       CHE314TraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine25());
       that.removeLine(getLine26());
       that.removeLine(getLine27());
-      that.removeLine(getLine36());
-      that.removeLine(getLine41());
-      that.removeLine(getLine47());
-      that.removeLine(getLine49());
-      that.removeLine(getLine56());
+      that.removeLine(getLine28());
+      that.removeLine(getLine37());
+      that.removeLine(getLine42());
+      that.removeLine(getLine48());
+      that.removeLine(getLine50());
+      that.removeLine(getLine57());
      that.unHighlightElement(CHE314TraditionalPlanelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE314TraditionalPlan", "EngineeringSciences");
   if (category != "") { 
@@ -11303,21 +11307,21 @@ CHE343TraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine28());
       that.addLine(getLine29());
-      that.addLine(getLine35());
-      that.addLine(getLine40());
-      that.addLine(getLine43());
+      that.addLine(getLine30());
+      that.addLine(getLine36());
+      that.addLine(getLine41());
+      that.addLine(getLine44());
      that.highlightElement(CHE343TraditionalPlanelement, "EngineeringSciences");
      that.addToClicked("CHE343TraditionalPlan", "EngineeringSciences");
       CHE343TraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine28());
       that.removeLine(getLine29());
-      that.removeLine(getLine35());
-      that.removeLine(getLine40());
-      that.removeLine(getLine43());
+      that.removeLine(getLine30());
+      that.removeLine(getLine36());
+      that.removeLine(getLine41());
+      that.removeLine(getLine44());
      that.unHighlightElement(CHE343TraditionalPlanelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE343TraditionalPlan", "EngineeringSciences");
   if (category != "") { 
@@ -11347,21 +11351,21 @@ CHE351TraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine30());
       that.addLine(getLine31());
       that.addLine(getLine32());
       that.addLine(getLine33());
-      that.addLine(getLine45());
+      that.addLine(getLine34());
+      that.addLine(getLine46());
      that.highlightElement(CHE351TraditionalPlanelement, "EngineeringSciences");
      that.addToClicked("CHE351TraditionalPlan", "EngineeringSciences");
       CHE351TraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine30());
       that.removeLine(getLine31());
       that.removeLine(getLine32());
       that.removeLine(getLine33());
-      that.removeLine(getLine45());
+      that.removeLine(getLine34());
+      that.removeLine(getLine46());
      that.unHighlightElement(CHE351TraditionalPlanelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE351TraditionalPlan", "EngineeringSciences");
   if (category != "") { 
@@ -11391,17 +11395,17 @@ CHE374TraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine27());
-      that.addLine(getLine34());
-      that.addLine(getLine44());
+      that.addLine(getLine28());
+      that.addLine(getLine35());
+      that.addLine(getLine45());
      that.highlightElement(CHE374TraditionalPlanelement, "EngineeringSciences");
      that.addToClicked("CHE374TraditionalPlan", "EngineeringSciences");
       CHE374TraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine27());
-      that.removeLine(getLine34());
-      that.removeLine(getLine44());
+      that.removeLine(getLine28());
+      that.removeLine(getLine35());
+      that.removeLine(getLine45());
      that.unHighlightElement(CHE374TraditionalPlanelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE374TraditionalPlan", "EngineeringSciences");
   if (category != "") { 
@@ -11465,19 +11469,19 @@ CHE316TraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine35());
       that.addLine(getLine36());
       that.addLine(getLine37());
-      that.addLine(getLine58());
+      that.addLine(getLine38());
+      that.addLine(getLine59());
      that.highlightElement(CHE316TraditionalPlanelement, "EngineeringSciences");
      that.addToClicked("CHE316TraditionalPlan", "EngineeringSciences");
       CHE316TraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine35());
       that.removeLine(getLine36());
       that.removeLine(getLine37());
-      that.removeLine(getLine58());
+      that.removeLine(getLine38());
+      that.removeLine(getLine59());
      that.unHighlightElement(CHE316TraditionalPlanelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE316TraditionalPlan", "EngineeringSciences");
   if (category != "") { 
@@ -11507,25 +11511,25 @@ CHE318TraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine37());
       that.addLine(getLine38());
       that.addLine(getLine39());
       that.addLine(getLine40());
       that.addLine(getLine41());
-      that.addLine(getLine50());
-      that.addLine(getLine62());
+      that.addLine(getLine42());
+      that.addLine(getLine51());
+      that.addLine(getLine63());
      that.highlightElement(CHE318TraditionalPlanelement, "EngineeringSciences");
      that.addToClicked("CHE318TraditionalPlan", "EngineeringSciences");
       CHE318TraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine37());
       that.removeLine(getLine38());
       that.removeLine(getLine39());
       that.removeLine(getLine40());
       that.removeLine(getLine41());
-      that.removeLine(getLine50());
-      that.removeLine(getLine62());
+      that.removeLine(getLine42());
+      that.removeLine(getLine51());
+      that.removeLine(getLine63());
      that.unHighlightElement(CHE318TraditionalPlanelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE318TraditionalPlan", "EngineeringSciences");
   if (category != "") { 
@@ -11555,25 +11559,25 @@ CHE345TraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine42());
       that.addLine(getLine43());
       that.addLine(getLine44());
-      that.addLine(getLine48());
-      that.addLine(getLine51());
-      that.addLine(getLine57());
-      that.addLine(getLine63());
+      that.addLine(getLine45());
+      that.addLine(getLine49());
+      that.addLine(getLine52());
+      that.addLine(getLine58());
+      that.addLine(getLine64());
      that.highlightElement(CHE345TraditionalPlanelement, "EngineeringSciences");
      that.addToClicked("CHE345TraditionalPlan", "EngineeringSciences");
       CHE345TraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine42());
       that.removeLine(getLine43());
       that.removeLine(getLine44());
-      that.removeLine(getLine48());
-      that.removeLine(getLine51());
-      that.removeLine(getLine57());
-      that.removeLine(getLine63());
+      that.removeLine(getLine45());
+      that.removeLine(getLine49());
+      that.removeLine(getLine52());
+      that.removeLine(getLine58());
+      that.removeLine(getLine64());
      that.unHighlightElement(CHE345TraditionalPlanelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE345TraditionalPlan", "EngineeringSciences");
   if (category != "") { 
@@ -11603,21 +11607,21 @@ CHE358TraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine45());
       that.addLine(getLine46());
       that.addLine(getLine47());
       that.addLine(getLine48());
-      that.addLine(getLine64());
+      that.addLine(getLine49());
+      that.addLine(getLine65());
      that.highlightElement(CHE358TraditionalPlanelement, "EngineeringSciences");
      that.addToClicked("CHE358TraditionalPlan", "EngineeringSciences");
       CHE358TraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine45());
       that.removeLine(getLine46());
       that.removeLine(getLine47());
       that.removeLine(getLine48());
-      that.removeLine(getLine64());
+      that.removeLine(getLine49());
+      that.removeLine(getLine65());
      that.unHighlightElement(CHE358TraditionalPlanelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE358TraditionalPlan", "EngineeringSciences");
   if (category != "") { 
@@ -11647,13 +11651,13 @@ ENGM310TraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine59());
+      that.addLine(getLine60());
      that.highlightElement(ENGM310TraditionalPlanelement, "Other");
      that.addToClicked("ENGM310TraditionalPlan", "Other");
       ENGM310TraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine59());
+      that.removeLine(getLine60());
      that.unHighlightElement(ENGM310TraditionalPlanelement, "Other");
      var category = that.removeFromClicked("ENGM310TraditionalPlan", "Other");
   if (category != "") { 
@@ -11683,13 +11687,13 @@ ENGM401TraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine60());
+      that.addLine(getLine61());
      that.highlightElement(ENGM401TraditionalPlanelement, "Other");
      that.addToClicked("ENGM401TraditionalPlan", "Other");
       ENGM401TraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine60());
+      that.removeLine(getLine61());
      that.unHighlightElement(ENGM401TraditionalPlanelement, "Other");
      var category = that.removeFromClicked("ENGM401TraditionalPlan", "Other");
   if (category != "") { 
@@ -11719,15 +11723,15 @@ ENGG404TraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine61());
-      that.addLine(getLine67());
+      that.addLine(getLine62());
+      that.addLine(getLine68());
      that.highlightElement(ENGG404TraditionalPlanelement, "EngineeringProfession");
      that.addToClicked("ENGG404TraditionalPlan", "EngineeringProfession");
       ENGG404TraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine61());
-      that.removeLine(getLine67());
+      that.removeLine(getLine62());
+      that.removeLine(getLine68());
      that.unHighlightElement(ENGG404TraditionalPlanelement, "EngineeringProfession");
      var category = that.removeFromClicked("ENGG404TraditionalPlan", "EngineeringProfession");
   if (category != "") { 
@@ -11757,17 +11761,17 @@ CHE445TraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine49());
       that.addLine(getLine50());
       that.addLine(getLine51());
+      that.addLine(getLine52());
      that.highlightElement(CHE445TraditionalPlanelement, "EngineeringSciences");
      that.addToClicked("CHE445TraditionalPlan", "EngineeringSciences");
       CHE445TraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine49());
       that.removeLine(getLine50());
       that.removeLine(getLine51());
+      that.removeLine(getLine52());
      that.unHighlightElement(CHE445TraditionalPlanelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE445TraditionalPlan", "EngineeringSciences");
   if (category != "") { 
@@ -11797,21 +11801,21 @@ CHE446TraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine52());
       that.addLine(getLine53());
       that.addLine(getLine54());
       that.addLine(getLine55());
-      that.addLine(getLine65());
+      that.addLine(getLine56());
+      that.addLine(getLine66());
      that.highlightElement(CHE446TraditionalPlanelement, "EngineeringSciences");
      that.addToClicked("CHE446TraditionalPlan", "EngineeringSciences");
       CHE446TraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine52());
       that.removeLine(getLine53());
       that.removeLine(getLine54());
       that.removeLine(getLine55());
-      that.removeLine(getLine65());
+      that.removeLine(getLine56());
+      that.removeLine(getLine66());
      that.unHighlightElement(CHE446TraditionalPlanelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE446TraditionalPlan", "EngineeringSciences");
   if (category != "") { 
@@ -11841,25 +11845,25 @@ CHE464TraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine56());
       that.addLine(getLine57());
       that.addLine(getLine58());
       that.addLine(getLine59());
       that.addLine(getLine60());
       that.addLine(getLine61());
-      that.addLine(getLine66());
+      that.addLine(getLine62());
+      that.addLine(getLine67());
      that.highlightElement(CHE464TraditionalPlanelement, "EngineeringDesign");
      that.addToClicked("CHE464TraditionalPlan", "EngineeringDesign");
       CHE464TraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine56());
       that.removeLine(getLine57());
       that.removeLine(getLine58());
       that.removeLine(getLine59());
       that.removeLine(getLine60());
       that.removeLine(getLine61());
-      that.removeLine(getLine66());
+      that.removeLine(getLine62());
+      that.removeLine(getLine67());
      that.unHighlightElement(CHE464TraditionalPlanelement, "EngineeringDesign");
      var category = that.removeFromClicked("CHE464TraditionalPlan", "EngineeringDesign");
   if (category != "") { 
@@ -11991,17 +11995,17 @@ CHE454TraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine62());
       that.addLine(getLine63());
       that.addLine(getLine64());
+      that.addLine(getLine65());
      that.highlightElement(CHE454TraditionalPlanelement, "EngineeringSciences");
      that.addToClicked("CHE454TraditionalPlan", "EngineeringSciences");
       CHE454TraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine62());
       that.removeLine(getLine63());
       that.removeLine(getLine64());
+      that.removeLine(getLine65());
      that.unHighlightElement(CHE454TraditionalPlanelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE454TraditionalPlan", "EngineeringSciences");
   if (category != "") { 
@@ -12031,17 +12035,17 @@ CHE465TraditionalPlanTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine65());
       that.addLine(getLine66());
       that.addLine(getLine67());
+      that.addLine(getLine68());
      that.highlightElement(CHE465TraditionalPlanelement, "EngineeringDesign");
      that.addToClicked("CHE465TraditionalPlan", "EngineeringDesign");
       CHE465TraditionalPlanflag=true
   }
  else {
-      that.removeLine(getLine65());
       that.removeLine(getLine66());
       that.removeLine(getLine67());
+      that.removeLine(getLine68());
      that.unHighlightElement(CHE465TraditionalPlanelement, "EngineeringDesign");
      var category = that.removeFromClicked("CHE465TraditionalPlan", "EngineeringDesign");
   if (category != "") { 
@@ -13481,13 +13485,15 @@ CHEM103BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine70());
+      that.addLine(getLine71());
+      that.addLine(getLine84());
      that.highlightElement(CHEM103BiomedicalOptionelement, "NaturalSciences");
      that.addToClicked("CHEM103BiomedicalOption", "NaturalSciences");
       CHEM103BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine70());
+      that.removeLine(getLine71());
+      that.removeLine(getLine84());
      that.unHighlightElement(CHEM103BiomedicalOptionelement, "NaturalSciences");
      var category = that.removeFromClicked("CHEM103BiomedicalOption", "NaturalSciences");
   if (category != "") { 
@@ -13551,15 +13557,15 @@ ENGG130BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine68());
-      that.addLine(getLine73());
+      that.addLine(getLine69());
+      that.addLine(getLine74());
      that.highlightElement(ENGG130BiomedicalOptionelement, "NaturalSciences");
      that.addToClicked("ENGG130BiomedicalOption", "NaturalSciences");
       ENGG130BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine68());
-      that.removeLine(getLine73());
+      that.removeLine(getLine69());
+      that.removeLine(getLine74());
      that.unHighlightElement(ENGG130BiomedicalOptionelement, "NaturalSciences");
      var category = that.removeFromClicked("ENGG130BiomedicalOption", "NaturalSciences");
   if (category != "") { 
@@ -13589,15 +13595,15 @@ ENGL199BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine71());
-      that.addLine(getLine102());
+      that.addLine(getLine72());
+      that.addLine(getLine104());
      that.highlightElement(ENGL199BiomedicalOptionelement, "Other");
      that.addToClicked("ENGL199BiomedicalOption", "Other");
       ENGL199BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine71());
-      that.removeLine(getLine102());
+      that.removeLine(getLine72());
+      that.removeLine(getLine104());
      that.unHighlightElement(ENGL199BiomedicalOptionelement, "Other");
      var category = that.removeFromClicked("ENGL199BiomedicalOption", "Other");
   if (category != "") { 
@@ -13627,23 +13633,23 @@ MATH100BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine68());
       that.addLine(getLine69());
-      that.addLine(getLine72());
-      that.addLine(getLine75());
+      that.addLine(getLine70());
+      that.addLine(getLine73());
       that.addLine(getLine76());
-      that.addLine(getLine91());
+      that.addLine(getLine77());
+      that.addLine(getLine93());
      that.highlightElement(MATH100BiomedicalOptionelement, "Math");
      that.addToClicked("MATH100BiomedicalOption", "Math");
       MATH100BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine68());
       that.removeLine(getLine69());
-      that.removeLine(getLine72());
-      that.removeLine(getLine75());
+      that.removeLine(getLine70());
+      that.removeLine(getLine73());
       that.removeLine(getLine76());
-      that.removeLine(getLine91());
+      that.removeLine(getLine77());
+      that.removeLine(getLine93());
      that.unHighlightElement(MATH100BiomedicalOptionelement, "Math");
      var category = that.removeFromClicked("MATH100BiomedicalOption", "Math");
   if (category != "") { 
@@ -13673,13 +13679,13 @@ PHYS130BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine69());
+      that.addLine(getLine70());
      that.highlightElement(PHYS130BiomedicalOptionelement, "NaturalSciences");
      that.addToClicked("PHYS130BiomedicalOption", "NaturalSciences");
       PHYS130BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine69());
+      that.removeLine(getLine70());
      that.unHighlightElement(PHYS130BiomedicalOptionelement, "NaturalSciences");
      var category = that.removeFromClicked("PHYS130BiomedicalOption", "NaturalSciences");
   if (category != "") { 
@@ -13709,17 +13715,17 @@ CHEM105BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine70());
-      that.addLine(getLine80());
-      that.addLine(getLine90());
+      that.addLine(getLine71());
+      that.addLine(getLine81());
+      that.addLine(getLine92());
      that.highlightElement(CHEM105BiomedicalOptionelement, "NaturalSciences");
      that.addToClicked("CHEM105BiomedicalOption", "NaturalSciences");
       CHEM105BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine70());
-      that.removeLine(getLine80());
-      that.removeLine(getLine90());
+      that.removeLine(getLine71());
+      that.removeLine(getLine81());
+      that.removeLine(getLine92());
      that.unHighlightElement(CHEM105BiomedicalOptionelement, "NaturalSciences");
      var category = that.removeFromClicked("CHEM105BiomedicalOption", "NaturalSciences");
   if (category != "") { 
@@ -13749,15 +13755,15 @@ ENCMP100BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine78());
-      that.addLine(getLine106());
+      that.addLine(getLine79());
+      that.addLine(getLine108());
      that.highlightElement(ENCMP100BiomedicalOptionelement, "NaturalSciences");
      that.addToClicked("ENCMP100BiomedicalOption", "NaturalSciences");
       ENCMP100BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine78());
-      that.removeLine(getLine106());
+      that.removeLine(getLine79());
+      that.removeLine(getLine108());
      that.unHighlightElement(ENCMP100BiomedicalOptionelement, "NaturalSciences");
      var category = that.removeFromClicked("ENCMP100BiomedicalOption", "NaturalSciences");
   if (category != "") { 
@@ -13787,13 +13793,13 @@ ENGG160BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine71());
+      that.addLine(getLine72());
      that.highlightElement(ENGG160BiomedicalOptionelement, "EngineeringDesign");
      that.addToClicked("ENGG160BiomedicalOption", "EngineeringDesign");
       ENGG160BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine71());
+      that.removeLine(getLine72());
      that.unHighlightElement(ENGG160BiomedicalOptionelement, "EngineeringDesign");
      var category = that.removeFromClicked("ENGG160BiomedicalOption", "EngineeringDesign");
   if (category != "") { 
@@ -13823,19 +13829,19 @@ ENPH131BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine72());
       that.addLine(getLine73());
       that.addLine(getLine74());
-      that.addLine(getLine94());
+      that.addLine(getLine75());
+      that.addLine(getLine96());
      that.highlightElement(ENPH131BiomedicalOptionelement, "NaturalSciences");
      that.addToClicked("ENPH131BiomedicalOption", "NaturalSciences");
       ENPH131BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine72());
       that.removeLine(getLine73());
       that.removeLine(getLine74());
-      that.removeLine(getLine94());
+      that.removeLine(getLine75());
+      that.removeLine(getLine96());
      that.unHighlightElement(ENPH131BiomedicalOptionelement, "NaturalSciences");
      var category = that.removeFromClicked("ENPH131BiomedicalOption", "NaturalSciences");
   if (category != "") { 
@@ -13865,21 +13871,21 @@ MATH101BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine74());
       that.addLine(getLine75());
-      that.addLine(getLine77());
-      that.addLine(getLine83());
-      that.addLine(getLine92());
+      that.addLine(getLine76());
+      that.addLine(getLine78());
+      that.addLine(getLine85());
+      that.addLine(getLine94());
      that.highlightElement(MATH101BiomedicalOptionelement, "Math");
      that.addToClicked("MATH101BiomedicalOption", "Math");
       MATH101BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine74());
       that.removeLine(getLine75());
-      that.removeLine(getLine77());
-      that.removeLine(getLine83());
-      that.removeLine(getLine92());
+      that.removeLine(getLine76());
+      that.removeLine(getLine78());
+      that.removeLine(getLine85());
+      that.removeLine(getLine94());
      that.unHighlightElement(MATH101BiomedicalOptionelement, "Math");
      var category = that.removeFromClicked("MATH101BiomedicalOption", "Math");
   if (category != "") { 
@@ -13909,17 +13915,17 @@ MATH102BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine76());
-      that.addLine(getLine79());
-      that.addLine(getLine84());
+      that.addLine(getLine77());
+      that.addLine(getLine80());
+      that.addLine(getLine86());
      that.highlightElement(MATH102BiomedicalOptionelement, "Math");
      that.addToClicked("MATH102BiomedicalOption", "Math");
       MATH102BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine76());
-      that.removeLine(getLine79());
-      that.removeLine(getLine84());
+      that.removeLine(getLine77());
+      that.removeLine(getLine80());
+      that.removeLine(getLine86());
      that.unHighlightElement(MATH102BiomedicalOptionelement, "Math");
      var category = that.removeFromClicked("MATH102BiomedicalOption", "Math");
   if (category != "") { 
@@ -13949,15 +13955,15 @@ BIOL107BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine86());
-      that.addLine(getLine87());
+      that.addLine(getLine88());
+      that.addLine(getLine89());
      that.highlightElement(BIOL107BiomedicalOptionelement, "NaturalSciences");
      that.addToClicked("BIOL107BiomedicalOption", "NaturalSciences");
       BIOL107BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine86());
-      that.removeLine(getLine87());
+      that.removeLine(getLine88());
+      that.removeLine(getLine89());
      that.unHighlightElement(BIOL107BiomedicalOptionelement, "NaturalSciences");
      var category = that.removeFromClicked("BIOL107BiomedicalOption", "NaturalSciences");
   if (category != "") { 
@@ -13987,21 +13993,21 @@ CHE243BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine77());
-      that.addLine(getLine81());
-      that.addLine(getLine93());
-      that.addLine(getLine100());
-      that.addLine(getLine104());
+      that.addLine(getLine78());
+      that.addLine(getLine82());
+      that.addLine(getLine95());
+      that.addLine(getLine102());
+      that.addLine(getLine106());
      that.highlightElement(CHE243BiomedicalOptionelement, "EngineeringSciences");
      that.addToClicked("CHE243BiomedicalOption", "EngineeringSciences");
       CHE243BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine77());
-      that.removeLine(getLine81());
-      that.removeLine(getLine93());
-      that.removeLine(getLine100());
-      that.removeLine(getLine104());
+      that.removeLine(getLine78());
+      that.removeLine(getLine82());
+      that.removeLine(getLine95());
+      that.removeLine(getLine102());
+      that.removeLine(getLine106());
      that.unHighlightElement(CHE243BiomedicalOptionelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE243BiomedicalOption", "EngineeringSciences");
   if (category != "") { 
@@ -14065,31 +14071,31 @@ CME265BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine78());
       that.addLine(getLine79());
       that.addLine(getLine80());
       that.addLine(getLine81());
       that.addLine(getLine82());
-      that.addLine(getLine101());
+      that.addLine(getLine83());
       that.addLine(getLine103());
-      that.addLine(getLine111());
-      that.addLine(getLine115());
-      that.addLine(getLine122());
+      that.addLine(getLine105());
+      that.addLine(getLine113());
+      that.addLine(getLine117());
+      that.addLine(getLine124());
      that.highlightElement(CME265BiomedicalOptionelement, "EngineeringSciences");
      that.addToClicked("CME265BiomedicalOption", "EngineeringSciences");
       CME265BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine78());
       that.removeLine(getLine79());
       that.removeLine(getLine80());
       that.removeLine(getLine81());
       that.removeLine(getLine82());
-      that.removeLine(getLine101());
+      that.removeLine(getLine83());
       that.removeLine(getLine103());
-      that.removeLine(getLine111());
-      that.removeLine(getLine115());
-      that.removeLine(getLine122());
+      that.removeLine(getLine105());
+      that.removeLine(getLine113());
+      that.removeLine(getLine117());
+      that.removeLine(getLine124());
      that.unHighlightElement(CME265BiomedicalOptionelement, "EngineeringSciences");
      var category = that.removeFromClicked("CME265BiomedicalOption", "EngineeringSciences");
   if (category != "") { 
@@ -14119,15 +14125,17 @@ CHEM261BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine85());
-      that.addLine(getLine88());
+      that.addLine(getLine84());
+      that.addLine(getLine87());
+      that.addLine(getLine90());
      that.highlightElement(CHEM261BiomedicalOptionelement, "NaturalSciences");
      that.addToClicked("CHEM261BiomedicalOption", "NaturalSciences");
       CHEM261BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine85());
-      that.removeLine(getLine88());
+      that.removeLine(getLine84());
+      that.removeLine(getLine87());
+      that.removeLine(getLine90());
      that.unHighlightElement(CHEM261BiomedicalOptionelement, "NaturalSciences");
      var category = that.removeFromClicked("CHEM261BiomedicalOption", "NaturalSciences");
   if (category != "") { 
@@ -14191,23 +14199,23 @@ MATH209BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine82());
       that.addLine(getLine83());
-      that.addLine(getLine84());
-      that.addLine(getLine89());
-      that.addLine(getLine95());
-      that.addLine(getLine124());
+      that.addLine(getLine85());
+      that.addLine(getLine86());
+      that.addLine(getLine91());
+      that.addLine(getLine97());
+      that.addLine(getLine126());
      that.highlightElement(MATH209BiomedicalOptionelement, "Math");
      that.addToClicked("MATH209BiomedicalOption", "Math");
       MATH209BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine82());
       that.removeLine(getLine83());
-      that.removeLine(getLine84());
-      that.removeLine(getLine89());
-      that.removeLine(getLine95());
-      that.removeLine(getLine124());
+      that.removeLine(getLine85());
+      that.removeLine(getLine86());
+      that.removeLine(getLine91());
+      that.removeLine(getLine97());
+      that.removeLine(getLine126());
      that.unHighlightElement(MATH209BiomedicalOptionelement, "Math");
      var category = that.removeFromClicked("MATH209BiomedicalOption", "Math");
   if (category != "") { 
@@ -14237,13 +14245,13 @@ BIOCH200BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine85());
+      that.addLine(getLine87());
      that.highlightElement(BIOCH200BiomedicalOptionelement, "NaturalSciences");
      that.addToClicked("BIOCH200BiomedicalOption", "NaturalSciences");
       BIOCH200BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine85());
+      that.removeLine(getLine87());
      that.unHighlightElement(BIOCH200BiomedicalOptionelement, "NaturalSciences");
      var category = that.removeFromClicked("BIOCH200BiomedicalOption", "NaturalSciences");
   if (category != "") { 
@@ -14273,13 +14281,13 @@ BIOL201BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine86());
+      that.addLine(getLine88());
      that.highlightElement(BIOL201BiomedicalOptionelement, "NaturalSciences");
      that.addToClicked("BIOL201BiomedicalOption", "NaturalSciences");
       BIOL201BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine86());
+      that.removeLine(getLine88());
      that.unHighlightElement(BIOL201BiomedicalOptionelement, "NaturalSciences");
      var category = that.removeFromClicked("BIOL201BiomedicalOption", "NaturalSciences");
   if (category != "") { 
@@ -14309,15 +14317,15 @@ CELL201BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine87());
-      that.addLine(getLine88());
+      that.addLine(getLine89());
+      that.addLine(getLine90());
      that.highlightElement(CELL201BiomedicalOptionelement, "NaturalSciences");
      that.addToClicked("CELL201BiomedicalOption", "NaturalSciences");
       CELL201BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine87());
-      that.removeLine(getLine88());
+      that.removeLine(getLine89());
+      that.removeLine(getLine90());
      that.unHighlightElement(CELL201BiomedicalOptionelement, "NaturalSciences");
      var category = that.removeFromClicked("CELL201BiomedicalOption", "NaturalSciences");
   if (category != "") { 
@@ -14381,19 +14389,19 @@ MATH201BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine89());
-      that.addLine(getLine96());
-      that.addLine(getLine97());
-      that.addLine(getLine123());
+      that.addLine(getLine91());
+      that.addLine(getLine98());
+      that.addLine(getLine99());
+      that.addLine(getLine125());
      that.highlightElement(MATH201BiomedicalOptionelement, "Math");
      that.addToClicked("MATH201BiomedicalOption", "Math");
       MATH201BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine89());
-      that.removeLine(getLine96());
-      that.removeLine(getLine97());
-      that.removeLine(getLine123());
+      that.removeLine(getLine91());
+      that.removeLine(getLine98());
+      that.removeLine(getLine99());
+      that.removeLine(getLine125());
      that.unHighlightElement(MATH201BiomedicalOptionelement, "Math");
      var category = that.removeFromClicked("MATH201BiomedicalOption", "Math");
   if (category != "") { 
@@ -14423,13 +14431,13 @@ MATE202BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine90());
+      that.addLine(getLine92());
      that.highlightElement(MATE202BiomedicalOptionelement, "EngineeringSciences");
      that.addToClicked("MATE202BiomedicalOption", "EngineeringSciences");
       MATE202BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine90());
+      that.removeLine(getLine92());
      that.unHighlightElement(MATE202BiomedicalOptionelement, "EngineeringSciences");
      var category = that.removeFromClicked("MATE202BiomedicalOption", "EngineeringSciences");
   if (category != "") { 
@@ -14459,17 +14467,17 @@ STAT235BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine91());
-      that.addLine(getLine92());
-      that.addLine(getLine119());
+      that.addLine(getLine93());
+      that.addLine(getLine94());
+      that.addLine(getLine121());
      that.highlightElement(STAT235BiomedicalOptionelement, "Math");
      that.addToClicked("STAT235BiomedicalOption", "Math");
       STAT235BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine91());
-      that.removeLine(getLine92());
-      that.removeLine(getLine119());
+      that.removeLine(getLine93());
+      that.removeLine(getLine94());
+      that.removeLine(getLine121());
      that.unHighlightElement(STAT235BiomedicalOptionelement, "Math");
      var category = that.removeFromClicked("STAT235BiomedicalOption", "Math");
   if (category != "") { 
@@ -14499,27 +14507,27 @@ CHE312BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine93());
-      that.addLine(getLine94());
       that.addLine(getLine95());
       that.addLine(getLine96());
+      that.addLine(getLine97());
       that.addLine(getLine98());
-      that.addLine(getLine105());
-      that.addLine(getLine112());
-      that.addLine(getLine125());
+      that.addLine(getLine100());
+      that.addLine(getLine107());
+      that.addLine(getLine114());
+      that.addLine(getLine127());
      that.highlightElement(CHE312BiomedicalOptionelement, "EngineeringSciences");
      that.addToClicked("CHE312BiomedicalOption", "EngineeringSciences");
       CHE312BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine93());
-      that.removeLine(getLine94());
       that.removeLine(getLine95());
       that.removeLine(getLine96());
+      that.removeLine(getLine97());
       that.removeLine(getLine98());
-      that.removeLine(getLine105());
-      that.removeLine(getLine112());
-      that.removeLine(getLine125());
+      that.removeLine(getLine100());
+      that.removeLine(getLine107());
+      that.removeLine(getLine114());
+      that.removeLine(getLine127());
      that.unHighlightElement(CHE312BiomedicalOptionelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE312BiomedicalOption", "EngineeringSciences");
   if (category != "") { 
@@ -14549,13 +14557,13 @@ BME320BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine107());
+      that.addLine(getLine109());
      that.highlightElement(BME320BiomedicalOptionelement, "NaturalSciences");
      that.addToClicked("BME320BiomedicalOption", "NaturalSciences");
       BME320BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine107());
+      that.removeLine(getLine109());
      that.unHighlightElement(BME320BiomedicalOptionelement, "NaturalSciences");
      var category = that.removeFromClicked("BME320BiomedicalOption", "NaturalSciences");
   if (category != "") { 
@@ -14585,25 +14593,25 @@ CHE314BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine97());
-      that.addLine(getLine98());
       that.addLine(getLine99());
-      that.addLine(getLine109());
-      that.addLine(getLine114());
-      that.addLine(getLine120());
-      that.addLine(getLine126());
+      that.addLine(getLine100());
+      that.addLine(getLine101());
+      that.addLine(getLine111());
+      that.addLine(getLine116());
+      that.addLine(getLine122());
+      that.addLine(getLine128());
      that.highlightElement(CHE314BiomedicalOptionelement, "EngineeringSciences");
      that.addToClicked("CHE314BiomedicalOption", "EngineeringSciences");
       CHE314BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine97());
-      that.removeLine(getLine98());
       that.removeLine(getLine99());
-      that.removeLine(getLine109());
-      that.removeLine(getLine114());
-      that.removeLine(getLine120());
-      that.removeLine(getLine126());
+      that.removeLine(getLine100());
+      that.removeLine(getLine101());
+      that.removeLine(getLine111());
+      that.removeLine(getLine116());
+      that.removeLine(getLine122());
+      that.removeLine(getLine128());
      that.unHighlightElement(CHE314BiomedicalOptionelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE314BiomedicalOption", "EngineeringSciences");
   if (category != "") { 
@@ -14633,21 +14641,21 @@ CHE343BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine100());
-      that.addLine(getLine101());
-      that.addLine(getLine108());
-      that.addLine(getLine113());
-      that.addLine(getLine116());
+      that.addLine(getLine102());
+      that.addLine(getLine103());
+      that.addLine(getLine110());
+      that.addLine(getLine115());
+      that.addLine(getLine118());
      that.highlightElement(CHE343BiomedicalOptionelement, "EngineeringSciences");
      that.addToClicked("CHE343BiomedicalOption", "EngineeringSciences");
       CHE343BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine100());
-      that.removeLine(getLine101());
-      that.removeLine(getLine108());
-      that.removeLine(getLine113());
-      that.removeLine(getLine116());
+      that.removeLine(getLine102());
+      that.removeLine(getLine103());
+      that.removeLine(getLine110());
+      that.removeLine(getLine115());
+      that.removeLine(getLine118());
      that.unHighlightElement(CHE343BiomedicalOptionelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE343BiomedicalOption", "EngineeringSciences");
   if (category != "") { 
@@ -14677,21 +14685,21 @@ CHE351BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine102());
-      that.addLine(getLine103());
       that.addLine(getLine104());
       that.addLine(getLine105());
-      that.addLine(getLine118());
+      that.addLine(getLine106());
+      that.addLine(getLine107());
+      that.addLine(getLine120());
      that.highlightElement(CHE351BiomedicalOptionelement, "EngineeringSciences");
      that.addToClicked("CHE351BiomedicalOption", "EngineeringSciences");
       CHE351BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine102());
-      that.removeLine(getLine103());
       that.removeLine(getLine104());
       that.removeLine(getLine105());
-      that.removeLine(getLine118());
+      that.removeLine(getLine106());
+      that.removeLine(getLine107());
+      that.removeLine(getLine120());
      that.unHighlightElement(CHE351BiomedicalOptionelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE351BiomedicalOption", "EngineeringSciences");
   if (category != "") { 
@@ -14721,17 +14729,17 @@ CHE374BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine99());
-      that.addLine(getLine106());
-      that.addLine(getLine117());
+      that.addLine(getLine101());
+      that.addLine(getLine108());
+      that.addLine(getLine119());
      that.highlightElement(CHE374BiomedicalOptionelement, "EngineeringSciences");
      that.addToClicked("CHE374BiomedicalOption", "EngineeringSciences");
       CHE374BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine99());
-      that.removeLine(getLine106());
-      that.removeLine(getLine117());
+      that.removeLine(getLine101());
+      that.removeLine(getLine108());
+      that.removeLine(getLine119());
      that.unHighlightElement(CHE374BiomedicalOptionelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE374BiomedicalOption", "EngineeringSciences");
   if (category != "") { 
@@ -14761,15 +14769,15 @@ ENGG404BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine131());
-      that.addLine(getLine137());
+      that.addLine(getLine133());
+      that.addLine(getLine139());
      that.highlightElement(ENGG404BiomedicalOptionelement, "EngineeringProfession");
      that.addToClicked("ENGG404BiomedicalOption", "EngineeringProfession");
       ENGG404BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine131());
-      that.removeLine(getLine137());
+      that.removeLine(getLine133());
+      that.removeLine(getLine139());
      that.unHighlightElement(ENGG404BiomedicalOptionelement, "EngineeringProfession");
      var category = that.removeFromClicked("ENGG404BiomedicalOption", "EngineeringProfession");
   if (category != "") { 
@@ -14799,13 +14807,13 @@ BME321BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine107());
+      that.addLine(getLine109());
      that.highlightElement(BME321BiomedicalOptionelement, "NaturalSciences");
      that.addToClicked("BME321BiomedicalOption", "NaturalSciences");
       BME321BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine107());
+      that.removeLine(getLine109());
      that.unHighlightElement(BME321BiomedicalOptionelement, "NaturalSciences");
      var category = that.removeFromClicked("BME321BiomedicalOption", "NaturalSciences");
   if (category != "") { 
@@ -14835,19 +14843,19 @@ CHE316BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine108());
-      that.addLine(getLine109());
       that.addLine(getLine110());
-      that.addLine(getLine128());
+      that.addLine(getLine111());
+      that.addLine(getLine112());
+      that.addLine(getLine130());
      that.highlightElement(CHE316BiomedicalOptionelement, "EngineeringSciences");
      that.addToClicked("CHE316BiomedicalOption", "EngineeringSciences");
       CHE316BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine108());
-      that.removeLine(getLine109());
       that.removeLine(getLine110());
-      that.removeLine(getLine128());
+      that.removeLine(getLine111());
+      that.removeLine(getLine112());
+      that.removeLine(getLine130());
      that.unHighlightElement(CHE316BiomedicalOptionelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE316BiomedicalOption", "EngineeringSciences");
   if (category != "") { 
@@ -14877,23 +14885,23 @@ CHE318BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine110());
-      that.addLine(getLine111());
       that.addLine(getLine112());
       that.addLine(getLine113());
       that.addLine(getLine114());
-      that.addLine(getLine132());
+      that.addLine(getLine115());
+      that.addLine(getLine116());
+      that.addLine(getLine134());
      that.highlightElement(CHE318BiomedicalOptionelement, "EngineeringSciences");
      that.addToClicked("CHE318BiomedicalOption", "EngineeringSciences");
       CHE318BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine110());
-      that.removeLine(getLine111());
       that.removeLine(getLine112());
       that.removeLine(getLine113());
       that.removeLine(getLine114());
-      that.removeLine(getLine132());
+      that.removeLine(getLine115());
+      that.removeLine(getLine116());
+      that.removeLine(getLine134());
      that.unHighlightElement(CHE318BiomedicalOptionelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE318BiomedicalOption", "EngineeringSciences");
   if (category != "") { 
@@ -14923,23 +14931,23 @@ CHE345BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine115());
-      that.addLine(getLine116());
       that.addLine(getLine117());
-      that.addLine(getLine121());
-      that.addLine(getLine127());
-      that.addLine(getLine133());
+      that.addLine(getLine118());
+      that.addLine(getLine119());
+      that.addLine(getLine123());
+      that.addLine(getLine129());
+      that.addLine(getLine135());
      that.highlightElement(CHE345BiomedicalOptionelement, "EngineeringSciences");
      that.addToClicked("CHE345BiomedicalOption", "EngineeringSciences");
       CHE345BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine115());
-      that.removeLine(getLine116());
       that.removeLine(getLine117());
-      that.removeLine(getLine121());
-      that.removeLine(getLine127());
-      that.removeLine(getLine133());
+      that.removeLine(getLine118());
+      that.removeLine(getLine119());
+      that.removeLine(getLine123());
+      that.removeLine(getLine129());
+      that.removeLine(getLine135());
      that.unHighlightElement(CHE345BiomedicalOptionelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE345BiomedicalOption", "EngineeringSciences");
   if (category != "") { 
@@ -14969,21 +14977,21 @@ CHE358BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine118());
-      that.addLine(getLine119());
       that.addLine(getLine120());
       that.addLine(getLine121());
-      that.addLine(getLine134());
+      that.addLine(getLine122());
+      that.addLine(getLine123());
+      that.addLine(getLine136());
      that.highlightElement(CHE358BiomedicalOptionelement, "EngineeringSciences");
      that.addToClicked("CHE358BiomedicalOption", "EngineeringSciences");
       CHE358BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine118());
-      that.removeLine(getLine119());
       that.removeLine(getLine120());
       that.removeLine(getLine121());
-      that.removeLine(getLine134());
+      that.removeLine(getLine122());
+      that.removeLine(getLine123());
+      that.removeLine(getLine136());
      that.unHighlightElement(CHE358BiomedicalOptionelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE358BiomedicalOption", "EngineeringSciences");
   if (category != "") { 
@@ -15013,13 +15021,13 @@ ENGM310BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine129());
+      that.addLine(getLine131());
      that.highlightElement(ENGM310BiomedicalOptionelement, "Other");
      that.addToClicked("ENGM310BiomedicalOption", "Other");
       ENGM310BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine129());
+      that.removeLine(getLine131());
      that.unHighlightElement(ENGM310BiomedicalOptionelement, "Other");
      var category = that.removeFromClicked("ENGM310BiomedicalOption", "Other");
   if (category != "") { 
@@ -15049,13 +15057,13 @@ ENGM401BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine130());
+      that.addLine(getLine132());
      that.highlightElement(ENGM401BiomedicalOptionelement, "Other");
      that.addToClicked("ENGM401BiomedicalOption", "Other");
       ENGM401BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine130());
+      that.removeLine(getLine132());
      that.unHighlightElement(ENGM401BiomedicalOptionelement, "Other");
      var category = that.removeFromClicked("ENGM401BiomedicalOption", "Other");
   if (category != "") { 
@@ -15085,21 +15093,21 @@ CHE446BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine122());
-      that.addLine(getLine123());
       that.addLine(getLine124());
       that.addLine(getLine125());
-      that.addLine(getLine135());
+      that.addLine(getLine126());
+      that.addLine(getLine127());
+      that.addLine(getLine137());
      that.highlightElement(CHE446BiomedicalOptionelement, "EngineeringSciences");
      that.addToClicked("CHE446BiomedicalOption", "EngineeringSciences");
       CHE446BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine122());
-      that.removeLine(getLine123());
       that.removeLine(getLine124());
       that.removeLine(getLine125());
-      that.removeLine(getLine135());
+      that.removeLine(getLine126());
+      that.removeLine(getLine127());
+      that.removeLine(getLine137());
      that.unHighlightElement(CHE446BiomedicalOptionelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE446BiomedicalOption", "EngineeringSciences");
   if (category != "") { 
@@ -15129,25 +15137,25 @@ CHE464BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine126());
-      that.addLine(getLine127());
       that.addLine(getLine128());
       that.addLine(getLine129());
       that.addLine(getLine130());
       that.addLine(getLine131());
-      that.addLine(getLine136());
+      that.addLine(getLine132());
+      that.addLine(getLine133());
+      that.addLine(getLine138());
      that.highlightElement(CHE464BiomedicalOptionelement, "EngineeringDesign");
      that.addToClicked("CHE464BiomedicalOption", "EngineeringDesign");
       CHE464BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine126());
-      that.removeLine(getLine127());
       that.removeLine(getLine128());
       that.removeLine(getLine129());
       that.removeLine(getLine130());
       that.removeLine(getLine131());
-      that.removeLine(getLine136());
+      that.removeLine(getLine132());
+      that.removeLine(getLine133());
+      that.removeLine(getLine138());
      that.unHighlightElement(CHE464BiomedicalOptionelement, "EngineeringDesign");
      var category = that.removeFromClicked("CHE464BiomedicalOption", "EngineeringDesign");
   if (category != "") { 
@@ -15313,17 +15321,17 @@ CHE454BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine132());
-      that.addLine(getLine133());
       that.addLine(getLine134());
+      that.addLine(getLine135());
+      that.addLine(getLine136());
      that.highlightElement(CHE454BiomedicalOptionelement, "EngineeringSciences");
      that.addToClicked("CHE454BiomedicalOption", "EngineeringSciences");
       CHE454BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine132());
-      that.removeLine(getLine133());
       that.removeLine(getLine134());
+      that.removeLine(getLine135());
+      that.removeLine(getLine136());
      that.unHighlightElement(CHE454BiomedicalOptionelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE454BiomedicalOption", "EngineeringSciences");
   if (category != "") { 
@@ -15353,17 +15361,17 @@ CHE465BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine135());
-      that.addLine(getLine136());
       that.addLine(getLine137());
+      that.addLine(getLine138());
+      that.addLine(getLine139());
      that.highlightElement(CHE465BiomedicalOptionelement, "EngineeringDesign");
      that.addToClicked("CHE465BiomedicalOption", "EngineeringDesign");
       CHE465BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine135());
-      that.removeLine(getLine136());
       that.removeLine(getLine137());
+      that.removeLine(getLine138());
+      that.removeLine(getLine139());
      that.unHighlightElement(CHE465BiomedicalOptionelement, "EngineeringDesign");
      var category = that.removeFromClicked("CHE465BiomedicalOption", "EngineeringDesign");
   if (category != "") { 
@@ -16864,13 +16872,15 @@ CHEM103ComputerProcessControlOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine140());
+      that.addLine(getLine142());
+      that.addLine(getLine150());
      that.highlightElement(CHEM103ComputerProcessControlOptionelement, "NaturalSciences");
      that.addToClicked("CHEM103ComputerProcessControlOption", "NaturalSciences");
       CHEM103ComputerProcessControlOptionflag=true
   }
  else {
-      that.removeLine(getLine140());
+      that.removeLine(getLine142());
+      that.removeLine(getLine150());
      that.unHighlightElement(CHEM103ComputerProcessControlOptionelement, "NaturalSciences");
      var category = that.removeFromClicked("CHEM103ComputerProcessControlOption", "NaturalSciences");
   if (category != "") { 
@@ -16934,15 +16944,15 @@ ENGG130ComputerProcessControlOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine138());
-      that.addLine(getLine143());
+      that.addLine(getLine140());
+      that.addLine(getLine145());
      that.highlightElement(ENGG130ComputerProcessControlOptionelement, "NaturalSciences");
      that.addToClicked("ENGG130ComputerProcessControlOption", "NaturalSciences");
       ENGG130ComputerProcessControlOptionflag=true
   }
  else {
-      that.removeLine(getLine138());
-      that.removeLine(getLine143());
+      that.removeLine(getLine140());
+      that.removeLine(getLine145());
      that.unHighlightElement(ENGG130ComputerProcessControlOptionelement, "NaturalSciences");
      var category = that.removeFromClicked("ENGG130ComputerProcessControlOption", "NaturalSciences");
   if (category != "") { 
@@ -16972,15 +16982,15 @@ ENGL199ComputerProcessControlOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine141());
-      that.addLine(getLine170());
+      that.addLine(getLine143());
+      that.addLine(getLine173());
      that.highlightElement(ENGL199ComputerProcessControlOptionelement, "Other");
      that.addToClicked("ENGL199ComputerProcessControlOption", "Other");
       ENGL199ComputerProcessControlOptionflag=true
   }
  else {
-      that.removeLine(getLine141());
-      that.removeLine(getLine170());
+      that.removeLine(getLine143());
+      that.removeLine(getLine173());
      that.unHighlightElement(ENGL199ComputerProcessControlOptionelement, "Other");
      var category = that.removeFromClicked("ENGL199ComputerProcessControlOption", "Other");
   if (category != "") { 
@@ -17010,23 +17020,23 @@ MATH100ComputerProcessControlOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine138());
-      that.addLine(getLine139());
-      that.addLine(getLine142());
-      that.addLine(getLine145());
-      that.addLine(getLine146());
-      that.addLine(getLine163());
+      that.addLine(getLine140());
+      that.addLine(getLine141());
+      that.addLine(getLine144());
+      that.addLine(getLine147());
+      that.addLine(getLine148());
+      that.addLine(getLine166());
      that.highlightElement(MATH100ComputerProcessControlOptionelement, "Math");
      that.addToClicked("MATH100ComputerProcessControlOption", "Math");
       MATH100ComputerProcessControlOptionflag=true
   }
  else {
-      that.removeLine(getLine138());
-      that.removeLine(getLine139());
-      that.removeLine(getLine142());
-      that.removeLine(getLine145());
-      that.removeLine(getLine146());
-      that.removeLine(getLine163());
+      that.removeLine(getLine140());
+      that.removeLine(getLine141());
+      that.removeLine(getLine144());
+      that.removeLine(getLine147());
+      that.removeLine(getLine148());
+      that.removeLine(getLine166());
      that.unHighlightElement(MATH100ComputerProcessControlOptionelement, "Math");
      var category = that.removeFromClicked("MATH100ComputerProcessControlOption", "Math");
   if (category != "") { 
@@ -17056,13 +17066,13 @@ PHYS130ComputerProcessControlOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine139());
+      that.addLine(getLine141());
      that.highlightElement(PHYS130ComputerProcessControlOptionelement, "NaturalSciences");
      that.addToClicked("PHYS130ComputerProcessControlOption", "NaturalSciences");
       PHYS130ComputerProcessControlOptionflag=true
   }
  else {
-      that.removeLine(getLine139());
+      that.removeLine(getLine141());
      that.unHighlightElement(PHYS130ComputerProcessControlOptionelement, "NaturalSciences");
      var category = that.removeFromClicked("PHYS130ComputerProcessControlOption", "NaturalSciences");
   if (category != "") { 
@@ -17092,17 +17102,17 @@ CHEM105ComputerProcessControlOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine140());
-      that.addLine(getLine154());
-      that.addLine(getLine161());
+      that.addLine(getLine142());
+      that.addLine(getLine157());
+      that.addLine(getLine164());
      that.highlightElement(CHEM105ComputerProcessControlOptionelement, "NaturalSciences");
      that.addToClicked("CHEM105ComputerProcessControlOption", "NaturalSciences");
       CHEM105ComputerProcessControlOptionflag=true
   }
  else {
-      that.removeLine(getLine140());
-      that.removeLine(getLine154());
-      that.removeLine(getLine161());
+      that.removeLine(getLine142());
+      that.removeLine(getLine157());
+      that.removeLine(getLine164());
      that.unHighlightElement(CHEM105ComputerProcessControlOptionelement, "NaturalSciences");
      var category = that.removeFromClicked("CHEM105ComputerProcessControlOption", "NaturalSciences");
   if (category != "") { 
@@ -17132,15 +17142,15 @@ ENCMP100ComputerProcessControlOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine152());
-      that.addLine(getLine174());
+      that.addLine(getLine155());
+      that.addLine(getLine177());
      that.highlightElement(ENCMP100ComputerProcessControlOptionelement, "NaturalSciences");
      that.addToClicked("ENCMP100ComputerProcessControlOption", "NaturalSciences");
       ENCMP100ComputerProcessControlOptionflag=true
   }
  else {
-      that.removeLine(getLine152());
-      that.removeLine(getLine174());
+      that.removeLine(getLine155());
+      that.removeLine(getLine177());
      that.unHighlightElement(ENCMP100ComputerProcessControlOptionelement, "NaturalSciences");
      var category = that.removeFromClicked("ENCMP100ComputerProcessControlOption", "NaturalSciences");
   if (category != "") { 
@@ -17170,13 +17180,13 @@ ENGG160ComputerProcessControlOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine141());
+      that.addLine(getLine143());
      that.highlightElement(ENGG160ComputerProcessControlOptionelement, "EngineeringDesign");
      that.addToClicked("ENGG160ComputerProcessControlOption", "EngineeringDesign");
       ENGG160ComputerProcessControlOptionflag=true
   }
  else {
-      that.removeLine(getLine141());
+      that.removeLine(getLine143());
      that.unHighlightElement(ENGG160ComputerProcessControlOptionelement, "EngineeringDesign");
      var category = that.removeFromClicked("ENGG160ComputerProcessControlOption", "EngineeringDesign");
   if (category != "") { 
@@ -17206,19 +17216,19 @@ ENPH131ComputerProcessControlOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine142());
-      that.addLine(getLine143());
       that.addLine(getLine144());
-      that.addLine(getLine158());
+      that.addLine(getLine145());
+      that.addLine(getLine146());
+      that.addLine(getLine161());
      that.highlightElement(ENPH131ComputerProcessControlOptionelement, "NaturalSciences");
      that.addToClicked("ENPH131ComputerProcessControlOption", "NaturalSciences");
       ENPH131ComputerProcessControlOptionflag=true
   }
  else {
-      that.removeLine(getLine142());
-      that.removeLine(getLine143());
       that.removeLine(getLine144());
-      that.removeLine(getLine158());
+      that.removeLine(getLine145());
+      that.removeLine(getLine146());
+      that.removeLine(getLine161());
      that.unHighlightElement(ENPH131ComputerProcessControlOptionelement, "NaturalSciences");
      var category = that.removeFromClicked("ENPH131ComputerProcessControlOption", "NaturalSciences");
   if (category != "") { 
@@ -17248,23 +17258,23 @@ MATH101ComputerProcessControlOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine144());
-      that.addLine(getLine145());
+      that.addLine(getLine146());
       that.addLine(getLine147());
-      that.addLine(getLine148());
-      that.addLine(getLine150());
-      that.addLine(getLine164());
+      that.addLine(getLine149());
+      that.addLine(getLine151());
+      that.addLine(getLine153());
+      that.addLine(getLine167());
      that.highlightElement(MATH101ComputerProcessControlOptionelement, "Math");
      that.addToClicked("MATH101ComputerProcessControlOption", "Math");
       MATH101ComputerProcessControlOptionflag=true
   }
  else {
-      that.removeLine(getLine144());
-      that.removeLine(getLine145());
+      that.removeLine(getLine146());
       that.removeLine(getLine147());
-      that.removeLine(getLine148());
-      that.removeLine(getLine150());
-      that.removeLine(getLine164());
+      that.removeLine(getLine149());
+      that.removeLine(getLine151());
+      that.removeLine(getLine153());
+      that.removeLine(getLine167());
      that.unHighlightElement(MATH101ComputerProcessControlOptionelement, "Math");
      var category = that.removeFromClicked("MATH101ComputerProcessControlOption", "Math");
   if (category != "") { 
@@ -17294,19 +17304,19 @@ MATH102ComputerProcessControlOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine146());
-      that.addLine(getLine149());
-      that.addLine(getLine151());
-      that.addLine(getLine153());
+      that.addLine(getLine148());
+      that.addLine(getLine152());
+      that.addLine(getLine154());
+      that.addLine(getLine156());
      that.highlightElement(MATH102ComputerProcessControlOptionelement, "Math");
      that.addToClicked("MATH102ComputerProcessControlOption", "Math");
       MATH102ComputerProcessControlOptionflag=true
   }
  else {
-      that.removeLine(getLine146());
-      that.removeLine(getLine149());
-      that.removeLine(getLine151());
-      that.removeLine(getLine153());
+      that.removeLine(getLine148());
+      that.removeLine(getLine152());
+      that.removeLine(getLine154());
+      that.removeLine(getLine156());
      that.unHighlightElement(MATH102ComputerProcessControlOptionelement, "Math");
      var category = that.removeFromClicked("MATH102ComputerProcessControlOption", "Math");
   if (category != "") { 
@@ -17336,21 +17346,21 @@ CHE243ComputerProcessControlOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine147());
-      that.addLine(getLine155());
-      that.addLine(getLine157());
-      that.addLine(getLine168());
-      that.addLine(getLine172());
+      that.addLine(getLine149());
+      that.addLine(getLine158());
+      that.addLine(getLine160());
+      that.addLine(getLine171());
+      that.addLine(getLine175());
      that.highlightElement(CHE243ComputerProcessControlOptionelement, "EngineeringSciences");
      that.addToClicked("CHE243ComputerProcessControlOption", "EngineeringSciences");
       CHE243ComputerProcessControlOptionflag=true
   }
  else {
-      that.removeLine(getLine147());
-      that.removeLine(getLine155());
-      that.removeLine(getLine157());
-      that.removeLine(getLine168());
-      that.removeLine(getLine172());
+      that.removeLine(getLine149());
+      that.removeLine(getLine158());
+      that.removeLine(getLine160());
+      that.removeLine(getLine171());
+      that.removeLine(getLine175());
      that.unHighlightElement(CHE243ComputerProcessControlOptionelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE243ComputerProcessControlOption", "EngineeringSciences");
   if (category != "") { 
@@ -17380,11 +17390,13 @@ CHEM261ComputerProcessControlOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
+      that.addLine(getLine150());
      that.highlightElement(CHEM261ComputerProcessControlOptionelement, "NaturalSciences");
      that.addToClicked("CHEM261ComputerProcessControlOption", "NaturalSciences");
       CHEM261ComputerProcessControlOptionflag=true
   }
  else {
+      that.removeLine(getLine150());
      that.unHighlightElement(CHEM261ComputerProcessControlOptionelement, "NaturalSciences");
      var category = that.removeFromClicked("CHEM261ComputerProcessControlOption", "NaturalSciences");
   if (category != "") { 
@@ -17448,15 +17460,15 @@ ECE202ComputerProcessControlOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine148());
-      that.addLine(getLine149());
+      that.addLine(getLine151());
+      that.addLine(getLine152());
      that.highlightElement(ECE202ComputerProcessControlOptionelement, "EngineeringSciences");
      that.addToClicked("ECE202ComputerProcessControlOption", "EngineeringSciences");
       ECE202ComputerProcessControlOptionflag=true
   }
  else {
-      that.removeLine(getLine148());
-      that.removeLine(getLine149());
+      that.removeLine(getLine151());
+      that.removeLine(getLine152());
      that.unHighlightElement(ECE202ComputerProcessControlOptionelement, "EngineeringSciences");
      var category = that.removeFromClicked("ECE202ComputerProcessControlOption", "EngineeringSciences");
   if (category != "") { 
@@ -17520,23 +17532,23 @@ MATH209ComputerProcessControlOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine150());
-      that.addLine(getLine151());
-      that.addLine(getLine156());
+      that.addLine(getLine153());
+      that.addLine(getLine154());
       that.addLine(getLine159());
       that.addLine(getLine162());
-      that.addLine(getLine177());
+      that.addLine(getLine165());
+      that.addLine(getLine180());
      that.highlightElement(MATH209ComputerProcessControlOptionelement, "Math");
      that.addToClicked("MATH209ComputerProcessControlOption", "Math");
       MATH209ComputerProcessControlOptionflag=true
   }
  else {
-      that.removeLine(getLine150());
-      that.removeLine(getLine151());
-      that.removeLine(getLine156());
+      that.removeLine(getLine153());
+      that.removeLine(getLine154());
       that.removeLine(getLine159());
       that.removeLine(getLine162());
-      that.removeLine(getLine177());
+      that.removeLine(getLine165());
+      that.removeLine(getLine180());
      that.unHighlightElement(MATH209ComputerProcessControlOptionelement, "Math");
      var category = that.removeFromClicked("MATH209ComputerProcessControlOption", "Math");
   if (category != "") { 
@@ -17600,31 +17612,31 @@ CME265ComputerProcessControlOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine152());
-      that.addLine(getLine153());
-      that.addLine(getLine154());
       that.addLine(getLine155());
       that.addLine(getLine156());
-      that.addLine(getLine169());
-      that.addLine(getLine171());
-      that.addLine(getLine175());
-      that.addLine(getLine182());
-      that.addLine(getLine186());
+      that.addLine(getLine157());
+      that.addLine(getLine158());
+      that.addLine(getLine159());
+      that.addLine(getLine172());
+      that.addLine(getLine174());
+      that.addLine(getLine178());
+      that.addLine(getLine185());
+      that.addLine(getLine189());
      that.highlightElement(CME265ComputerProcessControlOptionelement, "EngineeringSciences");
      that.addToClicked("CME265ComputerProcessControlOption", "EngineeringSciences");
       CME265ComputerProcessControlOptionflag=true
   }
  else {
-      that.removeLine(getLine152());
-      that.removeLine(getLine153());
-      that.removeLine(getLine154());
       that.removeLine(getLine155());
       that.removeLine(getLine156());
-      that.removeLine(getLine169());
-      that.removeLine(getLine171());
-      that.removeLine(getLine175());
-      that.removeLine(getLine182());
-      that.removeLine(getLine186());
+      that.removeLine(getLine157());
+      that.removeLine(getLine158());
+      that.removeLine(getLine159());
+      that.removeLine(getLine172());
+      that.removeLine(getLine174());
+      that.removeLine(getLine178());
+      that.removeLine(getLine185());
+      that.removeLine(getLine189());
      that.unHighlightElement(CME265ComputerProcessControlOptionelement, "EngineeringSciences");
      var category = that.removeFromClicked("CME265ComputerProcessControlOption", "EngineeringSciences");
   if (category != "") { 
@@ -17654,27 +17666,27 @@ CHE312ComputerProcessControlOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine157());
-      that.addLine(getLine158());
-      that.addLine(getLine159());
       that.addLine(getLine160());
-      that.addLine(getLine166());
-      that.addLine(getLine173());
-      that.addLine(getLine178());
-      that.addLine(getLine183());
+      that.addLine(getLine161());
+      that.addLine(getLine162());
+      that.addLine(getLine163());
+      that.addLine(getLine169());
+      that.addLine(getLine176());
+      that.addLine(getLine181());
+      that.addLine(getLine186());
      that.highlightElement(CHE312ComputerProcessControlOptionelement, "EngineeringSciences");
      that.addToClicked("CHE312ComputerProcessControlOption", "EngineeringSciences");
       CHE312ComputerProcessControlOptionflag=true
   }
  else {
-      that.removeLine(getLine157());
-      that.removeLine(getLine158());
-      that.removeLine(getLine159());
       that.removeLine(getLine160());
-      that.removeLine(getLine166());
-      that.removeLine(getLine173());
-      that.removeLine(getLine178());
-      that.removeLine(getLine183());
+      that.removeLine(getLine161());
+      that.removeLine(getLine162());
+      that.removeLine(getLine163());
+      that.removeLine(getLine169());
+      that.removeLine(getLine176());
+      that.removeLine(getLine181());
+      that.removeLine(getLine186());
      that.unHighlightElement(CHE312ComputerProcessControlOptionelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE312ComputerProcessControlOption", "EngineeringSciences");
   if (category != "") { 
@@ -17738,13 +17750,13 @@ MATE202ComputerProcessControlOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine161());
+      that.addLine(getLine164());
      that.highlightElement(MATE202ComputerProcessControlOptionelement, "EngineeringSciences");
      that.addToClicked("MATE202ComputerProcessControlOption", "EngineeringSciences");
       MATE202ComputerProcessControlOptionflag=true
   }
  else {
-      that.removeLine(getLine161());
+      that.removeLine(getLine164());
      that.unHighlightElement(MATE202ComputerProcessControlOptionelement, "EngineeringSciences");
      var category = that.removeFromClicked("MATE202ComputerProcessControlOption", "EngineeringSciences");
   if (category != "") { 
@@ -17774,19 +17786,19 @@ MATH201ComputerProcessControlOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine160());
-      that.addLine(getLine162());
+      that.addLine(getLine163());
       that.addLine(getLine165());
-      that.addLine(getLine176());
+      that.addLine(getLine168());
+      that.addLine(getLine179());
      that.highlightElement(MATH201ComputerProcessControlOptionelement, "Math");
      that.addToClicked("MATH201ComputerProcessControlOption", "Math");
       MATH201ComputerProcessControlOptionflag=true
   }
  else {
-      that.removeLine(getLine160());
-      that.removeLine(getLine162());
+      that.removeLine(getLine163());
       that.removeLine(getLine165());
-      that.removeLine(getLine176());
+      that.removeLine(getLine168());
+      that.removeLine(getLine179());
      that.unHighlightElement(MATH201ComputerProcessControlOptionelement, "Math");
      var category = that.removeFromClicked("MATH201ComputerProcessControlOption", "Math");
   if (category != "") { 
@@ -17816,17 +17828,17 @@ STAT235ComputerProcessControlOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine163());
-      that.addLine(getLine164());
-      that.addLine(getLine190());
+      that.addLine(getLine166());
+      that.addLine(getLine167());
+      that.addLine(getLine193());
      that.highlightElement(STAT235ComputerProcessControlOptionelement, "Math");
      that.addToClicked("STAT235ComputerProcessControlOption", "Math");
       STAT235ComputerProcessControlOptionflag=true
   }
  else {
-      that.removeLine(getLine163());
-      that.removeLine(getLine164());
-      that.removeLine(getLine190());
+      that.removeLine(getLine166());
+      that.removeLine(getLine167());
+      that.removeLine(getLine193());
      that.unHighlightElement(STAT235ComputerProcessControlOptionelement, "Math");
      var category = that.removeFromClicked("STAT235ComputerProcessControlOption", "Math");
   if (category != "") { 
@@ -17856,27 +17868,27 @@ CHE314ComputerProcessControlOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine165());
-      that.addLine(getLine166());
-      that.addLine(getLine167());
-      that.addLine(getLine180());
-      that.addLine(getLine185());
-      that.addLine(getLine191());
-      that.addLine(getLine193());
+      that.addLine(getLine168());
+      that.addLine(getLine169());
+      that.addLine(getLine170());
+      that.addLine(getLine183());
+      that.addLine(getLine188());
+      that.addLine(getLine194());
       that.addLine(getLine196());
+      that.addLine(getLine199());
      that.highlightElement(CHE314ComputerProcessControlOptionelement, "EngineeringSciences");
      that.addToClicked("CHE314ComputerProcessControlOption", "EngineeringSciences");
       CHE314ComputerProcessControlOptionflag=true
   }
  else {
-      that.removeLine(getLine165());
-      that.removeLine(getLine166());
-      that.removeLine(getLine167());
-      that.removeLine(getLine180());
-      that.removeLine(getLine185());
-      that.removeLine(getLine191());
-      that.removeLine(getLine193());
+      that.removeLine(getLine168());
+      that.removeLine(getLine169());
+      that.removeLine(getLine170());
+      that.removeLine(getLine183());
+      that.removeLine(getLine188());
+      that.removeLine(getLine194());
       that.removeLine(getLine196());
+      that.removeLine(getLine199());
      that.unHighlightElement(CHE314ComputerProcessControlOptionelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE314ComputerProcessControlOption", "EngineeringSciences");
   if (category != "") { 
@@ -17906,21 +17918,21 @@ CHE343ComputerProcessControlOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine168());
-      that.addLine(getLine169());
-      that.addLine(getLine179());
-      that.addLine(getLine184());
+      that.addLine(getLine171());
+      that.addLine(getLine172());
+      that.addLine(getLine182());
       that.addLine(getLine187());
+      that.addLine(getLine190());
      that.highlightElement(CHE343ComputerProcessControlOptionelement, "EngineeringSciences");
      that.addToClicked("CHE343ComputerProcessControlOption", "EngineeringSciences");
       CHE343ComputerProcessControlOptionflag=true
   }
  else {
-      that.removeLine(getLine168());
-      that.removeLine(getLine169());
-      that.removeLine(getLine179());
-      that.removeLine(getLine184());
+      that.removeLine(getLine171());
+      that.removeLine(getLine172());
+      that.removeLine(getLine182());
       that.removeLine(getLine187());
+      that.removeLine(getLine190());
      that.unHighlightElement(CHE343ComputerProcessControlOptionelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE343ComputerProcessControlOption", "EngineeringSciences");
   if (category != "") { 
@@ -17950,21 +17962,21 @@ CHE351ComputerProcessControlOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine170());
-      that.addLine(getLine171());
-      that.addLine(getLine172());
       that.addLine(getLine173());
-      that.addLine(getLine189());
+      that.addLine(getLine174());
+      that.addLine(getLine175());
+      that.addLine(getLine176());
+      that.addLine(getLine192());
      that.highlightElement(CHE351ComputerProcessControlOptionelement, "EngineeringSciences");
      that.addToClicked("CHE351ComputerProcessControlOption", "EngineeringSciences");
       CHE351ComputerProcessControlOptionflag=true
   }
  else {
-      that.removeLine(getLine170());
-      that.removeLine(getLine171());
-      that.removeLine(getLine172());
       that.removeLine(getLine173());
-      that.removeLine(getLine189());
+      that.removeLine(getLine174());
+      that.removeLine(getLine175());
+      that.removeLine(getLine176());
+      that.removeLine(getLine192());
      that.unHighlightElement(CHE351ComputerProcessControlOptionelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE351ComputerProcessControlOption", "EngineeringSciences");
   if (category != "") { 
@@ -17994,17 +18006,17 @@ CHE374ComputerProcessControlOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine167());
-      that.addLine(getLine174());
-      that.addLine(getLine188());
+      that.addLine(getLine170());
+      that.addLine(getLine177());
+      that.addLine(getLine191());
      that.highlightElement(CHE374ComputerProcessControlOptionelement, "EngineeringSciences");
      that.addToClicked("CHE374ComputerProcessControlOption", "EngineeringSciences");
       CHE374ComputerProcessControlOptionflag=true
   }
  else {
-      that.removeLine(getLine167());
-      that.removeLine(getLine174());
-      that.removeLine(getLine188());
+      that.removeLine(getLine170());
+      that.removeLine(getLine177());
+      that.removeLine(getLine191());
      that.unHighlightElement(CHE374ComputerProcessControlOptionelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE374ComputerProcessControlOption", "EngineeringSciences");
   if (category != "") { 
@@ -18034,25 +18046,25 @@ CHE446ComputerProcessControlOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine175());
-      that.addLine(getLine176());
-      that.addLine(getLine177());
       that.addLine(getLine178());
-      that.addLine(getLine205());
-      that.addLine(getLine209());
-      that.addLine(getLine210());
+      that.addLine(getLine179());
+      that.addLine(getLine180());
+      that.addLine(getLine181());
+      that.addLine(getLine208());
+      that.addLine(getLine212());
+      that.addLine(getLine213());
      that.highlightElement(CHE446ComputerProcessControlOptionelement, "EngineeringSciences");
      that.addToClicked("CHE446ComputerProcessControlOption", "EngineeringSciences");
       CHE446ComputerProcessControlOptionflag=true
   }
  else {
-      that.removeLine(getLine175());
-      that.removeLine(getLine176());
-      that.removeLine(getLine177());
       that.removeLine(getLine178());
-      that.removeLine(getLine205());
-      that.removeLine(getLine209());
-      that.removeLine(getLine210());
+      that.removeLine(getLine179());
+      that.removeLine(getLine180());
+      that.removeLine(getLine181());
+      that.removeLine(getLine208());
+      that.removeLine(getLine212());
+      that.removeLine(getLine213());
      that.unHighlightElement(CHE446ComputerProcessControlOptionelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE446ComputerProcessControlOption", "EngineeringSciences");
   if (category != "") { 
@@ -18082,15 +18094,15 @@ ENGG404ComputerProcessControlOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine201());
-      that.addLine(getLine207());
+      that.addLine(getLine204());
+      that.addLine(getLine210());
      that.highlightElement(ENGG404ComputerProcessControlOptionelement, "EngineeringProfession");
      that.addToClicked("ENGG404ComputerProcessControlOption", "EngineeringProfession");
       ENGG404ComputerProcessControlOptionflag=true
   }
  else {
-      that.removeLine(getLine201());
-      that.removeLine(getLine207());
+      that.removeLine(getLine204());
+      that.removeLine(getLine210());
      that.unHighlightElement(ENGG404ComputerProcessControlOptionelement, "EngineeringProfession");
      var category = that.removeFromClicked("ENGG404ComputerProcessControlOption", "EngineeringProfession");
   if (category != "") { 
@@ -18120,19 +18132,19 @@ CHE316ComputerProcessControlOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine179());
-      that.addLine(getLine180());
-      that.addLine(getLine181());
-      that.addLine(getLine198());
+      that.addLine(getLine182());
+      that.addLine(getLine183());
+      that.addLine(getLine184());
+      that.addLine(getLine201());
      that.highlightElement(CHE316ComputerProcessControlOptionelement, "EngineeringSciences");
      that.addToClicked("CHE316ComputerProcessControlOption", "EngineeringSciences");
       CHE316ComputerProcessControlOptionflag=true
   }
  else {
-      that.removeLine(getLine179());
-      that.removeLine(getLine180());
-      that.removeLine(getLine181());
-      that.removeLine(getLine198());
+      that.removeLine(getLine182());
+      that.removeLine(getLine183());
+      that.removeLine(getLine184());
+      that.removeLine(getLine201());
      that.unHighlightElement(CHE316ComputerProcessControlOptionelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE316ComputerProcessControlOption", "EngineeringSciences");
   if (category != "") { 
@@ -18162,25 +18174,25 @@ CHE318ComputerProcessControlOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine181());
-      that.addLine(getLine182());
-      that.addLine(getLine183());
       that.addLine(getLine184());
       that.addLine(getLine185());
-      that.addLine(getLine194());
-      that.addLine(getLine202());
+      that.addLine(getLine186());
+      that.addLine(getLine187());
+      that.addLine(getLine188());
+      that.addLine(getLine197());
+      that.addLine(getLine205());
      that.highlightElement(CHE318ComputerProcessControlOptionelement, "EngineeringSciences");
      that.addToClicked("CHE318ComputerProcessControlOption", "EngineeringSciences");
       CHE318ComputerProcessControlOptionflag=true
   }
  else {
-      that.removeLine(getLine181());
-      that.removeLine(getLine182());
-      that.removeLine(getLine183());
       that.removeLine(getLine184());
       that.removeLine(getLine185());
-      that.removeLine(getLine194());
-      that.removeLine(getLine202());
+      that.removeLine(getLine186());
+      that.removeLine(getLine187());
+      that.removeLine(getLine188());
+      that.removeLine(getLine197());
+      that.removeLine(getLine205());
      that.unHighlightElement(CHE318ComputerProcessControlOptionelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE318ComputerProcessControlOption", "EngineeringSciences");
   if (category != "") { 
@@ -18210,25 +18222,25 @@ CHE345ComputerProcessControlOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine186());
-      that.addLine(getLine187());
-      that.addLine(getLine188());
-      that.addLine(getLine192());
+      that.addLine(getLine189());
+      that.addLine(getLine190());
+      that.addLine(getLine191());
       that.addLine(getLine195());
-      that.addLine(getLine197());
-      that.addLine(getLine203());
+      that.addLine(getLine198());
+      that.addLine(getLine200());
+      that.addLine(getLine206());
      that.highlightElement(CHE345ComputerProcessControlOptionelement, "EngineeringSciences");
      that.addToClicked("CHE345ComputerProcessControlOption", "EngineeringSciences");
       CHE345ComputerProcessControlOptionflag=true
   }
  else {
-      that.removeLine(getLine186());
-      that.removeLine(getLine187());
-      that.removeLine(getLine188());
-      that.removeLine(getLine192());
+      that.removeLine(getLine189());
+      that.removeLine(getLine190());
+      that.removeLine(getLine191());
       that.removeLine(getLine195());
-      that.removeLine(getLine197());
-      that.removeLine(getLine203());
+      that.removeLine(getLine198());
+      that.removeLine(getLine200());
+      that.removeLine(getLine206());
      that.unHighlightElement(CHE345ComputerProcessControlOptionelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE345ComputerProcessControlOption", "EngineeringSciences");
   if (category != "") { 
@@ -18258,23 +18270,23 @@ CHE358ComputerProcessControlOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine189());
-      that.addLine(getLine190());
-      that.addLine(getLine191());
       that.addLine(getLine192());
-      that.addLine(getLine204());
-      that.addLine(getLine208());
+      that.addLine(getLine193());
+      that.addLine(getLine194());
+      that.addLine(getLine195());
+      that.addLine(getLine207());
+      that.addLine(getLine211());
      that.highlightElement(CHE358ComputerProcessControlOptionelement, "EngineeringSciences");
      that.addToClicked("CHE358ComputerProcessControlOption", "EngineeringSciences");
       CHE358ComputerProcessControlOptionflag=true
   }
  else {
-      that.removeLine(getLine189());
-      that.removeLine(getLine190());
-      that.removeLine(getLine191());
       that.removeLine(getLine192());
-      that.removeLine(getLine204());
-      that.removeLine(getLine208());
+      that.removeLine(getLine193());
+      that.removeLine(getLine194());
+      that.removeLine(getLine195());
+      that.removeLine(getLine207());
+      that.removeLine(getLine211());
      that.unHighlightElement(CHE358ComputerProcessControlOptionelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE358ComputerProcessControlOption", "EngineeringSciences");
   if (category != "") { 
@@ -18304,17 +18316,17 @@ CHE472ComputerProcessControlOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine193());
-      that.addLine(getLine194());
-      that.addLine(getLine195());
+      that.addLine(getLine196());
+      that.addLine(getLine197());
+      that.addLine(getLine198());
      that.highlightElement(CHE472ComputerProcessControlOptionelement, "EngineeringSciences");
      that.addToClicked("CHE472ComputerProcessControlOption", "EngineeringSciences");
       CHE472ComputerProcessControlOptionflag=true
   }
  else {
-      that.removeLine(getLine193());
-      that.removeLine(getLine194());
-      that.removeLine(getLine195());
+      that.removeLine(getLine196());
+      that.removeLine(getLine197());
+      that.removeLine(getLine198());
      that.unHighlightElement(CHE472ComputerProcessControlOptionelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE472ComputerProcessControlOption", "EngineeringSciences");
   if (category != "") { 
@@ -18344,13 +18356,13 @@ ENGM310ComputerProcessControlOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine199());
+      that.addLine(getLine202());
      that.highlightElement(ENGM310ComputerProcessControlOptionelement, "Other");
      that.addToClicked("ENGM310ComputerProcessControlOption", "Other");
       ENGM310ComputerProcessControlOptionflag=true
   }
  else {
-      that.removeLine(getLine199());
+      that.removeLine(getLine202());
      that.unHighlightElement(ENGM310ComputerProcessControlOptionelement, "Other");
      var category = that.removeFromClicked("ENGM310ComputerProcessControlOption", "Other");
   if (category != "") { 
@@ -18380,13 +18392,13 @@ ENGM401ComputerProcessControlOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine200());
+      that.addLine(getLine203());
      that.highlightElement(ENGM401ComputerProcessControlOptionelement, "Other");
      that.addToClicked("ENGM401ComputerProcessControlOption", "Other");
       ENGM401ComputerProcessControlOptionflag=true
   }
  else {
-      that.removeLine(getLine200());
+      that.removeLine(getLine203());
      that.unHighlightElement(ENGM401ComputerProcessControlOptionelement, "Other");
      var category = that.removeFromClicked("ENGM401ComputerProcessControlOption", "Other");
   if (category != "") { 
@@ -18416,25 +18428,25 @@ CHE464ComputerProcessControlOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine196());
-      that.addLine(getLine197());
-      that.addLine(getLine198());
       that.addLine(getLine199());
       that.addLine(getLine200());
       that.addLine(getLine201());
-      that.addLine(getLine206());
+      that.addLine(getLine202());
+      that.addLine(getLine203());
+      that.addLine(getLine204());
+      that.addLine(getLine209());
      that.highlightElement(CHE464ComputerProcessControlOptionelement, "EngineeringDesign");
      that.addToClicked("CHE464ComputerProcessControlOption", "EngineeringDesign");
       CHE464ComputerProcessControlOptionflag=true
   }
  else {
-      that.removeLine(getLine196());
-      that.removeLine(getLine197());
-      that.removeLine(getLine198());
       that.removeLine(getLine199());
       that.removeLine(getLine200());
       that.removeLine(getLine201());
-      that.removeLine(getLine206());
+      that.removeLine(getLine202());
+      that.removeLine(getLine203());
+      that.removeLine(getLine204());
+      that.removeLine(getLine209());
      that.unHighlightElement(CHE464ComputerProcessControlOptionelement, "EngineeringDesign");
      var category = that.removeFromClicked("CHE464ComputerProcessControlOption", "EngineeringDesign");
   if (category != "") { 
@@ -18634,17 +18646,17 @@ CHE454ComputerProcessControlOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine202());
-      that.addLine(getLine203());
-      that.addLine(getLine204());
+      that.addLine(getLine205());
+      that.addLine(getLine206());
+      that.addLine(getLine207());
      that.highlightElement(CHE454ComputerProcessControlOptionelement, "EngineeringSciences");
      that.addToClicked("CHE454ComputerProcessControlOption", "EngineeringSciences");
       CHE454ComputerProcessControlOptionflag=true
   }
  else {
-      that.removeLine(getLine202());
-      that.removeLine(getLine203());
-      that.removeLine(getLine204());
+      that.removeLine(getLine205());
+      that.removeLine(getLine206());
+      that.removeLine(getLine207());
      that.unHighlightElement(CHE454ComputerProcessControlOptionelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE454ComputerProcessControlOption", "EngineeringSciences");
   if (category != "") { 
@@ -18674,17 +18686,17 @@ CHE465ComputerProcessControlOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine205());
-      that.addLine(getLine206());
-      that.addLine(getLine207());
+      that.addLine(getLine208());
+      that.addLine(getLine209());
+      that.addLine(getLine210());
      that.highlightElement(CHE465ComputerProcessControlOptionelement, "EngineeringDesign");
      that.addToClicked("CHE465ComputerProcessControlOption", "EngineeringDesign");
       CHE465ComputerProcessControlOptionflag=true
   }
  else {
-      that.removeLine(getLine205());
-      that.removeLine(getLine206());
-      that.removeLine(getLine207());
+      that.removeLine(getLine208());
+      that.removeLine(getLine209());
+      that.removeLine(getLine210());
      that.unHighlightElement(CHE465ComputerProcessControlOptionelement, "EngineeringDesign");
      var category = that.removeFromClicked("CHE465ComputerProcessControlOption", "EngineeringDesign");
   if (category != "") { 
@@ -18714,15 +18726,15 @@ CHE573ComputerProcessControlOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine208());
-      that.addLine(getLine209());
+      that.addLine(getLine211());
+      that.addLine(getLine212());
      that.highlightElement(CHE573ComputerProcessControlOptionelement, "EngineeringSciences");
      that.addToClicked("CHE573ComputerProcessControlOption", "EngineeringSciences");
       CHE573ComputerProcessControlOptionflag=true
   }
  else {
-      that.removeLine(getLine208());
-      that.removeLine(getLine209());
+      that.removeLine(getLine211());
+      that.removeLine(getLine212());
      that.unHighlightElement(CHE573ComputerProcessControlOptionelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE573ComputerProcessControlOption", "EngineeringSciences");
   if (category != "") { 
@@ -18752,13 +18764,13 @@ CHE576ComputerProcessControlOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine210());
+      that.addLine(getLine213());
      that.highlightElement(CHE576ComputerProcessControlOptionelement, "EngineeringSciences");
      that.addToClicked("CHE576ComputerProcessControlOption", "EngineeringSciences");
       CHE576ComputerProcessControlOptionflag=true
   }
  else {
-      that.removeLine(getLine210());
+      that.removeLine(getLine213());
      that.unHighlightElement(CHE576ComputerProcessControlOptionelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE576ComputerProcessControlOption", "EngineeringSciences");
   if (category != "") { 
@@ -20141,13 +20153,15 @@ CHEM103OilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine213());
+      that.addLine(getLine216());
+      that.addLine(getLine229());
      that.highlightElement(CHEM103OilSandsElectiveelement, "NaturalSciences");
      that.addToClicked("CHEM103OilSandsElective", "NaturalSciences");
       CHEM103OilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine213());
+      that.removeLine(getLine216());
+      that.removeLine(getLine229());
      that.unHighlightElement(CHEM103OilSandsElectiveelement, "NaturalSciences");
      var category = that.removeFromClicked("CHEM103OilSandsElective", "NaturalSciences");
   if (category != "") { 
@@ -20211,15 +20225,15 @@ ENGG130OilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine211());
-      that.addLine(getLine216());
+      that.addLine(getLine214());
+      that.addLine(getLine219());
      that.highlightElement(ENGG130OilSandsElectiveelement, "NaturalSciences");
      that.addToClicked("ENGG130OilSandsElective", "NaturalSciences");
       ENGG130OilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine211());
-      that.removeLine(getLine216());
+      that.removeLine(getLine214());
+      that.removeLine(getLine219());
      that.unHighlightElement(ENGG130OilSandsElectiveelement, "NaturalSciences");
      var category = that.removeFromClicked("ENGG130OilSandsElective", "NaturalSciences");
   if (category != "") { 
@@ -20249,15 +20263,15 @@ ENGL199OilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine214());
-      that.addLine(getLine241());
+      that.addLine(getLine217());
+      that.addLine(getLine245());
      that.highlightElement(ENGL199OilSandsElectiveelement, "Other");
      that.addToClicked("ENGL199OilSandsElective", "Other");
       ENGL199OilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine214());
-      that.removeLine(getLine241());
+      that.removeLine(getLine217());
+      that.removeLine(getLine245());
      that.unHighlightElement(ENGL199OilSandsElectiveelement, "Other");
      var category = that.removeFromClicked("ENGL199OilSandsElective", "Other");
   if (category != "") { 
@@ -20287,23 +20301,23 @@ MATH100OilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine211());
-      that.addLine(getLine212());
+      that.addLine(getLine214());
       that.addLine(getLine215());
       that.addLine(getLine218());
-      that.addLine(getLine219());
-      that.addLine(getLine234());
+      that.addLine(getLine221());
+      that.addLine(getLine222());
+      that.addLine(getLine238());
      that.highlightElement(MATH100OilSandsElectiveelement, "Math");
      that.addToClicked("MATH100OilSandsElective", "Math");
       MATH100OilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine211());
-      that.removeLine(getLine212());
+      that.removeLine(getLine214());
       that.removeLine(getLine215());
       that.removeLine(getLine218());
-      that.removeLine(getLine219());
-      that.removeLine(getLine234());
+      that.removeLine(getLine221());
+      that.removeLine(getLine222());
+      that.removeLine(getLine238());
      that.unHighlightElement(MATH100OilSandsElectiveelement, "Math");
      var category = that.removeFromClicked("MATH100OilSandsElective", "Math");
   if (category != "") { 
@@ -20333,13 +20347,13 @@ PHYS130OilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine212());
+      that.addLine(getLine215());
      that.highlightElement(PHYS130OilSandsElectiveelement, "NaturalSciences");
      that.addToClicked("PHYS130OilSandsElective", "NaturalSciences");
       PHYS130OilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine212());
+      that.removeLine(getLine215());
      that.unHighlightElement(PHYS130OilSandsElectiveelement, "NaturalSciences");
      var category = that.removeFromClicked("PHYS130OilSandsElective", "NaturalSciences");
   if (category != "") { 
@@ -20369,17 +20383,17 @@ CHEM105OilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine213());
-      that.addLine(getLine223());
-      that.addLine(getLine232());
+      that.addLine(getLine216());
+      that.addLine(getLine226());
+      that.addLine(getLine236());
      that.highlightElement(CHEM105OilSandsElectiveelement, "NaturalSciences");
      that.addToClicked("CHEM105OilSandsElective", "NaturalSciences");
       CHEM105OilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine213());
-      that.removeLine(getLine223());
-      that.removeLine(getLine232());
+      that.removeLine(getLine216());
+      that.removeLine(getLine226());
+      that.removeLine(getLine236());
      that.unHighlightElement(CHEM105OilSandsElectiveelement, "NaturalSciences");
      var category = that.removeFromClicked("CHEM105OilSandsElective", "NaturalSciences");
   if (category != "") { 
@@ -20409,15 +20423,15 @@ ENCMP100OilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine221());
-      that.addLine(getLine245());
+      that.addLine(getLine224());
+      that.addLine(getLine249());
      that.highlightElement(ENCMP100OilSandsElectiveelement, "NaturalSciences");
      that.addToClicked("ENCMP100OilSandsElective", "NaturalSciences");
       ENCMP100OilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine221());
-      that.removeLine(getLine245());
+      that.removeLine(getLine224());
+      that.removeLine(getLine249());
      that.unHighlightElement(ENCMP100OilSandsElectiveelement, "NaturalSciences");
      var category = that.removeFromClicked("ENCMP100OilSandsElective", "NaturalSciences");
   if (category != "") { 
@@ -20447,13 +20461,13 @@ ENGG160OilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine214());
+      that.addLine(getLine217());
      that.highlightElement(ENGG160OilSandsElectiveelement, "EngineeringDesign");
      that.addToClicked("ENGG160OilSandsElective", "EngineeringDesign");
       ENGG160OilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine214());
+      that.removeLine(getLine217());
      that.unHighlightElement(ENGG160OilSandsElectiveelement, "EngineeringDesign");
      var category = that.removeFromClicked("ENGG160OilSandsElective", "EngineeringDesign");
   if (category != "") { 
@@ -20483,19 +20497,19 @@ ENPH131OilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine215());
-      that.addLine(getLine216());
-      that.addLine(getLine217());
-      that.addLine(getLine229());
+      that.addLine(getLine218());
+      that.addLine(getLine219());
+      that.addLine(getLine220());
+      that.addLine(getLine233());
      that.highlightElement(ENPH131OilSandsElectiveelement, "NaturalSciences");
      that.addToClicked("ENPH131OilSandsElective", "NaturalSciences");
       ENPH131OilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine215());
-      that.removeLine(getLine216());
-      that.removeLine(getLine217());
-      that.removeLine(getLine229());
+      that.removeLine(getLine218());
+      that.removeLine(getLine219());
+      that.removeLine(getLine220());
+      that.removeLine(getLine233());
      that.unHighlightElement(ENPH131OilSandsElectiveelement, "NaturalSciences");
      var category = that.removeFromClicked("ENPH131OilSandsElective", "NaturalSciences");
   if (category != "") { 
@@ -20525,21 +20539,21 @@ MATH101OilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine217());
-      that.addLine(getLine218());
       that.addLine(getLine220());
-      that.addLine(getLine226());
-      that.addLine(getLine235());
+      that.addLine(getLine221());
+      that.addLine(getLine223());
+      that.addLine(getLine230());
+      that.addLine(getLine239());
      that.highlightElement(MATH101OilSandsElectiveelement, "Math");
      that.addToClicked("MATH101OilSandsElective", "Math");
       MATH101OilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine217());
-      that.removeLine(getLine218());
       that.removeLine(getLine220());
-      that.removeLine(getLine226());
-      that.removeLine(getLine235());
+      that.removeLine(getLine221());
+      that.removeLine(getLine223());
+      that.removeLine(getLine230());
+      that.removeLine(getLine239());
      that.unHighlightElement(MATH101OilSandsElectiveelement, "Math");
      var category = that.removeFromClicked("MATH101OilSandsElective", "Math");
   if (category != "") { 
@@ -20569,17 +20583,17 @@ MATH102OilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine219());
       that.addLine(getLine222());
-      that.addLine(getLine227());
+      that.addLine(getLine225());
+      that.addLine(getLine231());
      that.highlightElement(MATH102OilSandsElectiveelement, "Math");
      that.addToClicked("MATH102OilSandsElective", "Math");
       MATH102OilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine219());
       that.removeLine(getLine222());
-      that.removeLine(getLine227());
+      that.removeLine(getLine225());
+      that.removeLine(getLine231());
      that.unHighlightElement(MATH102OilSandsElectiveelement, "Math");
      var category = that.removeFromClicked("MATH102OilSandsElective", "Math");
   if (category != "") { 
@@ -20609,21 +20623,21 @@ CHE243OilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine220());
-      that.addLine(getLine224());
-      that.addLine(getLine228());
-      that.addLine(getLine239());
+      that.addLine(getLine223());
+      that.addLine(getLine227());
+      that.addLine(getLine232());
       that.addLine(getLine243());
+      that.addLine(getLine247());
      that.highlightElement(CHE243OilSandsElectiveelement, "EngineeringSciences");
      that.addToClicked("CHE243OilSandsElective", "EngineeringSciences");
       CHE243OilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine220());
-      that.removeLine(getLine224());
-      that.removeLine(getLine228());
-      that.removeLine(getLine239());
+      that.removeLine(getLine223());
+      that.removeLine(getLine227());
+      that.removeLine(getLine232());
       that.removeLine(getLine243());
+      that.removeLine(getLine247());
      that.unHighlightElement(CHE243OilSandsElectiveelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE243OilSandsElective", "EngineeringSciences");
   if (category != "") { 
@@ -20687,31 +20701,31 @@ CME265OilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine221());
-      that.addLine(getLine222());
-      that.addLine(getLine223());
       that.addLine(getLine224());
       that.addLine(getLine225());
-      that.addLine(getLine240());
-      that.addLine(getLine242());
-      that.addLine(getLine249());
+      that.addLine(getLine226());
+      that.addLine(getLine227());
+      that.addLine(getLine228());
+      that.addLine(getLine244());
+      that.addLine(getLine246());
       that.addLine(getLine253());
-      that.addLine(getLine263());
+      that.addLine(getLine257());
+      that.addLine(getLine267());
      that.highlightElement(CME265OilSandsElectiveelement, "EngineeringSciences");
      that.addToClicked("CME265OilSandsElective", "EngineeringSciences");
       CME265OilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine221());
-      that.removeLine(getLine222());
-      that.removeLine(getLine223());
       that.removeLine(getLine224());
       that.removeLine(getLine225());
-      that.removeLine(getLine240());
-      that.removeLine(getLine242());
-      that.removeLine(getLine249());
+      that.removeLine(getLine226());
+      that.removeLine(getLine227());
+      that.removeLine(getLine228());
+      that.removeLine(getLine244());
+      that.removeLine(getLine246());
       that.removeLine(getLine253());
-      that.removeLine(getLine263());
+      that.removeLine(getLine257());
+      that.removeLine(getLine267());
      that.unHighlightElement(CME265OilSandsElectiveelement, "EngineeringSciences");
      var category = that.removeFromClicked("CME265OilSandsElective", "EngineeringSciences");
   if (category != "") { 
@@ -20741,11 +20755,13 @@ CHEM261OilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
+      that.addLine(getLine229());
      that.highlightElement(CHEM261OilSandsElectiveelement, "NaturalSciences");
      that.addToClicked("CHEM261OilSandsElective", "NaturalSciences");
       CHEM261OilSandsElectiveflag=true
   }
  else {
+      that.removeLine(getLine229());
      that.unHighlightElement(CHEM261OilSandsElectiveelement, "NaturalSciences");
      var category = that.removeFromClicked("CHEM261OilSandsElective", "NaturalSciences");
   if (category != "") { 
@@ -20775,23 +20791,23 @@ MATH209OilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine225());
-      that.addLine(getLine226());
-      that.addLine(getLine227());
+      that.addLine(getLine228());
       that.addLine(getLine230());
-      that.addLine(getLine233());
-      that.addLine(getLine265());
+      that.addLine(getLine231());
+      that.addLine(getLine234());
+      that.addLine(getLine237());
+      that.addLine(getLine269());
      that.highlightElement(MATH209OilSandsElectiveelement, "Math");
      that.addToClicked("MATH209OilSandsElective", "Math");
       MATH209OilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine225());
-      that.removeLine(getLine226());
-      that.removeLine(getLine227());
+      that.removeLine(getLine228());
       that.removeLine(getLine230());
-      that.removeLine(getLine233());
-      that.removeLine(getLine265());
+      that.removeLine(getLine231());
+      that.removeLine(getLine234());
+      that.removeLine(getLine237());
+      that.removeLine(getLine269());
      that.unHighlightElement(MATH209OilSandsElectiveelement, "Math");
      var category = that.removeFromClicked("MATH209OilSandsElective", "Math");
   if (category != "") { 
@@ -20889,29 +20905,29 @@ CHE312OilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine228());
-      that.addLine(getLine229());
-      that.addLine(getLine230());
-      that.addLine(getLine231());
-      that.addLine(getLine237());
-      that.addLine(getLine244());
-      that.addLine(getLine250());
-      that.addLine(getLine266());
-      that.addLine(getLine281());
+      that.addLine(getLine232());
+      that.addLine(getLine233());
+      that.addLine(getLine234());
+      that.addLine(getLine235());
+      that.addLine(getLine241());
+      that.addLine(getLine248());
+      that.addLine(getLine254());
+      that.addLine(getLine270());
+      that.addLine(getLine285());
      that.highlightElement(CHE312OilSandsElectiveelement, "EngineeringSciences");
      that.addToClicked("CHE312OilSandsElective", "EngineeringSciences");
       CHE312OilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine228());
-      that.removeLine(getLine229());
-      that.removeLine(getLine230());
-      that.removeLine(getLine231());
-      that.removeLine(getLine237());
-      that.removeLine(getLine244());
-      that.removeLine(getLine250());
-      that.removeLine(getLine266());
-      that.removeLine(getLine281());
+      that.removeLine(getLine232());
+      that.removeLine(getLine233());
+      that.removeLine(getLine234());
+      that.removeLine(getLine235());
+      that.removeLine(getLine241());
+      that.removeLine(getLine248());
+      that.removeLine(getLine254());
+      that.removeLine(getLine270());
+      that.removeLine(getLine285());
      that.unHighlightElement(CHE312OilSandsElectiveelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE312OilSandsElective", "EngineeringSciences");
   if (category != "") { 
@@ -20975,13 +20991,13 @@ MATE202OilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine232());
+      that.addLine(getLine236());
      that.highlightElement(MATE202OilSandsElectiveelement, "EngineeringSciences");
      that.addToClicked("MATE202OilSandsElective", "EngineeringSciences");
       MATE202OilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine232());
+      that.removeLine(getLine236());
      that.unHighlightElement(MATE202OilSandsElectiveelement, "EngineeringSciences");
      var category = that.removeFromClicked("MATE202OilSandsElective", "EngineeringSciences");
   if (category != "") { 
@@ -21011,19 +21027,19 @@ MATH201OilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine231());
-      that.addLine(getLine233());
-      that.addLine(getLine236());
-      that.addLine(getLine264());
+      that.addLine(getLine235());
+      that.addLine(getLine237());
+      that.addLine(getLine240());
+      that.addLine(getLine268());
      that.highlightElement(MATH201OilSandsElectiveelement, "Math");
      that.addToClicked("MATH201OilSandsElective", "Math");
       MATH201OilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine231());
-      that.removeLine(getLine233());
-      that.removeLine(getLine236());
-      that.removeLine(getLine264());
+      that.removeLine(getLine235());
+      that.removeLine(getLine237());
+      that.removeLine(getLine240());
+      that.removeLine(getLine268());
      that.unHighlightElement(MATH201OilSandsElectiveelement, "Math");
      var category = that.removeFromClicked("MATH201OilSandsElective", "Math");
   if (category != "") { 
@@ -21053,17 +21069,17 @@ STAT235OilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine234());
-      that.addLine(getLine235());
-      that.addLine(getLine257());
+      that.addLine(getLine238());
+      that.addLine(getLine239());
+      that.addLine(getLine261());
      that.highlightElement(STAT235OilSandsElectiveelement, "Math");
      that.addToClicked("STAT235OilSandsElective", "Math");
       STAT235OilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine234());
-      that.removeLine(getLine235());
-      that.removeLine(getLine257());
+      that.removeLine(getLine238());
+      that.removeLine(getLine239());
+      that.removeLine(getLine261());
      that.unHighlightElement(STAT235OilSandsElectiveelement, "Math");
      var category = that.removeFromClicked("STAT235OilSandsElective", "Math");
   if (category != "") { 
@@ -21127,29 +21143,29 @@ CHE314OilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine236());
-      that.addLine(getLine237());
-      that.addLine(getLine238());
-      that.addLine(getLine247());
-      that.addLine(getLine252());
-      that.addLine(getLine258());
-      that.addLine(getLine260());
-      that.addLine(getLine267());
-      that.addLine(getLine282());
+      that.addLine(getLine240());
+      that.addLine(getLine241());
+      that.addLine(getLine242());
+      that.addLine(getLine251());
+      that.addLine(getLine256());
+      that.addLine(getLine262());
+      that.addLine(getLine264());
+      that.addLine(getLine271());
+      that.addLine(getLine286());
      that.highlightElement(CHE314OilSandsElectiveelement, "EngineeringSciences");
      that.addToClicked("CHE314OilSandsElective", "EngineeringSciences");
       CHE314OilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine236());
-      that.removeLine(getLine237());
-      that.removeLine(getLine238());
-      that.removeLine(getLine247());
-      that.removeLine(getLine252());
-      that.removeLine(getLine258());
-      that.removeLine(getLine260());
-      that.removeLine(getLine267());
-      that.removeLine(getLine282());
+      that.removeLine(getLine240());
+      that.removeLine(getLine241());
+      that.removeLine(getLine242());
+      that.removeLine(getLine251());
+      that.removeLine(getLine256());
+      that.removeLine(getLine262());
+      that.removeLine(getLine264());
+      that.removeLine(getLine271());
+      that.removeLine(getLine286());
      that.unHighlightElement(CHE314OilSandsElectiveelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE314OilSandsElective", "EngineeringSciences");
   if (category != "") { 
@@ -21179,21 +21195,21 @@ CHE343OilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine239());
-      that.addLine(getLine240());
-      that.addLine(getLine246());
-      that.addLine(getLine251());
-      that.addLine(getLine254());
+      that.addLine(getLine243());
+      that.addLine(getLine244());
+      that.addLine(getLine250());
+      that.addLine(getLine255());
+      that.addLine(getLine258());
      that.highlightElement(CHE343OilSandsElectiveelement, "EngineeringSciences");
      that.addToClicked("CHE343OilSandsElective", "EngineeringSciences");
       CHE343OilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine239());
-      that.removeLine(getLine240());
-      that.removeLine(getLine246());
-      that.removeLine(getLine251());
-      that.removeLine(getLine254());
+      that.removeLine(getLine243());
+      that.removeLine(getLine244());
+      that.removeLine(getLine250());
+      that.removeLine(getLine255());
+      that.removeLine(getLine258());
      that.unHighlightElement(CHE343OilSandsElectiveelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE343OilSandsElective", "EngineeringSciences");
   if (category != "") { 
@@ -21223,21 +21239,21 @@ CHE351OilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine241());
-      that.addLine(getLine242());
-      that.addLine(getLine243());
-      that.addLine(getLine244());
-      that.addLine(getLine256());
+      that.addLine(getLine245());
+      that.addLine(getLine246());
+      that.addLine(getLine247());
+      that.addLine(getLine248());
+      that.addLine(getLine260());
      that.highlightElement(CHE351OilSandsElectiveelement, "EngineeringSciences");
      that.addToClicked("CHE351OilSandsElective", "EngineeringSciences");
       CHE351OilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine241());
-      that.removeLine(getLine242());
-      that.removeLine(getLine243());
-      that.removeLine(getLine244());
-      that.removeLine(getLine256());
+      that.removeLine(getLine245());
+      that.removeLine(getLine246());
+      that.removeLine(getLine247());
+      that.removeLine(getLine248());
+      that.removeLine(getLine260());
      that.unHighlightElement(CHE351OilSandsElectiveelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE351OilSandsElective", "EngineeringSciences");
   if (category != "") { 
@@ -21267,17 +21283,17 @@ CHE374OilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine238());
-      that.addLine(getLine245());
-      that.addLine(getLine255());
+      that.addLine(getLine242());
+      that.addLine(getLine249());
+      that.addLine(getLine259());
      that.highlightElement(CHE374OilSandsElectiveelement, "EngineeringSciences");
      that.addToClicked("CHE374OilSandsElective", "EngineeringSciences");
       CHE374OilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine238());
-      that.removeLine(getLine245());
-      that.removeLine(getLine255());
+      that.removeLine(getLine242());
+      that.removeLine(getLine249());
+      that.removeLine(getLine259());
      that.unHighlightElement(CHE374OilSandsElectiveelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE374OilSandsElective", "EngineeringSciences");
   if (category != "") { 
@@ -21307,13 +21323,13 @@ ENGM310OilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine270());
+      that.addLine(getLine274());
      that.highlightElement(ENGM310OilSandsElectiveelement, "Other");
      that.addToClicked("ENGM310OilSandsElective", "Other");
       ENGM310OilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine270());
+      that.removeLine(getLine274());
      that.unHighlightElement(ENGM310OilSandsElectiveelement, "Other");
      var category = that.removeFromClicked("ENGM310OilSandsElective", "Other");
   if (category != "") { 
@@ -21343,13 +21359,13 @@ ENGM401OilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine271());
+      that.addLine(getLine275());
      that.highlightElement(ENGM401OilSandsElectiveelement, "Other");
      that.addToClicked("ENGM401OilSandsElective", "Other");
       ENGM401OilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine271());
+      that.removeLine(getLine275());
      that.unHighlightElement(ENGM401OilSandsElectiveelement, "Other");
      var category = that.removeFromClicked("ENGM401OilSandsElective", "Other");
   if (category != "") { 
@@ -21379,19 +21395,19 @@ CHE316OilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine246());
-      that.addLine(getLine247());
-      that.addLine(getLine248());
-      that.addLine(getLine269());
+      that.addLine(getLine250());
+      that.addLine(getLine251());
+      that.addLine(getLine252());
+      that.addLine(getLine273());
      that.highlightElement(CHE316OilSandsElectiveelement, "EngineeringSciences");
      that.addToClicked("CHE316OilSandsElective", "EngineeringSciences");
       CHE316OilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine246());
-      that.removeLine(getLine247());
-      that.removeLine(getLine248());
-      that.removeLine(getLine269());
+      that.removeLine(getLine250());
+      that.removeLine(getLine251());
+      that.removeLine(getLine252());
+      that.removeLine(getLine273());
      that.unHighlightElement(CHE316OilSandsElectiveelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE316OilSandsElective", "EngineeringSciences");
   if (category != "") { 
@@ -21421,25 +21437,25 @@ CHE318OilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine248());
-      that.addLine(getLine249());
-      that.addLine(getLine250());
-      that.addLine(getLine251());
       that.addLine(getLine252());
-      that.addLine(getLine261());
-      that.addLine(getLine277());
+      that.addLine(getLine253());
+      that.addLine(getLine254());
+      that.addLine(getLine255());
+      that.addLine(getLine256());
+      that.addLine(getLine265());
+      that.addLine(getLine281());
      that.highlightElement(CHE318OilSandsElectiveelement, "EngineeringSciences");
      that.addToClicked("CHE318OilSandsElective", "EngineeringSciences");
       CHE318OilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine248());
-      that.removeLine(getLine249());
-      that.removeLine(getLine250());
-      that.removeLine(getLine251());
       that.removeLine(getLine252());
-      that.removeLine(getLine261());
-      that.removeLine(getLine277());
+      that.removeLine(getLine253());
+      that.removeLine(getLine254());
+      that.removeLine(getLine255());
+      that.removeLine(getLine256());
+      that.removeLine(getLine265());
+      that.removeLine(getLine281());
      that.unHighlightElement(CHE318OilSandsElectiveelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE318OilSandsElective", "EngineeringSciences");
   if (category != "") { 
@@ -21469,27 +21485,27 @@ CHE345OilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine253());
-      that.addLine(getLine254());
-      that.addLine(getLine255());
+      that.addLine(getLine257());
+      that.addLine(getLine258());
       that.addLine(getLine259());
-      that.addLine(getLine262());
-      that.addLine(getLine268());
-      that.addLine(getLine278());
-      that.addLine(getLine280());
+      that.addLine(getLine263());
+      that.addLine(getLine266());
+      that.addLine(getLine272());
+      that.addLine(getLine282());
+      that.addLine(getLine284());
      that.highlightElement(CHE345OilSandsElectiveelement, "EngineeringSciences");
      that.addToClicked("CHE345OilSandsElective", "EngineeringSciences");
       CHE345OilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine253());
-      that.removeLine(getLine254());
-      that.removeLine(getLine255());
+      that.removeLine(getLine257());
+      that.removeLine(getLine258());
       that.removeLine(getLine259());
-      that.removeLine(getLine262());
-      that.removeLine(getLine268());
-      that.removeLine(getLine278());
-      that.removeLine(getLine280());
+      that.removeLine(getLine263());
+      that.removeLine(getLine266());
+      that.removeLine(getLine272());
+      that.removeLine(getLine282());
+      that.removeLine(getLine284());
      that.unHighlightElement(CHE345OilSandsElectiveelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE345OilSandsElective", "EngineeringSciences");
   if (category != "") { 
@@ -21519,21 +21535,21 @@ CHE358OilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine256());
-      that.addLine(getLine257());
-      that.addLine(getLine258());
-      that.addLine(getLine259());
-      that.addLine(getLine279());
+      that.addLine(getLine260());
+      that.addLine(getLine261());
+      that.addLine(getLine262());
+      that.addLine(getLine263());
+      that.addLine(getLine283());
      that.highlightElement(CHE358OilSandsElectiveelement, "EngineeringSciences");
      that.addToClicked("CHE358OilSandsElective", "EngineeringSciences");
       CHE358OilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine256());
-      that.removeLine(getLine257());
-      that.removeLine(getLine258());
-      that.removeLine(getLine259());
-      that.removeLine(getLine279());
+      that.removeLine(getLine260());
+      that.removeLine(getLine261());
+      that.removeLine(getLine262());
+      that.removeLine(getLine263());
+      that.removeLine(getLine283());
      that.unHighlightElement(CHE358OilSandsElectiveelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE358OilSandsElective", "EngineeringSciences");
   if (category != "") { 
@@ -21597,15 +21613,15 @@ ENGG404OilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine272());
       that.addLine(getLine276());
+      that.addLine(getLine280());
      that.highlightElement(ENGG404OilSandsElectiveelement, "EngineeringProfession");
      that.addToClicked("ENGG404OilSandsElective", "EngineeringProfession");
       ENGG404OilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine272());
       that.removeLine(getLine276());
+      that.removeLine(getLine280());
      that.unHighlightElement(ENGG404OilSandsElectiveelement, "EngineeringProfession");
      var category = that.removeFromClicked("ENGG404OilSandsElective", "EngineeringProfession");
   if (category != "") { 
@@ -21635,19 +21651,19 @@ CHE445OilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine260());
-      that.addLine(getLine261());
-      that.addLine(getLine262());
-      that.addLine(getLine273());
+      that.addLine(getLine264());
+      that.addLine(getLine265());
+      that.addLine(getLine266());
+      that.addLine(getLine277());
      that.highlightElement(CHE445OilSandsElectiveelement, "EngineeringSciences");
      that.addToClicked("CHE445OilSandsElective", "EngineeringSciences");
       CHE445OilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine260());
-      that.removeLine(getLine261());
-      that.removeLine(getLine262());
-      that.removeLine(getLine273());
+      that.removeLine(getLine264());
+      that.removeLine(getLine265());
+      that.removeLine(getLine266());
+      that.removeLine(getLine277());
      that.unHighlightElement(CHE445OilSandsElectiveelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE445OilSandsElective", "EngineeringSciences");
   if (category != "") { 
@@ -21677,21 +21693,21 @@ CHE446OilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine263());
-      that.addLine(getLine264());
-      that.addLine(getLine265());
-      that.addLine(getLine266());
-      that.addLine(getLine274());
+      that.addLine(getLine267());
+      that.addLine(getLine268());
+      that.addLine(getLine269());
+      that.addLine(getLine270());
+      that.addLine(getLine278());
      that.highlightElement(CHE446OilSandsElectiveelement, "EngineeringSciences");
      that.addToClicked("CHE446OilSandsElective", "EngineeringSciences");
       CHE446OilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine263());
-      that.removeLine(getLine264());
-      that.removeLine(getLine265());
-      that.removeLine(getLine266());
-      that.removeLine(getLine274());
+      that.removeLine(getLine267());
+      that.removeLine(getLine268());
+      that.removeLine(getLine269());
+      that.removeLine(getLine270());
+      that.removeLine(getLine278());
      that.unHighlightElement(CHE446OilSandsElectiveelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE446OilSandsElective", "EngineeringSciences");
   if (category != "") { 
@@ -21721,25 +21737,25 @@ CHE464OilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine267());
-      that.addLine(getLine268());
-      that.addLine(getLine269());
-      that.addLine(getLine270());
       that.addLine(getLine271());
       that.addLine(getLine272());
+      that.addLine(getLine273());
+      that.addLine(getLine274());
       that.addLine(getLine275());
+      that.addLine(getLine276());
+      that.addLine(getLine279());
      that.highlightElement(CHE464OilSandsElectiveelement, "EngineeringDesign");
      that.addToClicked("CHE464OilSandsElective", "EngineeringDesign");
       CHE464OilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine267());
-      that.removeLine(getLine268());
-      that.removeLine(getLine269());
-      that.removeLine(getLine270());
       that.removeLine(getLine271());
       that.removeLine(getLine272());
+      that.removeLine(getLine273());
+      that.removeLine(getLine274());
       that.removeLine(getLine275());
+      that.removeLine(getLine276());
+      that.removeLine(getLine279());
      that.unHighlightElement(CHE464OilSandsElectiveelement, "EngineeringDesign");
      var category = that.removeFromClicked("CHE464OilSandsElective", "EngineeringDesign");
   if (category != "") { 
@@ -21871,19 +21887,19 @@ CHE435OilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine273());
-      that.addLine(getLine274());
-      that.addLine(getLine275());
-      that.addLine(getLine276());
+      that.addLine(getLine277());
+      that.addLine(getLine278());
+      that.addLine(getLine279());
+      that.addLine(getLine280());
      that.highlightElement(CHE435OilSandsElectiveelement, "EngineeringDesign");
      that.addToClicked("CHE435OilSandsElective", "EngineeringDesign");
       CHE435OilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine273());
-      that.removeLine(getLine274());
-      that.removeLine(getLine275());
-      that.removeLine(getLine276());
+      that.removeLine(getLine277());
+      that.removeLine(getLine278());
+      that.removeLine(getLine279());
+      that.removeLine(getLine280());
      that.unHighlightElement(CHE435OilSandsElectiveelement, "EngineeringDesign");
      var category = that.removeFromClicked("CHE435OilSandsElective", "EngineeringDesign");
   if (category != "") { 
@@ -21913,17 +21929,17 @@ CHE454OilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine277());
-      that.addLine(getLine278());
-      that.addLine(getLine279());
+      that.addLine(getLine281());
+      that.addLine(getLine282());
+      that.addLine(getLine283());
      that.highlightElement(CHE454OilSandsElectiveelement, "EngineeringSciences");
      that.addToClicked("CHE454OilSandsElective", "EngineeringSciences");
       CHE454OilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine277());
-      that.removeLine(getLine278());
-      that.removeLine(getLine279());
+      that.removeLine(getLine281());
+      that.removeLine(getLine282());
+      that.removeLine(getLine283());
      that.unHighlightElement(CHE454OilSandsElectiveelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE454OilSandsElective", "EngineeringSciences");
   if (category != "") { 
@@ -21953,13 +21969,13 @@ CHE522OilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine280());
+      that.addLine(getLine284());
      that.highlightElement(CHE522OilSandsElectiveelement, "EngineeringSciences");
      that.addToClicked("CHE522OilSandsElective", "EngineeringSciences");
       CHE522OilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine280());
+      that.removeLine(getLine284());
      that.unHighlightElement(CHE522OilSandsElectiveelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE522OilSandsElective", "EngineeringSciences");
   if (category != "") { 
@@ -21989,15 +22005,15 @@ CHE534OilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine281());
-      that.addLine(getLine282());
+      that.addLine(getLine285());
+      that.addLine(getLine286());
      that.highlightElement(CHE534OilSandsElectiveelement, "EngineeringSciences");
      that.addToClicked("CHE534OilSandsElective", "EngineeringSciences");
       CHE534OilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine281());
-      that.removeLine(getLine282());
+      that.removeLine(getLine285());
+      that.removeLine(getLine286());
      that.unHighlightElement(CHE534OilSandsElectiveelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE534OilSandsElective", "EngineeringSciences");
   if (category != "") { 
@@ -23381,13 +23397,15 @@ CHEM103CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine285());
+      that.addLine(getLine289());
+      that.addLine(getLine297());
      that.highlightElement(CHEM103CoopPlan1element, "NaturalSciences");
      that.addToClicked("CHEM103CoopPlan1", "NaturalSciences");
       CHEM103CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine285());
+      that.removeLine(getLine289());
+      that.removeLine(getLine297());
      that.unHighlightElement(CHEM103CoopPlan1element, "NaturalSciences");
      var category = that.removeFromClicked("CHEM103CoopPlan1", "NaturalSciences");
   if (category != "") { 
@@ -23451,15 +23469,15 @@ ENGG130CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine283());
-      that.addLine(getLine288());
+      that.addLine(getLine287());
+      that.addLine(getLine292());
      that.highlightElement(ENGG130CoopPlan1element, "NaturalSciences");
      that.addToClicked("ENGG130CoopPlan1", "NaturalSciences");
       ENGG130CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine283());
-      that.removeLine(getLine288());
+      that.removeLine(getLine287());
+      that.removeLine(getLine292());
      that.unHighlightElement(ENGG130CoopPlan1element, "NaturalSciences");
      var category = that.removeFromClicked("ENGG130CoopPlan1", "NaturalSciences");
   if (category != "") { 
@@ -23489,15 +23507,15 @@ ENGL199CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine286());
-      that.addLine(getLine315());
+      that.addLine(getLine290());
+      that.addLine(getLine320());
      that.highlightElement(ENGL199CoopPlan1element, "Other");
      that.addToClicked("ENGL199CoopPlan1", "Other");
       ENGL199CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine286());
-      that.removeLine(getLine315());
+      that.removeLine(getLine290());
+      that.removeLine(getLine320());
      that.unHighlightElement(ENGL199CoopPlan1element, "Other");
      var category = that.removeFromClicked("ENGL199CoopPlan1", "Other");
   if (category != "") { 
@@ -23527,23 +23545,23 @@ MATH100CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine283());
-      that.addLine(getLine284());
       that.addLine(getLine287());
-      that.addLine(getLine290());
+      that.addLine(getLine288());
       that.addLine(getLine291());
-      that.addLine(getLine306());
+      that.addLine(getLine294());
+      that.addLine(getLine295());
+      that.addLine(getLine311());
      that.highlightElement(MATH100CoopPlan1element, "Math");
      that.addToClicked("MATH100CoopPlan1", "Math");
       MATH100CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine283());
-      that.removeLine(getLine284());
       that.removeLine(getLine287());
-      that.removeLine(getLine290());
+      that.removeLine(getLine288());
       that.removeLine(getLine291());
-      that.removeLine(getLine306());
+      that.removeLine(getLine294());
+      that.removeLine(getLine295());
+      that.removeLine(getLine311());
      that.unHighlightElement(MATH100CoopPlan1element, "Math");
      var category = that.removeFromClicked("MATH100CoopPlan1", "Math");
   if (category != "") { 
@@ -23573,13 +23591,13 @@ PHYS130CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine284());
+      that.addLine(getLine288());
      that.highlightElement(PHYS130CoopPlan1element, "NaturalSciences");
      that.addToClicked("PHYS130CoopPlan1", "NaturalSciences");
       PHYS130CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine284());
+      that.removeLine(getLine288());
      that.unHighlightElement(PHYS130CoopPlan1element, "NaturalSciences");
      var category = that.removeFromClicked("PHYS130CoopPlan1", "NaturalSciences");
   if (category != "") { 
@@ -23609,17 +23627,17 @@ CHEM105CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine285());
-      that.addLine(getLine293());
+      that.addLine(getLine289());
       that.addLine(getLine298());
+      that.addLine(getLine303());
      that.highlightElement(CHEM105CoopPlan1element, "NaturalSciences");
      that.addToClicked("CHEM105CoopPlan1", "NaturalSciences");
       CHEM105CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine285());
-      that.removeLine(getLine293());
+      that.removeLine(getLine289());
       that.removeLine(getLine298());
+      that.removeLine(getLine303());
      that.unHighlightElement(CHEM105CoopPlan1element, "NaturalSciences");
      var category = that.removeFromClicked("CHEM105CoopPlan1", "NaturalSciences");
   if (category != "") { 
@@ -23649,15 +23667,15 @@ ENCMP100CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine296());
-      that.addLine(getLine319());
+      that.addLine(getLine301());
+      that.addLine(getLine324());
      that.highlightElement(ENCMP100CoopPlan1element, "NaturalSciences");
      that.addToClicked("ENCMP100CoopPlan1", "NaturalSciences");
       ENCMP100CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine296());
-      that.removeLine(getLine319());
+      that.removeLine(getLine301());
+      that.removeLine(getLine324());
      that.unHighlightElement(ENCMP100CoopPlan1element, "NaturalSciences");
      var category = that.removeFromClicked("ENCMP100CoopPlan1", "NaturalSciences");
   if (category != "") { 
@@ -23687,13 +23705,13 @@ ENGG160CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine286());
+      that.addLine(getLine290());
      that.highlightElement(ENGG160CoopPlan1element, "EngineeringDesign");
      that.addToClicked("ENGG160CoopPlan1", "EngineeringDesign");
       ENGG160CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine286());
+      that.removeLine(getLine290());
      that.unHighlightElement(ENGG160CoopPlan1element, "EngineeringDesign");
      var category = that.removeFromClicked("ENGG160CoopPlan1", "EngineeringDesign");
   if (category != "") { 
@@ -23723,19 +23741,19 @@ ENPH131CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine287());
-      that.addLine(getLine288());
-      that.addLine(getLine289());
-      that.addLine(getLine302());
+      that.addLine(getLine291());
+      that.addLine(getLine292());
+      that.addLine(getLine293());
+      that.addLine(getLine307());
      that.highlightElement(ENPH131CoopPlan1element, "NaturalSciences");
      that.addToClicked("ENPH131CoopPlan1", "NaturalSciences");
       ENPH131CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine287());
-      that.removeLine(getLine288());
-      that.removeLine(getLine289());
-      that.removeLine(getLine302());
+      that.removeLine(getLine291());
+      that.removeLine(getLine292());
+      that.removeLine(getLine293());
+      that.removeLine(getLine307());
      that.unHighlightElement(ENPH131CoopPlan1element, "NaturalSciences");
      var category = that.removeFromClicked("ENPH131CoopPlan1", "NaturalSciences");
   if (category != "") { 
@@ -23765,21 +23783,21 @@ MATH101CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine289());
-      that.addLine(getLine290());
-      that.addLine(getLine292());
+      that.addLine(getLine293());
       that.addLine(getLine294());
-      that.addLine(getLine307());
+      that.addLine(getLine296());
+      that.addLine(getLine299());
+      that.addLine(getLine312());
      that.highlightElement(MATH101CoopPlan1element, "Math");
      that.addToClicked("MATH101CoopPlan1", "Math");
       MATH101CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine289());
-      that.removeLine(getLine290());
-      that.removeLine(getLine292());
+      that.removeLine(getLine293());
       that.removeLine(getLine294());
-      that.removeLine(getLine307());
+      that.removeLine(getLine296());
+      that.removeLine(getLine299());
+      that.removeLine(getLine312());
      that.unHighlightElement(MATH101CoopPlan1element, "Math");
      var category = that.removeFromClicked("MATH101CoopPlan1", "Math");
   if (category != "") { 
@@ -23809,17 +23827,17 @@ MATH102CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine291());
       that.addLine(getLine295());
-      that.addLine(getLine297());
+      that.addLine(getLine300());
+      that.addLine(getLine302());
      that.highlightElement(MATH102CoopPlan1element, "Math");
      that.addToClicked("MATH102CoopPlan1", "Math");
       MATH102CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine291());
       that.removeLine(getLine295());
-      that.removeLine(getLine297());
+      that.removeLine(getLine300());
+      that.removeLine(getLine302());
      that.unHighlightElement(MATH102CoopPlan1element, "Math");
      var category = that.removeFromClicked("MATH102CoopPlan1", "Math");
   if (category != "") { 
@@ -23849,21 +23867,21 @@ CHE243CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine292());
-      that.addLine(getLine299());
-      that.addLine(getLine301());
-      that.addLine(getLine313());
-      that.addLine(getLine317());
+      that.addLine(getLine296());
+      that.addLine(getLine304());
+      that.addLine(getLine306());
+      that.addLine(getLine318());
+      that.addLine(getLine322());
      that.highlightElement(CHE243CoopPlan1element, "EngineeringSciences");
      that.addToClicked("CHE243CoopPlan1", "EngineeringSciences");
       CHE243CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine292());
-      that.removeLine(getLine299());
-      that.removeLine(getLine301());
-      that.removeLine(getLine313());
-      that.removeLine(getLine317());
+      that.removeLine(getLine296());
+      that.removeLine(getLine304());
+      that.removeLine(getLine306());
+      that.removeLine(getLine318());
+      that.removeLine(getLine322());
      that.unHighlightElement(CHE243CoopPlan1element, "EngineeringSciences");
      var category = that.removeFromClicked("CHE243CoopPlan1", "EngineeringSciences");
   if (category != "") { 
@@ -23927,11 +23945,13 @@ CHEM261CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
+      that.addLine(getLine297());
      that.highlightElement(CHEM261CoopPlan1element, "NaturalSciences");
      that.addToClicked("CHEM261CoopPlan1", "NaturalSciences");
       CHEM261CoopPlan1flag=true
   }
  else {
+      that.removeLine(getLine297());
      that.unHighlightElement(CHEM261CoopPlan1element, "NaturalSciences");
      var category = that.removeFromClicked("CHEM261CoopPlan1", "NaturalSciences");
   if (category != "") { 
@@ -23961,13 +23981,13 @@ ENGG299CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine308());
+      that.addLine(getLine313());
      that.highlightElement(ENGG299CoopPlan1element, "EngineeringProfession");
      that.addToClicked("ENGG299CoopPlan1", "EngineeringProfession");
       ENGG299CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine308());
+      that.removeLine(getLine313());
      that.unHighlightElement(ENGG299CoopPlan1element, "EngineeringProfession");
      var category = that.removeFromClicked("ENGG299CoopPlan1", "EngineeringProfession");
   if (category != "") { 
@@ -23997,13 +24017,13 @@ MATE202CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine293());
+      that.addLine(getLine298());
      that.highlightElement(MATE202CoopPlan1element, "EngineeringSciences");
      that.addToClicked("MATE202CoopPlan1", "EngineeringSciences");
       MATE202CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine293());
+      that.removeLine(getLine298());
      that.unHighlightElement(MATE202CoopPlan1element, "EngineeringSciences");
      var category = that.removeFromClicked("MATE202CoopPlan1", "EngineeringSciences");
   if (category != "") { 
@@ -24033,23 +24053,23 @@ MATH209CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine294());
-      that.addLine(getLine295());
+      that.addLine(getLine299());
       that.addLine(getLine300());
-      that.addLine(getLine303());
       that.addLine(getLine305());
-      that.addLine(getLine340());
+      that.addLine(getLine308());
+      that.addLine(getLine310());
+      that.addLine(getLine345());
      that.highlightElement(MATH209CoopPlan1element, "Math");
      that.addToClicked("MATH209CoopPlan1", "Math");
       MATH209CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine294());
-      that.removeLine(getLine295());
+      that.removeLine(getLine299());
       that.removeLine(getLine300());
-      that.removeLine(getLine303());
       that.removeLine(getLine305());
-      that.removeLine(getLine340());
+      that.removeLine(getLine308());
+      that.removeLine(getLine310());
+      that.removeLine(getLine345());
      that.unHighlightElement(MATH209CoopPlan1element, "Math");
      var category = that.removeFromClicked("MATH209CoopPlan1", "Math");
   if (category != "") { 
@@ -24147,31 +24167,31 @@ CME265CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine296());
-      that.addLine(getLine297());
-      that.addLine(getLine298());
-      that.addLine(getLine299());
-      that.addLine(getLine300());
-      that.addLine(getLine314());
-      that.addLine(getLine316());
-      that.addLine(getLine323());
-      that.addLine(getLine327());
-      that.addLine(getLine338());
+      that.addLine(getLine301());
+      that.addLine(getLine302());
+      that.addLine(getLine303());
+      that.addLine(getLine304());
+      that.addLine(getLine305());
+      that.addLine(getLine319());
+      that.addLine(getLine321());
+      that.addLine(getLine328());
+      that.addLine(getLine332());
+      that.addLine(getLine343());
      that.highlightElement(CME265CoopPlan1element, "EngineeringSciences");
      that.addToClicked("CME265CoopPlan1", "EngineeringSciences");
       CME265CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine296());
-      that.removeLine(getLine297());
-      that.removeLine(getLine298());
-      that.removeLine(getLine299());
-      that.removeLine(getLine300());
-      that.removeLine(getLine314());
-      that.removeLine(getLine316());
-      that.removeLine(getLine323());
-      that.removeLine(getLine327());
-      that.removeLine(getLine338());
+      that.removeLine(getLine301());
+      that.removeLine(getLine302());
+      that.removeLine(getLine303());
+      that.removeLine(getLine304());
+      that.removeLine(getLine305());
+      that.removeLine(getLine319());
+      that.removeLine(getLine321());
+      that.removeLine(getLine328());
+      that.removeLine(getLine332());
+      that.removeLine(getLine343());
      that.unHighlightElement(CME265CoopPlan1element, "EngineeringSciences");
      var category = that.removeFromClicked("CME265CoopPlan1", "EngineeringSciences");
   if (category != "") { 
@@ -24201,27 +24221,27 @@ CHE312CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine301());
-      that.addLine(getLine302());
-      that.addLine(getLine303());
-      that.addLine(getLine304());
-      that.addLine(getLine311());
-      that.addLine(getLine318());
-      that.addLine(getLine324());
-      that.addLine(getLine341());
+      that.addLine(getLine306());
+      that.addLine(getLine307());
+      that.addLine(getLine308());
+      that.addLine(getLine309());
+      that.addLine(getLine316());
+      that.addLine(getLine323());
+      that.addLine(getLine329());
+      that.addLine(getLine346());
      that.highlightElement(CHE312CoopPlan1element, "EngineeringSciences");
      that.addToClicked("CHE312CoopPlan1", "EngineeringSciences");
       CHE312CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine301());
-      that.removeLine(getLine302());
-      that.removeLine(getLine303());
-      that.removeLine(getLine304());
-      that.removeLine(getLine311());
-      that.removeLine(getLine318());
-      that.removeLine(getLine324());
-      that.removeLine(getLine341());
+      that.removeLine(getLine306());
+      that.removeLine(getLine307());
+      that.removeLine(getLine308());
+      that.removeLine(getLine309());
+      that.removeLine(getLine316());
+      that.removeLine(getLine323());
+      that.removeLine(getLine329());
+      that.removeLine(getLine346());
      that.unHighlightElement(CHE312CoopPlan1element, "EngineeringSciences");
      var category = that.removeFromClicked("CHE312CoopPlan1", "EngineeringSciences");
   if (category != "") { 
@@ -24285,19 +24305,19 @@ MATH201CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine304());
-      that.addLine(getLine305());
+      that.addLine(getLine309());
       that.addLine(getLine310());
-      that.addLine(getLine339());
+      that.addLine(getLine315());
+      that.addLine(getLine344());
      that.highlightElement(MATH201CoopPlan1element, "Math");
      that.addToClicked("MATH201CoopPlan1", "Math");
       MATH201CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine304());
-      that.removeLine(getLine305());
+      that.removeLine(getLine309());
       that.removeLine(getLine310());
-      that.removeLine(getLine339());
+      that.removeLine(getLine315());
+      that.removeLine(getLine344());
      that.unHighlightElement(MATH201CoopPlan1element, "Math");
      var category = that.removeFromClicked("MATH201CoopPlan1", "Math");
   if (category != "") { 
@@ -24361,17 +24381,17 @@ STAT235CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine306());
-      that.addLine(getLine307());
-      that.addLine(getLine331());
+      that.addLine(getLine311());
+      that.addLine(getLine312());
+      that.addLine(getLine336());
      that.highlightElement(STAT235CoopPlan1element, "Math");
      that.addToClicked("STAT235CoopPlan1", "Math");
       STAT235CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine306());
-      that.removeLine(getLine307());
-      that.removeLine(getLine331());
+      that.removeLine(getLine311());
+      that.removeLine(getLine312());
+      that.removeLine(getLine336());
      that.unHighlightElement(STAT235CoopPlan1element, "Math");
      var category = that.removeFromClicked("STAT235CoopPlan1", "Math");
   if (category != "") { 
@@ -24401,15 +24421,15 @@ WKEXP901CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine308());
-      that.addLine(getLine309());
+      that.addLine(getLine313());
+      that.addLine(getLine314());
      that.highlightElement(WKEXP901CoopPlan1element, "EngineeringProfession");
      that.addToClicked("WKEXP901CoopPlan1", "EngineeringProfession");
       WKEXP901CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine308());
-      that.removeLine(getLine309());
+      that.removeLine(getLine313());
+      that.removeLine(getLine314());
      that.unHighlightElement(WKEXP901CoopPlan1element, "EngineeringProfession");
      var category = that.removeFromClicked("WKEXP901CoopPlan1", "EngineeringProfession");
   if (category != "") { 
@@ -24439,15 +24459,15 @@ WKEXP902CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine309());
-      that.addLine(getLine334());
+      that.addLine(getLine314());
+      that.addLine(getLine339());
      that.highlightElement(WKEXP902CoopPlan1element, "EngineeringProfession");
      that.addToClicked("WKEXP902CoopPlan1", "EngineeringProfession");
       WKEXP902CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine309());
-      that.removeLine(getLine334());
+      that.removeLine(getLine314());
+      that.removeLine(getLine339());
      that.unHighlightElement(WKEXP902CoopPlan1element, "EngineeringProfession");
      var category = that.removeFromClicked("WKEXP902CoopPlan1", "EngineeringProfession");
   if (category != "") { 
@@ -24477,27 +24497,27 @@ CHE314CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine310());
-      that.addLine(getLine311());
-      that.addLine(getLine312());
-      that.addLine(getLine321());
+      that.addLine(getLine315());
+      that.addLine(getLine316());
+      that.addLine(getLine317());
       that.addLine(getLine326());
-      that.addLine(getLine332());
-      that.addLine(getLine335());
-      that.addLine(getLine342());
+      that.addLine(getLine331());
+      that.addLine(getLine337());
+      that.addLine(getLine340());
+      that.addLine(getLine347());
      that.highlightElement(CHE314CoopPlan1element, "EngineeringSciences");
      that.addToClicked("CHE314CoopPlan1", "EngineeringSciences");
       CHE314CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine310());
-      that.removeLine(getLine311());
-      that.removeLine(getLine312());
-      that.removeLine(getLine321());
+      that.removeLine(getLine315());
+      that.removeLine(getLine316());
+      that.removeLine(getLine317());
       that.removeLine(getLine326());
-      that.removeLine(getLine332());
-      that.removeLine(getLine335());
-      that.removeLine(getLine342());
+      that.removeLine(getLine331());
+      that.removeLine(getLine337());
+      that.removeLine(getLine340());
+      that.removeLine(getLine347());
      that.unHighlightElement(CHE314CoopPlan1element, "EngineeringSciences");
      var category = that.removeFromClicked("CHE314CoopPlan1", "EngineeringSciences");
   if (category != "") { 
@@ -24527,21 +24547,21 @@ CHE343CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine313());
-      that.addLine(getLine314());
-      that.addLine(getLine320());
+      that.addLine(getLine318());
+      that.addLine(getLine319());
       that.addLine(getLine325());
-      that.addLine(getLine328());
+      that.addLine(getLine330());
+      that.addLine(getLine333());
      that.highlightElement(CHE343CoopPlan1element, "EngineeringSciences");
      that.addToClicked("CHE343CoopPlan1", "EngineeringSciences");
       CHE343CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine313());
-      that.removeLine(getLine314());
-      that.removeLine(getLine320());
+      that.removeLine(getLine318());
+      that.removeLine(getLine319());
       that.removeLine(getLine325());
-      that.removeLine(getLine328());
+      that.removeLine(getLine330());
+      that.removeLine(getLine333());
      that.unHighlightElement(CHE343CoopPlan1element, "EngineeringSciences");
      var category = that.removeFromClicked("CHE343CoopPlan1", "EngineeringSciences");
   if (category != "") { 
@@ -24571,21 +24591,21 @@ CHE351CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine315());
-      that.addLine(getLine316());
-      that.addLine(getLine317());
-      that.addLine(getLine318());
-      that.addLine(getLine330());
+      that.addLine(getLine320());
+      that.addLine(getLine321());
+      that.addLine(getLine322());
+      that.addLine(getLine323());
+      that.addLine(getLine335());
      that.highlightElement(CHE351CoopPlan1element, "EngineeringSciences");
      that.addToClicked("CHE351CoopPlan1", "EngineeringSciences");
       CHE351CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine315());
-      that.removeLine(getLine316());
-      that.removeLine(getLine317());
-      that.removeLine(getLine318());
-      that.removeLine(getLine330());
+      that.removeLine(getLine320());
+      that.removeLine(getLine321());
+      that.removeLine(getLine322());
+      that.removeLine(getLine323());
+      that.removeLine(getLine335());
      that.unHighlightElement(CHE351CoopPlan1element, "EngineeringSciences");
      var category = that.removeFromClicked("CHE351CoopPlan1", "EngineeringSciences");
   if (category != "") { 
@@ -24615,17 +24635,17 @@ CHE374CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine312());
-      that.addLine(getLine319());
-      that.addLine(getLine329());
+      that.addLine(getLine317());
+      that.addLine(getLine324());
+      that.addLine(getLine334());
      that.highlightElement(CHE374CoopPlan1element, "EngineeringSciences");
      that.addToClicked("CHE374CoopPlan1", "EngineeringSciences");
       CHE374CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine312());
-      that.removeLine(getLine319());
-      that.removeLine(getLine329());
+      that.removeLine(getLine317());
+      that.removeLine(getLine324());
+      that.removeLine(getLine334());
      that.unHighlightElement(CHE374CoopPlan1element, "EngineeringSciences");
      var category = that.removeFromClicked("CHE374CoopPlan1", "EngineeringSciences");
   if (category != "") { 
@@ -24689,19 +24709,19 @@ CHE316CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine320());
-      that.addLine(getLine321());
-      that.addLine(getLine322());
-      that.addLine(getLine344());
+      that.addLine(getLine325());
+      that.addLine(getLine326());
+      that.addLine(getLine327());
+      that.addLine(getLine349());
      that.highlightElement(CHE316CoopPlan1element, "EngineeringSciences");
      that.addToClicked("CHE316CoopPlan1", "EngineeringSciences");
       CHE316CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine320());
-      that.removeLine(getLine321());
-      that.removeLine(getLine322());
-      that.removeLine(getLine344());
+      that.removeLine(getLine325());
+      that.removeLine(getLine326());
+      that.removeLine(getLine327());
+      that.removeLine(getLine349());
      that.unHighlightElement(CHE316CoopPlan1element, "EngineeringSciences");
      var category = that.removeFromClicked("CHE316CoopPlan1", "EngineeringSciences");
   if (category != "") { 
@@ -24731,25 +24751,25 @@ CHE318CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine322());
-      that.addLine(getLine323());
-      that.addLine(getLine324());
-      that.addLine(getLine325());
-      that.addLine(getLine326());
-      that.addLine(getLine336());
-      that.addLine(getLine350());
+      that.addLine(getLine327());
+      that.addLine(getLine328());
+      that.addLine(getLine329());
+      that.addLine(getLine330());
+      that.addLine(getLine331());
+      that.addLine(getLine341());
+      that.addLine(getLine355());
      that.highlightElement(CHE318CoopPlan1element, "EngineeringSciences");
      that.addToClicked("CHE318CoopPlan1", "EngineeringSciences");
       CHE318CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine322());
-      that.removeLine(getLine323());
-      that.removeLine(getLine324());
-      that.removeLine(getLine325());
-      that.removeLine(getLine326());
-      that.removeLine(getLine336());
-      that.removeLine(getLine350());
+      that.removeLine(getLine327());
+      that.removeLine(getLine328());
+      that.removeLine(getLine329());
+      that.removeLine(getLine330());
+      that.removeLine(getLine331());
+      that.removeLine(getLine341());
+      that.removeLine(getLine355());
      that.unHighlightElement(CHE318CoopPlan1element, "EngineeringSciences");
      var category = that.removeFromClicked("CHE318CoopPlan1", "EngineeringSciences");
   if (category != "") { 
@@ -24779,25 +24799,25 @@ CHE345CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine327());
-      that.addLine(getLine328());
-      that.addLine(getLine329());
+      that.addLine(getLine332());
       that.addLine(getLine333());
-      that.addLine(getLine337());
-      that.addLine(getLine343());
-      that.addLine(getLine351());
+      that.addLine(getLine334());
+      that.addLine(getLine338());
+      that.addLine(getLine342());
+      that.addLine(getLine348());
+      that.addLine(getLine356());
      that.highlightElement(CHE345CoopPlan1element, "EngineeringSciences");
      that.addToClicked("CHE345CoopPlan1", "EngineeringSciences");
       CHE345CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine327());
-      that.removeLine(getLine328());
-      that.removeLine(getLine329());
+      that.removeLine(getLine332());
       that.removeLine(getLine333());
-      that.removeLine(getLine337());
-      that.removeLine(getLine343());
-      that.removeLine(getLine351());
+      that.removeLine(getLine334());
+      that.removeLine(getLine338());
+      that.removeLine(getLine342());
+      that.removeLine(getLine348());
+      that.removeLine(getLine356());
      that.unHighlightElement(CHE345CoopPlan1element, "EngineeringSciences");
      var category = that.removeFromClicked("CHE345CoopPlan1", "EngineeringSciences");
   if (category != "") { 
@@ -24827,21 +24847,21 @@ CHE358CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine330());
-      that.addLine(getLine331());
-      that.addLine(getLine332());
-      that.addLine(getLine333());
-      that.addLine(getLine352());
+      that.addLine(getLine335());
+      that.addLine(getLine336());
+      that.addLine(getLine337());
+      that.addLine(getLine338());
+      that.addLine(getLine357());
      that.highlightElement(CHE358CoopPlan1element, "EngineeringSciences");
      that.addToClicked("CHE358CoopPlan1", "EngineeringSciences");
       CHE358CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine330());
-      that.removeLine(getLine331());
-      that.removeLine(getLine332());
-      that.removeLine(getLine333());
-      that.removeLine(getLine352());
+      that.removeLine(getLine335());
+      that.removeLine(getLine336());
+      that.removeLine(getLine337());
+      that.removeLine(getLine338());
+      that.removeLine(getLine357());
      that.unHighlightElement(CHE358CoopPlan1element, "EngineeringSciences");
      var category = that.removeFromClicked("CHE358CoopPlan1", "EngineeringSciences");
   if (category != "") { 
@@ -24871,13 +24891,13 @@ ENGM310CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine345());
+      that.addLine(getLine350());
      that.highlightElement(ENGM310CoopPlan1element, "Other");
      that.addToClicked("ENGM310CoopPlan1", "Other");
       ENGM310CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine345());
+      that.removeLine(getLine350());
      that.unHighlightElement(ENGM310CoopPlan1element, "Other");
      var category = that.removeFromClicked("ENGM310CoopPlan1", "Other");
   if (category != "") { 
@@ -24907,13 +24927,13 @@ ENGM401CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine346());
+      that.addLine(getLine351());
      that.highlightElement(ENGM401CoopPlan1element, "Other");
      that.addToClicked("ENGM401CoopPlan1", "Other");
       ENGM401CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine346());
+      that.removeLine(getLine351());
      that.unHighlightElement(ENGM401CoopPlan1element, "Other");
      var category = that.removeFromClicked("ENGM401CoopPlan1", "Other");
   if (category != "") { 
@@ -24943,15 +24963,15 @@ ENGG404CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine347());
-      that.addLine(getLine355());
+      that.addLine(getLine352());
+      that.addLine(getLine360());
      that.highlightElement(ENGG404CoopPlan1element, "EngineeringProfession");
      that.addToClicked("ENGG404CoopPlan1", "EngineeringProfession");
       ENGG404CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine347());
-      that.removeLine(getLine355());
+      that.removeLine(getLine352());
+      that.removeLine(getLine360());
      that.unHighlightElement(ENGG404CoopPlan1element, "EngineeringProfession");
      var category = that.removeFromClicked("ENGG404CoopPlan1", "EngineeringProfession");
   if (category != "") { 
@@ -24981,15 +25001,15 @@ WKEXP903CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine334());
-      that.addLine(getLine348());
+      that.addLine(getLine339());
+      that.addLine(getLine353());
      that.highlightElement(WKEXP903CoopPlan1element, "EngineeringProfession");
      that.addToClicked("WKEXP903CoopPlan1", "EngineeringProfession");
       WKEXP903CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine334());
-      that.removeLine(getLine348());
+      that.removeLine(getLine339());
+      that.removeLine(getLine353());
      that.unHighlightElement(WKEXP903CoopPlan1element, "EngineeringProfession");
      var category = that.removeFromClicked("WKEXP903CoopPlan1", "EngineeringProfession");
   if (category != "") { 
@@ -25019,17 +25039,17 @@ CHE445CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine335());
-      that.addLine(getLine336());
-      that.addLine(getLine337());
+      that.addLine(getLine340());
+      that.addLine(getLine341());
+      that.addLine(getLine342());
      that.highlightElement(CHE445CoopPlan1element, "EngineeringSciences");
      that.addToClicked("CHE445CoopPlan1", "EngineeringSciences");
       CHE445CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine335());
-      that.removeLine(getLine336());
-      that.removeLine(getLine337());
+      that.removeLine(getLine340());
+      that.removeLine(getLine341());
+      that.removeLine(getLine342());
      that.unHighlightElement(CHE445CoopPlan1element, "EngineeringSciences");
      var category = that.removeFromClicked("CHE445CoopPlan1", "EngineeringSciences");
   if (category != "") { 
@@ -25059,21 +25079,21 @@ CHE446CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine338());
-      that.addLine(getLine339());
-      that.addLine(getLine340());
-      that.addLine(getLine341());
-      that.addLine(getLine353());
+      that.addLine(getLine343());
+      that.addLine(getLine344());
+      that.addLine(getLine345());
+      that.addLine(getLine346());
+      that.addLine(getLine358());
      that.highlightElement(CHE446CoopPlan1element, "EngineeringSciences");
      that.addToClicked("CHE446CoopPlan1", "EngineeringSciences");
       CHE446CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine338());
-      that.removeLine(getLine339());
-      that.removeLine(getLine340());
-      that.removeLine(getLine341());
-      that.removeLine(getLine353());
+      that.removeLine(getLine343());
+      that.removeLine(getLine344());
+      that.removeLine(getLine345());
+      that.removeLine(getLine346());
+      that.removeLine(getLine358());
      that.unHighlightElement(CHE446CoopPlan1element, "EngineeringSciences");
      var category = that.removeFromClicked("CHE446CoopPlan1", "EngineeringSciences");
   if (category != "") { 
@@ -25103,25 +25123,25 @@ CHE464CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine342());
-      that.addLine(getLine343());
-      that.addLine(getLine344());
-      that.addLine(getLine345());
-      that.addLine(getLine346());
       that.addLine(getLine347());
-      that.addLine(getLine354());
+      that.addLine(getLine348());
+      that.addLine(getLine349());
+      that.addLine(getLine350());
+      that.addLine(getLine351());
+      that.addLine(getLine352());
+      that.addLine(getLine359());
      that.highlightElement(CHE464CoopPlan1element, "EngineeringDesign");
      that.addToClicked("CHE464CoopPlan1", "EngineeringDesign");
       CHE464CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine342());
-      that.removeLine(getLine343());
-      that.removeLine(getLine344());
-      that.removeLine(getLine345());
-      that.removeLine(getLine346());
       that.removeLine(getLine347());
-      that.removeLine(getLine354());
+      that.removeLine(getLine348());
+      that.removeLine(getLine349());
+      that.removeLine(getLine350());
+      that.removeLine(getLine351());
+      that.removeLine(getLine352());
+      that.removeLine(getLine359());
      that.unHighlightElement(CHE464CoopPlan1element, "EngineeringDesign");
      var category = that.removeFromClicked("CHE464CoopPlan1", "EngineeringDesign");
   if (category != "") { 
@@ -25253,15 +25273,15 @@ WKEXP904CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine348());
-      that.addLine(getLine349());
+      that.addLine(getLine353());
+      that.addLine(getLine354());
      that.highlightElement(WKEXP904CoopPlan1element, "EngineeringProfession");
      that.addToClicked("WKEXP904CoopPlan1", "EngineeringProfession");
       WKEXP904CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine348());
-      that.removeLine(getLine349());
+      that.removeLine(getLine353());
+      that.removeLine(getLine354());
      that.unHighlightElement(WKEXP904CoopPlan1element, "EngineeringProfession");
      var category = that.removeFromClicked("WKEXP904CoopPlan1", "EngineeringProfession");
   if (category != "") { 
@@ -25291,13 +25311,13 @@ WKEXP905CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine349());
+      that.addLine(getLine354());
      that.highlightElement(WKEXP905CoopPlan1element, "EngineeringProfession");
      that.addToClicked("WKEXP905CoopPlan1", "EngineeringProfession");
       WKEXP905CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine349());
+      that.removeLine(getLine354());
      that.unHighlightElement(WKEXP905CoopPlan1element, "EngineeringProfession");
      var category = that.removeFromClicked("WKEXP905CoopPlan1", "EngineeringProfession");
   if (category != "") { 
@@ -25327,17 +25347,17 @@ CHE454CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine350());
-      that.addLine(getLine351());
-      that.addLine(getLine352());
+      that.addLine(getLine355());
+      that.addLine(getLine356());
+      that.addLine(getLine357());
      that.highlightElement(CHE454CoopPlan1element, "EngineeringSciences");
      that.addToClicked("CHE454CoopPlan1", "EngineeringSciences");
       CHE454CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine350());
-      that.removeLine(getLine351());
-      that.removeLine(getLine352());
+      that.removeLine(getLine355());
+      that.removeLine(getLine356());
+      that.removeLine(getLine357());
      that.unHighlightElement(CHE454CoopPlan1element, "EngineeringSciences");
      var category = that.removeFromClicked("CHE454CoopPlan1", "EngineeringSciences");
   if (category != "") { 
@@ -25367,17 +25387,17 @@ CHE465CoopPlan1Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine353());
-      that.addLine(getLine354());
-      that.addLine(getLine355());
+      that.addLine(getLine358());
+      that.addLine(getLine359());
+      that.addLine(getLine360());
      that.highlightElement(CHE465CoopPlan1element, "EngineeringDesign");
      that.addToClicked("CHE465CoopPlan1", "EngineeringDesign");
       CHE465CoopPlan1flag=true
   }
  else {
-      that.removeLine(getLine353());
-      that.removeLine(getLine354());
-      that.removeLine(getLine355());
+      that.removeLine(getLine358());
+      that.removeLine(getLine359());
+      that.removeLine(getLine360());
      that.unHighlightElement(CHE465CoopPlan1element, "EngineeringDesign");
      var category = that.removeFromClicked("CHE465CoopPlan1", "EngineeringDesign");
   if (category != "") { 
@@ -26967,13 +26987,15 @@ CHEM103CoopPlan2Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine358());
+      that.addLine(getLine363());
+      that.addLine(getLine371());
      that.highlightElement(CHEM103CoopPlan2element, "NaturalSciences");
      that.addToClicked("CHEM103CoopPlan2", "NaturalSciences");
       CHEM103CoopPlan2flag=true
   }
  else {
-      that.removeLine(getLine358());
+      that.removeLine(getLine363());
+      that.removeLine(getLine371());
      that.unHighlightElement(CHEM103CoopPlan2element, "NaturalSciences");
      var category = that.removeFromClicked("CHEM103CoopPlan2", "NaturalSciences");
   if (category != "") { 
@@ -27037,15 +27059,15 @@ ENGG130CoopPlan2Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine356());
       that.addLine(getLine361());
+      that.addLine(getLine366());
      that.highlightElement(ENGG130CoopPlan2element, "NaturalSciences");
      that.addToClicked("ENGG130CoopPlan2", "NaturalSciences");
       ENGG130CoopPlan2flag=true
   }
  else {
-      that.removeLine(getLine356());
       that.removeLine(getLine361());
+      that.removeLine(getLine366());
      that.unHighlightElement(ENGG130CoopPlan2element, "NaturalSciences");
      var category = that.removeFromClicked("ENGG130CoopPlan2", "NaturalSciences");
   if (category != "") { 
@@ -27075,15 +27097,15 @@ ENGL199CoopPlan2Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine359());
-      that.addLine(getLine387());
+      that.addLine(getLine364());
+      that.addLine(getLine393());
      that.highlightElement(ENGL199CoopPlan2element, "Other");
      that.addToClicked("ENGL199CoopPlan2", "Other");
       ENGL199CoopPlan2flag=true
   }
  else {
-      that.removeLine(getLine359());
-      that.removeLine(getLine387());
+      that.removeLine(getLine364());
+      that.removeLine(getLine393());
      that.unHighlightElement(ENGL199CoopPlan2element, "Other");
      var category = that.removeFromClicked("ENGL199CoopPlan2", "Other");
   if (category != "") { 
@@ -27113,23 +27135,23 @@ MATH100CoopPlan2Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine356());
-      that.addLine(getLine357());
-      that.addLine(getLine360());
-      that.addLine(getLine363());
-      that.addLine(getLine364());
-      that.addLine(getLine380());
+      that.addLine(getLine361());
+      that.addLine(getLine362());
+      that.addLine(getLine365());
+      that.addLine(getLine368());
+      that.addLine(getLine369());
+      that.addLine(getLine386());
      that.highlightElement(MATH100CoopPlan2element, "Math");
      that.addToClicked("MATH100CoopPlan2", "Math");
       MATH100CoopPlan2flag=true
   }
  else {
-      that.removeLine(getLine356());
-      that.removeLine(getLine357());
-      that.removeLine(getLine360());
-      that.removeLine(getLine363());
-      that.removeLine(getLine364());
-      that.removeLine(getLine380());
+      that.removeLine(getLine361());
+      that.removeLine(getLine362());
+      that.removeLine(getLine365());
+      that.removeLine(getLine368());
+      that.removeLine(getLine369());
+      that.removeLine(getLine386());
      that.unHighlightElement(MATH100CoopPlan2element, "Math");
      var category = that.removeFromClicked("MATH100CoopPlan2", "Math");
   if (category != "") { 
@@ -27159,13 +27181,13 @@ PHYS130CoopPlan2Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine357());
+      that.addLine(getLine362());
      that.highlightElement(PHYS130CoopPlan2element, "NaturalSciences");
      that.addToClicked("PHYS130CoopPlan2", "NaturalSciences");
       PHYS130CoopPlan2flag=true
   }
  else {
-      that.removeLine(getLine357());
+      that.removeLine(getLine362());
      that.unHighlightElement(PHYS130CoopPlan2element, "NaturalSciences");
      var category = that.removeFromClicked("PHYS130CoopPlan2", "NaturalSciences");
   if (category != "") { 
@@ -27195,17 +27217,17 @@ CHEM105CoopPlan2Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine358());
-      that.addLine(getLine368());
-      that.addLine(getLine378());
+      that.addLine(getLine363());
+      that.addLine(getLine374());
+      that.addLine(getLine384());
      that.highlightElement(CHEM105CoopPlan2element, "NaturalSciences");
      that.addToClicked("CHEM105CoopPlan2", "NaturalSciences");
       CHEM105CoopPlan2flag=true
   }
  else {
-      that.removeLine(getLine358());
-      that.removeLine(getLine368());
-      that.removeLine(getLine378());
+      that.removeLine(getLine363());
+      that.removeLine(getLine374());
+      that.removeLine(getLine384());
      that.unHighlightElement(CHEM105CoopPlan2element, "NaturalSciences");
      var category = that.removeFromClicked("CHEM105CoopPlan2", "NaturalSciences");
   if (category != "") { 
@@ -27235,15 +27257,15 @@ ENCMP100CoopPlan2Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine366());
-      that.addLine(getLine391());
+      that.addLine(getLine372());
+      that.addLine(getLine397());
      that.highlightElement(ENCMP100CoopPlan2element, "NaturalSciences");
      that.addToClicked("ENCMP100CoopPlan2", "NaturalSciences");
       ENCMP100CoopPlan2flag=true
   }
  else {
-      that.removeLine(getLine366());
-      that.removeLine(getLine391());
+      that.removeLine(getLine372());
+      that.removeLine(getLine397());
      that.unHighlightElement(ENCMP100CoopPlan2element, "NaturalSciences");
      var category = that.removeFromClicked("ENCMP100CoopPlan2", "NaturalSciences");
   if (category != "") { 
@@ -27273,13 +27295,13 @@ ENGG160CoopPlan2Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine359());
+      that.addLine(getLine364());
      that.highlightElement(ENGG160CoopPlan2element, "EngineeringDesign");
      that.addToClicked("ENGG160CoopPlan2", "EngineeringDesign");
       ENGG160CoopPlan2flag=true
   }
  else {
-      that.removeLine(getLine359());
+      that.removeLine(getLine364());
      that.unHighlightElement(ENGG160CoopPlan2element, "EngineeringDesign");
      var category = that.removeFromClicked("ENGG160CoopPlan2", "EngineeringDesign");
   if (category != "") { 
@@ -27309,19 +27331,19 @@ ENPH131CoopPlan2Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine360());
-      that.addLine(getLine361());
-      that.addLine(getLine362());
-      that.addLine(getLine375());
+      that.addLine(getLine365());
+      that.addLine(getLine366());
+      that.addLine(getLine367());
+      that.addLine(getLine381());
      that.highlightElement(ENPH131CoopPlan2element, "NaturalSciences");
      that.addToClicked("ENPH131CoopPlan2", "NaturalSciences");
       ENPH131CoopPlan2flag=true
   }
  else {
-      that.removeLine(getLine360());
-      that.removeLine(getLine361());
-      that.removeLine(getLine362());
-      that.removeLine(getLine375());
+      that.removeLine(getLine365());
+      that.removeLine(getLine366());
+      that.removeLine(getLine367());
+      that.removeLine(getLine381());
      that.unHighlightElement(ENPH131CoopPlan2element, "NaturalSciences");
      var category = that.removeFromClicked("ENPH131CoopPlan2", "NaturalSciences");
   if (category != "") { 
@@ -27351,21 +27373,21 @@ MATH101CoopPlan2Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine362());
-      that.addLine(getLine363());
-      that.addLine(getLine365());
-      that.addLine(getLine371());
-      that.addLine(getLine381());
+      that.addLine(getLine367());
+      that.addLine(getLine368());
+      that.addLine(getLine370());
+      that.addLine(getLine377());
+      that.addLine(getLine387());
      that.highlightElement(MATH101CoopPlan2element, "Math");
      that.addToClicked("MATH101CoopPlan2", "Math");
       MATH101CoopPlan2flag=true
   }
  else {
-      that.removeLine(getLine362());
-      that.removeLine(getLine363());
-      that.removeLine(getLine365());
-      that.removeLine(getLine371());
-      that.removeLine(getLine381());
+      that.removeLine(getLine367());
+      that.removeLine(getLine368());
+      that.removeLine(getLine370());
+      that.removeLine(getLine377());
+      that.removeLine(getLine387());
      that.unHighlightElement(MATH101CoopPlan2element, "Math");
      var category = that.removeFromClicked("MATH101CoopPlan2", "Math");
   if (category != "") { 
@@ -27395,17 +27417,17 @@ MATH102CoopPlan2Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine364());
-      that.addLine(getLine367());
-      that.addLine(getLine372());
+      that.addLine(getLine369());
+      that.addLine(getLine373());
+      that.addLine(getLine378());
      that.highlightElement(MATH102CoopPlan2element, "Math");
      that.addToClicked("MATH102CoopPlan2", "Math");
       MATH102CoopPlan2flag=true
   }
  else {
-      that.removeLine(getLine364());
-      that.removeLine(getLine367());
-      that.removeLine(getLine372());
+      that.removeLine(getLine369());
+      that.removeLine(getLine373());
+      that.removeLine(getLine378());
      that.unHighlightElement(MATH102CoopPlan2element, "Math");
      var category = that.removeFromClicked("MATH102CoopPlan2", "Math");
   if (category != "") { 
@@ -27435,21 +27457,21 @@ CHE243CoopPlan2Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine365());
-      that.addLine(getLine369());
-      that.addLine(getLine374());
-      that.addLine(getLine385());
-      that.addLine(getLine389());
+      that.addLine(getLine370());
+      that.addLine(getLine375());
+      that.addLine(getLine380());
+      that.addLine(getLine391());
+      that.addLine(getLine395());
      that.highlightElement(CHE243CoopPlan2element, "EngineeringSciences");
      that.addToClicked("CHE243CoopPlan2", "EngineeringSciences");
       CHE243CoopPlan2flag=true
   }
  else {
-      that.removeLine(getLine365());
-      that.removeLine(getLine369());
-      that.removeLine(getLine374());
-      that.removeLine(getLine385());
-      that.removeLine(getLine389());
+      that.removeLine(getLine370());
+      that.removeLine(getLine375());
+      that.removeLine(getLine380());
+      that.removeLine(getLine391());
+      that.removeLine(getLine395());
      that.unHighlightElement(CHE243CoopPlan2element, "EngineeringSciences");
      var category = that.removeFromClicked("CHE243CoopPlan2", "EngineeringSciences");
   if (category != "") { 
@@ -27479,11 +27501,13 @@ CHEM261CoopPlan2Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
+      that.addLine(getLine371());
      that.highlightElement(CHEM261CoopPlan2element, "NaturalSciences");
      that.addToClicked("CHEM261CoopPlan2", "NaturalSciences");
       CHEM261CoopPlan2flag=true
   }
  else {
+      that.removeLine(getLine371());
      that.unHighlightElement(CHEM261CoopPlan2element, "NaturalSciences");
      var category = that.removeFromClicked("CHEM261CoopPlan2", "NaturalSciences");
   if (category != "") { 
@@ -27547,31 +27571,31 @@ CME265CoopPlan2Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine366());
-      that.addLine(getLine367());
-      that.addLine(getLine368());
-      that.addLine(getLine369());
-      that.addLine(getLine370());
-      that.addLine(getLine386());
-      that.addLine(getLine388());
-      that.addLine(getLine397());
-      that.addLine(getLine401());
-      that.addLine(getLine411());
+      that.addLine(getLine372());
+      that.addLine(getLine373());
+      that.addLine(getLine374());
+      that.addLine(getLine375());
+      that.addLine(getLine376());
+      that.addLine(getLine392());
+      that.addLine(getLine394());
+      that.addLine(getLine403());
+      that.addLine(getLine407());
+      that.addLine(getLine417());
      that.highlightElement(CME265CoopPlan2element, "EngineeringSciences");
      that.addToClicked("CME265CoopPlan2", "EngineeringSciences");
       CME265CoopPlan2flag=true
   }
  else {
-      that.removeLine(getLine366());
-      that.removeLine(getLine367());
-      that.removeLine(getLine368());
-      that.removeLine(getLine369());
-      that.removeLine(getLine370());
-      that.removeLine(getLine386());
-      that.removeLine(getLine388());
-      that.removeLine(getLine397());
-      that.removeLine(getLine401());
-      that.removeLine(getLine411());
+      that.removeLine(getLine372());
+      that.removeLine(getLine373());
+      that.removeLine(getLine374());
+      that.removeLine(getLine375());
+      that.removeLine(getLine376());
+      that.removeLine(getLine392());
+      that.removeLine(getLine394());
+      that.removeLine(getLine403());
+      that.removeLine(getLine407());
+      that.removeLine(getLine417());
      that.unHighlightElement(CME265CoopPlan2element, "EngineeringSciences");
      var category = that.removeFromClicked("CME265CoopPlan2", "EngineeringSciences");
   if (category != "") { 
@@ -27601,13 +27625,13 @@ ENGG299CoopPlan2Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine373());
+      that.addLine(getLine379());
      that.highlightElement(ENGG299CoopPlan2element, "EngineeringProfession");
      that.addToClicked("ENGG299CoopPlan2", "EngineeringProfession");
       ENGG299CoopPlan2flag=true
   }
  else {
-      that.removeLine(getLine373());
+      that.removeLine(getLine379());
      that.unHighlightElement(ENGG299CoopPlan2element, "EngineeringProfession");
      var category = that.removeFromClicked("ENGG299CoopPlan2", "EngineeringProfession");
   if (category != "") { 
@@ -27637,23 +27661,23 @@ MATH209CoopPlan2Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine370());
-      that.addLine(getLine371());
-      that.addLine(getLine372());
       that.addLine(getLine376());
-      that.addLine(getLine379());
-      that.addLine(getLine413());
+      that.addLine(getLine377());
+      that.addLine(getLine378());
+      that.addLine(getLine382());
+      that.addLine(getLine385());
+      that.addLine(getLine419());
      that.highlightElement(MATH209CoopPlan2element, "Math");
      that.addToClicked("MATH209CoopPlan2", "Math");
       MATH209CoopPlan2flag=true
   }
  else {
-      that.removeLine(getLine370());
-      that.removeLine(getLine371());
-      that.removeLine(getLine372());
       that.removeLine(getLine376());
-      that.removeLine(getLine379());
-      that.removeLine(getLine413());
+      that.removeLine(getLine377());
+      that.removeLine(getLine378());
+      that.removeLine(getLine382());
+      that.removeLine(getLine385());
+      that.removeLine(getLine419());
      that.unHighlightElement(MATH209CoopPlan2element, "Math");
      var category = that.removeFromClicked("MATH209CoopPlan2", "Math");
   if (category != "") { 
@@ -27751,15 +27775,15 @@ WKEXP901CoopPlan2Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine373());
-      that.addLine(getLine392());
+      that.addLine(getLine379());
+      that.addLine(getLine398());
      that.highlightElement(WKEXP901CoopPlan2element, "EngineeringProfession");
      that.addToClicked("WKEXP901CoopPlan2", "EngineeringProfession");
       WKEXP901CoopPlan2flag=true
   }
  else {
-      that.removeLine(getLine373());
-      that.removeLine(getLine392());
+      that.removeLine(getLine379());
+      that.removeLine(getLine398());
      that.unHighlightElement(WKEXP901CoopPlan2element, "EngineeringProfession");
      var category = that.removeFromClicked("WKEXP901CoopPlan2", "EngineeringProfession");
   if (category != "") { 
@@ -27789,27 +27813,27 @@ CHE312CoopPlan2Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine374());
-      that.addLine(getLine375());
-      that.addLine(getLine376());
-      that.addLine(getLine377());
+      that.addLine(getLine380());
+      that.addLine(getLine381());
+      that.addLine(getLine382());
       that.addLine(getLine383());
-      that.addLine(getLine390());
-      that.addLine(getLine398());
-      that.addLine(getLine414());
+      that.addLine(getLine389());
+      that.addLine(getLine396());
+      that.addLine(getLine404());
+      that.addLine(getLine420());
      that.highlightElement(CHE312CoopPlan2element, "EngineeringSciences");
      that.addToClicked("CHE312CoopPlan2", "EngineeringSciences");
       CHE312CoopPlan2flag=true
   }
  else {
-      that.removeLine(getLine374());
-      that.removeLine(getLine375());
-      that.removeLine(getLine376());
-      that.removeLine(getLine377());
+      that.removeLine(getLine380());
+      that.removeLine(getLine381());
+      that.removeLine(getLine382());
       that.removeLine(getLine383());
-      that.removeLine(getLine390());
-      that.removeLine(getLine398());
-      that.removeLine(getLine414());
+      that.removeLine(getLine389());
+      that.removeLine(getLine396());
+      that.removeLine(getLine404());
+      that.removeLine(getLine420());
      that.unHighlightElement(CHE312CoopPlan2element, "EngineeringSciences");
      var category = that.removeFromClicked("CHE312CoopPlan2", "EngineeringSciences");
   if (category != "") { 
@@ -27873,13 +27897,13 @@ MATE202CoopPlan2Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine378());
+      that.addLine(getLine384());
      that.highlightElement(MATE202CoopPlan2element, "EngineeringSciences");
      that.addToClicked("MATE202CoopPlan2", "EngineeringSciences");
       MATE202CoopPlan2flag=true
   }
  else {
-      that.removeLine(getLine378());
+      that.removeLine(getLine384());
      that.unHighlightElement(MATE202CoopPlan2element, "EngineeringSciences");
      var category = that.removeFromClicked("MATE202CoopPlan2", "EngineeringSciences");
   if (category != "") { 
@@ -27909,19 +27933,19 @@ MATH201CoopPlan2Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine377());
-      that.addLine(getLine379());
-      that.addLine(getLine382());
-      that.addLine(getLine412());
+      that.addLine(getLine383());
+      that.addLine(getLine385());
+      that.addLine(getLine388());
+      that.addLine(getLine418());
      that.highlightElement(MATH201CoopPlan2element, "Math");
      that.addToClicked("MATH201CoopPlan2", "Math");
       MATH201CoopPlan2flag=true
   }
  else {
-      that.removeLine(getLine377());
-      that.removeLine(getLine379());
-      that.removeLine(getLine382());
-      that.removeLine(getLine412());
+      that.removeLine(getLine383());
+      that.removeLine(getLine385());
+      that.removeLine(getLine388());
+      that.removeLine(getLine418());
      that.unHighlightElement(MATH201CoopPlan2element, "Math");
      var category = that.removeFromClicked("MATH201CoopPlan2", "Math");
   if (category != "") { 
@@ -27951,13 +27975,13 @@ ENGM310CoopPlan2Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine418());
+      that.addLine(getLine424());
      that.highlightElement(ENGM310CoopPlan2element, "Other");
      that.addToClicked("ENGM310CoopPlan2", "Other");
       ENGM310CoopPlan2flag=true
   }
  else {
-      that.removeLine(getLine418());
+      that.removeLine(getLine424());
      that.unHighlightElement(ENGM310CoopPlan2element, "Other");
      var category = that.removeFromClicked("ENGM310CoopPlan2", "Other");
   if (category != "") { 
@@ -27987,13 +28011,13 @@ ENGM401CoopPlan2Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine419());
+      that.addLine(getLine425());
      that.highlightElement(ENGM401CoopPlan2element, "Other");
      that.addToClicked("ENGM401CoopPlan2", "Other");
       ENGM401CoopPlan2flag=true
   }
  else {
-      that.removeLine(getLine419());
+      that.removeLine(getLine425());
      that.unHighlightElement(ENGM401CoopPlan2element, "Other");
      var category = that.removeFromClicked("ENGM401CoopPlan2", "Other");
   if (category != "") { 
@@ -28023,17 +28047,17 @@ STAT235CoopPlan2Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine380());
-      that.addLine(getLine381());
-      that.addLine(getLine405());
+      that.addLine(getLine386());
+      that.addLine(getLine387());
+      that.addLine(getLine411());
      that.highlightElement(STAT235CoopPlan2element, "Math");
      that.addToClicked("STAT235CoopPlan2", "Math");
       STAT235CoopPlan2flag=true
   }
  else {
-      that.removeLine(getLine380());
-      that.removeLine(getLine381());
-      that.removeLine(getLine405());
+      that.removeLine(getLine386());
+      that.removeLine(getLine387());
+      that.removeLine(getLine411());
      that.unHighlightElement(STAT235CoopPlan2element, "Math");
      var category = that.removeFromClicked("STAT235CoopPlan2", "Math");
   if (category != "") { 
@@ -28063,27 +28087,27 @@ CHE314CoopPlan2Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine382());
-      that.addLine(getLine383());
-      that.addLine(getLine384());
-      that.addLine(getLine395());
-      that.addLine(getLine400());
+      that.addLine(getLine388());
+      that.addLine(getLine389());
+      that.addLine(getLine390());
+      that.addLine(getLine401());
       that.addLine(getLine406());
-      that.addLine(getLine408());
-      that.addLine(getLine415());
+      that.addLine(getLine412());
+      that.addLine(getLine414());
+      that.addLine(getLine421());
      that.highlightElement(CHE314CoopPlan2element, "EngineeringSciences");
      that.addToClicked("CHE314CoopPlan2", "EngineeringSciences");
       CHE314CoopPlan2flag=true
   }
  else {
-      that.removeLine(getLine382());
-      that.removeLine(getLine383());
-      that.removeLine(getLine384());
-      that.removeLine(getLine395());
-      that.removeLine(getLine400());
+      that.removeLine(getLine388());
+      that.removeLine(getLine389());
+      that.removeLine(getLine390());
+      that.removeLine(getLine401());
       that.removeLine(getLine406());
-      that.removeLine(getLine408());
-      that.removeLine(getLine415());
+      that.removeLine(getLine412());
+      that.removeLine(getLine414());
+      that.removeLine(getLine421());
      that.unHighlightElement(CHE314CoopPlan2element, "EngineeringSciences");
      var category = that.removeFromClicked("CHE314CoopPlan2", "EngineeringSciences");
   if (category != "") { 
@@ -28113,21 +28137,21 @@ CHE343CoopPlan2Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine385());
-      that.addLine(getLine386());
-      that.addLine(getLine394());
-      that.addLine(getLine399());
-      that.addLine(getLine402());
+      that.addLine(getLine391());
+      that.addLine(getLine392());
+      that.addLine(getLine400());
+      that.addLine(getLine405());
+      that.addLine(getLine408());
      that.highlightElement(CHE343CoopPlan2element, "EngineeringSciences");
      that.addToClicked("CHE343CoopPlan2", "EngineeringSciences");
       CHE343CoopPlan2flag=true
   }
  else {
-      that.removeLine(getLine385());
-      that.removeLine(getLine386());
-      that.removeLine(getLine394());
-      that.removeLine(getLine399());
-      that.removeLine(getLine402());
+      that.removeLine(getLine391());
+      that.removeLine(getLine392());
+      that.removeLine(getLine400());
+      that.removeLine(getLine405());
+      that.removeLine(getLine408());
      that.unHighlightElement(CHE343CoopPlan2element, "EngineeringSciences");
      var category = that.removeFromClicked("CHE343CoopPlan2", "EngineeringSciences");
   if (category != "") { 
@@ -28157,21 +28181,21 @@ CHE351CoopPlan2Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine387());
-      that.addLine(getLine388());
-      that.addLine(getLine389());
-      that.addLine(getLine390());
-      that.addLine(getLine404());
+      that.addLine(getLine393());
+      that.addLine(getLine394());
+      that.addLine(getLine395());
+      that.addLine(getLine396());
+      that.addLine(getLine410());
      that.highlightElement(CHE351CoopPlan2element, "EngineeringSciences");
      that.addToClicked("CHE351CoopPlan2", "EngineeringSciences");
       CHE351CoopPlan2flag=true
   }
  else {
-      that.removeLine(getLine387());
-      that.removeLine(getLine388());
-      that.removeLine(getLine389());
-      that.removeLine(getLine390());
-      that.removeLine(getLine404());
+      that.removeLine(getLine393());
+      that.removeLine(getLine394());
+      that.removeLine(getLine395());
+      that.removeLine(getLine396());
+      that.removeLine(getLine410());
      that.unHighlightElement(CHE351CoopPlan2element, "EngineeringSciences");
      var category = that.removeFromClicked("CHE351CoopPlan2", "EngineeringSciences");
   if (category != "") { 
@@ -28201,17 +28225,17 @@ CHE374CoopPlan2Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine384());
-      that.addLine(getLine391());
-      that.addLine(getLine403());
+      that.addLine(getLine390());
+      that.addLine(getLine397());
+      that.addLine(getLine409());
      that.highlightElement(CHE374CoopPlan2element, "EngineeringSciences");
      that.addToClicked("CHE374CoopPlan2", "EngineeringSciences");
       CHE374CoopPlan2flag=true
   }
  else {
-      that.removeLine(getLine384());
-      that.removeLine(getLine391());
-      that.removeLine(getLine403());
+      that.removeLine(getLine390());
+      that.removeLine(getLine397());
+      that.removeLine(getLine409());
      that.unHighlightElement(CHE374CoopPlan2element, "EngineeringSciences");
      var category = that.removeFromClicked("CHE374CoopPlan2", "EngineeringSciences");
   if (category != "") { 
@@ -28275,15 +28299,15 @@ WKEXP902CoopPlan2Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine392());
-      that.addLine(getLine393());
+      that.addLine(getLine398());
+      that.addLine(getLine399());
      that.highlightElement(WKEXP902CoopPlan2element, "EngineeringProfession");
      that.addToClicked("WKEXP902CoopPlan2", "EngineeringProfession");
       WKEXP902CoopPlan2flag=true
   }
  else {
-      that.removeLine(getLine392());
-      that.removeLine(getLine393());
+      that.removeLine(getLine398());
+      that.removeLine(getLine399());
      that.unHighlightElement(WKEXP902CoopPlan2element, "EngineeringProfession");
      var category = that.removeFromClicked("WKEXP902CoopPlan2", "EngineeringProfession");
   if (category != "") { 
@@ -28313,15 +28337,15 @@ WKEXP903CoopPlan2Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine393());
-      that.addLine(getLine421());
+      that.addLine(getLine399());
+      that.addLine(getLine427());
      that.highlightElement(WKEXP903CoopPlan2element, "EngineeringProfession");
      that.addToClicked("WKEXP903CoopPlan2", "EngineeringProfession");
       WKEXP903CoopPlan2flag=true
   }
  else {
-      that.removeLine(getLine393());
-      that.removeLine(getLine421());
+      that.removeLine(getLine399());
+      that.removeLine(getLine427());
      that.unHighlightElement(WKEXP903CoopPlan2element, "EngineeringProfession");
      var category = that.removeFromClicked("WKEXP903CoopPlan2", "EngineeringProfession");
   if (category != "") { 
@@ -28351,19 +28375,19 @@ CHE316CoopPlan2Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine394());
-      that.addLine(getLine395());
-      that.addLine(getLine396());
-      that.addLine(getLine417());
+      that.addLine(getLine400());
+      that.addLine(getLine401());
+      that.addLine(getLine402());
+      that.addLine(getLine423());
      that.highlightElement(CHE316CoopPlan2element, "EngineeringSciences");
      that.addToClicked("CHE316CoopPlan2", "EngineeringSciences");
       CHE316CoopPlan2flag=true
   }
  else {
-      that.removeLine(getLine394());
-      that.removeLine(getLine395());
-      that.removeLine(getLine396());
-      that.removeLine(getLine417());
+      that.removeLine(getLine400());
+      that.removeLine(getLine401());
+      that.removeLine(getLine402());
+      that.removeLine(getLine423());
      that.unHighlightElement(CHE316CoopPlan2element, "EngineeringSciences");
      var category = that.removeFromClicked("CHE316CoopPlan2", "EngineeringSciences");
   if (category != "") { 
@@ -28393,25 +28417,25 @@ CHE318CoopPlan2Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine396());
-      that.addLine(getLine397());
-      that.addLine(getLine398());
-      that.addLine(getLine399());
-      that.addLine(getLine400());
-      that.addLine(getLine409());
-      that.addLine(getLine423());
+      that.addLine(getLine402());
+      that.addLine(getLine403());
+      that.addLine(getLine404());
+      that.addLine(getLine405());
+      that.addLine(getLine406());
+      that.addLine(getLine415());
+      that.addLine(getLine429());
      that.highlightElement(CHE318CoopPlan2element, "EngineeringSciences");
      that.addToClicked("CHE318CoopPlan2", "EngineeringSciences");
       CHE318CoopPlan2flag=true
   }
  else {
-      that.removeLine(getLine396());
-      that.removeLine(getLine397());
-      that.removeLine(getLine398());
-      that.removeLine(getLine399());
-      that.removeLine(getLine400());
-      that.removeLine(getLine409());
-      that.removeLine(getLine423());
+      that.removeLine(getLine402());
+      that.removeLine(getLine403());
+      that.removeLine(getLine404());
+      that.removeLine(getLine405());
+      that.removeLine(getLine406());
+      that.removeLine(getLine415());
+      that.removeLine(getLine429());
      that.unHighlightElement(CHE318CoopPlan2element, "EngineeringSciences");
      var category = that.removeFromClicked("CHE318CoopPlan2", "EngineeringSciences");
   if (category != "") { 
@@ -28441,25 +28465,25 @@ CHE345CoopPlan2Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine401());
-      that.addLine(getLine402());
-      that.addLine(getLine403());
       that.addLine(getLine407());
-      that.addLine(getLine410());
+      that.addLine(getLine408());
+      that.addLine(getLine409());
+      that.addLine(getLine413());
       that.addLine(getLine416());
-      that.addLine(getLine424());
+      that.addLine(getLine422());
+      that.addLine(getLine430());
      that.highlightElement(CHE345CoopPlan2element, "EngineeringSciences");
      that.addToClicked("CHE345CoopPlan2", "EngineeringSciences");
       CHE345CoopPlan2flag=true
   }
  else {
-      that.removeLine(getLine401());
-      that.removeLine(getLine402());
-      that.removeLine(getLine403());
       that.removeLine(getLine407());
-      that.removeLine(getLine410());
+      that.removeLine(getLine408());
+      that.removeLine(getLine409());
+      that.removeLine(getLine413());
       that.removeLine(getLine416());
-      that.removeLine(getLine424());
+      that.removeLine(getLine422());
+      that.removeLine(getLine430());
      that.unHighlightElement(CHE345CoopPlan2element, "EngineeringSciences");
      var category = that.removeFromClicked("CHE345CoopPlan2", "EngineeringSciences");
   if (category != "") { 
@@ -28489,21 +28513,21 @@ CHE358CoopPlan2Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine404());
-      that.addLine(getLine405());
-      that.addLine(getLine406());
-      that.addLine(getLine407());
-      that.addLine(getLine425());
+      that.addLine(getLine410());
+      that.addLine(getLine411());
+      that.addLine(getLine412());
+      that.addLine(getLine413());
+      that.addLine(getLine431());
      that.highlightElement(CHE358CoopPlan2element, "EngineeringSciences");
      that.addToClicked("CHE358CoopPlan2", "EngineeringSciences");
       CHE358CoopPlan2flag=true
   }
  else {
-      that.removeLine(getLine404());
-      that.removeLine(getLine405());
-      that.removeLine(getLine406());
-      that.removeLine(getLine407());
-      that.removeLine(getLine425());
+      that.removeLine(getLine410());
+      that.removeLine(getLine411());
+      that.removeLine(getLine412());
+      that.removeLine(getLine413());
+      that.removeLine(getLine431());
      that.unHighlightElement(CHE358CoopPlan2element, "EngineeringSciences");
      var category = that.removeFromClicked("CHE358CoopPlan2", "EngineeringSciences");
   if (category != "") { 
@@ -28567,15 +28591,15 @@ ENGG404CoopPlan2Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine420());
-      that.addLine(getLine428());
+      that.addLine(getLine426());
+      that.addLine(getLine434());
      that.highlightElement(ENGG404CoopPlan2element, "EngineeringProfession");
      that.addToClicked("ENGG404CoopPlan2", "EngineeringProfession");
       ENGG404CoopPlan2flag=true
   }
  else {
-      that.removeLine(getLine420());
-      that.removeLine(getLine428());
+      that.removeLine(getLine426());
+      that.removeLine(getLine434());
      that.unHighlightElement(ENGG404CoopPlan2element, "EngineeringProfession");
      var category = that.removeFromClicked("ENGG404CoopPlan2", "EngineeringProfession");
   if (category != "") { 
@@ -28605,17 +28629,17 @@ CHE445CoopPlan2Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine408());
-      that.addLine(getLine409());
-      that.addLine(getLine410());
+      that.addLine(getLine414());
+      that.addLine(getLine415());
+      that.addLine(getLine416());
      that.highlightElement(CHE445CoopPlan2element, "EngineeringSciences");
      that.addToClicked("CHE445CoopPlan2", "EngineeringSciences");
       CHE445CoopPlan2flag=true
   }
  else {
-      that.removeLine(getLine408());
-      that.removeLine(getLine409());
-      that.removeLine(getLine410());
+      that.removeLine(getLine414());
+      that.removeLine(getLine415());
+      that.removeLine(getLine416());
      that.unHighlightElement(CHE445CoopPlan2element, "EngineeringSciences");
      var category = that.removeFromClicked("CHE445CoopPlan2", "EngineeringSciences");
   if (category != "") { 
@@ -28645,21 +28669,21 @@ CHE446CoopPlan2Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine411());
-      that.addLine(getLine412());
-      that.addLine(getLine413());
-      that.addLine(getLine414());
-      that.addLine(getLine426());
+      that.addLine(getLine417());
+      that.addLine(getLine418());
+      that.addLine(getLine419());
+      that.addLine(getLine420());
+      that.addLine(getLine432());
      that.highlightElement(CHE446CoopPlan2element, "EngineeringSciences");
      that.addToClicked("CHE446CoopPlan2", "EngineeringSciences");
       CHE446CoopPlan2flag=true
   }
  else {
-      that.removeLine(getLine411());
-      that.removeLine(getLine412());
-      that.removeLine(getLine413());
-      that.removeLine(getLine414());
-      that.removeLine(getLine426());
+      that.removeLine(getLine417());
+      that.removeLine(getLine418());
+      that.removeLine(getLine419());
+      that.removeLine(getLine420());
+      that.removeLine(getLine432());
      that.unHighlightElement(CHE446CoopPlan2element, "EngineeringSciences");
      var category = that.removeFromClicked("CHE446CoopPlan2", "EngineeringSciences");
   if (category != "") { 
@@ -28689,25 +28713,25 @@ CHE464CoopPlan2Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine415());
-      that.addLine(getLine416());
-      that.addLine(getLine417());
-      that.addLine(getLine418());
-      that.addLine(getLine419());
-      that.addLine(getLine420());
-      that.addLine(getLine427());
+      that.addLine(getLine421());
+      that.addLine(getLine422());
+      that.addLine(getLine423());
+      that.addLine(getLine424());
+      that.addLine(getLine425());
+      that.addLine(getLine426());
+      that.addLine(getLine433());
      that.highlightElement(CHE464CoopPlan2element, "EngineeringDesign");
      that.addToClicked("CHE464CoopPlan2", "EngineeringDesign");
       CHE464CoopPlan2flag=true
   }
  else {
-      that.removeLine(getLine415());
-      that.removeLine(getLine416());
-      that.removeLine(getLine417());
-      that.removeLine(getLine418());
-      that.removeLine(getLine419());
-      that.removeLine(getLine420());
-      that.removeLine(getLine427());
+      that.removeLine(getLine421());
+      that.removeLine(getLine422());
+      that.removeLine(getLine423());
+      that.removeLine(getLine424());
+      that.removeLine(getLine425());
+      that.removeLine(getLine426());
+      that.removeLine(getLine433());
      that.unHighlightElement(CHE464CoopPlan2element, "EngineeringDesign");
      var category = that.removeFromClicked("CHE464CoopPlan2", "EngineeringDesign");
   if (category != "") { 
@@ -28839,15 +28863,15 @@ WKEXP904CoopPlan2Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine421());
-      that.addLine(getLine422());
+      that.addLine(getLine427());
+      that.addLine(getLine428());
      that.highlightElement(WKEXP904CoopPlan2element, "EngineeringProfession");
      that.addToClicked("WKEXP904CoopPlan2", "EngineeringProfession");
       WKEXP904CoopPlan2flag=true
   }
  else {
-      that.removeLine(getLine421());
-      that.removeLine(getLine422());
+      that.removeLine(getLine427());
+      that.removeLine(getLine428());
      that.unHighlightElement(WKEXP904CoopPlan2element, "EngineeringProfession");
      var category = that.removeFromClicked("WKEXP904CoopPlan2", "EngineeringProfession");
   if (category != "") { 
@@ -28877,13 +28901,13 @@ WKEXP905CoopPlan2Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine422());
+      that.addLine(getLine428());
      that.highlightElement(WKEXP905CoopPlan2element, "EngineeringProfession");
      that.addToClicked("WKEXP905CoopPlan2", "EngineeringProfession");
       WKEXP905CoopPlan2flag=true
   }
  else {
-      that.removeLine(getLine422());
+      that.removeLine(getLine428());
      that.unHighlightElement(WKEXP905CoopPlan2element, "EngineeringProfession");
      var category = that.removeFromClicked("WKEXP905CoopPlan2", "EngineeringProfession");
   if (category != "") { 
@@ -28913,17 +28937,17 @@ CHE454CoopPlan2Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine423());
-      that.addLine(getLine424());
-      that.addLine(getLine425());
+      that.addLine(getLine429());
+      that.addLine(getLine430());
+      that.addLine(getLine431());
      that.highlightElement(CHE454CoopPlan2element, "EngineeringSciences");
      that.addToClicked("CHE454CoopPlan2", "EngineeringSciences");
       CHE454CoopPlan2flag=true
   }
  else {
-      that.removeLine(getLine423());
-      that.removeLine(getLine424());
-      that.removeLine(getLine425());
+      that.removeLine(getLine429());
+      that.removeLine(getLine430());
+      that.removeLine(getLine431());
      that.unHighlightElement(CHE454CoopPlan2element, "EngineeringSciences");
      var category = that.removeFromClicked("CHE454CoopPlan2", "EngineeringSciences");
   if (category != "") { 
@@ -28953,17 +28977,17 @@ CHE465CoopPlan2Time = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine426());
-      that.addLine(getLine427());
-      that.addLine(getLine428());
+      that.addLine(getLine432());
+      that.addLine(getLine433());
+      that.addLine(getLine434());
      that.highlightElement(CHE465CoopPlan2element, "EngineeringDesign");
      that.addToClicked("CHE465CoopPlan2", "EngineeringDesign");
       CHE465CoopPlan2flag=true
   }
  else {
-      that.removeLine(getLine426());
-      that.removeLine(getLine427());
-      that.removeLine(getLine428());
+      that.removeLine(getLine432());
+      that.removeLine(getLine433());
+      that.removeLine(getLine434());
      that.unHighlightElement(CHE465CoopPlan2element, "EngineeringDesign");
      var category = that.removeFromClicked("CHE465CoopPlan2", "EngineeringDesign");
   if (category != "") { 
@@ -30565,13 +30589,15 @@ CHEM103CoopPlan2BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine431());
+      that.addLine(getLine437());
+      that.addLine(getLine445());
      that.highlightElement(CHEM103CoopPlan2BiomedicalOptionelement, "NaturalSciences");
      that.addToClicked("CHEM103CoopPlan2BiomedicalOption", "NaturalSciences");
       CHEM103CoopPlan2BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine431());
+      that.removeLine(getLine437());
+      that.removeLine(getLine445());
      that.unHighlightElement(CHEM103CoopPlan2BiomedicalOptionelement, "NaturalSciences");
      var category = that.removeFromClicked("CHEM103CoopPlan2BiomedicalOption", "NaturalSciences");
   if (category != "") { 
@@ -30635,15 +30661,15 @@ ENGG130CoopPlan2BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine429());
-      that.addLine(getLine434());
+      that.addLine(getLine435());
+      that.addLine(getLine440());
      that.highlightElement(ENGG130CoopPlan2BiomedicalOptionelement, "NaturalSciences");
      that.addToClicked("ENGG130CoopPlan2BiomedicalOption", "NaturalSciences");
       ENGG130CoopPlan2BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine429());
-      that.removeLine(getLine434());
+      that.removeLine(getLine435());
+      that.removeLine(getLine440());
      that.unHighlightElement(ENGG130CoopPlan2BiomedicalOptionelement, "NaturalSciences");
      var category = that.removeFromClicked("ENGG130CoopPlan2BiomedicalOption", "NaturalSciences");
   if (category != "") { 
@@ -30673,15 +30699,15 @@ ENGL199CoopPlan2BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine432());
-      that.addLine(getLine464());
+      that.addLine(getLine438());
+      that.addLine(getLine471());
      that.highlightElement(ENGL199CoopPlan2BiomedicalOptionelement, "Other");
      that.addToClicked("ENGL199CoopPlan2BiomedicalOption", "Other");
       ENGL199CoopPlan2BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine432());
-      that.removeLine(getLine464());
+      that.removeLine(getLine438());
+      that.removeLine(getLine471());
      that.unHighlightElement(ENGL199CoopPlan2BiomedicalOptionelement, "Other");
      var category = that.removeFromClicked("ENGL199CoopPlan2BiomedicalOption", "Other");
   if (category != "") { 
@@ -30711,23 +30737,23 @@ MATH100CoopPlan2BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine429());
-      that.addLine(getLine430());
-      that.addLine(getLine433());
+      that.addLine(getLine435());
       that.addLine(getLine436());
-      that.addLine(getLine437());
-      that.addLine(getLine453());
+      that.addLine(getLine439());
+      that.addLine(getLine442());
+      that.addLine(getLine443());
+      that.addLine(getLine460());
      that.highlightElement(MATH100CoopPlan2BiomedicalOptionelement, "Math");
      that.addToClicked("MATH100CoopPlan2BiomedicalOption", "Math");
       MATH100CoopPlan2BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine429());
-      that.removeLine(getLine430());
-      that.removeLine(getLine433());
+      that.removeLine(getLine435());
       that.removeLine(getLine436());
-      that.removeLine(getLine437());
-      that.removeLine(getLine453());
+      that.removeLine(getLine439());
+      that.removeLine(getLine442());
+      that.removeLine(getLine443());
+      that.removeLine(getLine460());
      that.unHighlightElement(MATH100CoopPlan2BiomedicalOptionelement, "Math");
      var category = that.removeFromClicked("MATH100CoopPlan2BiomedicalOption", "Math");
   if (category != "") { 
@@ -30757,13 +30783,13 @@ PHYS130CoopPlan2BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine430());
+      that.addLine(getLine436());
      that.highlightElement(PHYS130CoopPlan2BiomedicalOptionelement, "NaturalSciences");
      that.addToClicked("PHYS130CoopPlan2BiomedicalOption", "NaturalSciences");
       PHYS130CoopPlan2BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine430());
+      that.removeLine(getLine436());
      that.unHighlightElement(PHYS130CoopPlan2BiomedicalOptionelement, "NaturalSciences");
      var category = that.removeFromClicked("PHYS130CoopPlan2BiomedicalOption", "NaturalSciences");
   if (category != "") { 
@@ -30793,17 +30819,17 @@ CHEM105CoopPlan2BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine431());
-      that.addLine(getLine441());
-      that.addLine(getLine451());
+      that.addLine(getLine437());
+      that.addLine(getLine448());
+      that.addLine(getLine458());
      that.highlightElement(CHEM105CoopPlan2BiomedicalOptionelement, "NaturalSciences");
      that.addToClicked("CHEM105CoopPlan2BiomedicalOption", "NaturalSciences");
       CHEM105CoopPlan2BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine431());
-      that.removeLine(getLine441());
-      that.removeLine(getLine451());
+      that.removeLine(getLine437());
+      that.removeLine(getLine448());
+      that.removeLine(getLine458());
      that.unHighlightElement(CHEM105CoopPlan2BiomedicalOptionelement, "NaturalSciences");
      var category = that.removeFromClicked("CHEM105CoopPlan2BiomedicalOption", "NaturalSciences");
   if (category != "") { 
@@ -30833,15 +30859,15 @@ ENCMP100CoopPlan2BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine439());
-      that.addLine(getLine468());
+      that.addLine(getLine446());
+      that.addLine(getLine475());
      that.highlightElement(ENCMP100CoopPlan2BiomedicalOptionelement, "NaturalSciences");
      that.addToClicked("ENCMP100CoopPlan2BiomedicalOption", "NaturalSciences");
       ENCMP100CoopPlan2BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine439());
-      that.removeLine(getLine468());
+      that.removeLine(getLine446());
+      that.removeLine(getLine475());
      that.unHighlightElement(ENCMP100CoopPlan2BiomedicalOptionelement, "NaturalSciences");
      var category = that.removeFromClicked("ENCMP100CoopPlan2BiomedicalOption", "NaturalSciences");
   if (category != "") { 
@@ -30871,13 +30897,13 @@ ENGG160CoopPlan2BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine432());
+      that.addLine(getLine438());
      that.highlightElement(ENGG160CoopPlan2BiomedicalOptionelement, "EngineeringDesign");
      that.addToClicked("ENGG160CoopPlan2BiomedicalOption", "EngineeringDesign");
       ENGG160CoopPlan2BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine432());
+      that.removeLine(getLine438());
      that.unHighlightElement(ENGG160CoopPlan2BiomedicalOptionelement, "EngineeringDesign");
      var category = that.removeFromClicked("ENGG160CoopPlan2BiomedicalOption", "EngineeringDesign");
   if (category != "") { 
@@ -30907,19 +30933,19 @@ ENPH131CoopPlan2BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine433());
-      that.addLine(getLine434());
-      that.addLine(getLine435());
-      that.addLine(getLine448());
+      that.addLine(getLine439());
+      that.addLine(getLine440());
+      that.addLine(getLine441());
+      that.addLine(getLine455());
      that.highlightElement(ENPH131CoopPlan2BiomedicalOptionelement, "NaturalSciences");
      that.addToClicked("ENPH131CoopPlan2BiomedicalOption", "NaturalSciences");
       ENPH131CoopPlan2BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine433());
-      that.removeLine(getLine434());
-      that.removeLine(getLine435());
-      that.removeLine(getLine448());
+      that.removeLine(getLine439());
+      that.removeLine(getLine440());
+      that.removeLine(getLine441());
+      that.removeLine(getLine455());
      that.unHighlightElement(ENPH131CoopPlan2BiomedicalOptionelement, "NaturalSciences");
      var category = that.removeFromClicked("ENPH131CoopPlan2BiomedicalOption", "NaturalSciences");
   if (category != "") { 
@@ -30949,21 +30975,21 @@ MATH101CoopPlan2BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine435());
-      that.addLine(getLine436());
-      that.addLine(getLine438());
+      that.addLine(getLine441());
+      that.addLine(getLine442());
       that.addLine(getLine444());
-      that.addLine(getLine454());
+      that.addLine(getLine451());
+      that.addLine(getLine461());
      that.highlightElement(MATH101CoopPlan2BiomedicalOptionelement, "Math");
      that.addToClicked("MATH101CoopPlan2BiomedicalOption", "Math");
       MATH101CoopPlan2BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine435());
-      that.removeLine(getLine436());
-      that.removeLine(getLine438());
+      that.removeLine(getLine441());
+      that.removeLine(getLine442());
       that.removeLine(getLine444());
-      that.removeLine(getLine454());
+      that.removeLine(getLine451());
+      that.removeLine(getLine461());
      that.unHighlightElement(MATH101CoopPlan2BiomedicalOptionelement, "Math");
      var category = that.removeFromClicked("MATH101CoopPlan2BiomedicalOption", "Math");
   if (category != "") { 
@@ -30993,17 +31019,17 @@ MATH102CoopPlan2BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine437());
-      that.addLine(getLine440());
-      that.addLine(getLine445());
+      that.addLine(getLine443());
+      that.addLine(getLine447());
+      that.addLine(getLine452());
      that.highlightElement(MATH102CoopPlan2BiomedicalOptionelement, "Math");
      that.addToClicked("MATH102CoopPlan2BiomedicalOption", "Math");
       MATH102CoopPlan2BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine437());
-      that.removeLine(getLine440());
-      that.removeLine(getLine445());
+      that.removeLine(getLine443());
+      that.removeLine(getLine447());
+      that.removeLine(getLine452());
      that.unHighlightElement(MATH102CoopPlan2BiomedicalOptionelement, "Math");
      var category = that.removeFromClicked("MATH102CoopPlan2BiomedicalOption", "Math");
   if (category != "") { 
@@ -31033,15 +31059,15 @@ BIOL107CoopPlan2BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine456());
-      that.addLine(getLine457());
+      that.addLine(getLine463());
+      that.addLine(getLine464());
      that.highlightElement(BIOL107CoopPlan2BiomedicalOptionelement, "NaturalSciences");
      that.addToClicked("BIOL107CoopPlan2BiomedicalOption", "NaturalSciences");
       BIOL107CoopPlan2BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine456());
-      that.removeLine(getLine457());
+      that.removeLine(getLine463());
+      that.removeLine(getLine464());
      that.unHighlightElement(BIOL107CoopPlan2BiomedicalOptionelement, "NaturalSciences");
      var category = that.removeFromClicked("BIOL107CoopPlan2BiomedicalOption", "NaturalSciences");
   if (category != "") { 
@@ -31071,21 +31097,21 @@ CHE243CoopPlan2BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine438());
-      that.addLine(getLine442());
-      that.addLine(getLine447());
-      that.addLine(getLine462());
-      that.addLine(getLine466());
+      that.addLine(getLine444());
+      that.addLine(getLine449());
+      that.addLine(getLine454());
+      that.addLine(getLine469());
+      that.addLine(getLine473());
      that.highlightElement(CHE243CoopPlan2BiomedicalOptionelement, "EngineeringSciences");
      that.addToClicked("CHE243CoopPlan2BiomedicalOption", "EngineeringSciences");
       CHE243CoopPlan2BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine438());
-      that.removeLine(getLine442());
-      that.removeLine(getLine447());
-      that.removeLine(getLine462());
-      that.removeLine(getLine466());
+      that.removeLine(getLine444());
+      that.removeLine(getLine449());
+      that.removeLine(getLine454());
+      that.removeLine(getLine469());
+      that.removeLine(getLine473());
      that.unHighlightElement(CHE243CoopPlan2BiomedicalOptionelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE243CoopPlan2BiomedicalOption", "EngineeringSciences");
   if (category != "") { 
@@ -31115,15 +31141,17 @@ CHEM261CoopPlan2BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine455());
-      that.addLine(getLine458());
+      that.addLine(getLine445());
+      that.addLine(getLine462());
+      that.addLine(getLine465());
      that.highlightElement(CHEM261CoopPlan2BiomedicalOptionelement, "NaturalSciences");
      that.addToClicked("CHEM261CoopPlan2BiomedicalOption", "NaturalSciences");
       CHEM261CoopPlan2BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine455());
-      that.removeLine(getLine458());
+      that.removeLine(getLine445());
+      that.removeLine(getLine462());
+      that.removeLine(getLine465());
      that.unHighlightElement(CHEM261CoopPlan2BiomedicalOptionelement, "NaturalSciences");
      var category = that.removeFromClicked("CHEM261CoopPlan2BiomedicalOption", "NaturalSciences");
   if (category != "") { 
@@ -31187,31 +31215,31 @@ CME265CoopPlan2BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine439());
-      that.addLine(getLine440());
-      that.addLine(getLine441());
-      that.addLine(getLine442());
-      that.addLine(getLine443());
-      that.addLine(getLine463());
-      that.addLine(getLine465());
-      that.addLine(getLine474());
-      that.addLine(getLine478());
-      that.addLine(getLine486());
+      that.addLine(getLine446());
+      that.addLine(getLine447());
+      that.addLine(getLine448());
+      that.addLine(getLine449());
+      that.addLine(getLine450());
+      that.addLine(getLine470());
+      that.addLine(getLine472());
+      that.addLine(getLine481());
+      that.addLine(getLine485());
+      that.addLine(getLine493());
      that.highlightElement(CME265CoopPlan2BiomedicalOptionelement, "EngineeringSciences");
      that.addToClicked("CME265CoopPlan2BiomedicalOption", "EngineeringSciences");
       CME265CoopPlan2BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine439());
-      that.removeLine(getLine440());
-      that.removeLine(getLine441());
-      that.removeLine(getLine442());
-      that.removeLine(getLine443());
-      that.removeLine(getLine463());
-      that.removeLine(getLine465());
-      that.removeLine(getLine474());
-      that.removeLine(getLine478());
-      that.removeLine(getLine486());
+      that.removeLine(getLine446());
+      that.removeLine(getLine447());
+      that.removeLine(getLine448());
+      that.removeLine(getLine449());
+      that.removeLine(getLine450());
+      that.removeLine(getLine470());
+      that.removeLine(getLine472());
+      that.removeLine(getLine481());
+      that.removeLine(getLine485());
+      that.removeLine(getLine493());
      that.unHighlightElement(CME265CoopPlan2BiomedicalOptionelement, "EngineeringSciences");
      var category = that.removeFromClicked("CME265CoopPlan2BiomedicalOption", "EngineeringSciences");
   if (category != "") { 
@@ -31241,13 +31269,13 @@ ENGG299CoopPlan2BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine446());
+      that.addLine(getLine453());
      that.highlightElement(ENGG299CoopPlan2BiomedicalOptionelement, "EngineeringProfession");
      that.addToClicked("ENGG299CoopPlan2BiomedicalOption", "EngineeringProfession");
       ENGG299CoopPlan2BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine446());
+      that.removeLine(getLine453());
      that.unHighlightElement(ENGG299CoopPlan2BiomedicalOptionelement, "EngineeringProfession");
      var category = that.removeFromClicked("ENGG299CoopPlan2BiomedicalOption", "EngineeringProfession");
   if (category != "") { 
@@ -31277,23 +31305,23 @@ MATH209CoopPlan2BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine443());
-      that.addLine(getLine444());
-      that.addLine(getLine445());
-      that.addLine(getLine449());
+      that.addLine(getLine450());
+      that.addLine(getLine451());
       that.addLine(getLine452());
-      that.addLine(getLine488());
+      that.addLine(getLine456());
+      that.addLine(getLine459());
+      that.addLine(getLine495());
      that.highlightElement(MATH209CoopPlan2BiomedicalOptionelement, "Math");
      that.addToClicked("MATH209CoopPlan2BiomedicalOption", "Math");
       MATH209CoopPlan2BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine443());
-      that.removeLine(getLine444());
-      that.removeLine(getLine445());
-      that.removeLine(getLine449());
+      that.removeLine(getLine450());
+      that.removeLine(getLine451());
       that.removeLine(getLine452());
-      that.removeLine(getLine488());
+      that.removeLine(getLine456());
+      that.removeLine(getLine459());
+      that.removeLine(getLine495());
      that.unHighlightElement(MATH209CoopPlan2BiomedicalOptionelement, "Math");
      var category = that.removeFromClicked("MATH209CoopPlan2BiomedicalOption", "Math");
   if (category != "") { 
@@ -31357,15 +31385,15 @@ WKEXP901CoopPlan2BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine446());
-      that.addLine(getLine469());
+      that.addLine(getLine453());
+      that.addLine(getLine476());
      that.highlightElement(WKEXP901CoopPlan2BiomedicalOptionelement, "EngineeringProfession");
      that.addToClicked("WKEXP901CoopPlan2BiomedicalOption", "EngineeringProfession");
       WKEXP901CoopPlan2BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine446());
-      that.removeLine(getLine469());
+      that.removeLine(getLine453());
+      that.removeLine(getLine476());
      that.unHighlightElement(WKEXP901CoopPlan2BiomedicalOptionelement, "EngineeringProfession");
      var category = that.removeFromClicked("WKEXP901CoopPlan2BiomedicalOption", "EngineeringProfession");
   if (category != "") { 
@@ -31395,27 +31423,27 @@ CHE312CoopPlan2BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine447());
-      that.addLine(getLine448());
-      that.addLine(getLine449());
-      that.addLine(getLine450());
-      that.addLine(getLine460());
+      that.addLine(getLine454());
+      that.addLine(getLine455());
+      that.addLine(getLine456());
+      that.addLine(getLine457());
       that.addLine(getLine467());
-      that.addLine(getLine475());
-      that.addLine(getLine489());
+      that.addLine(getLine474());
+      that.addLine(getLine482());
+      that.addLine(getLine496());
      that.highlightElement(CHE312CoopPlan2BiomedicalOptionelement, "EngineeringSciences");
      that.addToClicked("CHE312CoopPlan2BiomedicalOption", "EngineeringSciences");
       CHE312CoopPlan2BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine447());
-      that.removeLine(getLine448());
-      that.removeLine(getLine449());
-      that.removeLine(getLine450());
-      that.removeLine(getLine460());
+      that.removeLine(getLine454());
+      that.removeLine(getLine455());
+      that.removeLine(getLine456());
+      that.removeLine(getLine457());
       that.removeLine(getLine467());
-      that.removeLine(getLine475());
-      that.removeLine(getLine489());
+      that.removeLine(getLine474());
+      that.removeLine(getLine482());
+      that.removeLine(getLine496());
      that.unHighlightElement(CHE312CoopPlan2BiomedicalOptionelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE312CoopPlan2BiomedicalOption", "EngineeringSciences");
   if (category != "") { 
@@ -31479,13 +31507,13 @@ ENGM310CoopPlan2BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine493());
+      that.addLine(getLine500());
      that.highlightElement(ENGM310CoopPlan2BiomedicalOptionelement, "Other");
      that.addToClicked("ENGM310CoopPlan2BiomedicalOption", "Other");
       ENGM310CoopPlan2BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine493());
+      that.removeLine(getLine500());
      that.unHighlightElement(ENGM310CoopPlan2BiomedicalOptionelement, "Other");
      var category = that.removeFromClicked("ENGM310CoopPlan2BiomedicalOption", "Other");
   if (category != "") { 
@@ -31515,13 +31543,13 @@ ENGM401CoopPlan2BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine494());
+      that.addLine(getLine501());
      that.highlightElement(ENGM401CoopPlan2BiomedicalOptionelement, "Other");
      that.addToClicked("ENGM401CoopPlan2BiomedicalOption", "Other");
       ENGM401CoopPlan2BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine494());
+      that.removeLine(getLine501());
      that.unHighlightElement(ENGM401CoopPlan2BiomedicalOptionelement, "Other");
      var category = that.removeFromClicked("ENGM401CoopPlan2BiomedicalOption", "Other");
   if (category != "") { 
@@ -31551,13 +31579,13 @@ MATE202CoopPlan2BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine451());
+      that.addLine(getLine458());
      that.highlightElement(MATE202CoopPlan2BiomedicalOptionelement, "EngineeringSciences");
      that.addToClicked("MATE202CoopPlan2BiomedicalOption", "EngineeringSciences");
       MATE202CoopPlan2BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine451());
+      that.removeLine(getLine458());
      that.unHighlightElement(MATE202CoopPlan2BiomedicalOptionelement, "EngineeringSciences");
      var category = that.removeFromClicked("MATE202CoopPlan2BiomedicalOption", "EngineeringSciences");
   if (category != "") { 
@@ -31587,19 +31615,19 @@ MATH201CoopPlan2BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine450());
-      that.addLine(getLine452());
+      that.addLine(getLine457());
       that.addLine(getLine459());
-      that.addLine(getLine487());
+      that.addLine(getLine466());
+      that.addLine(getLine494());
      that.highlightElement(MATH201CoopPlan2BiomedicalOptionelement, "Math");
      that.addToClicked("MATH201CoopPlan2BiomedicalOption", "Math");
       MATH201CoopPlan2BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine450());
-      that.removeLine(getLine452());
+      that.removeLine(getLine457());
       that.removeLine(getLine459());
-      that.removeLine(getLine487());
+      that.removeLine(getLine466());
+      that.removeLine(getLine494());
      that.unHighlightElement(MATH201CoopPlan2BiomedicalOptionelement, "Math");
      var category = that.removeFromClicked("MATH201CoopPlan2BiomedicalOption", "Math");
   if (category != "") { 
@@ -31629,17 +31657,17 @@ STAT235CoopPlan2BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine453());
-      that.addLine(getLine454());
-      that.addLine(getLine482());
+      that.addLine(getLine460());
+      that.addLine(getLine461());
+      that.addLine(getLine489());
      that.highlightElement(STAT235CoopPlan2BiomedicalOptionelement, "Math");
      that.addToClicked("STAT235CoopPlan2BiomedicalOption", "Math");
       STAT235CoopPlan2BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine453());
-      that.removeLine(getLine454());
-      that.removeLine(getLine482());
+      that.removeLine(getLine460());
+      that.removeLine(getLine461());
+      that.removeLine(getLine489());
      that.unHighlightElement(STAT235CoopPlan2BiomedicalOptionelement, "Math");
      var category = that.removeFromClicked("STAT235CoopPlan2BiomedicalOption", "Math");
   if (category != "") { 
@@ -31669,13 +31697,13 @@ BIOCH200CoopPlan2BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine455());
+      that.addLine(getLine462());
      that.highlightElement(BIOCH200CoopPlan2BiomedicalOptionelement, "NaturalSciences");
      that.addToClicked("BIOCH200CoopPlan2BiomedicalOption", "NaturalSciences");
       BIOCH200CoopPlan2BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine455());
+      that.removeLine(getLine462());
      that.unHighlightElement(BIOCH200CoopPlan2BiomedicalOptionelement, "NaturalSciences");
      var category = that.removeFromClicked("BIOCH200CoopPlan2BiomedicalOption", "NaturalSciences");
   if (category != "") { 
@@ -31705,13 +31733,13 @@ BIOL201CoopPlan2BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine456());
+      that.addLine(getLine463());
      that.highlightElement(BIOL201CoopPlan2BiomedicalOptionelement, "NaturalSciences");
      that.addToClicked("BIOL201CoopPlan2BiomedicalOption", "NaturalSciences");
       BIOL201CoopPlan2BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine456());
+      that.removeLine(getLine463());
      that.unHighlightElement(BIOL201CoopPlan2BiomedicalOptionelement, "NaturalSciences");
      var category = that.removeFromClicked("BIOL201CoopPlan2BiomedicalOption", "NaturalSciences");
   if (category != "") { 
@@ -31741,15 +31769,15 @@ CELL201CoopPlan2BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine457());
-      that.addLine(getLine458());
+      that.addLine(getLine464());
+      that.addLine(getLine465());
      that.highlightElement(CELL201CoopPlan2BiomedicalOptionelement, "NaturalSciences");
      that.addToClicked("CELL201CoopPlan2BiomedicalOption", "NaturalSciences");
       CELL201CoopPlan2BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine457());
-      that.removeLine(getLine458());
+      that.removeLine(getLine464());
+      that.removeLine(getLine465());
      that.unHighlightElement(CELL201CoopPlan2BiomedicalOptionelement, "NaturalSciences");
      var category = that.removeFromClicked("CELL201CoopPlan2BiomedicalOption", "NaturalSciences");
   if (category != "") { 
@@ -31779,25 +31807,25 @@ CHE314CoopPlan2BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine459());
-      that.addLine(getLine460());
-      that.addLine(getLine461());
-      that.addLine(getLine472());
-      that.addLine(getLine477());
-      that.addLine(getLine483());
+      that.addLine(getLine466());
+      that.addLine(getLine467());
+      that.addLine(getLine468());
+      that.addLine(getLine479());
+      that.addLine(getLine484());
       that.addLine(getLine490());
+      that.addLine(getLine497());
      that.highlightElement(CHE314CoopPlan2BiomedicalOptionelement, "EngineeringSciences");
      that.addToClicked("CHE314CoopPlan2BiomedicalOption", "EngineeringSciences");
       CHE314CoopPlan2BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine459());
-      that.removeLine(getLine460());
-      that.removeLine(getLine461());
-      that.removeLine(getLine472());
-      that.removeLine(getLine477());
-      that.removeLine(getLine483());
+      that.removeLine(getLine466());
+      that.removeLine(getLine467());
+      that.removeLine(getLine468());
+      that.removeLine(getLine479());
+      that.removeLine(getLine484());
       that.removeLine(getLine490());
+      that.removeLine(getLine497());
      that.unHighlightElement(CHE314CoopPlan2BiomedicalOptionelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE314CoopPlan2BiomedicalOption", "EngineeringSciences");
   if (category != "") { 
@@ -31827,21 +31855,21 @@ CHE343CoopPlan2BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine462());
-      that.addLine(getLine463());
-      that.addLine(getLine471());
-      that.addLine(getLine476());
-      that.addLine(getLine479());
+      that.addLine(getLine469());
+      that.addLine(getLine470());
+      that.addLine(getLine478());
+      that.addLine(getLine483());
+      that.addLine(getLine486());
      that.highlightElement(CHE343CoopPlan2BiomedicalOptionelement, "EngineeringSciences");
      that.addToClicked("CHE343CoopPlan2BiomedicalOption", "EngineeringSciences");
       CHE343CoopPlan2BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine462());
-      that.removeLine(getLine463());
-      that.removeLine(getLine471());
-      that.removeLine(getLine476());
-      that.removeLine(getLine479());
+      that.removeLine(getLine469());
+      that.removeLine(getLine470());
+      that.removeLine(getLine478());
+      that.removeLine(getLine483());
+      that.removeLine(getLine486());
      that.unHighlightElement(CHE343CoopPlan2BiomedicalOptionelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE343CoopPlan2BiomedicalOption", "EngineeringSciences");
   if (category != "") { 
@@ -31871,21 +31899,21 @@ CHE351CoopPlan2BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine464());
-      that.addLine(getLine465());
-      that.addLine(getLine466());
-      that.addLine(getLine467());
-      that.addLine(getLine481());
+      that.addLine(getLine471());
+      that.addLine(getLine472());
+      that.addLine(getLine473());
+      that.addLine(getLine474());
+      that.addLine(getLine488());
      that.highlightElement(CHE351CoopPlan2BiomedicalOptionelement, "EngineeringSciences");
      that.addToClicked("CHE351CoopPlan2BiomedicalOption", "EngineeringSciences");
       CHE351CoopPlan2BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine464());
-      that.removeLine(getLine465());
-      that.removeLine(getLine466());
-      that.removeLine(getLine467());
-      that.removeLine(getLine481());
+      that.removeLine(getLine471());
+      that.removeLine(getLine472());
+      that.removeLine(getLine473());
+      that.removeLine(getLine474());
+      that.removeLine(getLine488());
      that.unHighlightElement(CHE351CoopPlan2BiomedicalOptionelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE351CoopPlan2BiomedicalOption", "EngineeringSciences");
   if (category != "") { 
@@ -31915,17 +31943,17 @@ CHE374CoopPlan2BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine461());
       that.addLine(getLine468());
-      that.addLine(getLine480());
+      that.addLine(getLine475());
+      that.addLine(getLine487());
      that.highlightElement(CHE374CoopPlan2BiomedicalOptionelement, "EngineeringSciences");
      that.addToClicked("CHE374CoopPlan2BiomedicalOption", "EngineeringSciences");
       CHE374CoopPlan2BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine461());
       that.removeLine(getLine468());
-      that.removeLine(getLine480());
+      that.removeLine(getLine475());
+      that.removeLine(getLine487());
      that.unHighlightElement(CHE374CoopPlan2BiomedicalOptionelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE374CoopPlan2BiomedicalOption", "EngineeringSciences");
   if (category != "") { 
@@ -31955,15 +31983,15 @@ ENGG404CoopPlan2BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine495());
       that.addLine(getLine502());
+      that.addLine(getLine509());
      that.highlightElement(ENGG404CoopPlan2BiomedicalOptionelement, "EngineeringProfession");
      that.addToClicked("ENGG404CoopPlan2BiomedicalOption", "EngineeringProfession");
       ENGG404CoopPlan2BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine495());
       that.removeLine(getLine502());
+      that.removeLine(getLine509());
      that.unHighlightElement(ENGG404CoopPlan2BiomedicalOptionelement, "EngineeringProfession");
      var category = that.removeFromClicked("ENGG404CoopPlan2BiomedicalOption", "EngineeringProfession");
   if (category != "") { 
@@ -31993,15 +32021,15 @@ WKEXP902CoopPlan2BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine469());
-      that.addLine(getLine470());
+      that.addLine(getLine476());
+      that.addLine(getLine477());
      that.highlightElement(WKEXP902CoopPlan2BiomedicalOptionelement, "EngineeringProfession");
      that.addToClicked("WKEXP902CoopPlan2BiomedicalOption", "EngineeringProfession");
       WKEXP902CoopPlan2BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine469());
-      that.removeLine(getLine470());
+      that.removeLine(getLine476());
+      that.removeLine(getLine477());
      that.unHighlightElement(WKEXP902CoopPlan2BiomedicalOptionelement, "EngineeringProfession");
      var category = that.removeFromClicked("WKEXP902CoopPlan2BiomedicalOption", "EngineeringProfession");
   if (category != "") { 
@@ -32031,15 +32059,15 @@ WKEXP903CoopPlan2BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine470());
-      that.addLine(getLine496());
+      that.addLine(getLine477());
+      that.addLine(getLine503());
      that.highlightElement(WKEXP903CoopPlan2BiomedicalOptionelement, "EngineeringProfession");
      that.addToClicked("WKEXP903CoopPlan2BiomedicalOption", "EngineeringProfession");
       WKEXP903CoopPlan2BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine470());
-      that.removeLine(getLine496());
+      that.removeLine(getLine477());
+      that.removeLine(getLine503());
      that.unHighlightElement(WKEXP903CoopPlan2BiomedicalOptionelement, "EngineeringProfession");
      var category = that.removeFromClicked("WKEXP903CoopPlan2BiomedicalOption", "EngineeringProfession");
   if (category != "") { 
@@ -32069,13 +32097,13 @@ BME320CoopPlan2BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine485());
+      that.addLine(getLine492());
      that.highlightElement(BME320CoopPlan2BiomedicalOptionelement, "NaturalSciences");
      that.addToClicked("BME320CoopPlan2BiomedicalOption", "NaturalSciences");
       BME320CoopPlan2BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine485());
+      that.removeLine(getLine492());
      that.unHighlightElement(BME320CoopPlan2BiomedicalOptionelement, "NaturalSciences");
      var category = that.removeFromClicked("BME320CoopPlan2BiomedicalOption", "NaturalSciences");
   if (category != "") { 
@@ -32105,19 +32133,19 @@ CHE316CoopPlan2BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine471());
-      that.addLine(getLine472());
-      that.addLine(getLine473());
-      that.addLine(getLine492());
+      that.addLine(getLine478());
+      that.addLine(getLine479());
+      that.addLine(getLine480());
+      that.addLine(getLine499());
      that.highlightElement(CHE316CoopPlan2BiomedicalOptionelement, "EngineeringSciences");
      that.addToClicked("CHE316CoopPlan2BiomedicalOption", "EngineeringSciences");
       CHE316CoopPlan2BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine471());
-      that.removeLine(getLine472());
-      that.removeLine(getLine473());
-      that.removeLine(getLine492());
+      that.removeLine(getLine478());
+      that.removeLine(getLine479());
+      that.removeLine(getLine480());
+      that.removeLine(getLine499());
      that.unHighlightElement(CHE316CoopPlan2BiomedicalOptionelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE316CoopPlan2BiomedicalOption", "EngineeringSciences");
   if (category != "") { 
@@ -32147,23 +32175,23 @@ CHE318CoopPlan2BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine473());
-      that.addLine(getLine474());
-      that.addLine(getLine475());
-      that.addLine(getLine476());
-      that.addLine(getLine477());
-      that.addLine(getLine497());
+      that.addLine(getLine480());
+      that.addLine(getLine481());
+      that.addLine(getLine482());
+      that.addLine(getLine483());
+      that.addLine(getLine484());
+      that.addLine(getLine504());
      that.highlightElement(CHE318CoopPlan2BiomedicalOptionelement, "EngineeringSciences");
      that.addToClicked("CHE318CoopPlan2BiomedicalOption", "EngineeringSciences");
       CHE318CoopPlan2BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine473());
-      that.removeLine(getLine474());
-      that.removeLine(getLine475());
-      that.removeLine(getLine476());
-      that.removeLine(getLine477());
-      that.removeLine(getLine497());
+      that.removeLine(getLine480());
+      that.removeLine(getLine481());
+      that.removeLine(getLine482());
+      that.removeLine(getLine483());
+      that.removeLine(getLine484());
+      that.removeLine(getLine504());
      that.unHighlightElement(CHE318CoopPlan2BiomedicalOptionelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE318CoopPlan2BiomedicalOption", "EngineeringSciences");
   if (category != "") { 
@@ -32193,23 +32221,23 @@ CHE345CoopPlan2BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine478());
-      that.addLine(getLine479());
-      that.addLine(getLine480());
-      that.addLine(getLine484());
+      that.addLine(getLine485());
+      that.addLine(getLine486());
+      that.addLine(getLine487());
       that.addLine(getLine491());
       that.addLine(getLine498());
+      that.addLine(getLine505());
      that.highlightElement(CHE345CoopPlan2BiomedicalOptionelement, "EngineeringSciences");
      that.addToClicked("CHE345CoopPlan2BiomedicalOption", "EngineeringSciences");
       CHE345CoopPlan2BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine478());
-      that.removeLine(getLine479());
-      that.removeLine(getLine480());
-      that.removeLine(getLine484());
+      that.removeLine(getLine485());
+      that.removeLine(getLine486());
+      that.removeLine(getLine487());
       that.removeLine(getLine491());
       that.removeLine(getLine498());
+      that.removeLine(getLine505());
      that.unHighlightElement(CHE345CoopPlan2BiomedicalOptionelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE345CoopPlan2BiomedicalOption", "EngineeringSciences");
   if (category != "") { 
@@ -32239,21 +32267,21 @@ CHE358CoopPlan2BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine481());
-      that.addLine(getLine482());
-      that.addLine(getLine483());
-      that.addLine(getLine484());
-      that.addLine(getLine499());
+      that.addLine(getLine488());
+      that.addLine(getLine489());
+      that.addLine(getLine490());
+      that.addLine(getLine491());
+      that.addLine(getLine506());
      that.highlightElement(CHE358CoopPlan2BiomedicalOptionelement, "EngineeringSciences");
      that.addToClicked("CHE358CoopPlan2BiomedicalOption", "EngineeringSciences");
       CHE358CoopPlan2BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine481());
-      that.removeLine(getLine482());
-      that.removeLine(getLine483());
-      that.removeLine(getLine484());
-      that.removeLine(getLine499());
+      that.removeLine(getLine488());
+      that.removeLine(getLine489());
+      that.removeLine(getLine490());
+      that.removeLine(getLine491());
+      that.removeLine(getLine506());
      that.unHighlightElement(CHE358CoopPlan2BiomedicalOptionelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE358CoopPlan2BiomedicalOption", "EngineeringSciences");
   if (category != "") { 
@@ -32317,13 +32345,13 @@ BME321CoopPlan2BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine485());
+      that.addLine(getLine492());
      that.highlightElement(BME321CoopPlan2BiomedicalOptionelement, "NaturalSciences");
      that.addToClicked("BME321CoopPlan2BiomedicalOption", "NaturalSciences");
       BME321CoopPlan2BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine485());
+      that.removeLine(getLine492());
      that.unHighlightElement(BME321CoopPlan2BiomedicalOptionelement, "NaturalSciences");
      var category = that.removeFromClicked("BME321CoopPlan2BiomedicalOption", "NaturalSciences");
   if (category != "") { 
@@ -32353,21 +32381,21 @@ CHE446CoopPlan2BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine486());
-      that.addLine(getLine487());
-      that.addLine(getLine488());
-      that.addLine(getLine489());
-      that.addLine(getLine500());
+      that.addLine(getLine493());
+      that.addLine(getLine494());
+      that.addLine(getLine495());
+      that.addLine(getLine496());
+      that.addLine(getLine507());
      that.highlightElement(CHE446CoopPlan2BiomedicalOptionelement, "EngineeringSciences");
      that.addToClicked("CHE446CoopPlan2BiomedicalOption", "EngineeringSciences");
       CHE446CoopPlan2BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine486());
-      that.removeLine(getLine487());
-      that.removeLine(getLine488());
-      that.removeLine(getLine489());
-      that.removeLine(getLine500());
+      that.removeLine(getLine493());
+      that.removeLine(getLine494());
+      that.removeLine(getLine495());
+      that.removeLine(getLine496());
+      that.removeLine(getLine507());
      that.unHighlightElement(CHE446CoopPlan2BiomedicalOptionelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE446CoopPlan2BiomedicalOption", "EngineeringSciences");
   if (category != "") { 
@@ -32397,25 +32425,25 @@ CHE464CoopPlan2BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine490());
-      that.addLine(getLine491());
-      that.addLine(getLine492());
-      that.addLine(getLine493());
-      that.addLine(getLine494());
-      that.addLine(getLine495());
+      that.addLine(getLine497());
+      that.addLine(getLine498());
+      that.addLine(getLine499());
+      that.addLine(getLine500());
       that.addLine(getLine501());
+      that.addLine(getLine502());
+      that.addLine(getLine508());
      that.highlightElement(CHE464CoopPlan2BiomedicalOptionelement, "EngineeringDesign");
      that.addToClicked("CHE464CoopPlan2BiomedicalOption", "EngineeringDesign");
       CHE464CoopPlan2BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine490());
-      that.removeLine(getLine491());
-      that.removeLine(getLine492());
-      that.removeLine(getLine493());
-      that.removeLine(getLine494());
-      that.removeLine(getLine495());
+      that.removeLine(getLine497());
+      that.removeLine(getLine498());
+      that.removeLine(getLine499());
+      that.removeLine(getLine500());
       that.removeLine(getLine501());
+      that.removeLine(getLine502());
+      that.removeLine(getLine508());
      that.unHighlightElement(CHE464CoopPlan2BiomedicalOptionelement, "EngineeringDesign");
      var category = that.removeFromClicked("CHE464CoopPlan2BiomedicalOption", "EngineeringDesign");
   if (category != "") { 
@@ -32547,13 +32575,13 @@ WKEXP904CoopPlan2BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine496());
+      that.addLine(getLine503());
      that.highlightElement(WKEXP904CoopPlan2BiomedicalOptionelement, "EngineeringProfession");
      that.addToClicked("WKEXP904CoopPlan2BiomedicalOption", "EngineeringProfession");
       WKEXP904CoopPlan2BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine496());
+      that.removeLine(getLine503());
      that.unHighlightElement(WKEXP904CoopPlan2BiomedicalOptionelement, "EngineeringProfession");
      var category = that.removeFromClicked("WKEXP904CoopPlan2BiomedicalOption", "EngineeringProfession");
   if (category != "") { 
@@ -32617,17 +32645,17 @@ CHE454CoopPlan2BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine497());
-      that.addLine(getLine498());
-      that.addLine(getLine499());
+      that.addLine(getLine504());
+      that.addLine(getLine505());
+      that.addLine(getLine506());
      that.highlightElement(CHE454CoopPlan2BiomedicalOptionelement, "EngineeringSciences");
      that.addToClicked("CHE454CoopPlan2BiomedicalOption", "EngineeringSciences");
       CHE454CoopPlan2BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine497());
-      that.removeLine(getLine498());
-      that.removeLine(getLine499());
+      that.removeLine(getLine504());
+      that.removeLine(getLine505());
+      that.removeLine(getLine506());
      that.unHighlightElement(CHE454CoopPlan2BiomedicalOptionelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE454CoopPlan2BiomedicalOption", "EngineeringSciences");
   if (category != "") { 
@@ -32657,17 +32685,17 @@ CHE465CoopPlan2BiomedicalOptionTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine500());
-      that.addLine(getLine501());
-      that.addLine(getLine502());
+      that.addLine(getLine507());
+      that.addLine(getLine508());
+      that.addLine(getLine509());
      that.highlightElement(CHE465CoopPlan2BiomedicalOptionelement, "EngineeringDesign");
      that.addToClicked("CHE465CoopPlan2BiomedicalOption", "EngineeringDesign");
       CHE465CoopPlan2BiomedicalOptionflag=true
   }
  else {
-      that.removeLine(getLine500());
-      that.removeLine(getLine501());
-      that.removeLine(getLine502());
+      that.removeLine(getLine507());
+      that.removeLine(getLine508());
+      that.removeLine(getLine509());
      that.unHighlightElement(CHE465CoopPlan2BiomedicalOptionelement, "EngineeringDesign");
      var category = that.removeFromClicked("CHE465CoopPlan2BiomedicalOption", "EngineeringDesign");
   if (category != "") { 
@@ -34330,13 +34358,15 @@ CHEM103CoopComputerProcessControlTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine505());
+      that.addLine(getLine512());
+      that.addLine(getLine520());
      that.highlightElement(CHEM103CoopComputerProcessControlelement, "NaturalSciences");
      that.addToClicked("CHEM103CoopComputerProcessControl", "NaturalSciences");
       CHEM103CoopComputerProcessControlflag=true
   }
  else {
-      that.removeLine(getLine505());
+      that.removeLine(getLine512());
+      that.removeLine(getLine520());
      that.unHighlightElement(CHEM103CoopComputerProcessControlelement, "NaturalSciences");
      var category = that.removeFromClicked("CHEM103CoopComputerProcessControl", "NaturalSciences");
   if (category != "") { 
@@ -34400,15 +34430,15 @@ ENGG130CoopComputerProcessControlTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine503());
-      that.addLine(getLine508());
+      that.addLine(getLine510());
+      that.addLine(getLine515());
      that.highlightElement(ENGG130CoopComputerProcessControlelement, "NaturalSciences");
      that.addToClicked("ENGG130CoopComputerProcessControl", "NaturalSciences");
       ENGG130CoopComputerProcessControlflag=true
   }
  else {
-      that.removeLine(getLine503());
-      that.removeLine(getLine508());
+      that.removeLine(getLine510());
+      that.removeLine(getLine515());
      that.unHighlightElement(ENGG130CoopComputerProcessControlelement, "NaturalSciences");
      var category = that.removeFromClicked("ENGG130CoopComputerProcessControl", "NaturalSciences");
   if (category != "") { 
@@ -34438,15 +34468,15 @@ ENGL199CoopComputerProcessControlTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine506());
-      that.addLine(getLine537());
+      that.addLine(getLine513());
+      that.addLine(getLine545());
      that.highlightElement(ENGL199CoopComputerProcessControlelement, "Other");
      that.addToClicked("ENGL199CoopComputerProcessControl", "Other");
       ENGL199CoopComputerProcessControlflag=true
   }
  else {
-      that.removeLine(getLine506());
-      that.removeLine(getLine537());
+      that.removeLine(getLine513());
+      that.removeLine(getLine545());
      that.unHighlightElement(ENGL199CoopComputerProcessControlelement, "Other");
      var category = that.removeFromClicked("ENGL199CoopComputerProcessControl", "Other");
   if (category != "") { 
@@ -34476,23 +34506,23 @@ MATH100CoopComputerProcessControlTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine503());
-      that.addLine(getLine504());
-      that.addLine(getLine507());
       that.addLine(getLine510());
       that.addLine(getLine511());
-      that.addLine(getLine528());
+      that.addLine(getLine514());
+      that.addLine(getLine517());
+      that.addLine(getLine518());
+      that.addLine(getLine536());
      that.highlightElement(MATH100CoopComputerProcessControlelement, "Math");
      that.addToClicked("MATH100CoopComputerProcessControl", "Math");
       MATH100CoopComputerProcessControlflag=true
   }
  else {
-      that.removeLine(getLine503());
-      that.removeLine(getLine504());
-      that.removeLine(getLine507());
       that.removeLine(getLine510());
       that.removeLine(getLine511());
-      that.removeLine(getLine528());
+      that.removeLine(getLine514());
+      that.removeLine(getLine517());
+      that.removeLine(getLine518());
+      that.removeLine(getLine536());
      that.unHighlightElement(MATH100CoopComputerProcessControlelement, "Math");
      var category = that.removeFromClicked("MATH100CoopComputerProcessControl", "Math");
   if (category != "") { 
@@ -34522,13 +34552,13 @@ PHYS130CoopComputerProcessControlTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine504());
+      that.addLine(getLine511());
      that.highlightElement(PHYS130CoopComputerProcessControlelement, "NaturalSciences");
      that.addToClicked("PHYS130CoopComputerProcessControl", "NaturalSciences");
       PHYS130CoopComputerProcessControlflag=true
   }
  else {
-      that.removeLine(getLine504());
+      that.removeLine(getLine511());
      that.unHighlightElement(PHYS130CoopComputerProcessControlelement, "NaturalSciences");
      var category = that.removeFromClicked("PHYS130CoopComputerProcessControl", "NaturalSciences");
   if (category != "") { 
@@ -34558,17 +34588,17 @@ CHEM105CoopComputerProcessControlTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine505());
-      that.addLine(getLine523());
-      that.addLine(getLine526());
+      that.addLine(getLine512());
+      that.addLine(getLine531());
+      that.addLine(getLine534());
      that.highlightElement(CHEM105CoopComputerProcessControlelement, "NaturalSciences");
      that.addToClicked("CHEM105CoopComputerProcessControl", "NaturalSciences");
       CHEM105CoopComputerProcessControlflag=true
   }
  else {
-      that.removeLine(getLine505());
-      that.removeLine(getLine523());
-      that.removeLine(getLine526());
+      that.removeLine(getLine512());
+      that.removeLine(getLine531());
+      that.removeLine(getLine534());
      that.unHighlightElement(CHEM105CoopComputerProcessControlelement, "NaturalSciences");
      var category = that.removeFromClicked("CHEM105CoopComputerProcessControl", "NaturalSciences");
   if (category != "") { 
@@ -34598,15 +34628,15 @@ ENCMP100CoopComputerProcessControlTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine521());
-      that.addLine(getLine541());
+      that.addLine(getLine529());
+      that.addLine(getLine549());
      that.highlightElement(ENCMP100CoopComputerProcessControlelement, "NaturalSciences");
      that.addToClicked("ENCMP100CoopComputerProcessControl", "NaturalSciences");
       ENCMP100CoopComputerProcessControlflag=true
   }
  else {
-      that.removeLine(getLine521());
-      that.removeLine(getLine541());
+      that.removeLine(getLine529());
+      that.removeLine(getLine549());
      that.unHighlightElement(ENCMP100CoopComputerProcessControlelement, "NaturalSciences");
      var category = that.removeFromClicked("ENCMP100CoopComputerProcessControl", "NaturalSciences");
   if (category != "") { 
@@ -34636,13 +34666,13 @@ ENGG160CoopComputerProcessControlTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine506());
+      that.addLine(getLine513());
      that.highlightElement(ENGG160CoopComputerProcessControlelement, "EngineeringDesign");
      that.addToClicked("ENGG160CoopComputerProcessControl", "EngineeringDesign");
       ENGG160CoopComputerProcessControlflag=true
   }
  else {
-      that.removeLine(getLine506());
+      that.removeLine(getLine513());
      that.unHighlightElement(ENGG160CoopComputerProcessControlelement, "EngineeringDesign");
      var category = that.removeFromClicked("ENGG160CoopComputerProcessControl", "EngineeringDesign");
   if (category != "") { 
@@ -34672,19 +34702,19 @@ ENPH131CoopComputerProcessControlTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine507());
-      that.addLine(getLine508());
-      that.addLine(getLine509());
-      that.addLine(getLine518());
+      that.addLine(getLine514());
+      that.addLine(getLine515());
+      that.addLine(getLine516());
+      that.addLine(getLine526());
      that.highlightElement(ENPH131CoopComputerProcessControlelement, "NaturalSciences");
      that.addToClicked("ENPH131CoopComputerProcessControl", "NaturalSciences");
       ENPH131CoopComputerProcessControlflag=true
   }
  else {
-      that.removeLine(getLine507());
-      that.removeLine(getLine508());
-      that.removeLine(getLine509());
-      that.removeLine(getLine518());
+      that.removeLine(getLine514());
+      that.removeLine(getLine515());
+      that.removeLine(getLine516());
+      that.removeLine(getLine526());
      that.unHighlightElement(ENPH131CoopComputerProcessControlelement, "NaturalSciences");
      var category = that.removeFromClicked("ENPH131CoopComputerProcessControl", "NaturalSciences");
   if (category != "") { 
@@ -34714,23 +34744,23 @@ MATH101CoopComputerProcessControlTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine509());
-      that.addLine(getLine510());
-      that.addLine(getLine512());
-      that.addLine(getLine513());
-      that.addLine(getLine515());
-      that.addLine(getLine529());
+      that.addLine(getLine516());
+      that.addLine(getLine517());
+      that.addLine(getLine519());
+      that.addLine(getLine521());
+      that.addLine(getLine523());
+      that.addLine(getLine537());
      that.highlightElement(MATH101CoopComputerProcessControlelement, "Math");
      that.addToClicked("MATH101CoopComputerProcessControl", "Math");
       MATH101CoopComputerProcessControlflag=true
   }
  else {
-      that.removeLine(getLine509());
-      that.removeLine(getLine510());
-      that.removeLine(getLine512());
-      that.removeLine(getLine513());
-      that.removeLine(getLine515());
-      that.removeLine(getLine529());
+      that.removeLine(getLine516());
+      that.removeLine(getLine517());
+      that.removeLine(getLine519());
+      that.removeLine(getLine521());
+      that.removeLine(getLine523());
+      that.removeLine(getLine537());
      that.unHighlightElement(MATH101CoopComputerProcessControlelement, "Math");
      var category = that.removeFromClicked("MATH101CoopComputerProcessControl", "Math");
   if (category != "") { 
@@ -34760,19 +34790,19 @@ MATH102CoopComputerProcessControlTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine511());
-      that.addLine(getLine514());
-      that.addLine(getLine516());
+      that.addLine(getLine518());
       that.addLine(getLine522());
+      that.addLine(getLine524());
+      that.addLine(getLine530());
      that.highlightElement(MATH102CoopComputerProcessControlelement, "Math");
      that.addToClicked("MATH102CoopComputerProcessControl", "Math");
       MATH102CoopComputerProcessControlflag=true
   }
  else {
-      that.removeLine(getLine511());
-      that.removeLine(getLine514());
-      that.removeLine(getLine516());
+      that.removeLine(getLine518());
       that.removeLine(getLine522());
+      that.removeLine(getLine524());
+      that.removeLine(getLine530());
      that.unHighlightElement(MATH102CoopComputerProcessControlelement, "Math");
      var category = that.removeFromClicked("MATH102CoopComputerProcessControl", "Math");
   if (category != "") { 
@@ -34802,21 +34832,21 @@ CHE243CoopComputerProcessControlTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine512());
-      that.addLine(getLine517());
-      that.addLine(getLine524());
-      that.addLine(getLine535());
-      that.addLine(getLine539());
+      that.addLine(getLine519());
+      that.addLine(getLine525());
+      that.addLine(getLine532());
+      that.addLine(getLine543());
+      that.addLine(getLine547());
      that.highlightElement(CHE243CoopComputerProcessControlelement, "EngineeringSciences");
      that.addToClicked("CHE243CoopComputerProcessControl", "EngineeringSciences");
       CHE243CoopComputerProcessControlflag=true
   }
  else {
-      that.removeLine(getLine512());
-      that.removeLine(getLine517());
-      that.removeLine(getLine524());
-      that.removeLine(getLine535());
-      that.removeLine(getLine539());
+      that.removeLine(getLine519());
+      that.removeLine(getLine525());
+      that.removeLine(getLine532());
+      that.removeLine(getLine543());
+      that.removeLine(getLine547());
      that.unHighlightElement(CHE243CoopComputerProcessControlelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE243CoopComputerProcessControl", "EngineeringSciences");
   if (category != "") { 
@@ -34846,11 +34876,13 @@ CHEM261CoopComputerProcessControlTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
+      that.addLine(getLine520());
      that.highlightElement(CHEM261CoopComputerProcessControlelement, "NaturalSciences");
      that.addToClicked("CHEM261CoopComputerProcessControl", "NaturalSciences");
       CHEM261CoopComputerProcessControlflag=true
   }
  else {
+      that.removeLine(getLine520());
      that.unHighlightElement(CHEM261CoopComputerProcessControlelement, "NaturalSciences");
      var category = that.removeFromClicked("CHEM261CoopComputerProcessControl", "NaturalSciences");
   if (category != "") { 
@@ -34914,15 +34946,15 @@ ECE202CoopComputerProcessControlTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine513());
-      that.addLine(getLine514());
+      that.addLine(getLine521());
+      that.addLine(getLine522());
      that.highlightElement(ECE202CoopComputerProcessControlelement, "EngineeringSciences");
      that.addToClicked("ECE202CoopComputerProcessControl", "EngineeringSciences");
       ECE202CoopComputerProcessControlflag=true
   }
  else {
-      that.removeLine(getLine513());
-      that.removeLine(getLine514());
+      that.removeLine(getLine521());
+      that.removeLine(getLine522());
      that.unHighlightElement(ECE202CoopComputerProcessControlelement, "EngineeringSciences");
      var category = that.removeFromClicked("ECE202CoopComputerProcessControl", "EngineeringSciences");
   if (category != "") { 
@@ -34986,13 +35018,13 @@ ENGG299CoopComputerProcessControlTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine530());
+      that.addLine(getLine538());
      that.highlightElement(ENGG299CoopComputerProcessControlelement, "EngineeringProfession");
      that.addToClicked("ENGG299CoopComputerProcessControl", "EngineeringProfession");
       ENGG299CoopComputerProcessControlflag=true
   }
  else {
-      that.removeLine(getLine530());
+      that.removeLine(getLine538());
      that.unHighlightElement(ENGG299CoopComputerProcessControlelement, "EngineeringProfession");
      var category = that.removeFromClicked("ENGG299CoopComputerProcessControl", "EngineeringProfession");
   if (category != "") { 
@@ -35022,23 +35054,23 @@ MATH209CoopComputerProcessControlTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine515());
-      that.addLine(getLine516());
-      that.addLine(getLine519());
-      that.addLine(getLine525());
+      that.addLine(getLine523());
+      that.addLine(getLine524());
       that.addLine(getLine527());
-      that.addLine(getLine544());
+      that.addLine(getLine533());
+      that.addLine(getLine535());
+      that.addLine(getLine552());
      that.highlightElement(MATH209CoopComputerProcessControlelement, "Math");
      that.addToClicked("MATH209CoopComputerProcessControl", "Math");
       MATH209CoopComputerProcessControlflag=true
   }
  else {
-      that.removeLine(getLine515());
-      that.removeLine(getLine516());
-      that.removeLine(getLine519());
-      that.removeLine(getLine525());
+      that.removeLine(getLine523());
+      that.removeLine(getLine524());
       that.removeLine(getLine527());
-      that.removeLine(getLine544());
+      that.removeLine(getLine533());
+      that.removeLine(getLine535());
+      that.removeLine(getLine552());
      that.unHighlightElement(MATH209CoopComputerProcessControlelement, "Math");
      var category = that.removeFromClicked("MATH209CoopComputerProcessControl", "Math");
   if (category != "") { 
@@ -35102,27 +35134,27 @@ CHE312CoopComputerProcessControlTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine517());
-      that.addLine(getLine518());
-      that.addLine(getLine519());
-      that.addLine(getLine520());
-      that.addLine(getLine533());
-      that.addLine(getLine540());
-      that.addLine(getLine545());
-      that.addLine(getLine550());
+      that.addLine(getLine525());
+      that.addLine(getLine526());
+      that.addLine(getLine527());
+      that.addLine(getLine528());
+      that.addLine(getLine541());
+      that.addLine(getLine548());
+      that.addLine(getLine553());
+      that.addLine(getLine558());
      that.highlightElement(CHE312CoopComputerProcessControlelement, "EngineeringSciences");
      that.addToClicked("CHE312CoopComputerProcessControl", "EngineeringSciences");
       CHE312CoopComputerProcessControlflag=true
   }
  else {
-      that.removeLine(getLine517());
-      that.removeLine(getLine518());
-      that.removeLine(getLine519());
-      that.removeLine(getLine520());
-      that.removeLine(getLine533());
-      that.removeLine(getLine540());
-      that.removeLine(getLine545());
-      that.removeLine(getLine550());
+      that.removeLine(getLine525());
+      that.removeLine(getLine526());
+      that.removeLine(getLine527());
+      that.removeLine(getLine528());
+      that.removeLine(getLine541());
+      that.removeLine(getLine548());
+      that.removeLine(getLine553());
+      that.removeLine(getLine558());
      that.unHighlightElement(CHE312CoopComputerProcessControlelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE312CoopComputerProcessControl", "EngineeringSciences");
   if (category != "") { 
@@ -35152,31 +35184,31 @@ CME265CoopComputerProcessControlTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine521());
-      that.addLine(getLine522());
-      that.addLine(getLine523());
-      that.addLine(getLine524());
-      that.addLine(getLine525());
-      that.addLine(getLine536());
-      that.addLine(getLine538());
-      that.addLine(getLine542());
-      that.addLine(getLine549());
-      that.addLine(getLine553());
+      that.addLine(getLine529());
+      that.addLine(getLine530());
+      that.addLine(getLine531());
+      that.addLine(getLine532());
+      that.addLine(getLine533());
+      that.addLine(getLine544());
+      that.addLine(getLine546());
+      that.addLine(getLine550());
+      that.addLine(getLine557());
+      that.addLine(getLine561());
      that.highlightElement(CME265CoopComputerProcessControlelement, "EngineeringSciences");
      that.addToClicked("CME265CoopComputerProcessControl", "EngineeringSciences");
       CME265CoopComputerProcessControlflag=true
   }
  else {
-      that.removeLine(getLine521());
-      that.removeLine(getLine522());
-      that.removeLine(getLine523());
-      that.removeLine(getLine524());
-      that.removeLine(getLine525());
-      that.removeLine(getLine536());
-      that.removeLine(getLine538());
-      that.removeLine(getLine542());
-      that.removeLine(getLine549());
-      that.removeLine(getLine553());
+      that.removeLine(getLine529());
+      that.removeLine(getLine530());
+      that.removeLine(getLine531());
+      that.removeLine(getLine532());
+      that.removeLine(getLine533());
+      that.removeLine(getLine544());
+      that.removeLine(getLine546());
+      that.removeLine(getLine550());
+      that.removeLine(getLine557());
+      that.removeLine(getLine561());
      that.unHighlightElement(CME265CoopComputerProcessControlelement, "EngineeringSciences");
      var category = that.removeFromClicked("CME265CoopComputerProcessControl", "EngineeringSciences");
   if (category != "") { 
@@ -35206,13 +35238,13 @@ MATE202CoopComputerProcessControlTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine526());
+      that.addLine(getLine534());
      that.highlightElement(MATE202CoopComputerProcessControlelement, "EngineeringSciences");
      that.addToClicked("MATE202CoopComputerProcessControl", "EngineeringSciences");
       MATE202CoopComputerProcessControlflag=true
   }
  else {
-      that.removeLine(getLine526());
+      that.removeLine(getLine534());
      that.unHighlightElement(MATE202CoopComputerProcessControlelement, "EngineeringSciences");
      var category = that.removeFromClicked("MATE202CoopComputerProcessControl", "EngineeringSciences");
   if (category != "") { 
@@ -35242,19 +35274,19 @@ MATH201CoopComputerProcessControlTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine520());
-      that.addLine(getLine527());
-      that.addLine(getLine532());
-      that.addLine(getLine543());
+      that.addLine(getLine528());
+      that.addLine(getLine535());
+      that.addLine(getLine540());
+      that.addLine(getLine551());
      that.highlightElement(MATH201CoopComputerProcessControlelement, "Math");
      that.addToClicked("MATH201CoopComputerProcessControl", "Math");
       MATH201CoopComputerProcessControlflag=true
   }
  else {
-      that.removeLine(getLine520());
-      that.removeLine(getLine527());
-      that.removeLine(getLine532());
-      that.removeLine(getLine543());
+      that.removeLine(getLine528());
+      that.removeLine(getLine535());
+      that.removeLine(getLine540());
+      that.removeLine(getLine551());
      that.unHighlightElement(MATH201CoopComputerProcessControlelement, "Math");
      var category = that.removeFromClicked("MATH201CoopComputerProcessControl", "Math");
   if (category != "") { 
@@ -35284,17 +35316,17 @@ STAT235CoopComputerProcessControlTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine528());
-      that.addLine(getLine529());
-      that.addLine(getLine557());
+      that.addLine(getLine536());
+      that.addLine(getLine537());
+      that.addLine(getLine565());
      that.highlightElement(STAT235CoopComputerProcessControlelement, "Math");
      that.addToClicked("STAT235CoopComputerProcessControl", "Math");
       STAT235CoopComputerProcessControlflag=true
   }
  else {
-      that.removeLine(getLine528());
-      that.removeLine(getLine529());
-      that.removeLine(getLine557());
+      that.removeLine(getLine536());
+      that.removeLine(getLine537());
+      that.removeLine(getLine565());
      that.unHighlightElement(STAT235CoopComputerProcessControlelement, "Math");
      var category = that.removeFromClicked("STAT235CoopComputerProcessControl", "Math");
   if (category != "") { 
@@ -35358,15 +35390,15 @@ WKEXP901CoopComputerProcessControlTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine530());
-      that.addLine(getLine531());
+      that.addLine(getLine538());
+      that.addLine(getLine539());
      that.highlightElement(WKEXP901CoopComputerProcessControlelement, "EngineeringProfession");
      that.addToClicked("WKEXP901CoopComputerProcessControl", "EngineeringProfession");
       WKEXP901CoopComputerProcessControlflag=true
   }
  else {
-      that.removeLine(getLine530());
-      that.removeLine(getLine531());
+      that.removeLine(getLine538());
+      that.removeLine(getLine539());
      that.unHighlightElement(WKEXP901CoopComputerProcessControlelement, "EngineeringProfession");
      var category = that.removeFromClicked("WKEXP901CoopComputerProcessControl", "EngineeringProfession");
   if (category != "") { 
@@ -35396,15 +35428,15 @@ WKEXP902CoopComputerProcessControlTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine531());
-      that.addLine(getLine560());
+      that.addLine(getLine539());
+      that.addLine(getLine568());
      that.highlightElement(WKEXP902CoopComputerProcessControlelement, "EngineeringProfession");
      that.addToClicked("WKEXP902CoopComputerProcessControl", "EngineeringProfession");
       WKEXP902CoopComputerProcessControlflag=true
   }
  else {
-      that.removeLine(getLine531());
-      that.removeLine(getLine560());
+      that.removeLine(getLine539());
+      that.removeLine(getLine568());
      that.unHighlightElement(WKEXP902CoopComputerProcessControlelement, "EngineeringProfession");
      var category = that.removeFromClicked("WKEXP902CoopComputerProcessControl", "EngineeringProfession");
   if (category != "") { 
@@ -35434,27 +35466,27 @@ CHE314CoopComputerProcessControlTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine532());
-      that.addLine(getLine533());
-      that.addLine(getLine534());
-      that.addLine(getLine547());
-      that.addLine(getLine552());
-      that.addLine(getLine558());
-      that.addLine(getLine561());
-      that.addLine(getLine567());
+      that.addLine(getLine540());
+      that.addLine(getLine541());
+      that.addLine(getLine542());
+      that.addLine(getLine555());
+      that.addLine(getLine560());
+      that.addLine(getLine566());
+      that.addLine(getLine569());
+      that.addLine(getLine575());
      that.highlightElement(CHE314CoopComputerProcessControlelement, "EngineeringSciences");
      that.addToClicked("CHE314CoopComputerProcessControl", "EngineeringSciences");
       CHE314CoopComputerProcessControlflag=true
   }
  else {
-      that.removeLine(getLine532());
-      that.removeLine(getLine533());
-      that.removeLine(getLine534());
-      that.removeLine(getLine547());
-      that.removeLine(getLine552());
-      that.removeLine(getLine558());
-      that.removeLine(getLine561());
-      that.removeLine(getLine567());
+      that.removeLine(getLine540());
+      that.removeLine(getLine541());
+      that.removeLine(getLine542());
+      that.removeLine(getLine555());
+      that.removeLine(getLine560());
+      that.removeLine(getLine566());
+      that.removeLine(getLine569());
+      that.removeLine(getLine575());
      that.unHighlightElement(CHE314CoopComputerProcessControlelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE314CoopComputerProcessControl", "EngineeringSciences");
   if (category != "") { 
@@ -35484,21 +35516,21 @@ CHE343CoopComputerProcessControlTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine535());
-      that.addLine(getLine536());
-      that.addLine(getLine546());
-      that.addLine(getLine551());
+      that.addLine(getLine543());
+      that.addLine(getLine544());
       that.addLine(getLine554());
+      that.addLine(getLine559());
+      that.addLine(getLine562());
      that.highlightElement(CHE343CoopComputerProcessControlelement, "EngineeringSciences");
      that.addToClicked("CHE343CoopComputerProcessControl", "EngineeringSciences");
       CHE343CoopComputerProcessControlflag=true
   }
  else {
-      that.removeLine(getLine535());
-      that.removeLine(getLine536());
-      that.removeLine(getLine546());
-      that.removeLine(getLine551());
+      that.removeLine(getLine543());
+      that.removeLine(getLine544());
       that.removeLine(getLine554());
+      that.removeLine(getLine559());
+      that.removeLine(getLine562());
      that.unHighlightElement(CHE343CoopComputerProcessControlelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE343CoopComputerProcessControl", "EngineeringSciences");
   if (category != "") { 
@@ -35528,21 +35560,21 @@ CHE351CoopComputerProcessControlTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine537());
-      that.addLine(getLine538());
-      that.addLine(getLine539());
-      that.addLine(getLine540());
-      that.addLine(getLine556());
+      that.addLine(getLine545());
+      that.addLine(getLine546());
+      that.addLine(getLine547());
+      that.addLine(getLine548());
+      that.addLine(getLine564());
      that.highlightElement(CHE351CoopComputerProcessControlelement, "EngineeringSciences");
      that.addToClicked("CHE351CoopComputerProcessControl", "EngineeringSciences");
       CHE351CoopComputerProcessControlflag=true
   }
  else {
-      that.removeLine(getLine537());
-      that.removeLine(getLine538());
-      that.removeLine(getLine539());
-      that.removeLine(getLine540());
-      that.removeLine(getLine556());
+      that.removeLine(getLine545());
+      that.removeLine(getLine546());
+      that.removeLine(getLine547());
+      that.removeLine(getLine548());
+      that.removeLine(getLine564());
      that.unHighlightElement(CHE351CoopComputerProcessControlelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE351CoopComputerProcessControl", "EngineeringSciences");
   if (category != "") { 
@@ -35572,17 +35604,17 @@ CHE374CoopComputerProcessControlTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine534());
-      that.addLine(getLine541());
-      that.addLine(getLine555());
+      that.addLine(getLine542());
+      that.addLine(getLine549());
+      that.addLine(getLine563());
      that.highlightElement(CHE374CoopComputerProcessControlelement, "EngineeringSciences");
      that.addToClicked("CHE374CoopComputerProcessControl", "EngineeringSciences");
       CHE374CoopComputerProcessControlflag=true
   }
  else {
-      that.removeLine(getLine534());
-      that.removeLine(getLine541());
-      that.removeLine(getLine555());
+      that.removeLine(getLine542());
+      that.removeLine(getLine549());
+      that.removeLine(getLine563());
      that.unHighlightElement(CHE374CoopComputerProcessControlelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE374CoopComputerProcessControl", "EngineeringSciences");
   if (category != "") { 
@@ -35612,25 +35644,25 @@ CHE446CoopComputerProcessControlTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine542());
-      that.addLine(getLine543());
-      that.addLine(getLine544());
-      that.addLine(getLine545());
-      that.addLine(getLine575());
-      that.addLine(getLine579());
-      that.addLine(getLine580());
+      that.addLine(getLine550());
+      that.addLine(getLine551());
+      that.addLine(getLine552());
+      that.addLine(getLine553());
+      that.addLine(getLine583());
+      that.addLine(getLine587());
+      that.addLine(getLine588());
      that.highlightElement(CHE446CoopComputerProcessControlelement, "EngineeringSciences");
      that.addToClicked("CHE446CoopComputerProcessControl", "EngineeringSciences");
       CHE446CoopComputerProcessControlflag=true
   }
  else {
-      that.removeLine(getLine542());
-      that.removeLine(getLine543());
-      that.removeLine(getLine544());
-      that.removeLine(getLine545());
-      that.removeLine(getLine575());
-      that.removeLine(getLine579());
-      that.removeLine(getLine580());
+      that.removeLine(getLine550());
+      that.removeLine(getLine551());
+      that.removeLine(getLine552());
+      that.removeLine(getLine553());
+      that.removeLine(getLine583());
+      that.removeLine(getLine587());
+      that.removeLine(getLine588());
      that.unHighlightElement(CHE446CoopComputerProcessControlelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE446CoopComputerProcessControl", "EngineeringSciences");
   if (category != "") { 
@@ -35694,19 +35726,19 @@ CHE316CoopComputerProcessControlTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine546());
-      that.addLine(getLine547());
-      that.addLine(getLine548());
-      that.addLine(getLine563());
+      that.addLine(getLine554());
+      that.addLine(getLine555());
+      that.addLine(getLine556());
+      that.addLine(getLine571());
      that.highlightElement(CHE316CoopComputerProcessControlelement, "EngineeringSciences");
      that.addToClicked("CHE316CoopComputerProcessControl", "EngineeringSciences");
       CHE316CoopComputerProcessControlflag=true
   }
  else {
-      that.removeLine(getLine546());
-      that.removeLine(getLine547());
-      that.removeLine(getLine548());
-      that.removeLine(getLine563());
+      that.removeLine(getLine554());
+      that.removeLine(getLine555());
+      that.removeLine(getLine556());
+      that.removeLine(getLine571());
      that.unHighlightElement(CHE316CoopComputerProcessControlelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE316CoopComputerProcessControl", "EngineeringSciences");
   if (category != "") { 
@@ -35736,25 +35768,25 @@ CHE318CoopComputerProcessControlTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine548());
-      that.addLine(getLine549());
-      that.addLine(getLine550());
-      that.addLine(getLine551());
-      that.addLine(getLine552());
-      that.addLine(getLine568());
-      that.addLine(getLine572());
+      that.addLine(getLine556());
+      that.addLine(getLine557());
+      that.addLine(getLine558());
+      that.addLine(getLine559());
+      that.addLine(getLine560());
+      that.addLine(getLine576());
+      that.addLine(getLine580());
      that.highlightElement(CHE318CoopComputerProcessControlelement, "EngineeringSciences");
      that.addToClicked("CHE318CoopComputerProcessControl", "EngineeringSciences");
       CHE318CoopComputerProcessControlflag=true
   }
  else {
-      that.removeLine(getLine548());
-      that.removeLine(getLine549());
-      that.removeLine(getLine550());
-      that.removeLine(getLine551());
-      that.removeLine(getLine552());
-      that.removeLine(getLine568());
-      that.removeLine(getLine572());
+      that.removeLine(getLine556());
+      that.removeLine(getLine557());
+      that.removeLine(getLine558());
+      that.removeLine(getLine559());
+      that.removeLine(getLine560());
+      that.removeLine(getLine576());
+      that.removeLine(getLine580());
      that.unHighlightElement(CHE318CoopComputerProcessControlelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE318CoopComputerProcessControl", "EngineeringSciences");
   if (category != "") { 
@@ -35784,25 +35816,25 @@ CHE345CoopComputerProcessControlTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine553());
-      that.addLine(getLine554());
-      that.addLine(getLine555());
-      that.addLine(getLine559());
+      that.addLine(getLine561());
       that.addLine(getLine562());
-      that.addLine(getLine569());
-      that.addLine(getLine573());
+      that.addLine(getLine563());
+      that.addLine(getLine567());
+      that.addLine(getLine570());
+      that.addLine(getLine577());
+      that.addLine(getLine581());
      that.highlightElement(CHE345CoopComputerProcessControlelement, "EngineeringSciences");
      that.addToClicked("CHE345CoopComputerProcessControl", "EngineeringSciences");
       CHE345CoopComputerProcessControlflag=true
   }
  else {
-      that.removeLine(getLine553());
-      that.removeLine(getLine554());
-      that.removeLine(getLine555());
-      that.removeLine(getLine559());
+      that.removeLine(getLine561());
       that.removeLine(getLine562());
-      that.removeLine(getLine569());
-      that.removeLine(getLine573());
+      that.removeLine(getLine563());
+      that.removeLine(getLine567());
+      that.removeLine(getLine570());
+      that.removeLine(getLine577());
+      that.removeLine(getLine581());
      that.unHighlightElement(CHE345CoopComputerProcessControlelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE345CoopComputerProcessControl", "EngineeringSciences");
   if (category != "") { 
@@ -35832,23 +35864,23 @@ CHE358CoopComputerProcessControlTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine556());
-      that.addLine(getLine557());
-      that.addLine(getLine558());
-      that.addLine(getLine559());
-      that.addLine(getLine574());
-      that.addLine(getLine578());
+      that.addLine(getLine564());
+      that.addLine(getLine565());
+      that.addLine(getLine566());
+      that.addLine(getLine567());
+      that.addLine(getLine582());
+      that.addLine(getLine586());
      that.highlightElement(CHE358CoopComputerProcessControlelement, "EngineeringSciences");
      that.addToClicked("CHE358CoopComputerProcessControl", "EngineeringSciences");
       CHE358CoopComputerProcessControlflag=true
   }
  else {
-      that.removeLine(getLine556());
-      that.removeLine(getLine557());
-      that.removeLine(getLine558());
-      that.removeLine(getLine559());
-      that.removeLine(getLine574());
-      that.removeLine(getLine578());
+      that.removeLine(getLine564());
+      that.removeLine(getLine565());
+      that.removeLine(getLine566());
+      that.removeLine(getLine567());
+      that.removeLine(getLine582());
+      that.removeLine(getLine586());
      that.unHighlightElement(CHE358CoopComputerProcessControlelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE358CoopComputerProcessControl", "EngineeringSciences");
   if (category != "") { 
@@ -35878,13 +35910,13 @@ ENGM310CoopComputerProcessControlTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine564());
+      that.addLine(getLine572());
      that.highlightElement(ENGM310CoopComputerProcessControlelement, "Other");
      that.addToClicked("ENGM310CoopComputerProcessControl", "Other");
       ENGM310CoopComputerProcessControlflag=true
   }
  else {
-      that.removeLine(getLine564());
+      that.removeLine(getLine572());
      that.unHighlightElement(ENGM310CoopComputerProcessControlelement, "Other");
      var category = that.removeFromClicked("ENGM310CoopComputerProcessControl", "Other");
   if (category != "") { 
@@ -35914,13 +35946,13 @@ ENGM401CoopComputerProcessControlTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine565());
+      that.addLine(getLine573());
      that.highlightElement(ENGM401CoopComputerProcessControlelement, "Other");
      that.addToClicked("ENGM401CoopComputerProcessControl", "Other");
       ENGM401CoopComputerProcessControlflag=true
   }
  else {
-      that.removeLine(getLine565());
+      that.removeLine(getLine573());
      that.unHighlightElement(ENGM401CoopComputerProcessControlelement, "Other");
      var category = that.removeFromClicked("ENGM401CoopComputerProcessControl", "Other");
   if (category != "") { 
@@ -35950,15 +35982,15 @@ ENGG404CoopComputerProcessControlTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine566());
-      that.addLine(getLine577());
+      that.addLine(getLine574());
+      that.addLine(getLine585());
      that.highlightElement(ENGG404CoopComputerProcessControlelement, "EngineeringProfession");
      that.addToClicked("ENGG404CoopComputerProcessControl", "EngineeringProfession");
       ENGG404CoopComputerProcessControlflag=true
   }
  else {
-      that.removeLine(getLine566());
-      that.removeLine(getLine577());
+      that.removeLine(getLine574());
+      that.removeLine(getLine585());
      that.unHighlightElement(ENGG404CoopComputerProcessControlelement, "EngineeringProfession");
      var category = that.removeFromClicked("ENGG404CoopComputerProcessControl", "EngineeringProfession");
   if (category != "") { 
@@ -35988,15 +36020,15 @@ WKEXP903CoopComputerProcessControlTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine560());
-      that.addLine(getLine570());
+      that.addLine(getLine568());
+      that.addLine(getLine578());
      that.highlightElement(WKEXP903CoopComputerProcessControlelement, "EngineeringProfession");
      that.addToClicked("WKEXP903CoopComputerProcessControl", "EngineeringProfession");
       WKEXP903CoopComputerProcessControlflag=true
   }
  else {
-      that.removeLine(getLine560());
-      that.removeLine(getLine570());
+      that.removeLine(getLine568());
+      that.removeLine(getLine578());
      that.unHighlightElement(WKEXP903CoopComputerProcessControlelement, "EngineeringProfession");
      var category = that.removeFromClicked("WKEXP903CoopComputerProcessControl", "EngineeringProfession");
   if (category != "") { 
@@ -36026,25 +36058,25 @@ CHE464CoopComputerProcessControlTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine561());
-      that.addLine(getLine562());
-      that.addLine(getLine563());
-      that.addLine(getLine564());
-      that.addLine(getLine565());
-      that.addLine(getLine566());
-      that.addLine(getLine576());
+      that.addLine(getLine569());
+      that.addLine(getLine570());
+      that.addLine(getLine571());
+      that.addLine(getLine572());
+      that.addLine(getLine573());
+      that.addLine(getLine574());
+      that.addLine(getLine584());
      that.highlightElement(CHE464CoopComputerProcessControlelement, "EngineeringDesign");
      that.addToClicked("CHE464CoopComputerProcessControl", "EngineeringDesign");
       CHE464CoopComputerProcessControlflag=true
   }
  else {
-      that.removeLine(getLine561());
-      that.removeLine(getLine562());
-      that.removeLine(getLine563());
-      that.removeLine(getLine564());
-      that.removeLine(getLine565());
-      that.removeLine(getLine566());
-      that.removeLine(getLine576());
+      that.removeLine(getLine569());
+      that.removeLine(getLine570());
+      that.removeLine(getLine571());
+      that.removeLine(getLine572());
+      that.removeLine(getLine573());
+      that.removeLine(getLine574());
+      that.removeLine(getLine584());
      that.unHighlightElement(CHE464CoopComputerProcessControlelement, "EngineeringDesign");
      var category = that.removeFromClicked("CHE464CoopComputerProcessControl", "EngineeringDesign");
   if (category != "") { 
@@ -36074,17 +36106,17 @@ CHE472CoopComputerProcessControlTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine567());
-      that.addLine(getLine568());
-      that.addLine(getLine569());
+      that.addLine(getLine575());
+      that.addLine(getLine576());
+      that.addLine(getLine577());
      that.highlightElement(CHE472CoopComputerProcessControlelement, "EngineeringSciences");
      that.addToClicked("CHE472CoopComputerProcessControl", "EngineeringSciences");
       CHE472CoopComputerProcessControlflag=true
   }
  else {
-      that.removeLine(getLine567());
-      that.removeLine(getLine568());
-      that.removeLine(getLine569());
+      that.removeLine(getLine575());
+      that.removeLine(getLine576());
+      that.removeLine(getLine577());
      that.unHighlightElement(CHE472CoopComputerProcessControlelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE472CoopComputerProcessControl", "EngineeringSciences");
   if (category != "") { 
@@ -36250,15 +36282,15 @@ WKEXP904CoopComputerProcessControlTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine570());
-      that.addLine(getLine571());
+      that.addLine(getLine578());
+      that.addLine(getLine579());
      that.highlightElement(WKEXP904CoopComputerProcessControlelement, "EngineeringProfession");
      that.addToClicked("WKEXP904CoopComputerProcessControl", "EngineeringProfession");
       WKEXP904CoopComputerProcessControlflag=true
   }
  else {
-      that.removeLine(getLine570());
-      that.removeLine(getLine571());
+      that.removeLine(getLine578());
+      that.removeLine(getLine579());
      that.unHighlightElement(WKEXP904CoopComputerProcessControlelement, "EngineeringProfession");
      var category = that.removeFromClicked("WKEXP904CoopComputerProcessControl", "EngineeringProfession");
   if (category != "") { 
@@ -36288,13 +36320,13 @@ WKEXP905CoopComputerProcessControlTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine571());
+      that.addLine(getLine579());
      that.highlightElement(WKEXP905CoopComputerProcessControlelement, "EngineeringProfession");
      that.addToClicked("WKEXP905CoopComputerProcessControl", "EngineeringProfession");
       WKEXP905CoopComputerProcessControlflag=true
   }
  else {
-      that.removeLine(getLine571());
+      that.removeLine(getLine579());
      that.unHighlightElement(WKEXP905CoopComputerProcessControlelement, "EngineeringProfession");
      var category = that.removeFromClicked("WKEXP905CoopComputerProcessControl", "EngineeringProfession");
   if (category != "") { 
@@ -36324,17 +36356,17 @@ CHE454CoopComputerProcessControlTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine572());
-      that.addLine(getLine573());
-      that.addLine(getLine574());
+      that.addLine(getLine580());
+      that.addLine(getLine581());
+      that.addLine(getLine582());
      that.highlightElement(CHE454CoopComputerProcessControlelement, "EngineeringSciences");
      that.addToClicked("CHE454CoopComputerProcessControl", "EngineeringSciences");
       CHE454CoopComputerProcessControlflag=true
   }
  else {
-      that.removeLine(getLine572());
-      that.removeLine(getLine573());
-      that.removeLine(getLine574());
+      that.removeLine(getLine580());
+      that.removeLine(getLine581());
+      that.removeLine(getLine582());
      that.unHighlightElement(CHE454CoopComputerProcessControlelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE454CoopComputerProcessControl", "EngineeringSciences");
   if (category != "") { 
@@ -36364,17 +36396,17 @@ CHE465CoopComputerProcessControlTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine575());
-      that.addLine(getLine576());
-      that.addLine(getLine577());
+      that.addLine(getLine583());
+      that.addLine(getLine584());
+      that.addLine(getLine585());
      that.highlightElement(CHE465CoopComputerProcessControlelement, "EngineeringDesign");
      that.addToClicked("CHE465CoopComputerProcessControl", "EngineeringDesign");
       CHE465CoopComputerProcessControlflag=true
   }
  else {
-      that.removeLine(getLine575());
-      that.removeLine(getLine576());
-      that.removeLine(getLine577());
+      that.removeLine(getLine583());
+      that.removeLine(getLine584());
+      that.removeLine(getLine585());
      that.unHighlightElement(CHE465CoopComputerProcessControlelement, "EngineeringDesign");
      var category = that.removeFromClicked("CHE465CoopComputerProcessControl", "EngineeringDesign");
   if (category != "") { 
@@ -36404,15 +36436,15 @@ CHE573CoopComputerProcessControlTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine578());
-      that.addLine(getLine579());
+      that.addLine(getLine586());
+      that.addLine(getLine587());
      that.highlightElement(CHE573CoopComputerProcessControlelement, "EngineeringSciences");
      that.addToClicked("CHE573CoopComputerProcessControl", "EngineeringSciences");
       CHE573CoopComputerProcessControlflag=true
   }
  else {
-      that.removeLine(getLine578());
-      that.removeLine(getLine579());
+      that.removeLine(getLine586());
+      that.removeLine(getLine587());
      that.unHighlightElement(CHE573CoopComputerProcessControlelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE573CoopComputerProcessControl", "EngineeringSciences");
   if (category != "") { 
@@ -36442,13 +36474,13 @@ CHE576CoopComputerProcessControlTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine580());
+      that.addLine(getLine588());
      that.highlightElement(CHE576CoopComputerProcessControlelement, "EngineeringSciences");
      that.addToClicked("CHE576CoopComputerProcessControl", "EngineeringSciences");
       CHE576CoopComputerProcessControlflag=true
   }
  else {
-      that.removeLine(getLine580());
+      that.removeLine(getLine588());
      that.unHighlightElement(CHE576CoopComputerProcessControlelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE576CoopComputerProcessControl", "EngineeringSciences");
   if (category != "") { 
@@ -37993,13 +38025,15 @@ CHEM103CoopOilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine583());
+      that.addLine(getLine591());
+      that.addLine(getLine599());
      that.highlightElement(CHEM103CoopOilSandsElectiveelement, "NaturalSciences");
      that.addToClicked("CHEM103CoopOilSandsElective", "NaturalSciences");
       CHEM103CoopOilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine583());
+      that.removeLine(getLine591());
+      that.removeLine(getLine599());
      that.unHighlightElement(CHEM103CoopOilSandsElectiveelement, "NaturalSciences");
      var category = that.removeFromClicked("CHEM103CoopOilSandsElective", "NaturalSciences");
   if (category != "") { 
@@ -38063,15 +38097,15 @@ ENGG130CoopOilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine581());
-      that.addLine(getLine586());
+      that.addLine(getLine589());
+      that.addLine(getLine594());
      that.highlightElement(ENGG130CoopOilSandsElectiveelement, "NaturalSciences");
      that.addToClicked("ENGG130CoopOilSandsElective", "NaturalSciences");
       ENGG130CoopOilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine581());
-      that.removeLine(getLine586());
+      that.removeLine(getLine589());
+      that.removeLine(getLine594());
      that.unHighlightElement(ENGG130CoopOilSandsElectiveelement, "NaturalSciences");
      var category = that.removeFromClicked("ENGG130CoopOilSandsElective", "NaturalSciences");
   if (category != "") { 
@@ -38101,15 +38135,15 @@ ENGL199CoopOilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine584());
-      that.addLine(getLine612());
+      that.addLine(getLine592());
+      that.addLine(getLine621());
      that.highlightElement(ENGL199CoopOilSandsElectiveelement, "Other");
      that.addToClicked("ENGL199CoopOilSandsElective", "Other");
       ENGL199CoopOilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine584());
-      that.removeLine(getLine612());
+      that.removeLine(getLine592());
+      that.removeLine(getLine621());
      that.unHighlightElement(ENGL199CoopOilSandsElectiveelement, "Other");
      var category = that.removeFromClicked("ENGL199CoopOilSandsElective", "Other");
   if (category != "") { 
@@ -38139,23 +38173,23 @@ MATH100CoopOilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine581());
-      that.addLine(getLine582());
-      that.addLine(getLine585());
-      that.addLine(getLine588());
       that.addLine(getLine589());
-      that.addLine(getLine605());
+      that.addLine(getLine590());
+      that.addLine(getLine593());
+      that.addLine(getLine596());
+      that.addLine(getLine597());
+      that.addLine(getLine614());
      that.highlightElement(MATH100CoopOilSandsElectiveelement, "Math");
      that.addToClicked("MATH100CoopOilSandsElective", "Math");
       MATH100CoopOilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine581());
-      that.removeLine(getLine582());
-      that.removeLine(getLine585());
-      that.removeLine(getLine588());
       that.removeLine(getLine589());
-      that.removeLine(getLine605());
+      that.removeLine(getLine590());
+      that.removeLine(getLine593());
+      that.removeLine(getLine596());
+      that.removeLine(getLine597());
+      that.removeLine(getLine614());
      that.unHighlightElement(MATH100CoopOilSandsElectiveelement, "Math");
      var category = that.removeFromClicked("MATH100CoopOilSandsElective", "Math");
   if (category != "") { 
@@ -38185,13 +38219,13 @@ PHYS130CoopOilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine582());
+      that.addLine(getLine590());
      that.highlightElement(PHYS130CoopOilSandsElectiveelement, "NaturalSciences");
      that.addToClicked("PHYS130CoopOilSandsElective", "NaturalSciences");
       PHYS130CoopOilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine582());
+      that.removeLine(getLine590());
      that.unHighlightElement(PHYS130CoopOilSandsElectiveelement, "NaturalSciences");
      var category = that.removeFromClicked("PHYS130CoopOilSandsElective", "NaturalSciences");
   if (category != "") { 
@@ -38221,17 +38255,17 @@ CHEM105CoopOilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine583());
-      that.addLine(getLine593());
-      that.addLine(getLine603());
+      that.addLine(getLine591());
+      that.addLine(getLine602());
+      that.addLine(getLine612());
      that.highlightElement(CHEM105CoopOilSandsElectiveelement, "NaturalSciences");
      that.addToClicked("CHEM105CoopOilSandsElective", "NaturalSciences");
       CHEM105CoopOilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine583());
-      that.removeLine(getLine593());
-      that.removeLine(getLine603());
+      that.removeLine(getLine591());
+      that.removeLine(getLine602());
+      that.removeLine(getLine612());
      that.unHighlightElement(CHEM105CoopOilSandsElectiveelement, "NaturalSciences");
      var category = that.removeFromClicked("CHEM105CoopOilSandsElective", "NaturalSciences");
   if (category != "") { 
@@ -38261,15 +38295,15 @@ ENCMP100CoopOilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine591());
-      that.addLine(getLine616());
+      that.addLine(getLine600());
+      that.addLine(getLine625());
      that.highlightElement(ENCMP100CoopOilSandsElectiveelement, "NaturalSciences");
      that.addToClicked("ENCMP100CoopOilSandsElective", "NaturalSciences");
       ENCMP100CoopOilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine591());
-      that.removeLine(getLine616());
+      that.removeLine(getLine600());
+      that.removeLine(getLine625());
      that.unHighlightElement(ENCMP100CoopOilSandsElectiveelement, "NaturalSciences");
      var category = that.removeFromClicked("ENCMP100CoopOilSandsElective", "NaturalSciences");
   if (category != "") { 
@@ -38299,13 +38333,13 @@ ENGG160CoopOilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine584());
+      that.addLine(getLine592());
      that.highlightElement(ENGG160CoopOilSandsElectiveelement, "EngineeringDesign");
      that.addToClicked("ENGG160CoopOilSandsElective", "EngineeringDesign");
       ENGG160CoopOilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine584());
+      that.removeLine(getLine592());
      that.unHighlightElement(ENGG160CoopOilSandsElectiveelement, "EngineeringDesign");
      var category = that.removeFromClicked("ENGG160CoopOilSandsElective", "EngineeringDesign");
   if (category != "") { 
@@ -38335,19 +38369,19 @@ ENPH131CoopOilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine585());
-      that.addLine(getLine586());
-      that.addLine(getLine587());
-      that.addLine(getLine600());
+      that.addLine(getLine593());
+      that.addLine(getLine594());
+      that.addLine(getLine595());
+      that.addLine(getLine609());
      that.highlightElement(ENPH131CoopOilSandsElectiveelement, "NaturalSciences");
      that.addToClicked("ENPH131CoopOilSandsElective", "NaturalSciences");
       ENPH131CoopOilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine585());
-      that.removeLine(getLine586());
-      that.removeLine(getLine587());
-      that.removeLine(getLine600());
+      that.removeLine(getLine593());
+      that.removeLine(getLine594());
+      that.removeLine(getLine595());
+      that.removeLine(getLine609());
      that.unHighlightElement(ENPH131CoopOilSandsElectiveelement, "NaturalSciences");
      var category = that.removeFromClicked("ENPH131CoopOilSandsElective", "NaturalSciences");
   if (category != "") { 
@@ -38377,21 +38411,21 @@ MATH101CoopOilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine587());
-      that.addLine(getLine588());
-      that.addLine(getLine590());
+      that.addLine(getLine595());
       that.addLine(getLine596());
-      that.addLine(getLine606());
+      that.addLine(getLine598());
+      that.addLine(getLine605());
+      that.addLine(getLine615());
      that.highlightElement(MATH101CoopOilSandsElectiveelement, "Math");
      that.addToClicked("MATH101CoopOilSandsElective", "Math");
       MATH101CoopOilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine587());
-      that.removeLine(getLine588());
-      that.removeLine(getLine590());
+      that.removeLine(getLine595());
       that.removeLine(getLine596());
-      that.removeLine(getLine606());
+      that.removeLine(getLine598());
+      that.removeLine(getLine605());
+      that.removeLine(getLine615());
      that.unHighlightElement(MATH101CoopOilSandsElectiveelement, "Math");
      var category = that.removeFromClicked("MATH101CoopOilSandsElective", "Math");
   if (category != "") { 
@@ -38421,17 +38455,17 @@ MATH102CoopOilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine589());
-      that.addLine(getLine592());
       that.addLine(getLine597());
+      that.addLine(getLine601());
+      that.addLine(getLine606());
      that.highlightElement(MATH102CoopOilSandsElectiveelement, "Math");
      that.addToClicked("MATH102CoopOilSandsElective", "Math");
       MATH102CoopOilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine589());
-      that.removeLine(getLine592());
       that.removeLine(getLine597());
+      that.removeLine(getLine601());
+      that.removeLine(getLine606());
      that.unHighlightElement(MATH102CoopOilSandsElectiveelement, "Math");
      var category = that.removeFromClicked("MATH102CoopOilSandsElective", "Math");
   if (category != "") { 
@@ -38461,21 +38495,21 @@ CHE243CoopOilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine590());
-      that.addLine(getLine594());
-      that.addLine(getLine599());
-      that.addLine(getLine610());
-      that.addLine(getLine614());
+      that.addLine(getLine598());
+      that.addLine(getLine603());
+      that.addLine(getLine608());
+      that.addLine(getLine619());
+      that.addLine(getLine623());
      that.highlightElement(CHE243CoopOilSandsElectiveelement, "EngineeringSciences");
      that.addToClicked("CHE243CoopOilSandsElective", "EngineeringSciences");
       CHE243CoopOilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine590());
-      that.removeLine(getLine594());
-      that.removeLine(getLine599());
-      that.removeLine(getLine610());
-      that.removeLine(getLine614());
+      that.removeLine(getLine598());
+      that.removeLine(getLine603());
+      that.removeLine(getLine608());
+      that.removeLine(getLine619());
+      that.removeLine(getLine623());
      that.unHighlightElement(CHE243CoopOilSandsElectiveelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE243CoopOilSandsElective", "EngineeringSciences");
   if (category != "") { 
@@ -38505,11 +38539,13 @@ CHEM261CoopOilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
+      that.addLine(getLine599());
      that.highlightElement(CHEM261CoopOilSandsElectiveelement, "NaturalSciences");
      that.addToClicked("CHEM261CoopOilSandsElective", "NaturalSciences");
       CHEM261CoopOilSandsElectiveflag=true
   }
  else {
+      that.removeLine(getLine599());
      that.unHighlightElement(CHEM261CoopOilSandsElectiveelement, "NaturalSciences");
      var category = that.removeFromClicked("CHEM261CoopOilSandsElective", "NaturalSciences");
   if (category != "") { 
@@ -38573,31 +38609,31 @@ CME265CoopOilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine591());
-      that.addLine(getLine592());
-      that.addLine(getLine593());
-      that.addLine(getLine594());
-      that.addLine(getLine595());
-      that.addLine(getLine611());
-      that.addLine(getLine613());
+      that.addLine(getLine600());
+      that.addLine(getLine601());
+      that.addLine(getLine602());
+      that.addLine(getLine603());
+      that.addLine(getLine604());
+      that.addLine(getLine620());
       that.addLine(getLine622());
-      that.addLine(getLine626());
-      that.addLine(getLine636());
+      that.addLine(getLine631());
+      that.addLine(getLine635());
+      that.addLine(getLine645());
      that.highlightElement(CME265CoopOilSandsElectiveelement, "EngineeringSciences");
      that.addToClicked("CME265CoopOilSandsElective", "EngineeringSciences");
       CME265CoopOilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine591());
-      that.removeLine(getLine592());
-      that.removeLine(getLine593());
-      that.removeLine(getLine594());
-      that.removeLine(getLine595());
-      that.removeLine(getLine611());
-      that.removeLine(getLine613());
+      that.removeLine(getLine600());
+      that.removeLine(getLine601());
+      that.removeLine(getLine602());
+      that.removeLine(getLine603());
+      that.removeLine(getLine604());
+      that.removeLine(getLine620());
       that.removeLine(getLine622());
-      that.removeLine(getLine626());
-      that.removeLine(getLine636());
+      that.removeLine(getLine631());
+      that.removeLine(getLine635());
+      that.removeLine(getLine645());
      that.unHighlightElement(CME265CoopOilSandsElectiveelement, "EngineeringSciences");
      var category = that.removeFromClicked("CME265CoopOilSandsElective", "EngineeringSciences");
   if (category != "") { 
@@ -38627,13 +38663,13 @@ ENGG299CoopOilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine598());
+      that.addLine(getLine607());
      that.highlightElement(ENGG299CoopOilSandsElectiveelement, "EngineeringProfession");
      that.addToClicked("ENGG299CoopOilSandsElective", "EngineeringProfession");
       ENGG299CoopOilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine598());
+      that.removeLine(getLine607());
      that.unHighlightElement(ENGG299CoopOilSandsElectiveelement, "EngineeringProfession");
      var category = that.removeFromClicked("ENGG299CoopOilSandsElective", "EngineeringProfession");
   if (category != "") { 
@@ -38663,23 +38699,23 @@ MATH209CoopOilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine595());
-      that.addLine(getLine596());
-      that.addLine(getLine597());
-      that.addLine(getLine601());
       that.addLine(getLine604());
-      that.addLine(getLine638());
+      that.addLine(getLine605());
+      that.addLine(getLine606());
+      that.addLine(getLine610());
+      that.addLine(getLine613());
+      that.addLine(getLine647());
      that.highlightElement(MATH209CoopOilSandsElectiveelement, "Math");
      that.addToClicked("MATH209CoopOilSandsElective", "Math");
       MATH209CoopOilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine595());
-      that.removeLine(getLine596());
-      that.removeLine(getLine597());
-      that.removeLine(getLine601());
       that.removeLine(getLine604());
-      that.removeLine(getLine638());
+      that.removeLine(getLine605());
+      that.removeLine(getLine606());
+      that.removeLine(getLine610());
+      that.removeLine(getLine613());
+      that.removeLine(getLine647());
      that.unHighlightElement(MATH209CoopOilSandsElectiveelement, "Math");
      var category = that.removeFromClicked("MATH209CoopOilSandsElective", "Math");
   if (category != "") { 
@@ -38777,15 +38813,15 @@ WKEXP901CoopOilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine598());
-      that.addLine(getLine617());
+      that.addLine(getLine607());
+      that.addLine(getLine626());
      that.highlightElement(WKEXP901CoopOilSandsElectiveelement, "EngineeringProfession");
      that.addToClicked("WKEXP901CoopOilSandsElective", "EngineeringProfession");
       WKEXP901CoopOilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine598());
-      that.removeLine(getLine617());
+      that.removeLine(getLine607());
+      that.removeLine(getLine626());
      that.unHighlightElement(WKEXP901CoopOilSandsElectiveelement, "EngineeringProfession");
      var category = that.removeFromClicked("WKEXP901CoopOilSandsElective", "EngineeringProfession");
   if (category != "") { 
@@ -38815,29 +38851,29 @@ CHE312CoopOilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine599());
-      that.addLine(getLine600());
-      that.addLine(getLine601());
-      that.addLine(getLine602());
       that.addLine(getLine608());
-      that.addLine(getLine615());
-      that.addLine(getLine623());
-      that.addLine(getLine639());
-      that.addLine(getLine656());
+      that.addLine(getLine609());
+      that.addLine(getLine610());
+      that.addLine(getLine611());
+      that.addLine(getLine617());
+      that.addLine(getLine624());
+      that.addLine(getLine632());
+      that.addLine(getLine648());
+      that.addLine(getLine665());
      that.highlightElement(CHE312CoopOilSandsElectiveelement, "EngineeringSciences");
      that.addToClicked("CHE312CoopOilSandsElective", "EngineeringSciences");
       CHE312CoopOilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine599());
-      that.removeLine(getLine600());
-      that.removeLine(getLine601());
-      that.removeLine(getLine602());
       that.removeLine(getLine608());
-      that.removeLine(getLine615());
-      that.removeLine(getLine623());
-      that.removeLine(getLine639());
-      that.removeLine(getLine656());
+      that.removeLine(getLine609());
+      that.removeLine(getLine610());
+      that.removeLine(getLine611());
+      that.removeLine(getLine617());
+      that.removeLine(getLine624());
+      that.removeLine(getLine632());
+      that.removeLine(getLine648());
+      that.removeLine(getLine665());
      that.unHighlightElement(CHE312CoopOilSandsElectiveelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE312CoopOilSandsElective", "EngineeringSciences");
   if (category != "") { 
@@ -38901,13 +38937,13 @@ ENGM310CoopOilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine643());
+      that.addLine(getLine652());
      that.highlightElement(ENGM310CoopOilSandsElectiveelement, "Other");
      that.addToClicked("ENGM310CoopOilSandsElective", "Other");
       ENGM310CoopOilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine643());
+      that.removeLine(getLine652());
      that.unHighlightElement(ENGM310CoopOilSandsElectiveelement, "Other");
      var category = that.removeFromClicked("ENGM310CoopOilSandsElective", "Other");
   if (category != "") { 
@@ -38937,13 +38973,13 @@ ENGM401CoopOilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine644());
+      that.addLine(getLine653());
      that.highlightElement(ENGM401CoopOilSandsElectiveelement, "Other");
      that.addToClicked("ENGM401CoopOilSandsElective", "Other");
       ENGM401CoopOilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine644());
+      that.removeLine(getLine653());
      that.unHighlightElement(ENGM401CoopOilSandsElectiveelement, "Other");
      var category = that.removeFromClicked("ENGM401CoopOilSandsElective", "Other");
   if (category != "") { 
@@ -38973,13 +39009,13 @@ MATE202CoopOilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine603());
+      that.addLine(getLine612());
      that.highlightElement(MATE202CoopOilSandsElectiveelement, "EngineeringSciences");
      that.addToClicked("MATE202CoopOilSandsElective", "EngineeringSciences");
       MATE202CoopOilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine603());
+      that.removeLine(getLine612());
      that.unHighlightElement(MATE202CoopOilSandsElectiveelement, "EngineeringSciences");
      var category = that.removeFromClicked("MATE202CoopOilSandsElective", "EngineeringSciences");
   if (category != "") { 
@@ -39009,19 +39045,19 @@ MATH201CoopOilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine602());
-      that.addLine(getLine604());
-      that.addLine(getLine607());
-      that.addLine(getLine637());
+      that.addLine(getLine611());
+      that.addLine(getLine613());
+      that.addLine(getLine616());
+      that.addLine(getLine646());
      that.highlightElement(MATH201CoopOilSandsElectiveelement, "Math");
      that.addToClicked("MATH201CoopOilSandsElective", "Math");
       MATH201CoopOilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine602());
-      that.removeLine(getLine604());
-      that.removeLine(getLine607());
-      that.removeLine(getLine637());
+      that.removeLine(getLine611());
+      that.removeLine(getLine613());
+      that.removeLine(getLine616());
+      that.removeLine(getLine646());
      that.unHighlightElement(MATH201CoopOilSandsElectiveelement, "Math");
      var category = that.removeFromClicked("MATH201CoopOilSandsElective", "Math");
   if (category != "") { 
@@ -39051,17 +39087,17 @@ STAT235CoopOilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine605());
-      that.addLine(getLine606());
-      that.addLine(getLine630());
+      that.addLine(getLine614());
+      that.addLine(getLine615());
+      that.addLine(getLine639());
      that.highlightElement(STAT235CoopOilSandsElectiveelement, "Math");
      that.addToClicked("STAT235CoopOilSandsElective", "Math");
       STAT235CoopOilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine605());
-      that.removeLine(getLine606());
-      that.removeLine(getLine630());
+      that.removeLine(getLine614());
+      that.removeLine(getLine615());
+      that.removeLine(getLine639());
      that.unHighlightElement(STAT235CoopOilSandsElectiveelement, "Math");
      var category = that.removeFromClicked("STAT235CoopOilSandsElective", "Math");
   if (category != "") { 
@@ -39091,29 +39127,29 @@ CHE314CoopOilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine607());
-      that.addLine(getLine608());
-      that.addLine(getLine609());
-      that.addLine(getLine620());
-      that.addLine(getLine625());
-      that.addLine(getLine631());
-      that.addLine(getLine633());
+      that.addLine(getLine616());
+      that.addLine(getLine617());
+      that.addLine(getLine618());
+      that.addLine(getLine629());
+      that.addLine(getLine634());
       that.addLine(getLine640());
-      that.addLine(getLine657());
+      that.addLine(getLine642());
+      that.addLine(getLine649());
+      that.addLine(getLine666());
      that.highlightElement(CHE314CoopOilSandsElectiveelement, "EngineeringSciences");
      that.addToClicked("CHE314CoopOilSandsElective", "EngineeringSciences");
       CHE314CoopOilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine607());
-      that.removeLine(getLine608());
-      that.removeLine(getLine609());
-      that.removeLine(getLine620());
-      that.removeLine(getLine625());
-      that.removeLine(getLine631());
-      that.removeLine(getLine633());
+      that.removeLine(getLine616());
+      that.removeLine(getLine617());
+      that.removeLine(getLine618());
+      that.removeLine(getLine629());
+      that.removeLine(getLine634());
       that.removeLine(getLine640());
-      that.removeLine(getLine657());
+      that.removeLine(getLine642());
+      that.removeLine(getLine649());
+      that.removeLine(getLine666());
      that.unHighlightElement(CHE314CoopOilSandsElectiveelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE314CoopOilSandsElective", "EngineeringSciences");
   if (category != "") { 
@@ -39143,21 +39179,21 @@ CHE343CoopOilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine610());
-      that.addLine(getLine611());
       that.addLine(getLine619());
-      that.addLine(getLine624());
-      that.addLine(getLine627());
+      that.addLine(getLine620());
+      that.addLine(getLine628());
+      that.addLine(getLine633());
+      that.addLine(getLine636());
      that.highlightElement(CHE343CoopOilSandsElectiveelement, "EngineeringSciences");
      that.addToClicked("CHE343CoopOilSandsElective", "EngineeringSciences");
       CHE343CoopOilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine610());
-      that.removeLine(getLine611());
       that.removeLine(getLine619());
-      that.removeLine(getLine624());
-      that.removeLine(getLine627());
+      that.removeLine(getLine620());
+      that.removeLine(getLine628());
+      that.removeLine(getLine633());
+      that.removeLine(getLine636());
      that.unHighlightElement(CHE343CoopOilSandsElectiveelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE343CoopOilSandsElective", "EngineeringSciences");
   if (category != "") { 
@@ -39187,21 +39223,21 @@ CHE351CoopOilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine612());
-      that.addLine(getLine613());
-      that.addLine(getLine614());
-      that.addLine(getLine615());
-      that.addLine(getLine629());
+      that.addLine(getLine621());
+      that.addLine(getLine622());
+      that.addLine(getLine623());
+      that.addLine(getLine624());
+      that.addLine(getLine638());
      that.highlightElement(CHE351CoopOilSandsElectiveelement, "EngineeringSciences");
      that.addToClicked("CHE351CoopOilSandsElective", "EngineeringSciences");
       CHE351CoopOilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine612());
-      that.removeLine(getLine613());
-      that.removeLine(getLine614());
-      that.removeLine(getLine615());
-      that.removeLine(getLine629());
+      that.removeLine(getLine621());
+      that.removeLine(getLine622());
+      that.removeLine(getLine623());
+      that.removeLine(getLine624());
+      that.removeLine(getLine638());
      that.unHighlightElement(CHE351CoopOilSandsElectiveelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE351CoopOilSandsElective", "EngineeringSciences");
   if (category != "") { 
@@ -39231,17 +39267,17 @@ CHE374CoopOilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine609());
-      that.addLine(getLine616());
-      that.addLine(getLine628());
+      that.addLine(getLine618());
+      that.addLine(getLine625());
+      that.addLine(getLine637());
      that.highlightElement(CHE374CoopOilSandsElectiveelement, "EngineeringSciences");
      that.addToClicked("CHE374CoopOilSandsElective", "EngineeringSciences");
       CHE374CoopOilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine609());
-      that.removeLine(getLine616());
-      that.removeLine(getLine628());
+      that.removeLine(getLine618());
+      that.removeLine(getLine625());
+      that.removeLine(getLine637());
      that.unHighlightElement(CHE374CoopOilSandsElectiveelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE374CoopOilSandsElective", "EngineeringSciences");
   if (category != "") { 
@@ -39305,15 +39341,15 @@ WKEXP902CoopOilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine617());
-      that.addLine(getLine618());
+      that.addLine(getLine626());
+      that.addLine(getLine627());
      that.highlightElement(WKEXP902CoopOilSandsElectiveelement, "EngineeringProfession");
      that.addToClicked("WKEXP902CoopOilSandsElective", "EngineeringProfession");
       WKEXP902CoopOilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine617());
-      that.removeLine(getLine618());
+      that.removeLine(getLine626());
+      that.removeLine(getLine627());
      that.unHighlightElement(WKEXP902CoopOilSandsElectiveelement, "EngineeringProfession");
      var category = that.removeFromClicked("WKEXP902CoopOilSandsElective", "EngineeringProfession");
   if (category != "") { 
@@ -39343,15 +39379,15 @@ WKEXP903CoopOilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine618());
-      that.addLine(getLine646());
+      that.addLine(getLine627());
+      that.addLine(getLine655());
      that.highlightElement(WKEXP903CoopOilSandsElectiveelement, "EngineeringProfession");
      that.addToClicked("WKEXP903CoopOilSandsElective", "EngineeringProfession");
       WKEXP903CoopOilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine618());
-      that.removeLine(getLine646());
+      that.removeLine(getLine627());
+      that.removeLine(getLine655());
      that.unHighlightElement(WKEXP903CoopOilSandsElectiveelement, "EngineeringProfession");
      var category = that.removeFromClicked("WKEXP903CoopOilSandsElective", "EngineeringProfession");
   if (category != "") { 
@@ -39381,19 +39417,19 @@ CHE316CoopOilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine619());
-      that.addLine(getLine620());
-      that.addLine(getLine621());
-      that.addLine(getLine642());
+      that.addLine(getLine628());
+      that.addLine(getLine629());
+      that.addLine(getLine630());
+      that.addLine(getLine651());
      that.highlightElement(CHE316CoopOilSandsElectiveelement, "EngineeringSciences");
      that.addToClicked("CHE316CoopOilSandsElective", "EngineeringSciences");
       CHE316CoopOilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine619());
-      that.removeLine(getLine620());
-      that.removeLine(getLine621());
-      that.removeLine(getLine642());
+      that.removeLine(getLine628());
+      that.removeLine(getLine629());
+      that.removeLine(getLine630());
+      that.removeLine(getLine651());
      that.unHighlightElement(CHE316CoopOilSandsElectiveelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE316CoopOilSandsElective", "EngineeringSciences");
   if (category != "") { 
@@ -39423,25 +39459,25 @@ CHE318CoopOilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine621());
-      that.addLine(getLine622());
-      that.addLine(getLine623());
-      that.addLine(getLine624());
-      that.addLine(getLine625());
+      that.addLine(getLine630());
+      that.addLine(getLine631());
+      that.addLine(getLine632());
+      that.addLine(getLine633());
       that.addLine(getLine634());
-      that.addLine(getLine652());
+      that.addLine(getLine643());
+      that.addLine(getLine661());
      that.highlightElement(CHE318CoopOilSandsElectiveelement, "EngineeringSciences");
      that.addToClicked("CHE318CoopOilSandsElective", "EngineeringSciences");
       CHE318CoopOilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine621());
-      that.removeLine(getLine622());
-      that.removeLine(getLine623());
-      that.removeLine(getLine624());
-      that.removeLine(getLine625());
+      that.removeLine(getLine630());
+      that.removeLine(getLine631());
+      that.removeLine(getLine632());
+      that.removeLine(getLine633());
       that.removeLine(getLine634());
-      that.removeLine(getLine652());
+      that.removeLine(getLine643());
+      that.removeLine(getLine661());
      that.unHighlightElement(CHE318CoopOilSandsElectiveelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE318CoopOilSandsElective", "EngineeringSciences");
   if (category != "") { 
@@ -39471,27 +39507,27 @@ CHE345CoopOilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine626());
-      that.addLine(getLine627());
-      that.addLine(getLine628());
-      that.addLine(getLine632());
       that.addLine(getLine635());
+      that.addLine(getLine636());
+      that.addLine(getLine637());
       that.addLine(getLine641());
-      that.addLine(getLine653());
-      that.addLine(getLine655());
+      that.addLine(getLine644());
+      that.addLine(getLine650());
+      that.addLine(getLine662());
+      that.addLine(getLine664());
      that.highlightElement(CHE345CoopOilSandsElectiveelement, "EngineeringSciences");
      that.addToClicked("CHE345CoopOilSandsElective", "EngineeringSciences");
       CHE345CoopOilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine626());
-      that.removeLine(getLine627());
-      that.removeLine(getLine628());
-      that.removeLine(getLine632());
       that.removeLine(getLine635());
+      that.removeLine(getLine636());
+      that.removeLine(getLine637());
       that.removeLine(getLine641());
-      that.removeLine(getLine653());
-      that.removeLine(getLine655());
+      that.removeLine(getLine644());
+      that.removeLine(getLine650());
+      that.removeLine(getLine662());
+      that.removeLine(getLine664());
      that.unHighlightElement(CHE345CoopOilSandsElectiveelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE345CoopOilSandsElective", "EngineeringSciences");
   if (category != "") { 
@@ -39521,21 +39557,21 @@ CHE358CoopOilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine629());
-      that.addLine(getLine630());
-      that.addLine(getLine631());
-      that.addLine(getLine632());
-      that.addLine(getLine654());
+      that.addLine(getLine638());
+      that.addLine(getLine639());
+      that.addLine(getLine640());
+      that.addLine(getLine641());
+      that.addLine(getLine663());
      that.highlightElement(CHE358CoopOilSandsElectiveelement, "EngineeringSciences");
      that.addToClicked("CHE358CoopOilSandsElective", "EngineeringSciences");
       CHE358CoopOilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine629());
-      that.removeLine(getLine630());
-      that.removeLine(getLine631());
-      that.removeLine(getLine632());
-      that.removeLine(getLine654());
+      that.removeLine(getLine638());
+      that.removeLine(getLine639());
+      that.removeLine(getLine640());
+      that.removeLine(getLine641());
+      that.removeLine(getLine663());
      that.unHighlightElement(CHE358CoopOilSandsElectiveelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE358CoopOilSandsElective", "EngineeringSciences");
   if (category != "") { 
@@ -39599,15 +39635,15 @@ ENGG404CoopOilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine645());
-      that.addLine(getLine651());
+      that.addLine(getLine654());
+      that.addLine(getLine660());
      that.highlightElement(ENGG404CoopOilSandsElectiveelement, "EngineeringProfession");
      that.addToClicked("ENGG404CoopOilSandsElective", "EngineeringProfession");
       ENGG404CoopOilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine645());
-      that.removeLine(getLine651());
+      that.removeLine(getLine654());
+      that.removeLine(getLine660());
      that.unHighlightElement(ENGG404CoopOilSandsElectiveelement, "EngineeringProfession");
      var category = that.removeFromClicked("ENGG404CoopOilSandsElective", "EngineeringProfession");
   if (category != "") { 
@@ -39637,19 +39673,19 @@ CHE445CoopOilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine633());
-      that.addLine(getLine634());
-      that.addLine(getLine635());
-      that.addLine(getLine648());
+      that.addLine(getLine642());
+      that.addLine(getLine643());
+      that.addLine(getLine644());
+      that.addLine(getLine657());
      that.highlightElement(CHE445CoopOilSandsElectiveelement, "EngineeringSciences");
      that.addToClicked("CHE445CoopOilSandsElective", "EngineeringSciences");
       CHE445CoopOilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine633());
-      that.removeLine(getLine634());
-      that.removeLine(getLine635());
-      that.removeLine(getLine648());
+      that.removeLine(getLine642());
+      that.removeLine(getLine643());
+      that.removeLine(getLine644());
+      that.removeLine(getLine657());
      that.unHighlightElement(CHE445CoopOilSandsElectiveelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE445CoopOilSandsElective", "EngineeringSciences");
   if (category != "") { 
@@ -39679,21 +39715,21 @@ CHE446CoopOilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine636());
-      that.addLine(getLine637());
-      that.addLine(getLine638());
-      that.addLine(getLine639());
-      that.addLine(getLine649());
+      that.addLine(getLine645());
+      that.addLine(getLine646());
+      that.addLine(getLine647());
+      that.addLine(getLine648());
+      that.addLine(getLine658());
      that.highlightElement(CHE446CoopOilSandsElectiveelement, "EngineeringSciences");
      that.addToClicked("CHE446CoopOilSandsElective", "EngineeringSciences");
       CHE446CoopOilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine636());
-      that.removeLine(getLine637());
-      that.removeLine(getLine638());
-      that.removeLine(getLine639());
-      that.removeLine(getLine649());
+      that.removeLine(getLine645());
+      that.removeLine(getLine646());
+      that.removeLine(getLine647());
+      that.removeLine(getLine648());
+      that.removeLine(getLine658());
      that.unHighlightElement(CHE446CoopOilSandsElectiveelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE446CoopOilSandsElective", "EngineeringSciences");
   if (category != "") { 
@@ -39723,25 +39759,25 @@ CHE464CoopOilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine640());
-      that.addLine(getLine641());
-      that.addLine(getLine642());
-      that.addLine(getLine643());
-      that.addLine(getLine644());
-      that.addLine(getLine645());
+      that.addLine(getLine649());
       that.addLine(getLine650());
+      that.addLine(getLine651());
+      that.addLine(getLine652());
+      that.addLine(getLine653());
+      that.addLine(getLine654());
+      that.addLine(getLine659());
      that.highlightElement(CHE464CoopOilSandsElectiveelement, "EngineeringDesign");
      that.addToClicked("CHE464CoopOilSandsElective", "EngineeringDesign");
       CHE464CoopOilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine640());
-      that.removeLine(getLine641());
-      that.removeLine(getLine642());
-      that.removeLine(getLine643());
-      that.removeLine(getLine644());
-      that.removeLine(getLine645());
+      that.removeLine(getLine649());
       that.removeLine(getLine650());
+      that.removeLine(getLine651());
+      that.removeLine(getLine652());
+      that.removeLine(getLine653());
+      that.removeLine(getLine654());
+      that.removeLine(getLine659());
      that.unHighlightElement(CHE464CoopOilSandsElectiveelement, "EngineeringDesign");
      var category = that.removeFromClicked("CHE464CoopOilSandsElective", "EngineeringDesign");
   if (category != "") { 
@@ -39873,15 +39909,15 @@ WKEXP904CoopOilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine646());
-      that.addLine(getLine647());
+      that.addLine(getLine655());
+      that.addLine(getLine656());
      that.highlightElement(WKEXP904CoopOilSandsElectiveelement, "EngineeringProfession");
      that.addToClicked("WKEXP904CoopOilSandsElective", "EngineeringProfession");
       WKEXP904CoopOilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine646());
-      that.removeLine(getLine647());
+      that.removeLine(getLine655());
+      that.removeLine(getLine656());
      that.unHighlightElement(WKEXP904CoopOilSandsElectiveelement, "EngineeringProfession");
      var category = that.removeFromClicked("WKEXP904CoopOilSandsElective", "EngineeringProfession");
   if (category != "") { 
@@ -39911,13 +39947,13 @@ WKEXP905CoopOilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine647());
+      that.addLine(getLine656());
      that.highlightElement(WKEXP905CoopOilSandsElectiveelement, "EngineeringProfession");
      that.addToClicked("WKEXP905CoopOilSandsElective", "EngineeringProfession");
       WKEXP905CoopOilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine647());
+      that.removeLine(getLine656());
      that.unHighlightElement(WKEXP905CoopOilSandsElectiveelement, "EngineeringProfession");
      var category = that.removeFromClicked("WKEXP905CoopOilSandsElective", "EngineeringProfession");
   if (category != "") { 
@@ -39947,19 +39983,19 @@ CHE435CoopOilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine648());
-      that.addLine(getLine649());
-      that.addLine(getLine650());
-      that.addLine(getLine651());
+      that.addLine(getLine657());
+      that.addLine(getLine658());
+      that.addLine(getLine659());
+      that.addLine(getLine660());
      that.highlightElement(CHE435CoopOilSandsElectiveelement, "EngineeringDesign");
      that.addToClicked("CHE435CoopOilSandsElective", "EngineeringDesign");
       CHE435CoopOilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine648());
-      that.removeLine(getLine649());
-      that.removeLine(getLine650());
-      that.removeLine(getLine651());
+      that.removeLine(getLine657());
+      that.removeLine(getLine658());
+      that.removeLine(getLine659());
+      that.removeLine(getLine660());
      that.unHighlightElement(CHE435CoopOilSandsElectiveelement, "EngineeringDesign");
      var category = that.removeFromClicked("CHE435CoopOilSandsElective", "EngineeringDesign");
   if (category != "") { 
@@ -39989,17 +40025,17 @@ CHE454CoopOilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine652());
-      that.addLine(getLine653());
-      that.addLine(getLine654());
+      that.addLine(getLine661());
+      that.addLine(getLine662());
+      that.addLine(getLine663());
      that.highlightElement(CHE454CoopOilSandsElectiveelement, "EngineeringSciences");
      that.addToClicked("CHE454CoopOilSandsElective", "EngineeringSciences");
       CHE454CoopOilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine652());
-      that.removeLine(getLine653());
-      that.removeLine(getLine654());
+      that.removeLine(getLine661());
+      that.removeLine(getLine662());
+      that.removeLine(getLine663());
      that.unHighlightElement(CHE454CoopOilSandsElectiveelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE454CoopOilSandsElective", "EngineeringSciences");
   if (category != "") { 
@@ -40029,13 +40065,13 @@ CHE522CoopOilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine655());
+      that.addLine(getLine664());
      that.highlightElement(CHE522CoopOilSandsElectiveelement, "EngineeringSciences");
      that.addToClicked("CHE522CoopOilSandsElective", "EngineeringSciences");
       CHE522CoopOilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine655());
+      that.removeLine(getLine664());
      that.unHighlightElement(CHE522CoopOilSandsElectiveelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE522CoopOilSandsElective", "EngineeringSciences");
   if (category != "") { 
@@ -40065,15 +40101,15 @@ CHE534CoopOilSandsElectiveTime = currentTime;
     if (trueCounter > 0) {
         return;
     }}
-      that.addLine(getLine656());
-      that.addLine(getLine657());
+      that.addLine(getLine665());
+      that.addLine(getLine666());
      that.highlightElement(CHE534CoopOilSandsElectiveelement, "EngineeringSciences");
      that.addToClicked("CHE534CoopOilSandsElective", "EngineeringSciences");
       CHE534CoopOilSandsElectiveflag=true
   }
  else {
-      that.removeLine(getLine656());
-      that.removeLine(getLine657());
+      that.removeLine(getLine665());
+      that.removeLine(getLine666());
      that.unHighlightElement(CHE534CoopOilSandsElectiveelement, "EngineeringSciences");
      var category = that.removeFromClicked("CHE534CoopOilSandsElective", "EngineeringSciences");
   if (category != "") { 

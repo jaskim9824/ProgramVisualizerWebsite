@@ -686,291 +686,299 @@ var line171 = new Line("MATH201NanoTraditionalPlan", "PHYS372NanoTraditionalPlan
 function getLine171() {
         return line171
     };
-var line172 = new Line("PHYS311NanoTraditionalPlan", "PHYS415NanoTraditionalPlan", false);
+var line172 = new Line("CHEM103NanoTraditionalPlan", "CHEM261NanoTraditionalPlan", false);
 function getLine172() {
         return line172
     };
-var line173 = new Line("PHYS372NanoTraditionalPlan", "PHYS415NanoTraditionalPlan", false);
+var line173 = new Line("PHYS311NanoTraditionalPlan", "PHYS415NanoTraditionalPlan", false);
 function getLine173() {
         return line173
     };
-var line174 = new Line("ECE341NanoTraditionalPlan", "PHYS415NanoTraditionalPlan", false);
+var line174 = new Line("PHYS372NanoTraditionalPlan", "PHYS415NanoTraditionalPlan", false);
 function getLine174() {
         return line174
     };
-var line175 = new Line("PHYS381NanoTraditionalPlan", "PHYS481NanoTraditionalPlan", false);
+var line175 = new Line("ECE341NanoTraditionalPlan", "PHYS415NanoTraditionalPlan", false);
 function getLine175() {
         return line175
     };
-var line176 = new Line("ECE341NanoTraditionalPlan", "PHYS481NanoTraditionalPlan", false);
+var line176 = new Line("PHYS381NanoTraditionalPlan", "PHYS481NanoTraditionalPlan", false);
 function getLine176() {
         return line176
     };
-var line177 = new Line("CHEM261NanoTraditionalPlan", "BIOCH200NanoTraditionalPlan", false);
+var line177 = new Line("ECE341NanoTraditionalPlan", "PHYS481NanoTraditionalPlan", false);
 function getLine177() {
         return line177
     };
-var line178 = new Line("MATH201NanoTraditionalPlan", "ECE455NanoTraditionalPlan", false);
+var line178 = new Line("CHEM261NanoTraditionalPlan", "BIOCH200NanoTraditionalPlan", false);
 function getLine178() {
         return line178
     };
-var line179 = new Line("ECE494NanoTraditionalPlan", "ECE495NanoTraditionalPlan", false);
+var line179 = new Line("MATH201NanoTraditionalPlan", "ECE455NanoTraditionalPlan", false);
 function getLine179() {
         return line179
     };
-var line180 = new Line("MATH100NanoCoopPlan", "ENGG130NanoCoopPlan", true);
+var line180 = new Line("ECE494NanoTraditionalPlan", "ECE495NanoTraditionalPlan", false);
 function getLine180() {
         return line180
     };
-var line181 = new Line("MATH100NanoCoopPlan", "PHYS130NanoCoopPlan", true);
+var line181 = new Line("MATH100NanoCoopPlan", "ENGG130NanoCoopPlan", true);
 function getLine181() {
         return line181
     };
-var line182 = new Line("CHEM103NanoCoopPlan", "CHEM105NanoCoopPlan", false);
+var line182 = new Line("MATH100NanoCoopPlan", "PHYS130NanoCoopPlan", true);
 function getLine182() {
         return line182
     };
-var line183 = new Line("ENGL199NanoCoopPlan", "ENGG160NanoCoopPlan", true);
+var line183 = new Line("CHEM103NanoCoopPlan", "CHEM105NanoCoopPlan", false);
 function getLine183() {
         return line183
     };
-var line184 = new Line("MATH100NanoCoopPlan", "ENPH131NanoCoopPlan", false);
+var line184 = new Line("ENGL199NanoCoopPlan", "ENGG160NanoCoopPlan", true);
 function getLine184() {
         return line184
     };
-var line185 = new Line("ENGG130NanoCoopPlan", "ENPH131NanoCoopPlan", false);
+var line185 = new Line("MATH100NanoCoopPlan", "ENPH131NanoCoopPlan", false);
 function getLine185() {
         return line185
     };
-var line186 = new Line("MATH101NanoCoopPlan", "ENPH131NanoCoopPlan", true);
+var line186 = new Line("ENGG130NanoCoopPlan", "ENPH131NanoCoopPlan", false);
 function getLine186() {
         return line186
     };
-var line187 = new Line("MATH100NanoCoopPlan", "MATH101NanoCoopPlan", false);
+var line187 = new Line("MATH101NanoCoopPlan", "ENPH131NanoCoopPlan", true);
 function getLine187() {
         return line187
     };
-var line188 = new Line("MATH100NanoCoopPlan", "MATH102NanoCoopPlan", true);
+var line188 = new Line("MATH100NanoCoopPlan", "MATH101NanoCoopPlan", false);
 function getLine188() {
         return line188
     };
-var line189 = new Line("MATH101NanoCoopPlan", "ECE202NanoCoopPlan", false);
+var line189 = new Line("MATH100NanoCoopPlan", "MATH102NanoCoopPlan", true);
 function getLine189() {
         return line189
     };
-var line190 = new Line("MATH102NanoCoopPlan", "ECE202NanoCoopPlan", false);
+var line190 = new Line("MATH101NanoCoopPlan", "ECE202NanoCoopPlan", false);
 function getLine190() {
         return line190
     };
-var line191 = new Line("CHEM105NanoCoopPlan", "MATE201NanoCoopPlan", false);
+var line191 = new Line("MATH102NanoCoopPlan", "ECE202NanoCoopPlan", false);
 function getLine191() {
         return line191
     };
-var line192 = new Line("MATH209NanoCoopPlan", "MATH201NanoCoopPlan", true);
+var line192 = new Line("CHEM105NanoCoopPlan", "MATE201NanoCoopPlan", false);
 function getLine192() {
         return line192
     };
-var line193 = new Line("MATH101NanoCoopPlan", "MATH209NanoCoopPlan", false);
+var line193 = new Line("MATH209NanoCoopPlan", "MATH201NanoCoopPlan", true);
 function getLine193() {
         return line193
     };
-var line194 = new Line("MATH102NanoCoopPlan", "MATH209NanoCoopPlan", true);
+var line194 = new Line("MATH101NanoCoopPlan", "MATH209NanoCoopPlan", false);
 function getLine194() {
         return line194
     };
-var line195 = new Line("ENPH131NanoCoopPlan", "PHYS281NanoCoopPlan", false);
+var line195 = new Line("MATH102NanoCoopPlan", "MATH209NanoCoopPlan", true);
 function getLine195() {
         return line195
     };
-var line196 = new Line("PHYS130NanoCoopPlan", "PHYS281NanoCoopPlan", false);
+var line196 = new Line("ENPH131NanoCoopPlan", "PHYS281NanoCoopPlan", false);
 function getLine196() {
         return line196
     };
-var line197 = new Line("MATH209NanoCoopPlan", "PHYS281NanoCoopPlan", true);
+var line197 = new Line("PHYS130NanoCoopPlan", "PHYS281NanoCoopPlan", false);
 function getLine197() {
         return line197
     };
-var line198 = new Line("PHYS281NanoCoopPlan", "PHYS292NanoCoopPlan", true);
+var line198 = new Line("MATH209NanoCoopPlan", "PHYS281NanoCoopPlan", true);
 function getLine198() {
         return line198
     };
-var line199 = new Line("MATH209NanoCoopPlan", "PHYS292NanoCoopPlan", true);
+var line199 = new Line("PHYS281NanoCoopPlan", "PHYS292NanoCoopPlan", true);
 function getLine199() {
         return line199
     };
-var line200 = new Line("MATH101NanoCoopPlan", "CHE243NanoCoopPlan", false);
+var line200 = new Line("MATH209NanoCoopPlan", "PHYS292NanoCoopPlan", true);
 function getLine200() {
         return line200
     };
-var line201 = new Line("ECE202NanoCoopPlan", "ECE203NanoCoopPlan", false);
+var line201 = new Line("MATH101NanoCoopPlan", "CHE243NanoCoopPlan", false);
 function getLine201() {
         return line201
     };
-var line202 = new Line("ECE240NanoCoopPlan", "ECE203NanoCoopPlan", true);
+var line202 = new Line("ECE202NanoCoopPlan", "ECE203NanoCoopPlan", false);
 function getLine202() {
         return line202
     };
-var line203 = new Line("ECE202NanoCoopPlan", "ECE240NanoCoopPlan", false);
+var line203 = new Line("ECE240NanoCoopPlan", "ECE203NanoCoopPlan", true);
 function getLine203() {
         return line203
     };
-var line204 = new Line("MATH201NanoCoopPlan", "ECE240NanoCoopPlan", false);
+var line204 = new Line("ECE202NanoCoopPlan", "ECE240NanoCoopPlan", false);
 function getLine204() {
         return line204
     };
-var line205 = new Line("ENPH131NanoCoopPlan", "PHYS244NanoCoopPlan", false);
+var line205 = new Line("MATH201NanoCoopPlan", "ECE240NanoCoopPlan", false);
 function getLine205() {
         return line205
     };
-var line206 = new Line("PHYS130NanoCoopPlan", "PHYS244NanoCoopPlan", false);
+var line206 = new Line("ENPH131NanoCoopPlan", "PHYS244NanoCoopPlan", false);
 function getLine206() {
         return line206
     };
-var line207 = new Line("MATH102NanoCoopPlan", "PHYS244NanoCoopPlan", true);
+var line207 = new Line("PHYS130NanoCoopPlan", "PHYS244NanoCoopPlan", false);
 function getLine207() {
         return line207
     };
-var line208 = new Line("MATH209NanoCoopPlan", "PHYS244NanoCoopPlan", true);
+var line208 = new Line("MATH102NanoCoopPlan", "PHYS244NanoCoopPlan", true);
 function getLine208() {
         return line208
     };
-var line209 = new Line("ENPH131NanoCoopPlan", "PHYS271NanoCoopPlan", false);
+var line209 = new Line("MATH209NanoCoopPlan", "PHYS244NanoCoopPlan", true);
 function getLine209() {
         return line209
     };
-var line210 = new Line("PHYS130NanoCoopPlan", "PHYS271NanoCoopPlan", false);
+var line210 = new Line("ENPH131NanoCoopPlan", "PHYS271NanoCoopPlan", false);
 function getLine210() {
         return line210
     };
-var line211 = new Line("MATH209NanoCoopPlan", "PHYS271NanoCoopPlan", true);
+var line211 = new Line("PHYS130NanoCoopPlan", "PHYS271NanoCoopPlan", false);
 function getLine211() {
         return line211
     };
-var line212 = new Line("PHYS281NanoCoopPlan", "PHYS292NanoCoopPlan", true);
+var line212 = new Line("MATH209NanoCoopPlan", "PHYS271NanoCoopPlan", true);
 function getLine212() {
         return line212
     };
-var line213 = new Line("MATH209NanoCoopPlan", "PHYS292NanoCoopPlan", true);
+var line213 = new Line("PHYS281NanoCoopPlan", "PHYS292NanoCoopPlan", true);
 function getLine213() {
         return line213
     };
-var line214 = new Line("ENGG299NanoCoopPlan", "WKEXP901NanoCoopPlan", false);
+var line214 = new Line("MATH209NanoCoopPlan", "PHYS292NanoCoopPlan", true);
 function getLine214() {
         return line214
     };
-var line215 = new Line("ECE203NanoCoopPlan", "ECE302NanoCoopPlan", false);
+var line215 = new Line("ENGG299NanoCoopPlan", "WKEXP901NanoCoopPlan", false);
 function getLine215() {
         return line215
     };
-var line216 = new Line("PHYS381NanoCoopPlan", "ECE471NanoCoopPlan", true);
+var line216 = new Line("ECE203NanoCoopPlan", "ECE302NanoCoopPlan", false);
 function getLine216() {
         return line216
     };
-var line217 = new Line("PHYS281NanoCoopPlan", "PHYS381NanoCoopPlan", false);
+var line217 = new Line("PHYS381NanoCoopPlan", "ECE471NanoCoopPlan", true);
 function getLine217() {
         return line217
     };
-var line218 = new Line("MATH201NanoCoopPlan", "PHYS381NanoCoopPlan", true);
+var line218 = new Line("PHYS281NanoCoopPlan", "PHYS381NanoCoopPlan", false);
 function getLine218() {
         return line218
     };
-var line219 = new Line("WKEXP901NanoCoopPlan", "WKEXP902NanoCoopPlan", false);
+var line219 = new Line("MATH201NanoCoopPlan", "PHYS381NanoCoopPlan", true);
 function getLine219() {
         return line219
     };
-var line220 = new Line("WKEXP902NanoCoopPlan", "WKEXP903NanoCoopPlan", false);
+var line220 = new Line("WKEXP901NanoCoopPlan", "WKEXP902NanoCoopPlan", false);
 function getLine220() {
         return line220
     };
-var line221 = new Line("WKEXP903NanoCoopPlan", "WKEXP904NanoCoopPlan", false);
+var line221 = new Line("WKEXP902NanoCoopPlan", "WKEXP903NanoCoopPlan", false);
 function getLine221() {
         return line221
     };
-var line222 = new Line("ECE302NanoCoopPlan", "ECE303NanoCoopPlan", false);
+var line222 = new Line("WKEXP903NanoCoopPlan", "WKEXP904NanoCoopPlan", false);
 function getLine222() {
         return line222
     };
-var line223 = new Line("ECE240NanoCoopPlan", "ECE341NanoCoopPlan", false);
+var line223 = new Line("ECE302NanoCoopPlan", "ECE303NanoCoopPlan", false);
 function getLine223() {
         return line223
     };
-var line224 = new Line("MATH311NanoCoopPlan", "ECE341NanoCoopPlan", false);
+var line224 = new Line("ECE240NanoCoopPlan", "ECE341NanoCoopPlan", false);
 function getLine224() {
         return line224
     };
-var line225 = new Line("ECE203NanoCoopPlan", "ECE360NanoCoopPlan", false);
+var line225 = new Line("MATH311NanoCoopPlan", "ECE341NanoCoopPlan", false);
 function getLine225() {
         return line225
     };
-var line226 = new Line("ECE240NanoCoopPlan", "ECE360NanoCoopPlan", false);
+var line226 = new Line("ECE203NanoCoopPlan", "ECE360NanoCoopPlan", false);
 function getLine226() {
         return line226
     };
-var line227 = new Line("ECE302NanoCoopPlan", "ECE456NanoCoopPlan", false);
+var line227 = new Line("ECE240NanoCoopPlan", "ECE360NanoCoopPlan", false);
 function getLine227() {
         return line227
     };
-var line228 = new Line("CHE243NanoCoopPlan", "PHYS311NanoCoopPlan", false);
+var line228 = new Line("ECE302NanoCoopPlan", "ECE456NanoCoopPlan", false);
 function getLine228() {
         return line228
     };
-var line229 = new Line("PHYS271NanoCoopPlan", "PHYS311NanoCoopPlan", false);
+var line229 = new Line("CHE243NanoCoopPlan", "PHYS311NanoCoopPlan", false);
 function getLine229() {
         return line229
     };
-var line230 = new Line("MATH209NanoCoopPlan", "PHYS311NanoCoopPlan", false);
+var line230 = new Line("PHYS271NanoCoopPlan", "PHYS311NanoCoopPlan", false);
 function getLine230() {
         return line230
     };
-var line231 = new Line("PHYS271NanoCoopPlan", "PHYS372NanoCoopPlan", false);
+var line231 = new Line("MATH209NanoCoopPlan", "PHYS311NanoCoopPlan", false);
 function getLine231() {
         return line231
     };
-var line232 = new Line("PHYS281NanoCoopPlan", "PHYS372NanoCoopPlan", false);
+var line232 = new Line("PHYS271NanoCoopPlan", "PHYS372NanoCoopPlan", false);
 function getLine232() {
         return line232
     };
-var line233 = new Line("MATH102NanoCoopPlan", "PHYS372NanoCoopPlan", false);
+var line233 = new Line("PHYS281NanoCoopPlan", "PHYS372NanoCoopPlan", false);
 function getLine233() {
         return line233
     };
-var line234 = new Line("MATH201NanoCoopPlan", "PHYS372NanoCoopPlan", false);
+var line234 = new Line("MATH102NanoCoopPlan", "PHYS372NanoCoopPlan", false);
 function getLine234() {
         return line234
     };
-var line235 = new Line("WKEXP904NanoCoopPlan", "WKEXP905NanoCoopPlan", false);
+var line235 = new Line("MATH201NanoCoopPlan", "PHYS372NanoCoopPlan", false);
 function getLine235() {
         return line235
     };
-var line236 = new Line("PHYS311NanoCoopPlan", "PHYS415NanoCoopPlan", false);
+var line236 = new Line("WKEXP904NanoCoopPlan", "WKEXP905NanoCoopPlan", false);
 function getLine236() {
         return line236
     };
-var line237 = new Line("PHYS372NanoCoopPlan", "PHYS415NanoCoopPlan", false);
+var line237 = new Line("CHEM103NanoCoopPlan", "CHEM261NanoCoopPlan", false);
 function getLine237() {
         return line237
     };
-var line238 = new Line("ECE341NanoCoopPlan", "PHYS415NanoCoopPlan", false);
+var line238 = new Line("PHYS311NanoCoopPlan", "PHYS415NanoCoopPlan", false);
 function getLine238() {
         return line238
     };
-var line239 = new Line("PHYS381NanoCoopPlan", "PHYS481NanoCoopPlan", false);
+var line239 = new Line("PHYS372NanoCoopPlan", "PHYS415NanoCoopPlan", false);
 function getLine239() {
         return line239
     };
-var line240 = new Line("ECE341NanoCoopPlan", "PHYS481NanoCoopPlan", false);
+var line240 = new Line("ECE341NanoCoopPlan", "PHYS415NanoCoopPlan", false);
 function getLine240() {
         return line240
     };
-var line241 = new Line("CHEM261NanoCoopPlan", "BIOCH200NanoCoopPlan", false);
+var line241 = new Line("PHYS381NanoCoopPlan", "PHYS481NanoCoopPlan", false);
 function getLine241() {
         return line241
     };
-var line242 = new Line("MATH201NanoCoopPlan", "ECE455NanoCoopPlan", false);
+var line242 = new Line("ECE341NanoCoopPlan", "PHYS481NanoCoopPlan", false);
 function getLine242() {
         return line242
     };
-var line243 = new Line("ECE494NanoCoopPlan", "ECE495NanoCoopPlan", false);
+var line243 = new Line("CHEM261NanoCoopPlan", "BIOCH200NanoCoopPlan", false);
 function getLine243() {
         return line243
+    };
+var line244 = new Line("MATH201NanoCoopPlan", "ECE455NanoCoopPlan", false);
+function getLine244() {
+        return line244
+    };
+var line245 = new Line("ECE494NanoCoopPlan", "ECE495NanoCoopPlan", false);
+function getLine245() {
+        return line245
     };
