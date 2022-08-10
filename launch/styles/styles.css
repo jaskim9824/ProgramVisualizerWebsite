@@ -99,7 +99,7 @@ header {
     }
 
     /* Allow vertical wrapping */
-    #main .deptscontainer {
+    #main .visualizerdeptscontainer, #main .timetabledeptscontainer {
         flex-wrap: wrap;
         width: 90vw;
     }
@@ -172,8 +172,14 @@ footer {
     left: 5vw;
 }
 
+.buttonsheader {
+    width: fit-content;
+    position: relative;
+    left: 45vw;
+}
+
 /* Container for departments/disciplines */
-.deptscontainer {
+.visualizerdeptscontainer, .timetabledeptscontainer {
     display: flex;
     flex-direction: row;
     position: relative;
