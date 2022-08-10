@@ -109,6 +109,19 @@ header {
     }
 }
 
+/* this and next keep buttonsheader roughly in middle of screen */ 
+@media screen and (max-width: 700px) {
+    #main .buttonsheader {
+        left: 25vw;
+    }
+}
+
+@media screen and (max-width: 850px) and (min-width: 700px) {
+    #main .buttonsheader {
+        left: 35vw;
+    }
+}
+
 /* Applies for narrow and short screens */
 @media screen and (max-width: 1000px) and (max-height: 600px) {
     body header .header a.site-title {
