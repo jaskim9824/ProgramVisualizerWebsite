@@ -44,13 +44,14 @@ header {
 }
 
 .site-title {
-    padding: 1vh 1vw 1vh 23vw;
+    margin: 1vh 1vw 1vh 13.5vw;
 }
 
 /*Title style*/
 .header a.site-title {
     width: fit-content;
-    font-size: 1.5vw;
+    min-width: 50vw;
+    font-size: 1.5rem;
     color: #F2CD00;
 }
 
@@ -68,9 +69,8 @@ header {
 @media screen and (max-width: 840px) {
     /* Adjust site title so it fits and is spaced nicely */
     header .site-title {
-        padding: 1.5vh 1vw 1vh 7.5vw;
+        margin: 1.5vh 1vw 1vh 7.5vw;
         max-width: 55vw;
-        margin-top: -10px;
     }
 
     header .header a.site-title {
@@ -96,6 +96,7 @@ header {
     #introtext {
         font-size: 75%;
         width: 90vw;
+        left: 20vw;
     }
 
     /* Allow vertical wrapping */
@@ -129,7 +130,7 @@ header {
     }
 
     body header .header .site-title {
-        padding: 0 1vw 0.5vh 25vw;
+        margin: 0 1vw 0.5vh 25vw;
     }
 }
 
@@ -182,13 +183,14 @@ footer {
     text-align: center;
     margin: 2px;
     position: relative;
-    left: 5vw;
+    left: 22.5vw;
+    width: fit-content;
 }
 
 .buttonsheader {
     width: fit-content;
     position: relative;
-    left: 45vw;
+    left: 42vw;
 }
 
 /* Container for departments/disciplines */
@@ -196,15 +198,15 @@ footer {
     display: flex;
     flex-direction: row;
     position: relative;
-    left: 5vw;
+    left: 7vw;
     justify-content: center;
 }
 
 /* Bold title of department */
 .depthead {
     text-align: center;
-    height: 2vh;
-    font-size: 1.5vw;
+    height: fit-content;
+    font-size: 1.25rem;
 }
 
 /* Disciplines within a department */
@@ -226,7 +228,7 @@ footer {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 0.8vw;
+    font-size: 0.75rem;
     margin: 4px 2px;
     transition-duration: 0.3s;
     cursor: pointer;
