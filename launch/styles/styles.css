@@ -185,6 +185,7 @@ footer {
     position: relative;
     left: 22.5vw;
     width: fit-content;
+    max-width: 70vw;
 }
 
 .buttonsheader {
