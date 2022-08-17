@@ -3,7 +3,7 @@
     font-size: 100%;
 }
 
-/*body style*/
+/* body style */
 body {
     margin: 0;
     width: fit-content;
@@ -19,7 +19,7 @@ html {
     overflow-y: scroll;
 }
 
-/*Header style*/
+/* Main green header along top of page */
 header {
     padding: 8px 8px;
     background-color: #275d38;
@@ -28,18 +28,21 @@ header {
     min-width: 100vw;
 }
 
+/* backbutton in top left corner */
 .backbutton {
     background-color: white;
     text-align: center;
     border-radius: 4px;
 }
 
+/* text inside backbutton, ensure padding matches button size */
 .header .backbutton a {
     color: black;
     font-size: 110%;
     padding: 15px 27px 15px 27px;
 }
 
+/* change text color on hover */
 .header .backbutton:hover a {
     color: blue;
 }
@@ -56,7 +59,7 @@ header {
     text-align: center;
 }
 
-/*Title style*/
+/* Title style */
 .header a.site-title {
     width: fit-content;
     font-size: 25px;
@@ -66,7 +69,7 @@ header {
     color: #F2CD00;
 }
 
-/*Image style*/
+/*Image style, U of a logo*/
 .header img {
     width: 183px;
     height: 50px;
@@ -89,6 +92,11 @@ header {
         /* img needs to be re-aligned on narrow screens */
         position: relative;
         bottom: 10px;
+    }
+
+    .header .backbutton {
+        position: relative;
+        bottom: 5px;
     }
 
     /* Changing width of tooltip on narrow screens */
@@ -124,14 +132,6 @@ header {
     }
 }
 
-/* Plan header styling */
-h3#planhead {
-    width: fit-content;
-    font-size: 175%;
-    position: relative;
-    left: 46rem;
-}
-
 /* Container for radio input selectors */
 #toprowcontainer {
     display: flex;
@@ -143,48 +143,72 @@ h3#planhead {
 #planlegend {
     width: fit-content;
     position: relative;
-    left: 20rem;
+    left: 15rem;
+}
+
+/* text above plan radio inputs */
+.planheader {
+    margin: 0px 0px 5px 35px;
+    font-size: 150%;
 }
 
 /* Container for term radio inputs */
 #termlegend {
     width: fit-content;
     position: relative;
-    left: 32.5rem;
+    left: 27.5rem;
 }
 
-/* Container for course group radio inputs */
+/* text above term inputs */
+.termheader {
+    margin: 0px 0px 5px 20px;
+    font-size: 150%
+}
+
+/* Container for sections dropdowns and cours groups radios */
 #optionlegend {
     width: fit-content;
     position: relative;
-    left: 45rem;
-    bottom: 3rem;
+    left: 40rem;
+    bottom: 2rem;
 }
 
+/* title above section dropdowns */
 .sectionsheader {
     text-align: center;
+    margin-bottom: 0;
+    margin-top: 30px;
 }
 
+/* flexbox holding title and all dropdowns */
 .dropdownsrow {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    max-height: 350px;
+    max-height: 200px;
 }
 
+/* container for dropdowns for one course
+(holds Lec, Sem, and Lab dropdowns for one course */
 .dropdownsforcourse {
-    margin: 5px;
-    height: 115px;
+    margin: 0px 5px 5px 0px;
+    height: fit-content;
     width: 175px;
 }
 
+/* dropdown box for sections */
 .sectiondropdown {
     width: 160px;
 }
 
+/* title above course group radio inputs */
+.coursegroupsheader {
+    margin: 0;
+}
+
 /* Wrapper div for the term names and course boxes, the main content */
 #main {
-    height: 2800px;
+    height: 1300px;
     width: fit-content;
 }
 
@@ -199,6 +223,7 @@ h3#planhead {
     height: fit-content;
     position: relative;
     right: 15px;
+    bottom: 40px;
 }
 
 /* Term column styling */
@@ -209,14 +234,6 @@ h3#planhead {
     align-items: center;
 }
 
-/* Term header styling */
-.termheader {
-    margin-bottom: 30px;
-    width: 125%;
-    text-align: center;
-    font-size: 115%;
-}
-
 /* Main content, grid of times/days */
 .coursegrid {
     display: flex;
@@ -225,7 +242,7 @@ h3#planhead {
 
 /* Column-oriented flexboxes for each day of the week */
 .monday, .tuesday, .wednesday, .thursday, .friday {
-    width: 320px;
+    width: 310px;
     text-align: center;
     font-size: 120%;
     border-right: 3px solid black;
@@ -238,6 +255,7 @@ h3#planhead {
     box-sizing: border-box;
     border-top: 3px solid black;
     width: inherit;
+    margin: 0;
 }
 
 /* Container for the times along left of page */ 
@@ -252,7 +270,7 @@ h3#planhead {
 
 /* Individual time text */
 .timeslot {
-    margin-bottom: 113.6px;
+    margin-bottom: 28px;
 }
 
 /* Contains one course */
@@ -266,23 +284,20 @@ h3#planhead {
 /* Text within a course box */
 .embed {
     text-align: center;
-    font-size: 110%;
+    font-size: 65%;
 }
 
 /* Courses that are very narrow need smaller font */
 .narrowcourse .embed {
-    font-size: 40%;
+    font-size: 30%;
 }
 
 /* Course box */
 .course, .narrowcourse {
-    width: 321px;
     box-sizing: border-box;
     border-style: solid;
     border-color: black;
     border-width: 2px;
-    height: 50px;
-    background-color: #eec89a;
 }
 
 /* Default course hover */
@@ -300,7 +315,7 @@ h3#planhead {
 /* Most properties taken from Calendar */
 .tooltip .tooltiptextleft, .tooltip .tooltiptextright {
     visibility: hidden;
-    width: 46vw;
+    width: 40vw;
     max-width: 900px;
     padding: 0px 10px;
     background-color: #EEEEEE;
@@ -364,7 +379,7 @@ h3#planhead {
 /* Title of description, format taken from Calendar */
 .descriptiontitle {
     color: #2b292a;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 500;
     font-family: 'Roboto', sans-serif;
 }
@@ -381,6 +396,11 @@ h3#planhead {
     overflow: hidden;
     border-style: inset;
     border-width: 1px;
+}
+
+.descriptioncredits, .descriptionfeeindex, .descriptionavailability, .descriptionalphahours, .fulldescription,
+.instructorname, .instructoremail, .place, .building, .starttime, .endtime, .accreditationunits {
+    font-size: 15px;
 }
 
 /* Various components of description body */
@@ -401,13 +421,8 @@ h3#planhead {
     margin-left: 50px;
 }
 
-/* Separation between enrolled and accreditation info */
-.enrolled {
-    margin: 0px 0px 10px 0px;
-}
-
 .accreditationheader {
-    font-size: 105%;
+    font-size: 80%;
 }
 
 /* footer formatting */
